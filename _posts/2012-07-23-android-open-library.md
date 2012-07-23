@@ -11,6 +11,9 @@ description: 유용하게 쓰일 수 있는 안드로이드 라이브러리를 �
 #### Actionbar Sherlock
 ---
 
+<img src="http://actionbarsherlock.com/static/mascot.png" alt="Donations &amp; Merhandise" title="Buy me on a shirt!" style="height: 80px; display: inline;" />
+<img src="http://actionbarsherlock.com/static/logo.png" alt="Home" style="height: 80px; display: inline;" />
+
 구글은 허니콤 이후부터 기존의 타이틀바를 대체한 액션바를 이용하도록 권고하였습니다만 프로요나 진저브레드같은 허니콤 이전의 플랫폼에서는 액션 바를 사용할 수 있는 방법이 없었습니다. 그렇지만 [액션바 셜록](http://actionbarsherlock.com/)을 이용하면 그 이전 버전의 안드로이드에서도 액션바를 사용할 수 있습니다. 또한 ICS스타일의 UI컴포넌트들도 제공하므로 ICS버전 앱과 그 이전 버전 앱의 통일성을 갖추고 싶은 분들은 필히 이용해 봐야 할 라이브러리입니다.
 
 액션 바 셜록의 세팅과 간단한 적용에 대한 [비디오](http://www.youtube.com/watch?v=4GJ6yY1lNNY&feature=player_embedded)를 참조하시면 시작하는데 도움이 될 것 입니다.
@@ -20,12 +23,17 @@ description: 유용하게 쓰일 수 있는 안드로이드 라이브러리를 �
 #### RoboGuice, AndroidAnnotations
 ---
 
+<img style="width: 150px; display: inline;" src="http://roboguice.googlecode.com/files/roboguice.png" alt="roboguice" />
+<img style="width: 150px; display: inline;" src="https://github.com/excilys/androidannotations/wiki/img/aa-logo.png" alt="Android Annotations Logo" />
+
 [RoboGuice](http://code.google.com/p/roboguice/)와 [AndroidAnnotations](https://github.com/excilys/androidannotations)는 자바의 [어노테이션](http://docs.oracle.com/javase/tutorial/java/javaOO/annotations.html)을 이용하여 소스를 더 간결하게 짤 수 있도록 도와주어 유지보수를 쉽도록 하고, 코드의 가독성을 높여주는 라이브러리입니다. 또 흔히 일어나는 예외처리등을 손쉽게 다룰 수 있도록 도와주기도 합니다.
 
 비슷한 의도를 가졌지만, 구현 방식은 조금 다른데, [RoboGuice 예제](http://code.google.com/p/roboguice/wiki/SimpleExample?tm=6)와 AndroidAnnotations을 [액티비티에 적용한 예제](https://github.com/excilys/androidannotations/wiki/Enhance%20Activities) 그리고 [Background annotation](https://github.com/excilys/androidannotations/wiki/WorkingWithThreads)을 확인해보시면 이 두 라이브러리가 어떤 의도를 가진 라이브러리인지 알 수 있을 거라고 생각합니다.
 
 #### greendroid
 ---
+
+<img style="width: 500px;" src="http://greendroid.cyrilmottier.com/images/greendroid_logo.png" alt="greendroid logo" />
 
 [그린드로이드](http://greendroid.cyrilmottier.com/)는 기존 안드로이드에서 제공하는 뷰나 위젯을 더 편리하게 쓸 수 있도록 강화 된 뷰를 제공하는 라이브러리입니다.
 
@@ -35,6 +43,8 @@ description: 유용하게 쓰일 수 있는 안드로이드 라이브러리를 �
 
 #### ViewPagerIndicator
 ---
+
+![view pager indicator icon](http://viewpagerindicator.com/web.png)
 
 안드로이드 호환성 패키지에 포함된 [ViewPager](http://blog.naver.com/PostView.nhn?blogId=huewu&logNo=110116958816)를 이용하여 화면의 전환 효과를 쉽게 구현할 수 있었습니다. 그런데 ViewPager에 인디케이터를 적용하려면 따로 구현을 해야만 했었는데요, 이러한 인디케이터효과를 쉽게 얻을 수 있도록 만든 라이브러리가 있습니다. [ViewPagerIndicator](http://viewpagerindicator.com/)를 이용하면 쉽게 미리 만들어 놓은 몇가지의 인디케이터들을 적용 할 수 있습니다.
 
@@ -58,8 +68,10 @@ Honeycomb API에서 지원하는 뷰 에니메이션 관련 API들을 그 이전
 
 그 외에 자잘하게 편의를 도와주는 [여러 API들](http://code.google.com/p/android-query/wiki/API)을 제공합니다.
 
-#### Commonsguy github
+#### Commonsguy github repository
 ---
+
+![commonsguy gravatar](https://secure.gravatar.com/avatar/5ff53c2b4f6cc66ee989bb9d9effe119?s=140&d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png)
 
 [Commonsguy](https://github.com/commonsguy)가 만들어 놓은 많은 안드로이드 프로젝트를 모아놓은 저장소입니다. 원래 [The Busy Coder's Guide to Android Development](http://www.amazon.com/Busy-Coders-Guide-Android-Development/dp/0981678009)라는 책에서 교육용으로 사용한 여러 예제를 모아놓은 저장소인데, 라이브러리는 아니지만 프로젝트를 뒤지다 보면 바로 가져다가 쓸 수 있을만큼 완성도 있게 만들어 놓은 컴포넌트들을 많이 발견할 수 있습니다.
 

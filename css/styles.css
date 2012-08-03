@@ -11,6 +11,7 @@ height: 100%;
 
 ol, li {
 list-style-position: inside;
+padding-left: 20px;
 }
 
 pre {
@@ -170,7 +171,9 @@ display: block;
 
 .post ol, ul {
 line-height: 1.8em;
-margin-bottom: 20px;
+font-family: "NanumGothic", Helvetica, sans-serif, Arial;
+font-size: 14px;
+color: #323232;
 }
 
 .post-title {

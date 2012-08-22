@@ -1,6 +1,6 @@
 ---
 layout: entry
-title: 반응형 웹 만들기
+title: 도도에서는 반응형 웹을 어떻게 만들었을까?
 author: Jacob(이성운)
 author-email: jacob@spoqa.com
 description: viewport, media query, jQuery를 이용하여 responsive web을 만들어 보겠습니다.

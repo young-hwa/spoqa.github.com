@@ -10,7 +10,7 @@ description: iOS Passbook에 들어갈 Pass를 만들 때 반드시 필요한 �
 
 ![Passbook](https://devimages.apple.com.edgekey.net/passbook/images/passbook-hero.png)
 
-iOS 6에서 새로 추가된 [Passbook](http://www.apple.com/ios/whats-new/#passbook)은 여러 장의 디지털 티켓, 쿠폰, 매장 카드를 담고 편리하게 이용할 수 있는 애플리케이션입니다. Passbook 안에 들어가는 티켓, 쿠폰, 매장 카드들을 Pass라고 부르는데, Pass는 기존 앱보다 손쉽게 개발, 배포할 수 있으며, 위치나 시간에 따라 최적의 사용 시간에 맞춰 알림을 주기 때문에 더 높은 사용성을 보장할 수 있습니다. 이번 블로그 글에선 Pass를 만드는 과정에서 이용되는 signpass의 소스코드를 분석해보도록 하겠습니다.
+iOS 6에서 새로 추가된 [Passbook](http://www.apple.com/ios/whats-new/#passbook)은 여러 장의 디지털 티켓, 쿠폰, 매장 카드를 담고 편리하게 이용할 수 있는 애플리케이션입니다. Passbook 안에 들어가는 티켓, 쿠폰, 매장 카드들을 Pass라고 부릅니다. Pass는 기존 앱보다 손쉽게 개발, 배포할 수 있으며, 위치나 시간에 따라 최적의 사용 시간에 맞춰 알림을 주기 때문에 더 높은 사용성을 보장할 수 있습니다. 이번 블로그 글에선 Pass를 만드는 과정에서 이용되는 signpass의 소스코드를 분석해보도록 하겠습니다.
 
 ## signpass?
 

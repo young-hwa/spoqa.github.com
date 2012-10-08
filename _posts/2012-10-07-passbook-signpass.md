@@ -10,11 +10,11 @@ description: iOS Passbook에 들어갈 Pass를 만들 때 반드시 필요한 �
 
 ![Passbook](https://devimages.apple.com.edgekey.net/passbook/images/passbook-hero.png)
 
-iOS 6에서 새로 추가된 [Passbook](http://www.apple.com/ios/whats-new/#passbook)은 여러 장의 디지털 티켓, 쿠폰, 매장 카드를 담고 편리하게 이용할 수 있는 애플리케이션입니다. Pass는 기존 앱보다 손쉽게 개발, 배포할 수 있으며, 위치나 시간에 따라 최적의 사용 시간에 맞춰 알림을 주기 때문에 더 높은 사용성을 보장할 수 있습니다. 이번 블로그 글에선 Pass를 만드는 과정에서 이용되는 signpass의 소스코드를 분석해보도록 하겠습니다.
+iOS 6에서 새로 추가된 [Passbook](http://www.apple.com/ios/whats-new/#passbook)은 여러 장의 디지털 티켓, 쿠폰, 매장 카드를 담고 편리하게 이용할 수 있는 애플리케이션입니다. Passbook 안에 들어가는 티켓, 쿠폰, 매장 카드들을 Pass라고 부르는데, Pass는 기존 앱보다 손쉽게 개발, 배포할 수 있으며, 위치나 시간에 따라 최적의 사용 시간에 맞춰 알림을 주기 때문에 더 높은 사용성을 보장할 수 있습니다. 이번 블로그 글에선 Pass를 만드는 과정에서 이용되는 signpass의 소스코드를 분석해보도록 하겠습니다.
 
 ## signpass?
 
-signpass는 애플이 Pass 개발에 이용할 수 있게 제공한 툴킷으로, 형식에 맞춰 개발된 Pass 디렉터리를 인증서와 함께 하나의 파일(\*.pkpass)로 묶어주는 프로그램입니다. Xcode Project 파일과 소스코드를 포함하여 오픈 소스 형태로 [Passbook Materials](https://developer.apple.com/downloads/index.action?name=passbook)에 포함되어있습니다.
+signpass는 애플이 Pass 개발에 이용할 수 있게 제공한 툴킷으로, 형식에 맞춰 개발된 Pass 디렉터리를 인증서와 함께 하나의 파일(\*.pkpass)로 묶어주는 프로그램입니다. Xcode Project 형태로 소스코드와 함께 [Passbook Materials](https://developer.apple.com/downloads/index.action?name=passbook)에 포함되어있습니다. Passbook Materials는 애플 개발자 계정이 있으면 무료로 다운받으실 수 있습니다.
 
 ## 왜 분석하는가?
 

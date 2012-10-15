@@ -3,6 +3,8 @@ margin: 0;
 padding: 0;
 }
 
+div.highlight { margin-top: 20px; }
+
 body {
 background-color: #E6E6E6;
 width: 100%;
@@ -37,13 +39,17 @@ text-shadow: 1px 1px 1px white;
 }
 
 h2, h3, h4, h5, h6 {
-margin-top:30px;
+margin-top: 20px;
 }
 
 h2 {
-font-size: 18px;
-margin-top: 40px;
+font-size: 24px;
 }
+
+h3 { font-size: 22px; }
+h4 { font-size: 20px; }
+h5 { font-size: 18px; }
+h6 { font-size: 16px; }
 
 p {
 font-family: "NanumGothic", Helvetica, sans-serif, Arial;

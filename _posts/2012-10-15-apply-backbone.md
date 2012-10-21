@@ -10,7 +10,9 @@ description: 새 판올림을 준비하며 프로젝트에 자바스크립트 MV
 
 ## Backbone이란?
 
-[Backbone](http://backbonejs.org/)은 자바스크립트 프레임워크로 [MVC 패턴](http://ko.wikipedia.org/wiki/MVC_%ED%8C%A8%ED%84%B4)을 적용하여 웹어플리케이션 개발 할 수 있도록 돕는 유용한 프레임워크입니다. MVC패턴에 대해서는 밑에 더 자세히 설명하기로 하고 간단히 Backbone을 적용한 후의 장점을 소개하면 깔끔하게 뷰와 로직을 분리할 수 있어 코드를 유지보수하는데 드는 시간이 줄며 기능 수정 혹은 기능 확장이 쉬워진다는 점등을 들 수 있습니다.
+[Backbone](http://backbonejs.org/)은 자바스크립트 프레임워크로 [MVC 패턴](http://ko.wikipedia.org/wiki/MVC_%ED%8C%A8%ED%84%B4)을 적용하여 웹어플리케이션 개발 할 수 있도록 돕는 유용한 프레임워크입니다. MVC패턴에 대해서는 밑에 더 자세히 설명하기로 하고 간단히 Backbone을 적용한 후의 장점을 소개하면 깔끔하게 뷰와 로직을 분리할 수 있어 코드를 유지보수하는데 드는 시간이 줄며 기능 수정 혹은 기능 확장이 쉬워진다는 점등을 들 수 있습니다. 
+
+또한 Backbone에서는 [Underscore](http://documentcloud.github.com/underscore/)라이브러리를 사용하는데, 이 라이브러리에서 제공하는 템플레이트 기능을 통해 뷰의 재사용과 설계를 쉽게 할 수 있다는 점도 장점입니다.
 
 만약 서버 사이드에서 [RESTful](http://en.wikipedia.org/wiki/Representational_state_transfer)한 URL를 제공한다면, Backbone을 사용하여 얻을 수 있는 이점이 더 확실해집니다. [모델에 RESTful한 URL을 제공](http://backbonejs.org/#Model-url)하면, [간단하게 서버와 동기화 하면서](http://backbonejs.org/#Sync) 그에 따르는 뷰의 변화따위를 손쉽게 구현할 수 있습니다. 
 
@@ -22,9 +24,7 @@ RESTful한 인터페이스 설계에 대해서 궁금하시다면 이전에 올�
 
 모델은 뷰나 컨트롤러와 무관하게 작성되는데 그런 모델을 뷰가 [관찰](http://ko.wikipedia.org/wiki/%EC%98%B5%EC%A0%80%EB%B2%84_%ED%8C%A8%ED%84%B4)하고 있다가 모델의 변화에 따라 적절히 뷰의 모습을 바꾸게 되므로 서로 투명하게 작동하게 됩니다. 즉 모델만 잘 설계해서 만들어주고 그에 따르는 뷰의 모습만 정의하면 그 다음부터는 지저분하게 모델의 상태에 따르는 코드를 직접 처리할 필요가 없다는 장점이 있습니다.
 
-## 왜 사용하는가?
-
-앞서 MVC 패턴을 설명하며 언급했다시피 Backbone과 같은 프레임워크를 사용하면 모델과 뷰를 분리할 수 있고 이러한 점이 코드를 좀 더 알아보기 쉬울뿐만 아니라 견고하게 만들어줄 수 있다는 장점을 꼽을 수 있습니다. 또한 Backbone이 사용하는 Underscore 라이브러리는 간단한 template 기능을 지원하기 때문에 뷰를 구성하기 쉽게 해준다는 장점이 있습니다. 
+Bakcbone이 MVC패턴을 적용하기 위한 프레임워크라고 하였지만, 실제로 Backbone에서는 MVC패턴의 변형인 MVR패턴을 사용합니다. 컨트롤러 대신 [Router](http://backbonejs.org/#Router)가 쓰이는 형식인데, 이 [링크](http://backbonetutorials.com/what-is-a-router/)에서 Backbone의 Router에 대한 자세한 설명을 제공하고 있습니다. 하지만 Router가 컨트롤러의 역할을 대행하는 것은 아니고, 대부분의 Backbone 예제를 살펴보면 실제로 컨트롤러가 담당하는 업무들을 뷰에 이관하여 처리하는 것을 볼 수 있습니다. MV* 패턴중에는 [MVP패턴](http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93presenter)이나 [MVA패턴](http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93adapter)같은 MVC패턴의 변형들이 존재합니다만 그 근간을 이루는 Model-View의 관계는 변하지 않는 것을 볼 수 있습니다.
 
 ## Simple code snippet
 
@@ -46,7 +46,7 @@ var Shape = Backbone.Model.extend({
 });
 {% endhighlight %}
 
-이렇게 Backbone.Model,extend 함수를 통해 모델의 청사진을 구성하게 됩니다. 이 모델을 이용하여 뷰를 구성할 수 있습니다.
+이렇게 Backbone.Model.extend 함수를 통해 모델의 청사진을 구성하게 됩니다. 이 모델을 이용하여 뷰를 구성할 수 있습니다.
 
 #### 콜렉션
 
@@ -88,7 +88,7 @@ compiled({name : 'moe'});
 => "hello: moe"
 {% endhighlight %}
 
-Underscore에서 제공하는 [template 기능](http://documentcloud.github.com/underscore/#template)을 이용하여 문자열을 곧바로 html 요소로 만들어낼 수 있습니다. 또한 템플레이트 내에 자바스크립트 함수등을 삽입하는 기능도 제공합니다. 기본적으로 Underscore에서 template 기능을 제공하지만 그 외에도 여러 라이브러리가 있습니다. 
+Underscore에서 제공하는 [템플레이트 기능](http://documentcloud.github.com/underscore/#template)을 이용하여 문자열을 곧바로 html 요소로 만들어낼 수 있습니다. 또한 템플레이트 내에 자바스크립트 함수등을 삽입하는 기능도 제공합니다. 기본적으로 Underscore에서 템플레이트 기능을 제공하지만 그 외에도 여러 라이브러리가 있습니다. 
 
 가령 [mustache](http://mustache.github.com/)를 이용해서도 똑같은 기능을 할 수 있습니다. 필요에 따라 유연하게 템플레이트 라이브러리를 바꿀 수 있다는 점이 매력이라고 볼 수 있습니다. Backbone 공식 사이트에서도 이러한 템플레이트 라이브러리를 이용하는 것을 권장하고 있습니다.
 

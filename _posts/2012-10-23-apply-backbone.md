@@ -1,6 +1,6 @@
 ---
 layout: entry
-title: Bakcbone 적용기
+title: Backbone 적용기
 author: akaz
 author-email: akaz@spoqa.com
 description: 새 판올림을 준비하며 프로젝트에 자바스크립트 MVC 프레임워크인 Backbone을 도입해보았습니다. 그에 따르는 장점을 살펴보고, 간단한 예제를 통해 Backbone에 대하여 알아봅니다.

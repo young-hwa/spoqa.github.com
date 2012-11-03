@@ -17,12 +17,20 @@ padding-left: 20px;
 }
 
 pre {
-padding: 5px;
+  padding: 5px;
+  display: inline-block;
+  width: 100%;
+}
+
+pre code {
+  word-wrap: break-word;
+  width: 100%;
 }
 
 code {
-background-color: #FFF;
-padding: 2px;
+  background-color: #FFF;
+  padding: 1px;
+  display: inline-block;
 }
 
 a {

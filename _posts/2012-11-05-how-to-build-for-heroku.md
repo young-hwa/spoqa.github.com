@@ -12,7 +12,7 @@ publish: true
 # Why?
 ---
 
-지난주 저희 개발팀은 새로운 상점 사진을 출력하기 위해 한 사진을 비율이 다른 이미지로 바꿔서 저장하는 작업을 해야 했습니다. 다행히 이 문제는 [Seam carving], 혹은  Liquid rescaling으로 불리는 방법, 그리고 이를 구현한 [ImageMagick]과 그 [Python] 바인딩인 [wand]로 쉽게 해결할 수 있을 것 같았습니다. (Seam carving과 wand에 대해서는 [이 글]()을 읽어보시는 것을 권합니다.)
+지난주 저희 개발팀은 새로운 상점 사진을 출력하기 위해 한 사진을 비율이 다른 이미지로 바꿔서 저장하는 작업을 해야 했습니다. 다행히 이 문제는 [Seam carving], 혹은  Liquid rescaling으로 불리는 방법, 그리고 이를 구현한 [ImageMagick]과 그 [Python] 바인딩인 [wand]로 쉽게 해결할 수 있을 것 같았습니다. (Seam carving과 wand에 대해서는 [이 글](http://blog.dahlia.kr/post/34088303362)을 읽어보시는 것을 권합니다.)
 
 그런데 막상 서비스에 배포하려니 한가지 문제가 있었습니다. 저희는 최근 서비스를 Heroku에서 운영 중인데, 이 Heroku에 ImageMagick 라이브러리는 깔렸었지만, [liblqr]이 없어 Liquid rescalig이 불가능한 상태였던 겁니다. 개발자의 로컬에서 테스트할 때야 소스를 받아서 직접 빌드라도하면 되지만 이 고지식한 PasS에서 그건 무리였죠.
 

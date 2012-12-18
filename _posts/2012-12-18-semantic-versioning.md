@@ -50,10 +50,10 @@ description: 소프트웨어의 버전 명을 정하는 방법은 여러 가지�
 
 여러 오픈소스 프로젝트들이 이미 Semantic Versioning에 따라 버전 명을 표기하기 시작하였으며, 해당 규칙에 기반을 둔 버전 비교 라이브러리도 만들어지고 있습니다.
 
- - node.js: https://github.com/isaacs/node-semver
- - PHP: https://github.com/GordonSchmidt/SemVer
- - Python: https://github.com/k-bx/python-semver
- - Ruby: https://github.com/iantruslove/SemverStringer
+ - node.js: <https://github.com/isaacs/node-semver>
+ - PHP: <https://github.com/GordonSchmidt/SemVer>
+ - Python: <https://github.com/k-bx/python-semver>
+ - Ruby: <https://github.com/iantruslove/SemverStringer>
 
 [seaport]는 node.js 에서 서비스 클러스터들이  Semantic Versioning에 따라 버전 의존성을 가지게 설계할 수 있어 보다 안정적인 버전 협상이 가능하도록 하고 있습니다.
 

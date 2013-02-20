@@ -37,7 +37,7 @@ pip는 PyPI(Python Package Index)에 등록된 패키지들을 설치하고 관�
 $ easy_install pip
 ```
 
-다음은 __pip__ 명령의 사용법입니다.
+다음은 pip 명령의 사용법입니다.
 
  * pip install packageName 명령 : 최신버전으로 설치
  * pip install packageName==0.x.x 명령 : 0.x.x버전으로 설치
@@ -146,7 +146,7 @@ $ sudo pip install SQLAlchemy==0.7.2
 
 여기에서 ==0.7.2는 설치할 SQLAlchemy의 버전을 뜻하며 버전을 명시하지 않으면 최신 버전으로 깔립니다.
 ### Flask-SQLAlchemy
-__Flask-SQLAlchemy__는 SQLAlchemy를 더욱 뒷받침할 수 있는 Flask의 확장으로 SQLAlchemy 0.6 이상의 버전을 필요로합니다.
+[Flask-SQLAlchemy](http://pythonhosted.org/Flask-SQLAlchemy/)는 SQLAlchemy를 더욱 뒷받침할 수 있는 Flask의 확장으로 SQLAlchemy 0.6 이상의 버전을 필요로합니다.
 Flask-SQLAlchemy 역시 pip 명령으로 설치할 수 있으며 저는 Flask-SQLAlchemy 0.15 버전을 설치했습니다.
 
 ```
@@ -159,15 +159,10 @@ $ sudo pip install Flask-SQLAlchemy==0.15
 
 #출처
 ---
-__Python__<br>
 [Python 위키백과](http://ko.wikipedia.org/wiki/%ED%8C%8C%EC%9D%B4%EC%8D%AC)<br>
-__Pip__ <br>
 [pip 위키백과](http://en.wikipedia.org/wiki/Pip_(Python\)) <br>
-__Flask__<br>
 [Flask 홈페이지](http://flask.pocoo.org/)<br>
-__PostgreSQL__<br>
 [PostgreSQL plus](http://www.postgresplus.co.kr/man/intro-whatis.html)<br>
 [PostgreSQL 위키백과](http://ko.wikipedia.org/wiki/PostgreSQL) <br>
-__SQLAlchemy__<br>
 Essential SQLAlchemy, O REILLY, 2008 <br>
 [Flask-SQLAlchemy 홈페이지](http://pythonhosted.org/Flask-SQLAlchemy/)

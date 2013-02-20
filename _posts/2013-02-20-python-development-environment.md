@@ -9,14 +9,14 @@ description: Windows, Mac OS, Linux 운영체제에서  Python, PostgreSQL을 �
 
 # Python
 ---
-__Python__(파이썬)은 비영리의 Python 소프트웨어 재단이 관리하는 개방형, 공동체 기반 개발 모델을 가지고 있습니다. Python은 C파이썬 구현이 사실상의 표준이며 동적 타이핑 범용 프로그래밍 언어로, 펄 및 루비와 자주 비교됩니다. Python은 순수한 프로그래밍 언어의 기능 외에도 다른 언어로 쓰인 모듈들을 연결하는 Glue language로써 자주 이용됩니다. 실제 Python은 많은 상용 응용 프로그램에서 스크립트 언어로 채용되고 있습니다. 또한, 유니코드 문자열을 지원하여 다양한 언어의 문자 처리에도 능합니다. 현대의 Python은 여전히 인터프리터 언어처럼 동작하나 사용자가 모르는 사이에 스스로 Python 소스 코드를 컴파일하여 바이트 코드를 만들어 냄으로써 다음에 수행할 때에는 빠른 속도를 보여줍니다.
+[Python](http://www.python.org/)(파이썬)은 비영리의 Python 소프트웨어 재단이 관리하는 개방형, 공동체 기반 개발 모델을 가지고 있습니다. Python은 C파이썬 구현이 사실상의 표준이며 동적 타이핑 범용 프로그래밍 언어로, 펄 및 루비와 자주 비교됩니다. Python은 순수한 프로그래밍 언어의 기능 외에도 다른 언어로 쓰인 모듈들을 연결하는 Glue language로써 자주 이용됩니다. 실제 Python은 많은 상용 응용 프로그램에서 스크립트 언어로 채용되고 있습니다. 또한, 유니코드 문자열을 지원하여 다양한 언어의 문자 처리에도 능합니다. 현대의 Python은 여전히 인터프리터 언어처럼 동작하나 사용자가 모르는 사이에 스스로 Python 소스 코드를 컴파일하여 바이트 코드를 만들어 냄으로써 다음에 수행할 때에는 빠른 속도를 보여줍니다.
 
 ### Windows에서 Python 2.x 설치 방법
 Linux와 Mac OS에서 Python은 기본적으로 설치되어 있기 때문에 터미널 창에서 Python 명령만으로 쉽게 실행할 수 있지만 Windows에서는 Python을 따로 설치해주어야 합니다. 
 
 [Python 공식 사이트](http://www.python.org)
     
- 해당 사이트에 들어가서 Quick Links (2.7.3) – Windows Installer 선택하여 python-2.7.3.msi 다운로드 후 실행하여 설치합니다. 특별히 원하는 버전이 있을 때에는 DOWNLOAD – Releases에서 버전별로 설치파일을 다운로드 할 수 있습니다. Python의 기본 설치 경로는 C:\Python27 이며 설치 완료 후, __환경변수__를 등록해야 합니다. 환경변수를 등록하는 방법은 다음과 같습니다.
+ 해당 사이트에 들어가서 Quick Links (2.7.3) – Windows Installer 선택하여 python-2.7.3.msi 다운로드 후 실행하여 설치합니다. 특별히 원하는 버전이 있을 때에는 DOWNLOAD – Releases에서 버전별로 설치파일을 다운로드 할 수 있습니다. Python의 기본 설치 경로는 C:\Python27 이며 설치 완료 후, 환경변수를 등록해야 합니다. 환경변수를 등록하는 방법은 다음과 같습니다.
  
 * 내컴퓨터(마우스 오른쪽 버튼 클릭) – 속성(시스템 등록 정보) – 고급 – 환경 변수 클릭
 * 시스템 변수 – Path 선택 후 편집 클릭
@@ -44,15 +44,14 @@ $ easy_install pip
  * 패키지 설치 경로 : C:\Python27\Lib\site-packages
  * pip uninstall packageName 명령 : package 제거
  * pip freeze 명령 : 현재 환경에 설치된 package 이름과 버전 목록
- 
- 
- 
+<br>
+  
 #PostgreSQL
 ---
 
 ![PostgreSQL](/images/2013-02-20/postgresql.png)
 
- __PostgreSQL__는 California 대학 Berkeley computer science 학부에서 개발한 POSTGRES, Version 4.2 를 기반으로 한 오브젝트 RDB 관리 시스템(ORDBMS)입니다. 또한, PostgreSQL은 BSD 허가권으로 배포되며 오픈소스 개발자 및 관련 회사들이 개발에 참여하고 있습니다. 따라서 누구라도 사용, 수정, 배포할 수 있으며 목적과 관계없이 무료로 이용할 수 있습니다.
+ [PostgreSQL](http://www.postgresql.org/)는 California 대학 Berkeley computer science 학부에서 개발한 POSTGRES, Version 4.2 를 기반으로 한 오브젝트 RDB 관리 시스템(ORDBMS)입니다. 또한, PostgreSQL은 BSD 허가권으로 배포되며 오픈소스 개발자 및 관련 회사들이 개발에 참여하고 있습니다. 따라서 누구라도 사용, 수정, 배포할 수 있으며 목적과 관계없이 무료로 이용할 수 있습니다.
 
 ### 각 운영체제 별 PostgreSQL 설치 방법
 #### Windows
@@ -109,7 +108,7 @@ $ brew install postgresql
 설치된 버전을 __$ psql --ver__ 명령으로 확인해 보니 PostgreSQL 9.1.4 버전이 설치되어 있었습니다. 
 
 ###psycopg2
-__psycopg2__는 Python library의 한 종류로써 하는 역할은 Python에서 PostgreSQL를 활용하게 해주는 library입니다. 설치 방법은 터미널 창에서 아래와 같은 명령어를 입력하시면 됩니다.
+[psycopg2](http://initd.org/psycopg/)는 Python library의 한 종류로써 하는 역할은 Python에서 PostgreSQL를 활용하게 해주는 library입니다. 설치 방법은 터미널 창에서 아래와 같은 명령어를 입력하시면 됩니다.
 
 ```
 $ pip install psycopg2
@@ -123,7 +122,7 @@ $ sudo apt-get install python-dev
 
 #Flask
 ---
-__Flask__는 Python용 Micro Framework이며, Jinja2 template engine과 Werkzerg WSGI toolkit에 의존합니다. Flask에는 기본적으로 많은 환경설정 값들이 존재합니다. 규칙에 따라 템플릿 파일과 CSS, JavaScript, Images 등의 파일들은 templates과 static 이라는 하위 디렉터리에 각각 보관해야 합니다. 기본적으로 Flask는 다른 라이브러리에는 존재하는 Database abstraction layer, Form validation 등의 기능을 포함하지 않지만, 기능을 추가할 수 있는 확장성을 제공합니다. 이미 수많은 라이브러리들이 Database integration, Form validation, Upload handling, Various open authentication technologies등을 제공합니다. SQLAlchemy나 다른 DB Tool을 이용하여 고급 패턴을 구현할 수 있으며, Flask를 이용해보면 다양한 기능을 확장할 수 있다는 것을 알 수 있을 것입니다.
+[Flask](http://flask.pocoo.org/)는 Python용 Micro Framework이며, Jinja2 template engine과 Werkzerg WSGI toolkit에 의존합니다. Flask에는 기본적으로 많은 환경설정 값들이 존재합니다. 규칙에 따라 템플릿 파일과 CSS, JavaScript, Images 등의 파일들은 templates과 static 이라는 하위 디렉터리에 각각 보관해야 합니다. 기본적으로 Flask는 다른 라이브러리에는 존재하는 Database abstraction layer, Form validation 등의 기능을 포함하지 않지만, 기능을 추가할 수 있는 확장성을 제공합니다. 이미 수많은 라이브러리들이 Database integration, Form validation, Upload handling, Various open authentication technologies등을 제공합니다. SQLAlchemy나 다른 DB Tool을 이용하여 고급 패턴을 구현할 수 있으며, Flask를 이용해보면 다양한 기능을 확장할 수 있다는 것을 알 수 있을 것입니다.
 ### Flask 설치 방법
  Flask를 설치하려면 터미널 창에서 다음 명령어를 치면 됩니다. (windows의 경우 cmd창)
  
@@ -133,7 +132,7 @@ __Flask__는 Python용 Micro Framework이며, Jinja2 template engine과 Werkzerg
 
 #SQLAlchemy
 ---
-__SQLAlchemy__는 Oracle, DB2, MySQL, PostgreSQL, SQLite와 같은 관계형 데이터베이스에 강력하고 유연한 인터페이스를 제공하는 Python SQL Toolkit이자 Object Relation Mapper(ORM)입니다. 여기서 ORM은 객체를 관계형 DB 테이블에 매핑해주는 역할을 하는데 SQLAlchemy는 객체를 매핑하기 위해 특정 클래스를 상속받지 않아도 되기 때문에 높은 수준의 라이브러리라고 할 수 있습니다. 
+[SQLAlchemy](http://www.sqlalchemy.org/)는 Oracle, DB2, MySQL, PostgreSQL, SQLite와 같은 관계형 데이터베이스에 강력하고 유연한 인터페이스를 제공하는 Python SQL Toolkit이자 Object Relation Mapper(ORM)입니다. 여기서 ORM은 객체를 관계형 DB 테이블에 매핑해주는 역할을 하는데 SQLAlchemy는 객체를 매핑하기 위해 특정 클래스를 상속받지 않아도 되기 때문에 높은 수준의 라이브러리라고 할 수 있습니다. 
 
 앞선 단계까지의 설치가 완료되었다면 SQLAlchemy의 설치법 역시 [pip](http://en.wikipedia.org/wiki/Pip_(Python\)) 명령을 쓰면 되므로 간단합니다. 윈도우는 커맨드창을 실행시키고, 리눅스와 MAC OS의 경우 터미널을 실행시켜 다음 명령을 입력합니다. 저는 SQLAlchemy 0.7.2 버전을 설치했습니다.
 

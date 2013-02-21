@@ -124,7 +124,7 @@ $ sudo apt-get install python-dev
 ---
 [Flask](http://flask.pocoo.org/)는 Python용 Micro Framework이며, Jinja2 template engine과 Werkzerg WSGI toolkit에 의존합니다. Flask에는 기본적으로 많은 환경설정 값들이 존재합니다. 규칙에 따라 템플릿 파일과 CSS, JavaScript, Images 등의 파일들은 templates과 static 이라는 하위 디렉터리에 각각 보관해야 합니다. 기본적으로 Flask는 다른 라이브러리에는 존재하는 Database abstraction layer, Form validation 등의 기능을 포함하지 않지만, 기능을 추가할 수 있는 확장성을 제공합니다. 이미 수많은 라이브러리들이 Database integration, Form validation, Upload handling, Various open authentication technologies등을 제공합니다. SQLAlchemy나 다른 DB Tool을 이용하여 고급 패턴을 구현할 수 있으며, Flask를 이용해보면 다양한 기능을 확장할 수 있다는 것을 알 수 있을 것입니다.
 ### Flask 설치 방법
- Flask를 설치하려면 터미널 창에서 다음 명령어를 치면 됩니다. (windows의 경우 cmd창)
+ Flask를 설치하려면 터미널 창에서 다음 명령어를 입력하면 됩니다. (windows의 경우 cmd창)
  
 ```
  $ sudo pip install flask 

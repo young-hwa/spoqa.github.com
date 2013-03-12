@@ -102,9 +102,9 @@ UT는 단순히 사용자를 선정하여 사용자의 행동을 기록하는 �
 
 **Image references**
 
-- http://www.branded3.com/wp-content/uploads/2009/03/eye-tracking-transactional.gif
-- http://www.akinsdesigns.com/images/morae_sample_400x282.jpg
+- [http://www.branded3.com/wp-content/uploads/2009/03/eye-tracking-transactional.gif](http://www.branded3.com/wp-content/uploads/2009/03/eye-tracking-transactional.gif)
+- [http://www.akinsdesigns.com/images/morae_sample_400x282.jpg](http://www.akinsdesigns.com/images/morae_sample_400x282.jpg)
 
 **Contents references**
 
-- http://www.nngroup.com/articles/ 등
+- [http://www.nngroup.com/articles/](http://www.nngroup.com/articles/)

@@ -44,13 +44,13 @@ setup(name="test_py2xxx",
       version="0.0.1",
       windows=[{"script": "run.py"}],
       options={
-          'py2exe': {
+          "py2exe": {
               # PySide 구동에 필요한 모듈들은 포함시켜줍니다.
-              'includes': ['PySide.QtCore',
-                           'PySide.QtGui',
-                           'PySide.QtWebKit',
-                           'PySide.QtNetwork',
-                           'PySide.QtXml'],
+              "includes": ["PySide.QtCore",
+                           "PySide.QtGui",
+                           "PySide.QtWebKit",
+                           "PySide.QtNetwork",
+                           "PySide.QtXml"],
               # 존재하지 않거나 불필요한 파일은 제거합니다.
               "dll_excludes": ["msvcr71.dll",
                                "MSVCP90.dll"],
@@ -70,8 +70,8 @@ $ python setup.py py2exe
 # ...
 setup(
     # ...
-    options = {
-        'py2exe':{
+    options={
+        "py2exe":{
             bundle_files: 1,
             # ...
         }
@@ -83,8 +83,8 @@ setup(
 {% highlight python %}
 setup(
     # ...
-    options = {
-        'py2exe':{
+    options={
+        "py2exe":{
             # ...
         }
     },
@@ -125,15 +125,16 @@ setup(name="test_py2xxx",
       description="py2app test application",
       version="0.0.1",
       # 설치시 의존성 추가
-      setup_requires=['py2app'],
+      setup_requires=["py2app"],
+      app=["run.py"],
       options={
-          'py2app': {
+          "py2app": {
               # PySide 구동에 필요한 모듈들은 포함시켜줍니다.
-              "includes": ['PySide.QtCore',
-                           'PySide.QtGui',
-                           'PySide.QtWebKit',
-                           'PySide.QtNetwork',
-                           'PySide.QtXml']
+              "includes": ["PySide.QtCore",
+                           "PySide.QtGui",
+                           "PySide.QtWebKit",
+                           "PySide.QtNetwork",
+                           "PySide.QtXml"]
           }
       })
 {% endhighlight %}
@@ -163,11 +164,11 @@ $ open ./dist/test_py2xxx
 setup(
     # ...
     options={
-        'py2app': {
+      "py2app": {
             # ...
-            'iconfile': 'window_icon.icns'
-        }
-    }
+            "iconfile": "window_icon.icns"
+      }
+    })
 {% endhighlight %}
 
 [py2exe]와 [py2app] 둘 다 `distutil`의 확장이기 때문에 다음과 같이 함께 사용할 수도 있습니다.
@@ -180,20 +181,20 @@ import sys
 if sys.platform == "win32":
     import py2exe
     platform_options = {
-        'windows': [{
+        "windows": [{
             "script": "run.py",
-            "icon_resources": [(1, "resources/window_icon.ico")],
+            "icon_resources": [(1, "window_icon.ico")],
             "dest_base": "dodo"
         }],
-        'zipfile': None,
-        'setup_requires': ['py2exe'],
-        'options': {
-            'py2exe': {
-                'includes': ['PySide.QtCore',
-                             'PySide.QtGui',
-                             'PySide.QtWebKit',
-                             'PySide.QtNetwork',
-                             'PySide.QtXml'],
+        "zipfile": None,
+        "setup_requires": ["py2exe"],
+        "options": {
+            "py2exe": {
+                "includes": ["PySide.QtCore",
+                             "PySide.QtGui",
+                             "PySide.QtWebKit",
+                             "PySide.QtNetwork",
+                             "PySide.QtXml"],
                 "dll_excludes": ["w9xpopen.exe",
                                  "msvcr71.dll",
                                  "MSVCP90.dll"],
@@ -203,23 +204,23 @@ if sys.platform == "win32":
     }
 elif sys.platform == "darwin":
     platform_options = {
-        'setup_requires': ['py2app'],
-        'app': ['run.py'],
-        'options': {
-            'py2app': {
+        "setup_requires": ["py2app"],
+        "app": ["run.py"],
+        "options": {
+            "py2app": {
                 "argv_emulation": True,
-                "includes": ['PySide.QtCore',
-                             'PySide.QtGui',
-                             'PySide.QtWebKit',
-                             'PySide.QtNetwork',
-                             'PySide.QtXml'],
-                'iconfile': 'resources/window_icon.icns'
+                "includes": ["PySide.QtCore",
+                             "PySide.QtGui",
+                             "PySide.QtWebKit",
+                             "PySide.QtNetwork",
+                             "PySide.QtXml"],
+                "iconfile": "window_icon.icns"
             }
         }
     }
 else:
     platform_options = {
-        'scripts': ['run.py']
+        "scripts": ["run.py"]
     }
     
 setup(name="test_py2xxx",

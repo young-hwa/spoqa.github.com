@@ -179,6 +179,7 @@ from setuptools import setup
 import sys
 
 if sys.platform == "win32":
+    # python setup.py py2exe
     import py2exe
     platform_options = {
         "windows": [{
@@ -203,6 +204,7 @@ if sys.platform == "win32":
         }
     }
 elif sys.platform == "darwin":
+    # python setup.py py2app
     platform_options = {
         "setup_requires": ["py2app"],
         "app": ["run.py"],
@@ -219,6 +221,7 @@ elif sys.platform == "darwin":
         }
     }
 else:
+    # python setup.py install
     platform_options = {
         "scripts": ["run.py"]
     }

@@ -171,7 +171,7 @@ setup(
     })
 {% endhighlight %}
 
-[py2exe]와 [py2app] 둘 다 `distutil`의 확장이기 때문에 다음과 같이 함께 사용할 수도 있습니다.
+[py2exe]와 [py2app] 둘 다 `distutils`의 확장이기 때문에 다음과 같이 함께 사용할 수도 있습니다.
 
 {% highlight python %}
 # -*- coding: utf-8 -*-

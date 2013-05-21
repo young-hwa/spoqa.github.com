@@ -171,7 +171,7 @@ setup(
     })
 {% endhighlight %}
 
-[py2exe]와 [py2app] 둘 다 `distutils`의 확장이기 때문에 다음과 같이 함께 사용할 수도 있습니다.
+[py2exe]와 [py2app] 둘 다 [distutils]의 확장이기 때문에 다음과 같이 함께 사용할 수도 있습니다.
 
 {% highlight python %}
 # -*- coding: utf-8 -*-
@@ -236,7 +236,7 @@ setup(name="test_py2xxx",
 
 # Alternatives
 
-[PyInstaller]는 [py2exe]와 [py2app]과는 다르게 처음부터 여러 플랫폼을 지원하는 목적으로 한 도구입니다. [cx_Freeze]은 [Python3]를 사용하신다면 고려해볼 수 있는 대안입니다. (물론 2.x도 지원합니다.)
+[PyInstaller]는 [py2exe]와 [py2app]과는 다르게 처음부터 여러 플랫폼을 지원하는 목적으로 한 도구입니다. [cx_Freeze]은 [Python 3.x](http://docs.python.org/3/)를 사용하신다면 고려해볼 수 있는 대안입니다. (물론 2.x도 지원합니다.)
 
 
   [스포카 개발팀]: http://spoqa.github.com

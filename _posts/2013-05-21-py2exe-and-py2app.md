@@ -14,7 +14,7 @@ description: py2exe와 py2app을 통해 Windows와 Mac OS X에서 실행 가능�
 
 그런데 어느 날 갑자기 
 
-"윈도우즈에서 돌아갈 GUI 기반의 프로그램이 필요합니다."
+"Windows에서 돌아갈 GUI 기반의 프로그램이 필요합니다."
 
 란 요청이 들어왔습니다. 회사 프로그래머 중 VC/C#/VB/Delphi 등에 익숙한 사람은 당연히(?) 없었기 때문에 자연스럽게 프로그램은 [Python]으로 작성하게 되었습니다. (사실 이 부분은 나중에 다른 글로 소개해드릴 예정입니다.)
 
@@ -29,9 +29,9 @@ description: py2exe와 py2app을 통해 Windows와 Mac OS X에서 실행 가능�
 
 # py2exe
 
-[py2exe]는 이름에서 알 수 있듯이 [Python]으로 작성된 스크립트를 [윈도우즈 실행 파일(.exe)](http://en.wikipedia.org/wiki/EXE)로 변환해주는 일종의 변환기입니다. [Python]의 패키징 표준이었던 [distutils]의 확장으로 작성되어있으며 윈도우즈에 설치된 [Python]만으로 완벽하게 동작하는 것이 특징입니다.
+[py2exe]는 이름에서 알 수 있듯이 [Python]으로 작성된 스크립트를 [Windows 실행 파일(.exe)](http://en.wikipedia.org/wiki/EXE)로 변환해주는 일종의 변환기입니다. [Python]의 패키징 표준이었던 [distutils]의 확장으로 작성되어있으며 [Windows][Microsoft Windows]에 설치된 [Python]만으로 완벽하게 동작하는 것이 특징입니다.
 
-[distutils] 확장답게 패키징에는 `setup.py`를 이용합니다. 직접 따라 해 보실 분들은 [다음 튜토리얼](http://qt-project.org/wiki/Hello-World-in-PySide)를 참고로 간단한 GUI 프로그램을 작성해서 `run.py`로 저장하신 뒤 진행하시면 됩니다. 물론 실습에는 윈도우가 설치된 시스템과 [Python], [PySide]가 필요합니다.
+[distutils] 확장답게 패키징에는 `setup.py`를 이용합니다. 직접 따라 해 보실 분들은 [다음 튜토리얼](http://qt-project.org/wiki/Hello-World-in-PySide)를 참고로 간단한 GUI 프로그램을 작성해서 `run.py`로 저장하신 뒤 진행하시면 됩니다. 물론 실습에는 [Windows][Microsoft Windows]가 설치된 시스템과 [Python], [PySide]가 필요합니다.
 
 {% highlight python %}
 # -*- coding: utf-8 -*-

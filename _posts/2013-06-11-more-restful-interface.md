@@ -224,7 +224,7 @@ HTTP 요청과 응답을 보낼 때 특정 헤더를 포함해 **요청, 응답 
 * 가능하다면 이용 가능한 HTTP 헤더를 적절하게 첨가하자.
 * HTTP 상태코드의 의미에 대해서 생각해보고 상황에 맞는 적절한 상태 코드를 응답으로 보내줄 수 있도록 하자.
 
-이 글을 쓰면서 한빛 미디어의 [일관성 있는 웹 서비스 인터페이스 설계를 위한 REST API 디자인 규칙](http://www.hanb.co.kr/ebook/look.html?isbn=9788979149456)과 [apigee사의 web API design eBook](http://apigee.com/about/api-best-practices/all/ebook)을 참고하셨습니다. 둘 다 아주 좋은 서적이고 글에서 다루지 않은 심층 내용을 다루니 기회가 되시면 읽어보세요.
+이 글을 쓰면서 한빛 미디어의 [일관성 있는 웹 서비스 인터페이스 설계를 위한 REST API 디자인 규칙](http://www.hanb.co.kr/ebook/look.html?isbn=9788979149456)과 [apigee사의 web API design eBook](http://apigee.com/about/api-best-practices/all/ebook)을 참고하였습니다. 둘 다 내용이 좋은 서적이고 이 글에서 다루지 않은 심층 내용을 다루니 기회가 되시면 읽어보세요.
 
 ## references
 

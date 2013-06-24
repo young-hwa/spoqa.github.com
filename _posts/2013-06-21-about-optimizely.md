@@ -3,6 +3,7 @@ layout: entry
 title: A/B Testing 도구인 Optimizely 사용법
 author: 이의성
 author-email: leeus@spoqa.com
+
 description: A/B Testing 도구인 Optimizely의 장점과 활용법을 소개합니다.
 ---
 
@@ -10,17 +11,23 @@ description: A/B Testing 도구인 Optimizely의 장점과 활용법을 소개�
 
 웹 서비스를 운영하다 보면 준비하는 과정에서 정말 많은 고민이 오갑니다. 컨텐츠의 배치, 헤드 카피, 인터랙티브.. 하지만 어떤 요소가 조금 더 사용자의 반응을 이끌어내는지 정확히 알 수 없습니다. 이런 부분들을 '직감'이나 '경험'으로 막연하게 자기 자신과 타인에게 주장하고 있는 것은 아닌가요?
 
-두 가지 혹은 그 이상의 시안들을 직접 시험대에 올려 각각 더 좋은 것을 선택하는 것은 어떨까요? 괴혈병이 해적보다 더 무서웠던 대항해시대에 레몬(A)과 바닷물(B) 등을 이용해 선원들을 모두 구했던 영국 해군의 현명한 대처법에서 우리는 지혜를 얻어야 합니다.
+두 가지 혹은 그 이상의 시안들을 직접 시험대에 올려 각각 더 좋은 것을 선택하는 것은 어떨까요? 
+
+A/B 테스팅에 관련한 유명한 일화가 하나 있습니다. 1497년, [Vasco da gama](http://ko.wikipedia.org/wiki/%EB%B0%94%EC%8A%A4%EC%BF%A0_%EB%8B%A4_%EA%B0%80%EB%A7%88)는 최초로 유럽에서 아프리카 남부를 거쳐 인도까지 항해한 인물입니다. 그가 인도를 발견하고 귀항했을 때 160명의 원정대원 중 100명이 [괴혈병]()으로 사망하는 사건이 있었습니다. 그만큼 괴혈병은 항해하는 선원들의 공포 대상이었죠. 그로부터 약 300년 뒤, 영국의 의사인 [James Lind](http://en.wikipedia.org/wiki/James_Lind)는 괴혈병의 치료법을 알기 위해 실험군을 나누어 각각 다른 음식으로 실험을 진행했습니다. 
+
+실험은 다음과 같습니다. 괴혈병에 걸린 12명의 선원을 선정하여 그 중 10명에게는 보통 음식을 주고, 두 사람에게는 매일 라임 과즙을 마시게 하였습니다. 6일 후 라임 과즙을 마신 선원 두 명만이 괴혈병에 완벽히 치료된 모습을 보였습니다. James Lind가 실험하기 전에는 단순히 '감귤류 과일이 괴혈병에 좋다.', '괴혈병으로 죽어가는 찰나에 잡초를 먹고 다시 살아났다.' 라는 이야기만이 난무했었고 직접적인 치료법을 제시한 것은 James Lind가 최초였습니다.  비타민C가 발견된 것이 1928년임을 고려하면, 이 당시에는 비타민C 이라는 개념이 없었기 때문에 James Lind의 실험은 후에 많은 선원의 목숨을 괴혈병으로부터 지켜주는 사례가 됩니다.
+
+괴혈병이 해적보다 더 무서웠던 대항해시대에 보통 음식(A)과 라임(B)을 이용해 선원들을 모두 구했던 영국 해군의 현명한 대처법에서 우리의 웹 서비스를 더욱 더 활성화 시키는 지혜를 얻어야 합니다. 
+
 
 ![lind](/images/2013-06-21/lind.jpg)
 
-(James Lind는 괴혈병의 치료법을 알기 위해 실험군을 나누어 각각 다른 음식으로 실험을 진행했습니다.)
 
-## Optimizely?
+## [Optimizely](http://optimizely.com)?
 
 Optimizely는 웹서비스를 운영하면서 A/B Testing 수행을 원하시는 분들에게 적합한 서비스입니다. Optimizely를 사용하기 전에 A/B 테스팅에 대한 정보가 필요하다면 A/B 테스팅에 관련한 JC Kim님의 글( [A/B Testing에 대한 기초적인 정보들](http://spoqa.github.io/2012/05/15/ab-testing-basic.html) )을 먼저 읽어보시는 것을 추천합니다. 
 
-오늘 소개하는 Optimizely 라는 서비스는, 단순히 A/B 테스트의 진행과 그 통계 결과만 제공하는 것이 아니라, 테스트를 진행하는 동안의 모든 준비 과정에서 사용자들에게 도움을 주고 있습니다. 오늘은 그 Optimizely의 핵심 기능 및 활용법에 대하여 알아보겠습니다. Optimizely는 유료 서비스이지만 30일 동안의 Free Trial을 제공해주므로 그 기간 동안 충분히 이 서비스의 모든 것을 체험할 수 있습니다.
+Optimizely는 단순히 A/B 테스트의 진행과 그 통계 결과만 제공하는 것이 아니라, 테스트를 진행하는 동안의 모든 준비 과정에서 사용자들에게 도움을 주고 있습니다. 오늘은 그 Optimizely의 핵심 기능 및 활용법에 대하여 알아보겠습니다. Optimizely는 유료 서비스이지만 30일 동안의 Free Trial을 제공해주므로 그 기간 동안 충분히 이 서비스의 모든 것을 체험할 수 있습니다.
 
 Optimizely는 세계적인 대형 기업들이 이용하는 서비스로, 이들은 이미 Optimizely를 통해 각각 컨텐츠들에 대한 사이트 접속자들의 반응을 체크하고 있습니다. 대표적인 회사로 Starbucks, Salesforce, MTV, the Walt Disney company, abc, cbs 등이 있습니다. 
 
@@ -28,7 +35,6 @@ Optimizely는 세계적인 대형 기업들이 이용하는 서비스로, 이들
 
 ![screen](/images/2013-06-21/optimizely.jpg)
 
-##장점
 
 
 ###더 정확한 데이터를 추출하려는 노력.
@@ -49,15 +55,15 @@ Optimizely를 이용하면 여러분이 복잡한 CSS나 Javascript 기술이 �
 
 
 
-![1](/images/2013-06-21/위치변경사례.png)
+![1](/images/2013-06-21/1.png)
 
 위치와 크기를 Drag & Drop 으로 쉽게 움직이게 할 수 있습니다.
 
-![2](/images/2013-06-21/이미지변경사례.jpg)
+![2](/images/2013-06-21/2.jpg)
 
 웹사이트에 적용된 이미지 또한 로컬에 있는 파일 혹은 웹에 있는 이미지로 대체할 수 있습니다.
 
-![3](/images/2013-06-21/텍스트변경사례.jpg)
+![3](/images/2013-06-21/3.jpg)
 
 텍스트도 곧바로 변경할 수 있고 HTML을 직접 대체해서 끼워 넣을 수 있습니다.
 
@@ -81,15 +87,15 @@ Optimizely와 연동되는 서비스는 다음과 같습니다.
 
 
 ######Analytics
-* Google Analytics
-* KISSmetrics
-* Mixpanel
-* Omniture SiteCatalyst
+* [Google Analytics](http://www.google.com/analytics/)
+* [KISSmetrics](https://www.kissmetrics.com/)
+* [Mixpanel](https://mixpanel.com/)
+* [Omniture SiteCatalyst](http://www.omniture.com/ko/products/web_analytics/sitecatalyst)
 
 
 ######Heatmap
-* ClickTale
-* Crazyegg
+* [ClickTale](http://www.clicktale.com/)
+* [Crazyegg](http://crazyegg.com/)
 
 
 위 서비스 중 하나라도 이용 중이시라면, Optimizely와 어떤 부분이 연동이 되는 지 살펴보세요.
@@ -98,4 +104,4 @@ Optimizely와 연동되는 서비스는 다음과 같습니다.
 
 ## 마치며
 
-페이지 두 개를 접속자들에게 무작위로 나누어 배포해서 반응을 트래킹하는 기술은 흔할지도 모릅니다. 하지만 Optimizely를, 그리고 연동되는 다양한 서비스들을 이용하면 조금 더 세밀하고 확실한 데이터를 얻을 수 있습니다. 정말로 나의 웹 서비스에 필요한 것이 '바닷물'인지 '레몬'인지 알고 싶다면 지금 당장 시작해보세요.
+페이지 두 개를 접속자들에게 무작위로 나누어 배포해서 반응을 트래킹하는 기술은 흔할지도 모릅니다. 하지만 Optimizely를, 그리고 연동되는 다양한 서비스들을 이용하면 조금 더 세밀하고 확실한 데이터를 얻을 수 있습니다. 정말로 나의 웹 서비스에 필요한 것이 '잡초'인지 '레몬'인지 알고 싶다면 지금 당장 시작해보세요.

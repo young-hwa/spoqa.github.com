@@ -114,9 +114,9 @@ MIT 라이센스는 MIT 공과대학교에서 학교 학생들의 소프트웨�
 
 - [한국저작권위원회](http://www.olis.or.kr/ossw/license/compareGuide.do#)
 - [위키백과](http://ko.wikipedia.org/)
-- [kldpwiki](http://wiki.kldp.org/wiki.php/OpenSourceLicenseGuide#s-3.2.4)
+- [KLDPwiki](http://wiki.kldp.org/wiki.php/OpenSourceLicenseGuide#s-3.2.4)
 - [GNU](http://www.gnu.org/licenses/gpl-faq.ko.html#HowIGetCopyright)
 - [공개SW포털](https://www.oss.kr/oss_main)
-- [MYSQL KOREA](http://www.mysqlkorea.co.kr/sub.html?mcode=product&scode=08)
-- [kldp 오픈소스라이센스가이드](http://wiki.kldp.org/wiki.php/OpenSourceLicenseGuide#s-3.4.3)
+- [MySQL KOREA](http://www.mysqlkorea.co.kr/sub.html?mcode=product&scode=08)
+- [KLDP 오픈소스라이센스가이드](http://wiki.kldp.org/wiki.php/OpenSourceLicenseGuide#s-3.4.3)
 - [오픈소스 라이센스 비교표](http://www.olis.or.kr/ossw/license/compareGuide.do)

@@ -51,9 +51,7 @@ LESS는 css를 동적으로 쓸 수 있게 해주는 자바스크립트 라이�
 Backbone.js는 자바스크립트를 MVC 패턴으로 개발할 수 있게 도와주는 자바스크립트 라이브러리입니다. 
 
 ##D3.js
-D3.js는 데이터를 우리가 쉽게 볼 수있게 다양한 차트, 표, 그림으로 표현 할 수 있도록 기능을 제공해주는 
-
-자바스크립트 라이브러리입니다. 
+D3.js는 데이터를 우리가 쉽게 볼 수있게 다양한 차트, 표, 그림으로 표현 할 수 있도록 기능을 제공해주는 자바스크립트 라이브러리입니다. 
 
 ##DataTables.js
 ![DataTables.js](https://datatables.net/media/images/DataTables.jpg)

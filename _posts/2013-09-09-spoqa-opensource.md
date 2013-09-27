@@ -28,11 +28,11 @@ description: 스포카에서 쓰는 오픈소스와 오픈소스 라이센스에
 
 현재 스포카의 클라이언트측에서 사용하고 있는 오픈소스는 다음과 같습니다.
 
-- ![jQuery](http://jquery.com/)
-- ![LESS](http://lesscss.org/)
-- ![Backbone.js](http://backbonejs.org/)
-- ![D3.js](http://d3js.org/)
-- ![DataTables.js](https://datatables.net/) 
+- [jQuery](http://jquery.com/)
+- [LESS](http://lesscss.org/)
+- [Backbone.js](http://backbonejs.org/)
+- [D3.js](http://d3js.org/)
+- [DataTables.js](https://datatables.net/) 
 
 그럼 간략하게 이 오픈소스가 어떠한 역할을 하는지 간략하게 알아보겠습니다.
 

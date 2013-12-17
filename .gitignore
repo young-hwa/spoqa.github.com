@@ -1,4 +1,5 @@
 /_site/*
 *.swp
 *.swo
+/build/*
 .DS_Store

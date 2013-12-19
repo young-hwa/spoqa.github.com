@@ -14,9 +14,8 @@ description: Google Web Designer로 프로젝트를 진행하며 알게 된 기�
 근래에 구글에서 개발한 웹 디자인 프로그램입니다. 
 위키백과에 검색해보니 이렇게 설명이 되어있더군요.
 
-```
-Google Web Designer is a program for Windows and Mac from Google for creating interactive HTML5 sites and ads for any device. 
-```
+> Google Web Designer is a program for Windows and Mac from Google for creating interactive HTML5 sites and ads for any device. 
+
 웹 페이지를 만들거나 웹 배너를 만들기 위한 프로그램이라고 생각하시면 됩니다^^  
 
 실행해보니 기능이 디자이너와 프로그래머가 협업하기 좋은 프로그램입니다. 

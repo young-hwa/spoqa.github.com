@@ -1,16 +1,16 @@
 ---
 layout: entry
-title: 다함께 써봐요 Google Web Designer Program!
+title: 다함께 써봐요 Google Web Designer!
 author: 이서빈
-description: Google Web Designer 프로그램으로 프로젝트를 진행하며 알게 된 기능과 느낀 점에 관한 이야기입니다.
+description: Google Web Designer로 프로젝트를 진행하며 알게 된 기능과 느낀 점에 관한 이야기입니다.
 ---
 
 안녕하세요. 이번 기술 블로그 글을 맡은 spoqa 디자이너 Been입니다 ^^
 회사에서 그래픽디자인을 맡고 있으며 기술 블로그 글을 쓰는 건 처음입니다.   
 
-회사 프로젝트를 진행하며 접하게 된 Google Web Designer 베타버전 프로그램에 대해 글을 쓰려 합니다. Google Web Designer 프로그램으로 프로젝트를 진행하며 알게 된 기능과 느낀 점에 관한 이야기입니다.  
+회사 프로젝트를 진행하며 접하게 된 Google Web Designer 베타버전에 대해 글을 쓰려 합니다. Google Web Designer로 프로젝트를 진행하며 알게 된 기능과 느낀 점에 관한 이야기입니다.  
 
-먼저 **Google Web Designer** 프로그램은요, 
+먼저 **Google Web Designer** 는요,
 근래에 구글에서 개발한 웹 디자인 프로그램입니다. 
 위키백과에 검색해보니 이렇게 설명이 되어있더군요.
 

@@ -21,6 +21,7 @@ pre {
   padding: 5px;
   display: inline-block;
   width: 100%;
+  background: white;
 }
 
 pre code {
@@ -29,9 +30,6 @@ pre code {
 }
 
 code {
-  background-color: #FFF;
-  padding: 1px;
-  display: inline-block;
 }
 
 a {
@@ -60,7 +58,7 @@ h4 { font-size: 20px; }
 h5 { font-size: 18px; }
 h6 { font-size: 16px; }
 
-p {
+p, dl {
 font-family: "NanumGothic", Helvetica, sans-serif, Arial;
 font-size: 14px;
 color: #323232;
@@ -265,4 +263,12 @@ blockquote {
   margin-left: 50px;
   padding-left: 15px;
   border-left: 3px solid #CCC;
+}
+
+dl dt {
+  font-weight: bolder;
+}
+
+dl dd {
+  margin-left: 2em;
 }

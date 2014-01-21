@@ -2,7 +2,8 @@
 
 ## Requirements (for testing)
 
-- [Jekyll]
+- [Jekyll] 1.4.3+
+- [RDiscount]
 
 ## How to write a post
 1. _post 디렉토리 밑에 [Markdown] 문법으로 포스트를 작성합니다.[yyyy-mm-dd-제목.md]
@@ -14,7 +15,7 @@
         
 ## Testing
 
-        $ jekyll --server
+        $ jekyll serve
 
 ## Writing Tips
 1. _post 폴더 내의 파일에서 YAML Front Matter block에 <code>author</code>와 <code>author-email</code>을 넣을수 있습니다. <code>author</code>는 작성한 사람, 그리고 <code>author-email</code>은 작성자 이메일, 이렇게 추가 정보를 입력할 수 있고 실제 포스트에는 mail링크가 걸리게 됩니다. ( <code>author</code>만 있으면 링크 없음 )
@@ -22,3 +23,4 @@
 
   [Jekyll]: http://jekyllrb.com
   [Markdown]: http://daringfireball.net/projects/markdown/
+  [RDiscount]: http://dafoster.net/projects/rdiscount/

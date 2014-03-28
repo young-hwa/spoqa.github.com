@@ -7,7 +7,7 @@ border: 0;
 div.highlight { margin-top: 20px; }
 
 body {
-background-color: #E6E6E6;
+background-color: #ffffff;
 width: 100%;
 height: 100%;
 }
@@ -81,7 +81,7 @@ display: inline;
 #menu-list {
 font-family: Helvetica, sans-serif, Arial;
 text-shadow: 1px 1px 1px white;
-color: #323232; 
+color: #323232;
 font-size: 18px;
 margin-top: 10px;
 }
@@ -119,12 +119,12 @@ list-style: none;
 
 /* index */
 .atom-img {
-vertical-align: middle; 
+vertical-align: middle;
 margin-left: 5px;
 }
 .logo-img {
-margin-top: 10px; 
-padding-right: 15px; 
+margin-top: 10px;
+padding-right: 15px;
 vertical-align: middle;
 }
 .dev-blog {
@@ -156,13 +156,13 @@ width: 7%;
 vertical-align: middle;
 }
 .post-author-info .author-name {
-font-size: 1.5em; 
-font-weight: bold; 
+font-size: 1.5em;
+font-weight: bold;
 margin-left: 10px;
 }
 .post-footer {
-text-align: center; 
-margin-top: 20px; 
+text-align: center;
+margin-top: 20px;
 margin-bottom: 20px;
 }
 .post-date {

@@ -14,7 +14,7 @@ height: 100%;
 
 ol, li {
 list-style-position: inside;
-padding-left: 20px;
+padding-left: 0px;
 }
 
 pre {
@@ -83,7 +83,8 @@ font-family: Helvetica, sans-serif, Arial;
 text-shadow: 1px 1px 1px white;
 color: #323232;
 font-size: 18px;
-margin-top: 10px;
+margin-top: 20px;
+margin-bottom: 60px;
 }
 #menu-list .seperator {
 color: #969696;

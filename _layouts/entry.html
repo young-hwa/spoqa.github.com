@@ -18,7 +18,7 @@ layout: default
 {% if page.publish == false %}
   <div class="post">Coming soon</div>
 {% else %}
-  <p style="float: right;">{{ page.date | date: "%Y-%m-%d" }}</p> 
+  {{ page.date | date: "%Y-%m-%d" }}</p> 
   <div class="post">{{ content }}</div>
 {% endif %}
 

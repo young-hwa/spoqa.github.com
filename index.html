@@ -7,8 +7,10 @@ layout: default
       {% for post in paginator.posts %}
         {% if post.publish != false %}
         <li></span><a href="{{ post.url }}"><span class="post-title">{{ post.title }}</span></a>
-        <p class="post-description">{{ post.description }}</p>
+        </br>
         <span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span>
+        <p class="post-description">{{ post.description }}</p>
+        
         </li>
         <div style="clear: both;"></div>
         <hr style="margin-bottom: 20px; opacity: 0.5;" />

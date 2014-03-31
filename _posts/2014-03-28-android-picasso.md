@@ -34,7 +34,7 @@ Why Picasso?
 Dive into Picasso
 -----------------
 
-Picasso가 작동하는 방식과 중요한 클래스들을 살펴보도록 하겠습니다. (소스는 [commit f78c6b9][2]를 기준으로 합니다.)
+Picasso가 작동하는 방식과 중요한 클래스들을 살펴보도록 하겠습니다. (소스는 [v2.2.0][2]을 기준으로 합니다.)
 
 ![workflow][]
 
@@ -44,7 +44,7 @@ Picasso가 작동하는 방식과 중요한 클래스들을 살펴보도록 하�
 
 ### 1. 이미지 불러오기 요청
 
-이미지를 불러오기 위해 문서화된 API인 [`Picasso`][picasso]를 사용합니다. 간단한 용례는 다음과 같습니다.
+이미지를 불러오기 위해 [`Picasso`][picasso]를 사용합니다. 간단한 용례는 다음과 같습니다.
 
 	Picasso.with(context)
 	       .load(placeImageUrl)
@@ -87,25 +87,26 @@ Picasso가 작동하는 방식과 중요한 클래스들을 살펴보도록 하�
 Appendix
 --------
 
-<h3 id="picasso">Picasso</h3>
+<h3 id="picasso">com.squareup.picasso.Picasso(<a href="http://square.github.io/picasso/javadoc/index.html">javadoc</a>)</h3>
 
-Picasso로 이미지를 불러올 때 사용하게되는 문서화된 API입니다. `RequestCreator`와 함께 [Method Chaining][] 혹은 [Builder Pattern][]로 불리는 방법으로 API를 간결하게 사용 할 수 있도록 합니다.
+Picasso로 이미지를 불러올 때 사용하게되는 빌더입니다. `RequestCreator`와 함께 [Method Chaining][] 혹은 [Builder Pattern][]로 불리는 방법으로 API를 간결하게 사용 할 수 있도록 합니다.
 
 [Method Chaining]: http://en.wikipedia.org/wiki/Method_chaining
 [Builder Pattern]: http://en.wikipedia.org/wiki/Builder_pattern
+[picasso.javadoc]: http://square.github.io/picasso/javadoc/index.html
 
 
-<h3 id="dispatcher">Dispatcher</h3>
+<h3 id="dispatcher">com.squareup.picasso.Dispatcher</h3>
 
 백그라운드 스레드와 UI 스레드 간에 통신하게되는 통로입니다. [`Picasso`][picasso]에서 요청 데이터를 전달 받아 Background 에서 [`BitmapHunter`][bitmaphunter]가 비트맵을 불러올 수 있도록 합니다. 비트맵을 UI 스레드에 전달해서 처리할 수 있도록 합니다.
 
-<h3 id="cache">Cache</h3>
+<h3 id="cache">com.squareup.picasso.Cache(<a href="http://square.github.io/picasso/javadoc/com/squareup/picasso/Picasso.html">javadoc</a>)</h3>
 
 이미지 캐싱을 위한 모듈입니다. 기본 구현체로는 [LRU][] 방식으로 캐시하는 `LruCache`가 사용됩니다.
 
 [LRU]: http://en.wikipedia.org/wiki/Least_Recently_Used#LRU
 
-<h3 id="bitmaphunter">BitmapHunter</h3>
+<h3 id="bitmaphunter">com.squareup.picasso.BitmapHunter</h3>
 
 비트맵을 불러오는 모듈입니다. 자주 사용되는 구현체로는 `ResourceBitmapHunter`와 `NetworkBitmapHunter`가 있습니다.
 
@@ -114,7 +115,7 @@ Picasso로 이미지를 불러올 때 사용하게되는 문서화된 API입니�
 [Uri]: http://developer.android.com/reference/android/net/Uri.html
 [URI Scheme]: http://en.wikipedia.org/wiki/URI_scheme
 
-<h3 id="downloader">Downloader</h3>
+<h3 id="downloader">com.squareup.picasso.Downloader(<a href="http://square.github.io/picasso/javadoc/com/squareup/picasso/Downloader.html">javadoc</a>)</h3>
 
 `NetworkBitmapHunter`가 이미지를 내려받을 때 사용하는 인터페이스입니다. 기본 구현체는 [OkHttp][]를 사용할 수 있는지 여부에 따라 다릅니다.
 
@@ -123,11 +124,11 @@ Picasso로 이미지를 불러올 때 사용하게되는 문서화된 API입니�
 1. 만약 [OkHttp][]를 사용할 수 있다면 Http Client 를 [OkHttp][]로 사용하는 `OkHttpDownloader`가 기본 구현체가 됩니다.
 2. 그렇지 않은 경우에는 Http Client 를 `HttpURLConnection`로 사용하는 `UrlConnectionDownloader`가 기본 구현체가 됩니다.
 
-<h3 id="transformer">Transformer</h3>
+<h3 id="transformer">com.squareup.picasso.Transformer</h3>
 
 [`BitmapHunter`][bitmaphunter]가 비트맵을 만들면 후처리를 하는 모듈입니다. 불러온 이미지를 마스킹 한다던지 블러 효과를 주고싶다면 [`Transformer`][transformer]인터페이스를 구현하면 됩니다.
 
-<h3 id="action">Action</h3>
+<h3 id="action">com.squareup.picasso.Action</h3>
 
 [`BitmapHunter`][bitmaphunter]를 통해 불러오고 [`Transformer`][transformer]를 통해 후처리가 끝난 비트맵은 [`Action`][action]이 가져가서 처리를 하게됩니다. 불러온 비트맵을 어떻게 할지 결정하는 모듈이라고 볼 수 있습니다. 일반적으로 쓰게되는 [`Action`][action]의 구현체는 `ImageViewAction` 인데, 생성된 키트맵을 `ImageView` 에 설정합니다.
 

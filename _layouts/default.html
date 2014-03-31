@@ -53,12 +53,11 @@ $('a').hover(
   <div class="wrapper">
     <div class="header">
       <a href="http://dodopoint.com/"><img src="/images/logo.png" style="margin-top: 10px; padding-right: 15px; vertical-align: middle;" /></a><a href="/" style="
-      font-family: arial;
-      font-weight: bold;
-      font-size: 40px;
-      color: white;
-      text-shadow: 0px 1px 1px #333;
-      display: inline-block;
+        font-size: 31px;
+        position: relative;
+        top: 8px;
+        color: #8ab0e6;
+        font-weight: bold;
       ">Tech Blog</a>
       <ol id="menu-list">
           {% if page.url == '/about.html' %}
@@ -81,8 +80,6 @@ $('a').hover(
           <li><a href="/atom.xml"><img class="atom-img" src="/images/atom.png" /></a></li>
         </ol>
     </div>
-  
-    <hr style="margin-top: 20px; margin-bottom: 20px;" />
 
     <div class="content">
       {{ content }}
@@ -95,7 +92,7 @@ $('a').hover(
     <hr style="margin-top: 20px; margin-bottom: 20px;" />
     <div id="info">
       <span>© Spoqa Inc. All rights reserved.</span>
-      <span>powerd by <a style="color: gray;" href="http://pages.github.io/">pages</a></span>
+      <span>Powered by <a style="color: gray;" href="http://pages.github.io/">pages</a></span>
     </div>
   </div>
 

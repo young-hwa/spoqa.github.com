@@ -18,9 +18,10 @@ layout: default
 {% if page.publish == false %}
   <div class="post">Coming soon</div>
 {% else %}
+  {{ page.date | date: "%Y-%m-%d" }}</p> 
   <div class="post">{{ content }}</div>
 {% endif %}
-<p style="float: right;">{{ page.date | date: "%Y-%m-%d" }}</p>
+
 
 <hr style="clear: both;" />
 <div class="post-footer"><a href="/">◀ List</a></div>
@@ -39,3 +40,4 @@ $(function() {
   }(document, 'script', 'facebook-jssdk'));
 }); 
 </script>
+<!--test-->

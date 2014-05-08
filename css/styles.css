@@ -384,6 +384,12 @@ display: inline-block;
     border-color: #c9ced6; /* @grey_m3 */
   }
 
+  /* facebook comment */
+
+  .fb-like { 
+    margin-top: 40px;
+  }
+
 /* blog ends */
 
 /* about */

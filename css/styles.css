@@ -394,28 +394,48 @@ display: inline-block;
 
 /* about */
 
+.post .intro-title {
+  margin-top: 20px;
+  padding-bottom: 20px;
+  color: #363d4f; /* @semi_dark_grey_p5 */
+  font-size: 38px;
+  border-bottom: 1px solid #dadee3; /*@light_grey_0*/
+}
+.about p a,
+.about ol a,
+.about ul a {
+  padding-right: 2px;
+}
 .author {
-overflow: auto;
+  overflow: auto;
+  padding: 30px 0;
+  border-bottom: 1px solid #dadee3; /*@light_grey_0*/
+}
+.author-title {
+  margin-top: 100px;
 }
 .author-info {
-margin-left: 25%;
+  margin-left: 20%;
 }
 .member-info {
-margin-top: 20px;
 }
-.sns img {
-display: inline;
-vertical-align: top;
+.sns a {
+  margin: -5px 2px 0 0;
+  vertical-align: middle;
 }
 .nick-name {
-font-weight: bold;
-font-size: 20px;
+  margin-right: 10px;
+  font-weight: bold;
+  font-size: 18px;
 }
-.author-picture {
-width: 20%;
-float: left;
-border: 6px solid #DDD;
-margin-bottom: 20px;
+.nick-name a {
+  color: #363d4f; /* @semi_dark_grey_p5 */
+}
+.author img {
+  width: 14%;
+  padding: 0;
+  border-radius: 50%; 
+  float: left;
 }
 .twitter-icon {
   display: inline-block;

@@ -110,15 +110,32 @@ color: #323232;
   background-image: url(/images/atom-hover.png);
 }
 
+
+/* post-authot-info (post-info로 수정하는게 의미상 맞을 듯) */ 
+
+.post-item p {
+  font-size: 18px;
+}
+.sep {
+  color: #dfe1e6;/*@ @light_grey_m1 */
+  margin: 0 5px;
 }
 
 /* blog list */
 
 .posts li, ol {
+.posts .post-author-info { /*추후에는 blog list 의 post-author-info와 blog의 post-author-info를 분리하는게 좋을 듯.*/
+  margin: 0;
 }
 
 .list-type-none {
 list-style: none;
+.posts .post-author-info .portrait {
+  width: 60px;
+  vertical-align: middle;
+  border-radius: 50%;
+  float: right;
+  margin-left: 40px;
 }
 
 /* */
@@ -201,6 +218,8 @@ vertical-align: middle;
       border-color: #c9ced6; /* @grey_m3 */
     }
 
+.post-author-info {
+  margin-bottom: 160px;
 }
 .dev-blog {
 font-family: arial;
@@ -210,8 +229,6 @@ color: white;
 text-shadow: 0px 1px 1px #333;
 display: inline-block;
 }
-.posts .post-title {
-font-size: 24px;
 }
 
 /* */
@@ -221,34 +238,24 @@ font-size: 24px;
 .post hr {
 margin-bottom: 20px;
 }
-.post-author-info {
-margin-top: 20px;
-margin-bottom: 20px;
-font-size: 12px;
 }
 .post-author-info .portrait {
-width: 7%;
-vertical-align: middle;
+  width: 16%;
+  vertical-align: middle;
+  border-radius: 50%;
+  float: right;
+  margin-left: 30px;
 }
+.post-author-info .author-name a,
 .post-author-info .author-name {
-font-size: 1.5em;
-font-weight: bold;
-margin-left: 10px;
-}
-.post-footer {
-text-align: center;
-margin-top: 20px;
-margin-bottom: 20px;
+  font-size: 14px;
+  color: #b0b6c2;/*@grey_0*/
+  margin-right: 10px;
 }
 .post-date {
-font-size: 0.8em;
-color: #666;
-margin-bottom: 10px;
-}
-
-.post a {
-font-weight: bold;
-
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #b0b6c2;/*@grey_0*/
 }
 
 .post img {
@@ -263,18 +270,6 @@ color: #323232;
 }
 
 .post-title {
-font-weight: bold;
-font-size: 24px;
-color: #323232;
-}
-
-.post-description {
-font-size: 14px;
-margin-top: 20px;
-margin-bottom: 10px;
-line-height: 1.8em;
-}
-
 .pagination {
 text-align: center;
 padding: 10px;

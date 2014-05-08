@@ -10,56 +10,110 @@ height: 100%;
   font-family: source sans pro, Helvetica, "NanumBarunGothicOTF", "Apple SD Gothic Neo", "NanumGothic", Arial;
 }
 
-ol, li {
-list-style-position: inside;
-padding-left: 0px;
+/* text style */
+
+a {
+  text-decoration: none;
+  color: #6585c1; /*sub_blue_0*/
 }
 
+h1 { font-size: 38px; color: #363d4f;/*@semi_dark_grey_p5*/ }
+h2 { font-size: 28px; color: #363d4f;/*@semi_dark_grey_p5*/ }
+h3 { font-size: 26px; color: #363d4f;/*@semi_dark_grey_p5*/ }
+h4 { font-size: 22px; color: #363d4f;/*@semi_dark_grey_p5*/ }
+h5 { font-size: 20px; color: #363d4f;/*@semi_dark_grey_p5*/ }
+h6 { font-size: 18px; color: #363d4f;/*@semi_dark_grey_p5*/ }
+
+p, dl {
+  color: #363d4f; /*@semi_dark_grey_p5*/
+  font-size: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 1.7em;
+}
+.post p a,
+.post ol a,
+.post ul a {
+  padding-right: 2px;
+}
+.post p a:hover,
+.post ol a:hover,
+.post ul a:hover { 
+  text-decoration: underline; 
+}
+dl dt {
+  font-weight: bolder;
+  margin-top: 10px
+}
+dl dd {
+  margin-left: 2em;
+}
+table {
+  margin: 10px 0;
+  border-bottom:1px #dcdcdc solid;
+  border-collapse: collapse;
+}
+thead {
+  background-color: #f5f7fa; /*@light_grey_m4*/
+}
+th, td{
+  border-top:1px #dcdcdc solid;
+  padding: 10px 20px;
+}
+blockquote {
+  margin: 20px 0 20px 25px;
+  padding-left: 12px;
+  border-left: 3px solid #dadee3; /*@light_grey_0*/
+}
+blockquote p {
+  padding-top: 0;
+  padding-bottom: 0;
+}
 pre {
-  padding: 5px;
+  margin: 10px 0;
+  padding: 10px;
   display: inline-block;
   width: 100%;
-  background: white;
+  background: #f5f7fa; /*@light_grey_m4*/
+  border: 1px solid #dadee3; /*@light_grey_0*/
+  border-radius: 4px;
 }
-
 pre code {
   word-wrap: break-word;
   width: 100%;
 }
-
-code {
+p code,
+p a code,
+li code,
+li a code,
+table code,
+table a code {
+  margin: 0 2px;
+  padding: 2px 5px;
+  width: 100%;
+  font-size: 13px;
+  background: #f5f7fa; /*@light_grey_m4*/
+  border: 1px solid #dadee3; /*@light_grey_0*/
+  border-radius: 4px;
 }
-
-a {
-/*font-weight: bold;*/
-color: #323232;
-text-decoration: none;
+.post ul,
+.post ol {
+  margin: 20px 0 20px 40px;
 }
-
-h1, h2, h3, h4 ,h5, h6 {
-color: #323232;
-text-shadow: 1px 1px 1px white;
+.post li {
+  margin: 6px 0;
+  line-height: 1.6em;
 }
-
-h2, h3, h4, h5, h6 {
-margin-top: 20px;
+.post ol li ul,
+.post ol li ol,
+.post ul li ul,
+.poat ul li ol {
+  margin: 0 0 0 40px;
 }
-
-h2 {
-font-size: 24px;
-}
-
-h3 { font-size: 22px; }
-h4 { font-size: 20px; }
-h5 { font-size: 18px; }
-h6 { font-size: 16px; }
-
-p, dl {
-font-size: 14px;
-color: #323232;
-margin-top: 20px;
-margin-bottom: 20px;
-line-height: 1.8em;
+.post hr {
+  margin-bottom: 20px;
+  border-bottom: 1px #dadee3; /* @light_grey_0 */
+  border-style: dashed;
 }
 
 .selected {
@@ -137,7 +191,6 @@ color: #323232;
 
 /* blog list */
 
-.posts li, ol {
 .posts .post-author-info { /*추후에는 blog list 의 post-author-info와 blog의 post-author-info를 분리하는게 좋을 듯.*/
   margin: 0;
 }
@@ -229,16 +282,29 @@ vertical-align: middle;
 .post-author-info {
   margin-bottom: 160px;
 }
-}
-}
+.post h1 { font-size: 26px; color: #5a6173;/*@@semi_dark_grey_p2*/ }
+.post h2 { font-size: 24px; color: #5a6173;/*@@semi_dark_grey_p2*/ }
+.post h3 { font-size: 22px; color: #5a6173;/*@@semi_dark_grey_p2*/ }
+.post h4 { font-size: 20px; color: #5a6173;/*@@semi_dark_grey_p2*/ }
+.post h5 { font-size: 18px; color: #5a6173;/*@@semi_dark_grey_p2*/ }
+.post h6 { font-size: 16px; color: #5a6173;/*@@semi_dark_grey_p2*/ }
 
-/* */
-
-/* blog */
-
-.post hr {
-margin-bottom: 20px;
+.post h1,
+.post h2 {
+  margin-top: 60px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #dadee3; /*@light_grey_0*/
 }
+.post h3,
+.post h4 {
+  margin-top: 30px;
+}
+.post h5,
+.post h6 {
+  margin-top: 20px;
+}
+.post p {
+  color: #363d4f; /*@semi_dark_grey_p5*/
 }
 .post-author-info .portrait {
   width: 16%;
@@ -258,18 +324,11 @@ margin-bottom: 20px;
   font-size: 14px;
   color: #b0b6c2;/*@grey_0*/
 }
-
 .post img {
-max-width: 100%;
-display: block;
+  max-width: 100%;
+  display: block;
+  padding: 20px;
 }
-
-.post ol, ul {
-line-height: 1.8em;
-font-size: 14px;
-color: #323232;
-}
-
 .post-title {
 .pagination {
 text-align: center;
@@ -335,18 +394,6 @@ float: left;
 border: 6px solid #DDD;
 margin-bottom: 20px;
 }
-
-th, td{border-top:1px #dcdcdc solid; border-left:1px #dcdcdc solid;padding: 10px;}
-table {border-bottom:1px #dcdcdc solid; border-right: 1px #dcdcdc solid;}
-
-/* */
-
-blockquote {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 50px;
-  padding-left: 15px;
-  border-left: 3px solid #CCC;
 .twitter-icon {
   display: inline-block;
   background-image: url(/images/twitter-icon.png);
@@ -390,13 +437,8 @@ blockquote {
   height: 24px;
 }
 
-dl dt {
-  font-weight: bolder;
-}
 /* footer */
 
-dl dd {
-  margin-left: 2em;
 .footer {
   width: 640px;
   margin-left: auto;

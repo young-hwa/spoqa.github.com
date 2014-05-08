@@ -52,13 +52,6 @@ $('a').hover(
 <div class="content-body">
   <div class="wrapper">
     <div class="header">
-      <a href="http://dodopoint.com/"><img src="/images/logo.png" style="margin-top: 10px; padding-right: 15px; vertical-align: middle;" /></a><a href="/" style="
-        font-size: 31px;
-        position: relative;
-        top: 8px;
-        color: #8ab0e6;
-        font-weight: bold;
-      ">Tech Blog</a>
       <ol id="menu-list">
           {% if page.url == '/about.html' %}
             <li><a class="selected" href="/about.html">About</a></li><span class="seperator">&nbsp;/</span>
@@ -70,6 +63,9 @@ $('a').hover(
           {% else %}
             <li><a href="/index.html">Blog</a></li><span class="seperator">&nbsp;/</span>
           {% endif %}
+      <div class="header-item">
+        <a class="spoqa-logo" href="/"><img src="/images/logo.png"></a>
+        <a class="blog-title" href="/">Tech Blog</a>
         <span><a class="atom-img" href="/atom.xml"></a></span>
 
           {% if page.url == '/job.html' %}

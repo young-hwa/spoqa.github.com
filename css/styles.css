@@ -88,9 +88,17 @@ margin-bottom: 60px;
 }
 #menu-list .seperator {
 color: #969696;
+.spoqa-logo img {
+  padding-right: 6px;
+  padding-bottom: 1px;
+  vertical-align: middle;
 }
 #menu-list a {
 color: #323232;
+.blog-title {
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
 }
 
 

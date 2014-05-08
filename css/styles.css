@@ -212,9 +212,6 @@ table a code {
 .posts .post-author-info { /*추후에는 blog list 의 post-author-info와 blog의 post-author-info를 분리하는게 좋을 듯.*/
   margin: 0;
 }
-
-.list-type-none {
-list-style: none;
 .posts .post-author-info .portrait {
   width: 60px;
   vertical-align: middle;
@@ -223,6 +220,12 @@ list-style: none;
   margin-left: 40px;
 }
 
+.posts li {
+  border-bottom: 1px solid #dadee3;/*@light_grey_0*/
+  padding: 40px 0;
+}
+.list-type-none {
+  list-style: none;
 }
 
     /* pagination */

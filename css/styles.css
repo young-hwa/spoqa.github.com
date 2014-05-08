@@ -258,6 +258,47 @@ blockquote {
   margin-left: 50px;
   padding-left: 15px;
   border-left: 3px solid #CCC;
+.twitter-icon {
+  display: inline-block;
+  background-image: url(/images/twitter-icon.png);
+  width: 24px;
+  height: 24px;
+}
+.facebook-icon {
+  display: inline-block;
+  background-image: url(/images/facebook-icon.png);
+  width: 24px;
+  height: 24px;
+}
+.tumblr-icon {
+  display: inline-block;
+  background-image: url(/images/tumblr-icon.png);
+  width: 24px;
+  height: 24px;
+}
+.dribbble-icon {
+  display: inline-block;
+  background-image: url(/images/dribbble-icon.png);
+  width: 24px;
+  height: 24px;
+}
+.linkdin-icon {
+  display: inline-block;
+  background-image: url(/images/linkdin-icon.png);
+  width: 24px;
+  height: 24px;
+}
+.wordpress-icon {
+  display: inline-block;
+  background-image: url(/images/wordpress-icon.png);
+  width: 24px;
+  height: 24px;
+}
+.homepage-icon {
+  display: inline-block;
+  background-image: url(/images/homepage-icon.png);
+  width: 24px;
+  height: 24px;
 }
 
 dl dt {

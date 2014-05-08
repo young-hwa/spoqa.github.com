@@ -299,6 +299,24 @@ margin-right: 20px;
 .pagination li {
 display: inline-block;
 }
+  /* post-footer back btn */
+
+  .back-btn {
+    margin-top: 80px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .back-btn a {
+    padding: 20px 80px;
+    border: 1px solid #d0d5db; /* @grey_m4 */
+    border-radius: 8px;
+    font-size: 18px;
+    color: #5a6173; /* @semi_dark_grey_p2 */
+  }
+  .back-btn a:hover {
+    background-color: #f5f7fa; /* @light_grey_m4 */
+    border-color: #c9ced6; /* @grey_m3 */
+  }
 
 /* blog ends */
 

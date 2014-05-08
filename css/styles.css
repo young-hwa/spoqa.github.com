@@ -386,7 +386,19 @@ blockquote {
 dl dt {
   font-weight: bolder;
 }
+/* footer */
 
 dl dd {
   margin-left: 2em;
+.footer {
+  width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #b0b6c2;/*@grey_0*/
+}
+.footer a {
+  color: #b0b6c2;/*@grey_0*/
+}
+.footer a:hover {
+  text-decoration: underline;
 }

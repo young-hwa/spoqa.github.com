@@ -296,6 +296,8 @@ table a code {
       border-color: #c9ced6; /* @grey_m3 */
     }
 
+/* blog post */
+
 .post-author-info {
   margin-bottom: 160px;
 }
@@ -347,24 +349,20 @@ table a code {
   padding: 20px;
 }
 .post-title {
-.pagination {
-text-align: center;
-padding: 10px;
+  margin: 0 100px 5px 0;
+  font-weight: bold;
+  line-height: 1.4em;
+  color: #363d4f;/*@semi_dark_grey_p5*/
 }
-.pagination p {
-display:inline;
+.post-description {
+  margin: 18px 100px 6px 0;
+  padding: 0;
 }
-.pagination span {
-display: inline;
+.post-footer {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
-.pagination ul {
-display: inline-block;
-margin-left: 20px;
-margin-right: 20px;
-}
-.pagination li {
-display: inline-block;
-}
+
   /* post-footer back btn */
 
   .back-btn {

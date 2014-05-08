@@ -70,28 +70,13 @@ font-weight: bold; text-decoration: none;
 color: #323232;
 }
 
-#menu-list ol {
-display: inline-block;
 }
-#menu-list li {
-display: inline;
 }
-#menu-list {
-text-shadow: 1px 1px 1px white;
-color: #323232;
-font-size: 18px;
-margin-top: 20px;
-margin-bottom: 60px;
-}
-#menu-list .seperator {
-color: #969696;
 .spoqa-logo img {
   padding-right: 6px;
   padding-bottom: 1px;
   vertical-align: middle;
 }
-#menu-list a {
-color: #323232;
 .blog-title {
   font-size: 20px;
   color: #fff;
@@ -110,6 +95,38 @@ color: #323232;
   background-image: url(/images/atom-hover.png);
 }
 
+  /* menu list btn */
+
+  .menu-list {
+    display: inline-block;
+    font-size: 16px;
+    float: right;
+    padding: 2px 0;
+  }
+  .menu-list li {
+    display: inline;
+  }
+  .menu-list li a {
+    padding-left: 20px;
+    color: #fff;
+    -webkit-text-stroke: 0.25px;
+  }
+  .menu-list li a:hover {
+  }
+  .logo-img {
+    margin-top: 10px;
+    padding-right: 15px;
+    vertical-align: middle;
+  }
+  .dev-blog {
+    font-weight: bold;
+    font-size: 40px;
+    color: white;
+    display: inline-block;
+  }
+  .selected {
+    font-weight: bold;
+  }
 
 /* post-authot-info (post-info로 수정하는게 의미상 맞을 듯) */ 
 
@@ -138,12 +155,6 @@ list-style: none;
   margin-left: 40px;
 }
 
-/* */
-
-/* index */
-.atom-img {
-vertical-align: middle;
-margin-left: 5px;
 }
 .logo-img {
 margin-top: 10px;
@@ -221,13 +232,6 @@ vertical-align: middle;
 .post-author-info {
   margin-bottom: 160px;
 }
-.dev-blog {
-font-family: arial;
-font-weight: bold;
-font-size: 40px;
-color: white;
-text-shadow: 0px 1px 1px #333;
-display: inline-block;
 }
 }
 

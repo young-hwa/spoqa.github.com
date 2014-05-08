@@ -52,28 +52,27 @@ $('a').hover(
 <body>
   <div class="wrapper">
     <div class="header">
-      <ol id="menu-list">
-          {% if page.url == '/about.html' %}
-            <li><a class="selected" href="/about.html">About</a></li><span class="seperator">&nbsp;/</span>
-          {% else %}
-            <li><a href="/about.html">About</a></li><span class="seperator">&nbsp;/</span>
-          {% endif %}
-          {% if page.url != '/about.html' and page.url != '/job.html' %}
-            <li><a class="selected" href="/index.html">Blog</a></li><span class="seperator">&nbsp;/</span>
-          {% else %}
-            <li><a href="/index.html">Blog</a></li><span class="seperator">&nbsp;/</span>
-          {% endif %}
       <div class="header-item">
         <a class="spoqa-logo" href="/"><img src="/images/logo.png"></a>
         <a class="blog-title" href="/">Tech Blog</a>
         <span><a class="atom-img" href="/atom.xml"></a></span>
 
-          {% if page.url == '/job.html' %}
-            <li><a class="selected" href="/job.html">We're hiring!</a></li><span class="seperator">&nbsp;/</span>
-          {% else %}
-            <li><a href="/job.html">We're hiring!</a></li><span class="seperator">&nbsp;/</span>
-          {% endif %}
-          <li><a href="https://github.com/spoqa">GitHub</a></li>
+        <ul class="menu-list">
+            <li><a class="
+              {% if page.url == '/about.html' %}
+              selected
+              {% endif %} menu-about" href="/about.html">About</a></li>
+            <li><a class="
+              {% if page.url != '/about.html' and page.url != '/job.html' %}
+              selected
+              {% endif %} menu-blog" href="/index.html">Blog</a></li>
+            <li><a class="
+              {% if page.url == '/job.html' %}
+              selected
+              {% endif %} menu-job" href="/job.html">We're hiring!</a></li>
+          <li><a class="menu-github" href="https://github.com/spoqa">GitHub</a></li>
+        </ul>
+      </div>
     </div>
 
     <div class="content">

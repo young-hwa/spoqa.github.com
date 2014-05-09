@@ -270,7 +270,7 @@ table a code {
     .next a,
     .previous.disabled,
     .next.disabled {
-      padding: 10px 20px;
+      padding: 2% 4%;
       border: 1px solid #d0d5db; /* @grey_m4 */
       border-radius: 8px;
       font-size: 18px;
@@ -299,7 +299,7 @@ table a code {
 /* blog post */
 
 .post-author-info {
-  margin-bottom: 160px;
+  margin-bottom: 25%;
 }
 .post h1 { font-size: 26px; color: #5a6173;/*@@semi_dark_grey_p2*/ }
 .post h2 { font-size: 24px; color: #5a6173;/*@@semi_dark_grey_p2*/ }
@@ -385,7 +385,7 @@ table a code {
   /* facebook comment */
 
   .fb-like { 
-    margin-top: 40px;
+    margin-top: 60px;
   }
 
 /* blog ends */
@@ -484,6 +484,9 @@ table a code {
   width: 640px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 50px;
+  padding: 4% 5%;
+  font-size: 16px;
   color: #b0b6c2;/*@grey_0*/
 }
 .footer a {
@@ -491,4 +494,44 @@ table a code {
 }
 .footer a:hover {
   text-decoration: underline;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 568px) {
+.header {
+  height: 80px;
+}
+.menu-list {
+  float: left;
+  padding: 8px 0;
+}
+.menu-list li a {
+  padding-left: 0;
+  padding-right: 20px;
+}
+.pagination .pages li {
+  display: none;
+}
+.post-description {
+  margin-right: 0;
+}
+.back-btn a {
+  padding: 20px 25%;
+}
+}
+@media only screen and (max-width: 350px) {
+.header {
+  height: 120px;
+}
+.menu-list {
+  float: left;
+  padding: 8px 0;
+  line-height: 30px;
+}
+.menu-list li a {
+  padding-left: 0;
+  padding-right: 20px;
+  margin-bottom: 100px;
+}
 }

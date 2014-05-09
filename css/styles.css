@@ -198,6 +198,9 @@ table a code {
   .selected {
     font-weight: bold;
   }
+  .menu-job {
+    display: none;
+  }
 
 /* post-authot-info (post-info로 수정하는게 의미상 맞을 듯) */ 
 
@@ -496,7 +499,7 @@ table a code {
 
 /* responsive */
 
-@media only screen and (max-width: 568px) {
+@media only screen and (max-width: 447px) {
 .header {
   height: 80px;
 }
@@ -521,18 +524,4 @@ table a code {
   padding: 20px 25%;
 }
 }
-@media only screen and (max-width: 350px) {
-.header {
-  height: 120px;
-}
-.menu-list {
-  float: left;
-  padding: 8px 0;
-  line-height: 30px;
-}
-.menu-list li a {
-  padding-left: 0;
-  padding-right: 20px;
-  margin-bottom: 100px;
-}
-}
+

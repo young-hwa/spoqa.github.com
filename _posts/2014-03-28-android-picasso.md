@@ -5,7 +5,6 @@ author: 정현우
 author-email: hyunwoo@spoqa.com
 description: Android Image Loading Library 중 하나인 Picasso 에 대해 알아봅니다.
 ---
-<br/>
 
 안녕하세요. 스포카 개발팀의 정현우입니다. 저희 안드로이드 모바일앱이 세 번째 버전으로 업데이트되면서 외적(사용자 측면)으로나 내적(구현 측면)으로 많은 변화가 있었는데요. 내적인 변화 중 하나는 검증된 오픈소스 라이브러리들을 많이 사용했다는 점입니다. 그중에 하나인 [Picasso][picasso website]에 관해 얘기해 보려고 합니다.
 

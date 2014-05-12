@@ -1,84 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset=utf-8 />
-<meta name="viewport" content="width=device-width, initial-scale=2.0, maximum-scale=1.0, user-scalable=0" />
-
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 <title>Spoqa Tech Blog</title>
-<link rel="stylesheet" href="/css/styles.css?q=8" />
-<link rel="stylesheet" href="/css/syntax.css" />
-<script src="http://www.google.com/jsapi"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script>
- google.load( "webfont", "1" );
- google.setOnLoadCallback(function() {
-  WebFont.load({ custom: {
-   families: [ "NanumGothic" ],
-   urls: [ "http://fontface.kr/NanumGothic/css" ]
-  }});
- });
-
-/*
-$('a').hover(
-  function(obj) {
-    alert('in');
-  },
-  function(obj) {
-    alert('out');
-  }
-);
-*/
-
-</script>
+<link rel="stylesheet" href="/css/NanumBarunGothic.css">
+<link rel="stylesheet" href="/css/styles.css">
+<link rel="stylesheet" href="/css/syntax.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
 {% if page.title %}
-<meta property="og:title" content="{{ page.title }}"/>
-<meta property="og:type" content="article"/>
-<meta property="og:url" content="http://spoqa.github.io{{ page.url }}"/>
-<meta property="og:site_name" content="Spoqa Tech Blog"/>
-<meta property="og:description"
-      content="{{ page.description }}"/>
+<meta property="og:title" content="{{ page.title }}">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://spoqa.github.io{{ page.url }}">
+<meta property="og:site_name" content="Spoqa Tech Blog">
+<meta property="og:description" content="{{ page.description }}">
 {% else %}
-<meta property="og:title" content="Spoqa Tech Blog"/>
-<meta property="og:type" content="blog"/>
-<meta property="og:url" content="http://spoqa.github.io/"/>
-<meta property="og:site_name" content="Spoqa Tech Blog"/>
-<meta property="og:description"
-      content="몇가지 Code snippet과 설명등을 포함하여 매주 1회씩 스포카 팀이 배운 여러가지 기술들에 대해 소개합니다."/>
+<meta property="og:title" content="Spoqa Tech Blog">
+<meta property="og:type" content="blog">
+<meta property="og:url" content="http://spoqa.github.io/">
+<meta property="og:site_name" content="Spoqa Tech Blog">
+<meta property="og:description" content="몇가지 Code snippet과 설명등을 포함하여 매주 1회씩 스포카 팀이 배운 여러가지 기술들에 대해 소개합니다.">
 {% endif %}
-<meta property="og:image" content="http://www.gravatar.com/avatar/52813188698089bda7e20154c114d17e.png"/>
+<meta property="og:image" content="http://www.gravatar.com/avatar/52813188698089bda7e20154c114d17e.png">
 </head>
 <body>
-<div class="content-body">
   <div class="wrapper">
     <div class="header">
-      <a href="http://dodopoint.com/"><img src="/images/logo.png" style="margin-top: 10px; padding-right: 15px; vertical-align: middle;" /></a><a href="/" style="
-        font-size: 31px;
-        position: relative;
-        top: 8px;
-        color: #8ab0e6;
-        font-weight: bold;
-      ">Tech Blog</a>
-      <ol id="menu-list">
-          {% if page.url == '/about.html' %}
-            <li><a class="selected" href="/about.html">About</a></li><span class="seperator">&nbsp;/</span>
-          {% else %}
-            <li><a href="/about.html">About</a></li><span class="seperator">&nbsp;/</span>
-          {% endif %}
-          {% if page.url != '/about.html' and page.url != '/job.html' %}
-            <li><a class="selected" href="/index.html">Blog</a></li><span class="seperator">&nbsp;/</span>
-          {% else %}
-            <li><a href="/index.html">Blog</a></li><span class="seperator">&nbsp;/</span>
-          {% endif %}
-
-          {% if page.url == '/job.html' %}
-            <li><a class="selected" href="/job.html">We're hiring!</a></li><span class="seperator">&nbsp;/</span>
-          {% else %}
-            <li><a href="/job.html">We're hiring!</a></li><span class="seperator">&nbsp;/</span>
-          {% endif %}
-          <li><a href="https://github.com/spoqa">GitHub</a></li>
-          <li><a href="/atom.xml"><img class="atom-img" src="/images/atom.png" /></a></li>
-        </ol>
+      <div class="header-item">
+        <div class="spoqa-logo-wrap">
+          <a class="spoqa-logo" href="/"><img src="/images/logo.png"></a>
+          <a class="blog-title" href="/">Tech Blog</a>
+          <span><a class="atom-img" href="/atom.xml"></a></span>
+        </div>
+        <ul class="menu-list">
+            <li><a class="
+              {% if page.url == '/about.html' %}
+              selected
+              {% endif %} menu-about" href="/about.html">About</a></li>
+            <li><a class="
+              {% if page.url != '/about.html' and page.url != '/job.html' %}
+              selected
+              {% endif %} menu-blog" href="/index.html">Blog</a></li>
+            <li><a class="
+              {% if page.url == '/job.html' %}
+              selected
+              {% endif %} menu-job" href="/job.html">We're hiring!</a></li>
+          <li><a class="menu-github" href="https://github.com/spoqa">GitHub</a></li>
+        </ul>
+      </div>
     </div>
 
     <div class="content">
@@ -86,17 +57,30 @@ $('a').hover(
     </div>
     <div class="push">
     </div>
-  </div>
 
-  <div style="margin-bottom: 50px;" class="footer">
-    <hr style="margin-top: 20px; margin-bottom: 20px;" />
-    <div id="info">
-      <span>© Spoqa Inc. All rights reserved.</span>
-      <span>Powered by <a style="color: gray;" href="http://pages.github.io/">pages</a></span>
+    <div class="footer">
+      <div id="info">
+        <span>© <a href="http://dodopoint.com/">Spoqa</a> Inc. All rights reserved.</span>
+        <span>Powered by <a href="http://pages.github.io/">pages</a></span>
+      </div>
     </div>
   </div>
-
-</div>
+<!-- Responsive layout polyfill for IE8 and lower -->
+<!--[if lte IE 8]>
+<script>
+var config = {
+    mobileResponsiveBreakpoint: 650
+};
+$(window).on('resize', function(){
+    if($(window).width() <= config.mobileResponsiveBreakpoint){
+        if(!$('body').hasClass('res-mobile')) $('body').addClass('res-mobile');
+    }
+    else {
+        $('body').removeClass('res-mobile');
+    }
+}).trigger('resize');
+</script>
+<![endif]-->
 </body>
 </html>
 

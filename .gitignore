@@ -3,3 +3,4 @@
 *.swo
 /build/*
 .DS_Store
+.ruby-version

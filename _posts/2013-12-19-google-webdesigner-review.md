@@ -2,6 +2,7 @@
 layout: entry
 title: 다함께 써봐요 Google Web Designer!
 author: 이서빈
+author-email: been@spoqa.com
 description: Google Web Designer로 프로젝트를 진행하며 알게 된 기능과 느낀 점에 관한 이야기입니다.
 ---
 

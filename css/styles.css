@@ -52,6 +52,17 @@ p, dl {
 .post ul a:hover { 
   text-decoration: underline; 
 }
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
 dl dt {
   font-weight: bolder;
   margin-top: 10px

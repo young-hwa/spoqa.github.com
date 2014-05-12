@@ -154,6 +154,9 @@ table a code {
   margin-right: auto;
   padding: 12px 0;
 }
+.spoqa-logo-wrap {
+    float:left;
+}
 .spoqa-logo img {
   padding-right: 6px;
   padding-bottom: 1px;
@@ -510,29 +513,77 @@ table a code {
 
 /* responsive */
 
-@media only screen and (max-width: 447px) {
-.header {
+@media only screen and (max-width: 480px) {
+
+  .header {
+    height: 80px;
+  }
+  .menu-list {
+    float: left;
+    padding: 8px 0;
+  }
+  .menu-list li a {
+    padding-left: 0;
+    padding-right: 20px;
+  }
+  .post-title {
+    margin-right: 0;
+  }
+  .pagination .pages li {
+    display: none;
+  }
+  .post-description {
+    margin-right: 0;
+  }
+  .back-btn a {
+    padding: 20px 25%;
+  }
+  .spoqa-logo-wrap {
+    float:none;
+  }
+}
+@media only screen and (max-width: 650px) {
+
+  .pagination .pages li {
+    display: none;
+  }
+  .pagination .previous {
+    float: left;
+  }
+  .pagination .next {
+    float: right;
+  }
+}
+/* for IE8 and lower */
+.res-mobile .header {
   height: 80px;
 }
-.menu-list {
+.res-mobile .menu-list {
   float: left;
   padding: 8px 0;
 }
-.menu-list li a {
+.res-mobile .menu-list li a {
   padding-left: 0;
   padding-right: 20px;
 }
-.post-title {
+.res-mobile .post-title {
   margin-right: 0;
 }
-.pagination .pages li {
+.res-mobile .pagination .pages li {
   display: none;
 }
-.post-description {
+.res-mobile .post-description {
   margin-right: 0;
 }
-.back-btn a {
+.res-mobile .back-btn a {
   padding: 20px 25%;
 }
+.res-mobile .spoqa-logo-wrap {
+    float:none;
 }
-
+.res-mobile .pagination .previous {
+  float: left;
+}
+.res-mobile .pagination .next {
+  float: right;
+}

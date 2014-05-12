@@ -365,6 +365,11 @@ table a code {
   line-height: 1.4em;
   color: #363d4f;/*@semi_dark_grey_p5*/
 }
+.post-title-words{
+  font-weight: bold;
+  line-height: 1.4em;
+  color: #363d4f;/*@semi_dark_grey_p5*/
+}
 .post-description {
   margin: 18px 100px 6px 0;
   padding: 0;

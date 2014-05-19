@@ -14,7 +14,9 @@ description: 업무 효율을 높여주는 포토샵 플러그인을 알아봅�
 
 # [GuideGuide](http://www.guideguide.me/) 
 
-#### [Cameron McEfee](http://cameronmcefee.com/) 무료 ★★★★★
+<a style="font-size: 20px;">
+ [Cameron McEfee](http://cameronmcefee.com/) 무료 ★★★★★
+</a>
 </br>
 제가 새 컴퓨터에서 업무 환경을 셋팅할 때 포토샵 설치 후 바로 설치하는 플러그인입니다. 그만큼 디자인 작업에 필수적이고 편리한 기능을 제공하고 있습니다. 말 그대로 가이드를 쉽게 그릴 수 있게 해주는 플러그인데요, 인터페이스는 아래와 같습니다.
 
@@ -48,8 +50,9 @@ description: 업무 효율을 높여주는 포토샵 플러그인을 알아봅�
 [GuideGuide](http://www.guideguide.me/)는 무료에 CC 업데이트도 아주 안정적으로 제공하고 있으니 아직 사용하고 있지 않다면 꼭 다운받으세요! 두번 받으세요!
 
 # [Dev Rocket](http://devrocket.uiparade.com/) 
-### [Cazoobi](http://www.cazoobi.com/) $19 ★★★★★
-
+<a style="font-size: 20px;">
+ [Cazoobi](http://www.cazoobi.com/) $19 ★★★★★
+</a>
 </br>
 Dev Rocket은 아마 iOS디자인을 하시는 분들은 많이 알고계실 것 같습니다. 모바일 UI를 디자인 하다보면 각 디바이스 사이즈에 맞게 새 문서를 생성하고 리소스를 자르고, 리사이징하는 등 반복 작업이 많은데요, 그런 업무를 수월하게 해주는 플러그인입니다. 몇 번의 버젼 업데이트를 하면서는 `Refills`와 같은 효과적인 부가 기능도 지원하고 있습니다. 우선 생김새를 보시죠.
 

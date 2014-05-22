@@ -17,7 +17,7 @@ description: 업무 효율을 높여주는 포토샵 플러그인을 알아봅�
 <a style="font-size: 20px;">
  [Cameron McEfee](http://cameronmcefee.com/) 무료 ★★★★★
 </a>
-</br>
+<br/>
 제가 새 컴퓨터에서 업무 환경을 셋팅할 때 포토샵 설치 후 바로 설치하는 플러그인입니다. 그만큼 디자인 작업에 필수적이고 편리한 기능을 제공하고 있습니다. 말 그대로 가이드를 쉽게 그릴 수 있게 해주는 플러그인데요, 인터페이스는 아래와 같습니다.
 
 <img src="/images/2014-05-19/GuideGuide_GUI.png" style="width: 280px; height: auto; margin: auto;">
@@ -53,7 +53,7 @@ description: 업무 효율을 높여주는 포토샵 플러그인을 알아봅�
 <a style="font-size: 20px;">
  [Cazoobi](http://www.cazoobi.com/) $19 ★★★★★
 </a>
-</br>
+<br/>
 Dev Rocket은 아마 iOS디자인을 하시는 분들은 많이 알고계실 것 같습니다. 모바일 UI를 디자인 하다보면 각 디바이스 사이즈에 맞게 새 문서를 생성하고 리소스를 자르고, 리사이징하는 등 반복 작업이 많은데요, 그런 업무를 수월하게 해주는 플러그인입니다. 몇 번의 버젼 업데이트를 하면서는 `Refills`와 같은 효과적인 부가 기능도 지원하고 있습니다. 우선 생김새를 보시죠.
 
 <img src="/images/2014-05-19/DevRocket_GUI.png" style="width: 385px; height: auto; margin: auto;">
@@ -94,7 +94,7 @@ Refills는 사람들이 Refills Store에 올려놓은 에셋을 구매해서 사
 
 아마 제가 모든 플러그인을 통틀어 가장 자주 쓰는 기능이 아닐까 합니다. (저는 이 기능만으로도 $19의 값을 충분히 한다고 생각합니다!)
 
-레이어를 선택하고 이 버튼을 누르면 그 레이어 사이즈 맞게 새 문서로 추출해줍니다. 포토샵의 `Duplicate Layer`>`Destination`:`New Document`와 비슷한 기능이죠. 다른점은 `UI Snips`는 여백이 없는 새 문서에 레이어를 뽑아준다는 점입니다. 이 버튼 하나만 누르면 레이어를 깔끔히 추출해주는 편리함은 이루 말할 수가 없습니다! CC부터는 포토샵 자체적으로 저장까지 한번에 되는 `Generate`>`Image Asset`기능을 제공하고 있는데, 이것도 아주 유용한 기능이지만 폴더 관리법이나 에셋을 수정하는 상황애 따라 적절하지 않을 때가 있어서 여전히 애용하고 있습니다.
+레이어를 선택하고 이 버튼을 누르면 그 레이어 사이즈 맞게 새 문서로 추출해줍니다. 포토샵의 `Duplicate Layer`>`Destination`:`New Document`와 비슷한 기능이죠. 다른점은 `UI Snips`는 여백이 없는 새 문서에 레이어를 뽑아준다는 점입니다. 이 버튼 하나만 누르면 레이어를 깔끔히 추출해주는 편리함은 이루 말할 수가 없습니다! CC부터는 포토샵 자체적으로 저장까지 한번에 되는 `Generate`>`Image Asset`기능을 제공하고 있는데, 이것도 아주 유용한 기능이지만 폴더 관리법이나 에셋을 수정하는 상황에 따라 적절하지 않을 때가 있어서 여전히 애용하고 있습니다.
 
 
 ## 3. <img src="/images/2014-05-19/DevRocket_Layoutguides.png" style="width: auto; height: auto; display:inline; padding:0; vertical-align: middle;">Layout Guides

@@ -13,7 +13,11 @@
 <meta property="og:site_name" content="Spoqa Tech Blog">
 <meta property="og:description" content="{{ page.description }}">
 {% else %}
-{% assign base_path = '.' %}
+{% if paginator.page == 1 %}
+  {% assign base_path = '.' %}
+{% else %}
+  {% assign base_path = '..' %}
+{% endif %}
 <meta property="og:title" content="Spoqa Tech Blog">
 <meta property="og:type" content="blog">
 <meta property="og:url" content="http://spoqa.github.io/">

@@ -2,7 +2,11 @@
 layout: default
 ---
 
-{% assign base_path = '.' %}
+{% if paginator.page == 1 %}
+  {% assign base_path = '.' %}
+{% else %}
+  {% assign base_path = '..' %}
+{% endif %}
 
   <div class="posts">
     <ul class="posts list-type-none">

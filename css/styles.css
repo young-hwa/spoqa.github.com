@@ -161,6 +161,8 @@ pre code {
     float:left;
 }
 .spoqa-logo img {
+  width: 74px;
+  height: auto;
   padding-right: 6px;
   padding-bottom: 1px;
   vertical-align: middle;

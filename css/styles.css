@@ -197,7 +197,7 @@ pre code {
   display: inline;
 }
 .menu-list li a {
-  padding-left: 20px;
+  margin-left: 20px;
   color: #fff;
   -webkit-text-stroke: 0.25px;
 }
@@ -218,7 +218,10 @@ pre code {
   font-weight: bold;
 }
 .menu-job {
-  display: none;
+  padding: 8px 30px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  background-color: #719add;
 }
 
 /* post-authot-info (post-info로 수정하는게 의미상 맞을 듯) */ 

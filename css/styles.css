@@ -555,6 +555,9 @@ pre code {
   font-size: 20px;
   font-weight: bold;
 }
+.hiring-subtitle br{
+  display: none;
+}
 /* responsive */
 
 @media only screen and (max-width: 480px) {
@@ -623,6 +626,8 @@ pre code {
     }
     .hiring-subtitle {
       font-size: 18px;
+    .hiring-subtitle br{
+      display: block;
     }
 }
 /* for IE8 and lower */

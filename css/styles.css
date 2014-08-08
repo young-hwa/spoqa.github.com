@@ -541,7 +541,7 @@ pre code {
   position: relative;
 }
 .hiring-text {
-  padding: 50px 0;
+  padding: 56px 0;
   width: auto;
   display: inline-block;
 }
@@ -559,6 +559,49 @@ pre code {
   display: none;
 }
 /* responsive */
+@media only screen and (max-width: 650px) {
+  .spoqa-logo-wrap {
+    float: none;
+  }
+  .menu-list {
+    float: left;
+  }
+  .menu-list li {
+    margin-left: 0px; 
+    margin-right: 20px;
+    margin-top: 10px;
+    padding: 8px 0;
+  }
+  .menu-list .menu-job {
+    margin-right: 0;
+  }
+  .pagination .pages li {
+    display: none;
+  }
+  .pagination .previous {
+    float: left;
+  }
+  .pagination .next {
+    float: right;
+  }
+  /* hiring banner */
+
+    .hiring-box {
+      padding: 94px 36%;
+      top: 113px;
+    }
+    .hiring-text {
+      margin-top: 13px;
+      padding: 51px 0;
+    }
+    .hiring-title {
+      font-size: 44px;
+      padding-bottom: 16px;
+    }
+    .hiring-subtitle {
+      font-size: 18px;
+    }
+}
 
 @media only screen and (max-width: 480px) {
 
@@ -568,11 +611,11 @@ pre code {
   }*/
   .menu-list {
     float: left;
-    padding: 8px 0;
   }
-  .menu-list li a {
+  .menu-list li {
     margin-left: 0px; 
     margin-right: 20px;
+    margin-bottom: 10px;
   }
   .post-title {
     margin-right: 0;
@@ -590,6 +633,19 @@ pre code {
     float:none;
   }
 
+@media only screen and (max-width: 413px) {
+
+  .hiring-text {
+    margin-top: 10px;
+    padding: 10px 0;
+  }
+  .hiring-title {
+    font-size: 36px;
+  }
+  .hiring-subtitle {
+    font-size: 16px;
+  }
+}
   /* hiring banner */
 
     .hiring-box {
@@ -598,34 +654,6 @@ pre code {
     .menu-list .menu-job {
       margin-right: 0;
     }
-}
-
-@media only screen and (max-width: 650px) {
-
-  .pagination .pages li {
-    display: none;
-  }
-  .pagination .previous {
-    float: left;
-  }
-  .pagination .next {
-    float: right;
-  }
-  /* hiring banner */
-
-    .hiring-box {
-      padding: 94px 36%;
-      top: 113px;
-    }
-    .hiring-text {
-      padding: 57px 0;
-    }
-    .hiring-title {
-      font-size: 44px;
-      padding-bottom: 16px;
-    }
-    .hiring-subtitle {
-      font-size: 18px;
     .hiring-subtitle br{
       display: block;
     }

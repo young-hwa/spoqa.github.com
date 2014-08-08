@@ -201,8 +201,6 @@ pre code {
   color: #fff;
   -webkit-text-stroke: 0.25px;
 }
-.menu-list li a:hover {
-}
 .logo-img {
   margin-top: 10px;
   padding-right: 15px;
@@ -222,6 +220,9 @@ pre code {
   border: 1px solid #fff;
   border-radius: 3px;
   background-color: #719add;
+}
+.menu-job:hover {
+  background-color: #5e89d6;
 }
 
 /* post-authot-info (post-info로 수정하는게 의미상 맞을 듯) */ 

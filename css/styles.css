@@ -578,7 +578,9 @@ pre code {
     padding: 8px 0;
   }
   .menu-list .menu-job {
-    margin-right: 0;
+    position: absolute;
+    right: 5%;
+    top: 50px;
   }
   .pagination .pages li {
     display: none;

@@ -586,12 +586,15 @@ pre code {
   .spoqa-logo-wrap {
     float:none;
   }
-}
 
-/* hiring banner */
+  /* hiring banner */
 
-.hiring-box {
-border: none;
+    .hiring-box {
+    border: none;
+    }
+    .menu-list .menu-job {
+      margin-right: 0;
+    }
 }
 
 @media only screen and (max-width: 650px) {
@@ -605,6 +608,22 @@ border: none;
   .pagination .next {
     float: right;
   }
+  /* hiring banner */
+
+    .hiring-box {
+      padding: 94px 36%;
+      top: 113px;
+    }
+    .hiring-text {
+      padding: 57px 0;
+    }
+    .hiring-title {
+      font-size: 44px;
+      padding-bottom: 16px;
+    }
+    .hiring-subtitle {
+      font-size: 18px;
+    }
 }
 /* for IE8 and lower */
 .res-mobile .header {
@@ -638,21 +657,4 @@ border: none;
 }
 .res-mobile .pagination .next {
   float: right;
-}
-
-/* hiring banner */
-
-.hiring-box {
-  padding: 94px 36%;
-  top: 113px;
-}
-.hiring-text {
-  padding: 57px 0;
-}
-.hiring-title {
-  font-size: 44px;
-  padding-bottom: 16px;
-}
-.hiring-subtitle {
-  font-size: 18px;
 }

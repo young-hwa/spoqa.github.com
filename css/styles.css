@@ -194,10 +194,10 @@ pre code {
   padding: 2px 0;
 }
 .menu-list li {
-  display: inline;
+  display: inline-block;
+  margin-left: 20px;
 }
 .menu-list li a {
-  margin-left: 20px;
   color: #fff;
   -webkit-text-stroke: 0.25px;
 }
@@ -217,7 +217,7 @@ pre code {
 .selected {
   font-weight: bold;
 }
-.menu-job {
+.menu-list .menu-job {
   padding: 8px 30px;
   border: 1px solid #fff;
   border-radius: 3px;

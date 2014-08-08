@@ -194,14 +194,12 @@ pre code {
   padding: 2px 0;
 }
 .menu-list li {
-  display: inline;
+  display: inline-block;
+  margin-left: 20px;
 }
 .menu-list li a {
-  margin-left: 20px;
   color: #fff;
   -webkit-text-stroke: 0.25px;
-}
-.menu-list li a:hover {
 }
 .logo-img {
   margin-top: 10px;
@@ -217,11 +215,14 @@ pre code {
 .selected {
   font-weight: bold;
 }
-.menu-job {
+.menu-list .menu-job {
   padding: 8px 30px;
   border: 1px solid #fff;
   border-radius: 3px;
   background-color: #719add;
+}
+.menu-job:hover {
+  background-color: #5e89d6;
 }
 
 /* post-authot-info (post-info로 수정하는게 의미상 맞을 듯) */ 
@@ -515,21 +516,111 @@ pre code {
 .footer a:hover {
   text-decoration: underline;
 }
+/* hiring banner */
 
+.hiring-banner-waraper {
+  height: 400px;
+  background-color: #8ab0e6;
+  padding-top: 50px;
+  text-align: center;
+}
+.hiring-box {
+  border: 4px solid #fff;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  right: 0;
+  width: 100px;
+  padding: 105px 230px;
+  margin: 0 auto;
+}
+.hiring-image {
+  background: url(/images/hiring-imagex2.png) no-repeat;
+  background-size: 923px;
+  height: 400px;
+  background-position: 50% 100%;
+  position: relative;
+}
+.lt-ie9 .hiring-image {
+  background: url(/images/hiring-imagex1.png) no-repeat;
+  background-position: 50% 100%;
+}
+.hiring-text {
+  padding: 56px 0;
+  width: auto;
+  display: inline-block;
+}
+.hiring-title {
+  color: #fff;
+  font-size: 50px;
+  padding-bottom: 18px;
+}
+.hiring-subtitle {
+  color: #333b4d;
+  font-size: 20px;
+  font-weight: bold;
+}
+.hiring-subtitle br{
+  display: none;
+}
 /* responsive */
-
-@media only screen and (max-width: 480px) {
-
-  .header {
-    height: 80px;
+@media only screen and (max-width: 650px) {
+  .spoqa-logo-wrap {
+    float: none;
   }
   .menu-list {
     float: left;
+  }
+  .menu-list li {
+    margin-left: 0px; 
+    margin-right: 20px;
+    margin-top: 10px;
     padding: 8px 0;
   }
-  .menu-list li a {
-    padding-left: 0;
-    padding-right: 20px;
+  .menu-list .menu-job {
+    margin-right: 0;
+  }
+  .pagination .pages li {
+    display: none;
+  }
+  .pagination .previous {
+    float: left;
+  }
+  .pagination .next {
+    float: right;
+  }
+  /* hiring banner */
+
+    .hiring-box {
+      padding: 94px 36%;
+      top: 113px;
+    }
+    .hiring-text {
+      margin-top: 13px;
+      padding: 51px 0;
+    }
+    .hiring-title {
+      font-size: 44px;
+      padding-bottom: 16px;
+    }
+    .hiring-subtitle {
+      font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+  /* hiring banner 없애면 주석 풀 것
+  .header {
+    height: 80px;
+  }*/
+  .menu-list {
+    float: left;
+  }
+  .menu-list li {
+    margin-left: 0px; 
+    margin-right: 20px;
+    margin-bottom: 10px;
   }
   .post-title {
     margin-right: 0;
@@ -546,18 +637,31 @@ pre code {
   .spoqa-logo-wrap {
     float:none;
   }
-}
-@media only screen and (max-width: 650px) {
 
-  .pagination .pages li {
-    display: none;
+@media only screen and (max-width: 413px) {
+
+  .hiring-text {
+    margin-top: 10px;
+    padding: 10px 0;
   }
-  .pagination .previous {
-    float: left;
+  .hiring-title {
+    font-size: 36px;
   }
-  .pagination .next {
-    float: right;
+  .hiring-subtitle {
+    font-size: 16px;
   }
+}
+  /* hiring banner */
+
+    .hiring-box {
+    border: none;
+    }
+    .menu-list .menu-job {
+      margin-right: 0;
+    }
+    .hiring-subtitle br{
+      display: block;
+    }
 }
 /* for IE8 and lower */
 .res-mobile .header {
@@ -592,3 +696,4 @@ pre code {
 .res-mobile .pagination .next {
   float: right;
 }
+

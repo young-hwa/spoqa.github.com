@@ -534,11 +534,14 @@ pre code {
   margin: 0 auto;
 }
 .hiring-image {
-  background: url(/images/hiring-image.png) no-repeat;
+  background: url(/images/hiring-imagex2.png) no-repeat;
   background-size: 923px;
   height: 400px;
   background-position: 50% 100%;
   position: relative;
+}
+.lt-ie9 .hiring-image {
+  background: url(/images/hiring-imagex1.png) no-repeat;
 }
 .hiring-text {
   padding: 56px 0;
@@ -691,3 +694,4 @@ pre code {
 .res-mobile .pagination .next {
   float: right;
 }
+

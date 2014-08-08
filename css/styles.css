@@ -543,6 +543,7 @@ pre code {
 }
 .lt-ie9 .hiring-image {
   background: url(/images/hiring-imagex1.png) no-repeat;
+  background-position: 50% 100%;
 }
 .hiring-text {
   padding: 56px 0;

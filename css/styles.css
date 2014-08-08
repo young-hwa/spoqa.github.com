@@ -520,9 +520,10 @@ pre code {
 
 @media only screen and (max-width: 480px) {
 
+  /* hiring banner 없애면 주석 풀 것
   .header {
     height: 80px;
-  }
+  }*/
   .menu-list {
     float: left;
     padding: 8px 0;

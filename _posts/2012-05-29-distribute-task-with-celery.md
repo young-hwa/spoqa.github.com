@@ -28,7 +28,7 @@ description: 처리 시간이 오래 걸리는 작업을 Celery를 통해 개선
 
 <script src="https://gist.github.com/2817829.js?file=src2.py"></script>
 
-# Not enuogh memery
+# Not enuogh memory
 
 자 이제 응답이 지연될 일도 없으니 다 되었다고 생각한 저희는 테스트 환경에 배포해보았습니다. 그런데 테스트 중 이상한 에러 메시지가 떴습니다.
 

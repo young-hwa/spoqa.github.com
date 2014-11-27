@@ -513,53 +513,6 @@ pre code {
 .footer a:hover {
   text-decoration: underline;
 }
-/* hiring banner */
-
-.hiring-banner-wrapper {
-  height: 400px;
-  background-color: #8ab0e6;
-  padding-top: 50px;
-  text-align: center;
-}
-.hiring-box {
-  border: 4px solid #fff;
-  position: absolute;
-  top: 100px;
-  left: 0;
-  right: 0;
-  width: 100px;
-  padding: 105px 230px;
-  margin: 0 auto;
-}
-.hiring-image {
-  background: url(/images/hiring-imagex2.png) no-repeat;
-  background-size: 923px;
-  height: 400px;
-  background-position: 50% 100%;
-  position: relative;
-}
-.lt-ie9 .hiring-image {
-  background: url(/images/hiring-imagex1.png) no-repeat;
-  background-position: 50% 100%;
-}
-.hiring-text {
-  padding: 56px 0;
-  width: auto;
-  display: inline-block;
-}
-.hiring-title {
-  color: #fff;
-  font-size: 50px;
-  padding-bottom: 18px;
-}
-.hiring-subtitle {
-  color: #333b4d;
-  font-size: 20px;
-  font-weight: bold;
-}
-.hiring-subtitle br{
-  display: none;
-}
 /* responsive */
 @media only screen and (max-width: 650px) {
   .spoqa-logo-wrap {

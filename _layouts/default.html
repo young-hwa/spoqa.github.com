@@ -43,32 +43,17 @@
           <a class="blog-title" href="{{ base_path }}/">Tech Blog</a>
         </div>
         <ul class="menu-list">
-            <li><a class="
-              {% if page.url == '/about.html' %}
-              selected
-              {% endif %} menu-about" href="{{ base_path }}/about.html">About</a></li>
-            <li><a class="
-              {% if page.url != '/about.html' and page.url != '/job.html' %}
-              selected
-              {% endif %} menu-blog" href="{{ base_path }}/index.html">Blog</a></li>
-          <li><a class="menu-github" href="https://github.com/spoqa">GitHub</a></li>
           <li><a class="
-              {% if page.url == '/job.html' %}
-              selected
-              {% endif %} menu-job" href="/job.html">We're hiring!</a></li>
-            </ul>
+            {% if page.url == '/about.html' %}
+            selected
+            {% endif %} menu-about" href="{{ base_path }}/about.html">About</a></li>
+          <li><a class="
+            {% if page.url != '/about.html' and page.url != '/job.html' %}
+            selected
+            {% endif %} menu-blog" href="{{ base_path }}/index.html">Blog</a></li>
+          <li><a class="menu-github" href="https://github.com/spoqa">GitHub</a></li>
+        </ul>
       </div>
-    </div>
-    <div class="hiring-banner-wrapper">
-      <a class="hiring-link" href="/job.html">
-        <div class="hiring-box"></div>
-        <div class="hiring-image">
-         <div class="hiring-text">
-           <h2 class="hiring-title">WE'RE HIRING</h2>
-           <div class="hiring-subtitle">즐겁게 개발하는 기쁨을 함께 나눌<br/> 동료를 찾습니다</div>
-         </div>
-        </div>
-      </a>
     </div>
     <div class="content">
       {{ content }}

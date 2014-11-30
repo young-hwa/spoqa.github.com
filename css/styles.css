@@ -541,31 +541,13 @@ pre code {
   .pagination .next {
     float: right;
   }
-  /* hiring banner */
-
-    .hiring-box {
-      padding: 94px 36%;
-      top: 113px;
-    }
-    .hiring-text {
-      margin-top: 13px;
-      padding: 51px 0;
-    }
-    .hiring-title {
-      font-size: 44px;
-      padding-bottom: 16px;
-    }
-    .hiring-subtitle {
-      font-size: 18px;
-    }
 }
 
 @media only screen and (max-width: 480px) {
 
-  /* hiring banner 없애면 주석 풀 것
   .header {
     height: 80px;
-  }*/
+  }
   .menu-list {
     float: left;
   }
@@ -588,17 +570,6 @@ pre code {
   }
   .spoqa-logo-wrap {
     float:none;
-  }
-  
-  /* hiring- banner */
-  .hiring-box {
-    border: none;
-  }
-  .hiring-text {
-    padding: 30px 0;
-  }
-  .hiring-subtitle br {
-    display: block;
   }
 }
 

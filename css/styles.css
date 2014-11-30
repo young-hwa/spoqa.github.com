@@ -556,6 +556,9 @@ pre code {
     margin-right: 20px;
     margin-bottom: 10px;
   }
+  .portrait {
+    display: none;
+  }
   .post-title {
     margin-right: 0;
   }

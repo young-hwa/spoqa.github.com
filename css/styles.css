@@ -314,18 +314,13 @@ pre code {
 .post-author-info {
   margin-bottom: 25%;
 }
-.post h1 { font-size: 26px; color: #5a6173;/*@@semi_dark_grey_p2*/ }
-.post h2 { font-size: 24px; color: #5a6173;/*@@semi_dark_grey_p2*/ }
-.post h3 { font-size: 22px; color: #5a6173;/*@@semi_dark_grey_p2*/ }
-.post h4 { font-size: 20px; color: #5a6173;/*@@semi_dark_grey_p2*/ }
-.post h5 { font-size: 18px; color: #5a6173;/*@@semi_dark_grey_p2*/ }
-.post h6 { font-size: 16px; color: #5a6173;/*@@semi_dark_grey_p2*/ }
-
+,post h1 {
+  font-size: 28px;
+}
 .post h1,
 .post h2 {
   margin-top: 60px;
   padding-bottom: 10px;
-  border-bottom: 1px solid #dadee3; /*@light_grey_0*/
 }
 .post h3,
 .post h4 {

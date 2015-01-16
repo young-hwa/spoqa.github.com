@@ -183,20 +183,63 @@ pre code {
 }
 
 /* menu list btn */
-
-.menu-list {
-  display: inline-block;
-  font-size: 16px;
+.nav {
+  display: block;
   float: right;
-  padding: 2px 0;
 }
-.menu-list li {
+#toggle,
+.toggle {
+  display: none;
+}
+.toggle {
+  z-index: 2;
+}
+.toggle:hover:after {
+  border-bottom: 3px solid #8ab0e6;
+}
+.toggle:after {
+  content: 'Menu';
   display: inline-block;
-  margin-left: 20px;
+  padding: 16px 20px 12px;
+  background: transparent;
+  text-align: center;
+  font-size: 15px;
+  color: #FFFFFF;
+  line-height: 19px;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-bottom: 3px solid transparent;
 }
-.menu-list li a {
+#toggle:checked + .toggle:after {
+  border-bottom: 3px solid #8ab0e6;
+}
+
+.menu {
+  display: inline-block;
+  font-size: 15px;
+  float: right;
+}
+.menu li {
+  display: inline-block;
+}
+.menu li a {
+  padding: 16px 20px 12px;
   color: #fff;
-  -webkit-text-stroke: 0.25px;
+  line-height: 19px;
+  display: inline-block;
+  border-bottom: 3px solid transparent;
+}
+.menu li a:active,
+.menu li a:focus,
+.menu li a:hover,
+.menu li a.selected {
+  -webkit-transition: 0.2s ease-out all;
+  border-bottom: 3px solid #8ab0e6;
 }
 .logo-img {
   margin-top: 10px;
@@ -506,19 +549,10 @@ pre code {
 }
 /* responsive */
 @media only screen and (max-width: 650px) {
-  .spoqa-logo-wrap {
-    float: none;
+  body { 
+    width: 100%;
   }
-  .menu-list {
-    float: left;
-  }
-  .menu-list li {
-    margin-left: 0px; 
-    margin-right: 20px;
-    margin-top: 10px;
-    padding: 8px 0;
-  }
-  .menu-list .menu-job {
+  .menu .menu-job {
     position: absolute;
     right: 5%;
     top: 50px;
@@ -535,20 +569,50 @@ pre code {
 }
 
 @media only screen and (max-width: 480px) {
-
+  body { 
+    width: 100%;
+  }
   .header {
-    height: 80px;
+    height: 50px;
   }
-  .menu-list {
-    float: left;
+  .toggle {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
   }
-  .menu-list li {
-    margin-left: 0px; 
-    margin-right: 20px;
-    margin-bottom: 10px;
+  #toggle:checked ~ .menu {
+    display: block;
+    opacity: 1;
   }
-  .portrait {
+  .menu {
     display: none;
+    opacity: 0;
+    margin: 10px 5% 0;
+    width: 90%;
+    position: absolute;
+    right: 0;
+    background: rgba(7, 25, 57, 0.8);
+    border-radius: 3px;
+  }
+  .menu li {
+    display: block;
+  }
+  .menu li a {
+    padding: 15px 0;
+    width: 100%;
+    text-align: center;
+  }
+  .post-author-info .portrait {
+    width: 40%;
+  }
+  .posts .portrait {
+    display: none;
+  }
+  .posts li {
+    padding: 15% 0;
   }
   .post-title {
     margin-right: 0;
@@ -562,12 +626,12 @@ pre code {
   .back-btn a {
     padding: 20px 25%;
   }
-  .spoqa-logo-wrap {
-    float:none;
-  }
 }
 
 @media only screen and (max-width: 360px) {
+  body { 
+    width: 100%;
+  }
   .menu-job {
     display: none;
   }
@@ -580,11 +644,11 @@ pre code {
 .res-mobile .header {
   height: 80px;
 }
-.res-mobile .menu-list {
+.res-mobile .menu {
   float: left;
   padding: 8px 0;
 }
-.res-mobile .menu-list li a {
+.res-mobile .menu li a {
   padding-left: 0;
   padding-right: 20px;
 }

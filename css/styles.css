@@ -306,6 +306,7 @@ a.footnote:hover,
 
 .posts .post-author-info { /*추후에는 blog list 의 post-author-info와 blog의 post-author-info를 분리하는게 좋을 듯.*/
   margin: 0;
+  text-align: left;
 }
 .posts .post-author-info .portrait {
   width: 60px;
@@ -382,39 +383,36 @@ a.footnote:hover,
 /* blog post */
 
 .post-author-info {
-  margin-bottom: 25%;
+  margin-bottom: 10%;
+  text-align: center;
 }
 ,post h1 {
   font-size: 28px;
 }
 .post h1,
-.post h2 {
-  margin-top: 60px;
-  padding-bottom: 10px;
-}
+.post h2,
 .post h3,
 .post h4 {
-  margin-top: 30px;
+  margin-top: 40px;
+  padding-bottom: 10px;
 }
 .post h5,
 .post h6 {
   margin-top: 20px;
 }
 .post p {
+  font-size: 18px;
   color: #4f5259; /*@semi_dark_grey_p5*/
 }
 .post-author-info .portrait {
-  width: 16%;
+  width: 17%;
   vertical-align: middle;
   border-radius: 50%;
-  float: right;
-  margin-left: 30px;
 }
 .post-author-info .author-name a,
 .post-author-info .author-name {
   font-size: 14px;
   color: #b0b6c2;/*@grey_0*/
-  margin-right: 10px;
 }
 .post-date {
   margin-bottom: 10px;

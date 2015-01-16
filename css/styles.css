@@ -140,7 +140,35 @@ pre code {
   border-bottom: 1px #dadee3; /* @light_grey_0 */
   border-style: dashed;
 }
-
+a.footnote,
+.post p a.footnote, 
+.post ol a.footnote, 
+.post ul a.footnote {
+  margin: 0 3px;
+  padding: 2px 6px 0px;
+  font-size: 0.8em;
+  text-align: center;
+  font-weight: bolder;
+  -webkit-text-stroke: 0.25px;
+  border: 1px solid #dadee3;
+  border-radius: 3px;
+  -webkit-transition: 0.2s ease-out all;
+  text-decoration: none;
+}
+a.footnote:hover,
+.post p a.footnote:hover, 
+.post ol a.footnote:hover, 
+.post ul a.footnote:hover {
+  background: #f6f7f8;
+}
+.footnotes {
+  margin-top: 60px;
+  border-top: 1px solid #dadee3;
+}
+.post.footnotes li,
+.post.footnotes li p {
+  font-size: 16px;
+}
 /*header*/
 
 .header {

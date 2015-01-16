@@ -30,13 +30,13 @@ layout: default
 
 <div class="post-footer">
   <div class="back-btn"><a href="/">목록으로 돌아가기</a></div>
-  <div class="fb-like" data-href="http://spoqa.github.io{{ page.url }}" data-send="true" data-width="640" data-show-faces="true"></div>
-  <div class="fb-comments" data-href="http://spoqa.github.io{{ page.url }}" data-num-posts="5" data-width="640"></div>
+  <div class="fb-like" data-href="http://spoqa.github.io{{ page.url }}" data-send="true" data-width="" data-show-faces="true"></div>
+  <div class="fb-comments" data-href="http://spoqa.github.io{{ page.url }}" data-num-posts="5" data-width=""></div>
   <div id="fb-root"></div>
 </div>
 <script>
 $(function() {
-  $('.fb-like, .fb-comments').attr('data-width', $('.content-body').width());
+  $('.fb-like, .fb-comments').attr('data-width', "100%");
   (function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
     if (d.getElementById(id)) return;

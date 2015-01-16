@@ -454,10 +454,10 @@ a.footnote:hover,
 .back-btn {
   margin: 80px auto;
   text-align: center;
-  display: inline-block;
 }
 .back-btn a {
   padding: 20px 80px;
+  display: inline-block;
   border: 1px solid #d0d5db; /* @grey_m4 */
   border-radius: 3px;
   font-size: 18px;

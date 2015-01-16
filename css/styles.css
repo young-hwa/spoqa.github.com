@@ -28,19 +28,19 @@ a {
   color: #6585c1; /*sub_blue_0*/
 }
 
-h1 { font-size: 36px; color: #4f5259; }
-h2 { font-size: 28px; color: #4f5259; }
-h3 { font-size: 26px; color: #4f5259; }
+h1 { font-size: 30px; color: #4f5259; }
+h2 { font-size: 26px; color: #4f5259; }
+h3 { font-size: 24px; color: #4f5259; }
 h4 { font-size: 22px; color: #4f5259; }
 h5 { font-size: 20px; color: #4f5259; }
 h6 { font-size: 18px; color: #4f5259; }
 
 p, dl {
-  color: #4f5259; /*@semi_dark_grey_p5*/
+  color: #555;
   font-size: 16px;
   padding-top: 10px;
   padding-bottom: 10px;
-  line-height: 1.7em;
+  line-height: 1.5em;
 }
 .post p a,
 .post ol a,
@@ -87,9 +87,10 @@ blockquote {
   padding-left: 12px;
   border-left: 3px solid #e9ebf0; /*$grey-1*/
 }
-blockquote p {
+.post blockquote p {
   padding-top: 0;
   padding-bottom: 0;
+  font-size: 18px;
 }
 pre {
   margin: 10px 0;
@@ -109,7 +110,7 @@ table a code {
   margin: 0 2px;
   padding: 2px 5px;
   width: 100%;
-  font-size: 13px;
+  font-size: 16px;
   background: #f5f7fa; /*@light_grey_m4*/
   border: 1px solid #e9ebf0; /*$grey-1*/
   border-radius: 4px;
@@ -126,8 +127,12 @@ pre code {
   margin: 20px 0 20px 40px;
 }
 .post li {
+  font-size: 18px;
   margin: 6px 0;
   line-height: 1.6em;
+}
+.post li p {
+  font-size: 18px;
 }
 .post ol li ul,
 .post ol li ol,
@@ -136,9 +141,8 @@ pre code {
   margin: 0 0 0 40px;
 }
 .post hr {
-  margin-bottom: 20px;
+  margin: 20px;
   border-bottom: 1px #dadee3; /* @light_grey_0 */
-  border-style: dashed;
 }
 a.footnote,
 .post p a.footnote, 
@@ -318,7 +322,7 @@ a.footnote:hover,
 
 .posts li {
   border-bottom: 1px solid #e9ebf0;
-  padding: 60px 0;
+  padding: 8% 0;
 }
 .list-type-none {
   list-style: none;
@@ -423,15 +427,20 @@ a.footnote:hover,
   color: #b0b6c2;/*@grey_0*/
 }
 .post img {
-  max-width: 100%;
+  max-width: 90%;
   display: block;
   padding: 20px;
 }
 .post-title {
-  margin: 0 100px 5px 0;
+  font-size: 32px;
+  margin-top: 30px;
   font-weight: bold;
   line-height: 1.4em;
   color: #4f5259;/*@semi_dark_grey_p5*/
+}
+.posts .post-title {
+  margin: 0 100px 5px 0;
+  font-size: 24px;
 }
 .post-title-words{
   font-weight: bold;

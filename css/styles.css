@@ -7,15 +7,15 @@ body {
   background-color: #fff;
   width: 100%;
   height: 100%;
-  font-family: "Source Sans Pro", Helvetica, Arial, "Nanum Barun Gothic", "Apple SD Gothic Neo", "Nanum Gothic", Dotum;
-  color: #5a6173;/*@semi_dark_grey_p2*/
+  font-family: "museo-sans", Apple SD Gothic Neo, Nanum Barun Gothic,  Nanum Gothic, Verdana, Arial, Dotum, sans-serif;
+  color: #4f5259;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: none;
 }
 .content,
 .footer {
   width: 90%;
-  max-width: 640px;
+  max-width: 700px;
   margin-left: auto;
   margin-right: auto;
   padding: 4% 5%;
@@ -28,19 +28,19 @@ a {
   color: #6585c1; /*sub_blue_0*/
 }
 
-h1 { font-size: 38px; color: #363d4f;/*@semi_dark_grey_p5*/ }
-h2 { font-size: 28px; color: #363d4f;/*@semi_dark_grey_p5*/ }
-h3 { font-size: 26px; color: #363d4f;/*@semi_dark_grey_p5*/ }
-h4 { font-size: 22px; color: #363d4f;/*@semi_dark_grey_p5*/ }
-h5 { font-size: 20px; color: #363d4f;/*@semi_dark_grey_p5*/ }
-h6 { font-size: 18px; color: #363d4f;/*@semi_dark_grey_p5*/ }
+h1 { font-size: 30px; color: #4f5259; }
+h2 { font-size: 26px; color: #4f5259; }
+h3 { font-size: 24px; color: #4f5259; }
+h4 { font-size: 22px; color: #4f5259; }
+h5 { font-size: 20px; color: #4f5259; }
+h6 { font-size: 18px; color: #4f5259; }
 
 p, dl {
-  color: #363d4f; /*@semi_dark_grey_p5*/
+  color: #555;
   font-size: 16px;
   padding-top: 10px;
   padding-bottom: 10px;
-  line-height: 1.7em;
+  line-height: 1.5em;
 }
 .post p a,
 .post ol a,
@@ -85,11 +85,12 @@ th, td{
 blockquote {
   margin: 20px 0 20px 25px;
   padding-left: 12px;
-  border-left: 3px solid #dadee3; /*@light_grey_0*/
+  border-left: 3px solid #e9ebf0; /*$grey-1*/
 }
-blockquote p {
+.post blockquote p {
   padding-top: 0;
   padding-bottom: 0;
+  font-size: 18px;
 }
 pre {
   margin: 10px 0;
@@ -97,7 +98,7 @@ pre {
   display: inline-block;
   width: 100%;
   background: #f5f7fa; /*@light_grey_m4*/
-  border: 1px solid #dadee3; /*@light_grey_0*/
+  border: 1px solid #e9ebf0; /*$grey-1*/
   border-radius: 4px;
 }
 p code,
@@ -109,9 +110,9 @@ table a code {
   margin: 0 2px;
   padding: 2px 5px;
   width: 100%;
-  font-size: 13px;
+  font-size: 16px;
   background: #f5f7fa; /*@light_grey_m4*/
-  border: 1px solid #dadee3; /*@light_grey_0*/
+  border: 1px solid #e9ebf0; /*$grey-1*/
   border-radius: 4px;
 }
 pre code {
@@ -126,8 +127,12 @@ pre code {
   margin: 20px 0 20px 40px;
 }
 .post li {
+  font-size: 18px;
   margin: 6px 0;
   line-height: 1.6em;
+}
+.post li p {
+  font-size: 18px;
 }
 .post ol li ul,
 .post ol li ol,
@@ -136,11 +141,38 @@ pre code {
   margin: 0 0 0 40px;
 }
 .post hr {
-  margin-bottom: 20px;
+  margin: 20px;
   border-bottom: 1px #dadee3; /* @light_grey_0 */
-  border-style: dashed;
 }
-
+a.footnote,
+.post p a.footnote, 
+.post ol a.footnote, 
+.post ul a.footnote {
+  margin: 0 3px;
+  padding: 2px 6px 0px;
+  font-size: 0.8em;
+  text-align: center;
+  font-weight: bolder;
+  -webkit-text-stroke: 0.25px;
+  border: 1px solid #dadee3;
+  border-radius: 3px;
+  -webkit-transition: 0.2s ease-out all;
+  text-decoration: none;
+}
+a.footnote:hover,
+.post p a.footnote:hover, 
+.post ol a.footnote:hover, 
+.post ul a.footnote:hover {
+  background: #f6f7f8;
+}
+.footnotes {
+  margin-top: 60px;
+  border-top: 1px solid #dadee3;
+}
+.post.footnotes li,
+.post.footnotes li p {
+  font-size: 16px;
+}
 /*header*/
 
 .header {
@@ -149,25 +181,23 @@ pre code {
   background-color: rgba(7, 25, 57, 0.8);
 }
 .header-item {
-  max-width: 640px;
+  max-width: 700px;
   margin-left: auto;
   margin-right: auto;
-  padding: 12px 0;
 }
 .spoqa-logo-wrap {
-    float:left;
+  padding-top: 16px;
+  float:left;
 }
 .spoqa-logo img {
-  width: 74px;
+  width: 60px;
   height: auto;
   padding-right: 6px;
-  padding-bottom: 1px;
   vertical-align: middle;
 }
 .blog-title {
-  font-size: 20px;
+  font-size: 15px;
   color: #fff;
-  font-weight: bold;
 }
 .atom-img {
   display: inline-block;
@@ -183,20 +213,63 @@ pre code {
 }
 
 /* menu list btn */
-
-.menu-list {
-  display: inline-block;
-  font-size: 16px;
+.nav {
+  display: block;
   float: right;
-  padding: 2px 0;
 }
-.menu-list li {
+#toggle,
+.toggle {
+  display: none;
+}
+.toggle {
+  z-index: 2;
+}
+.toggle:hover:after {
+  border-bottom: 3px solid #8ab0e6;
+}
+.toggle:after {
+  content: 'Menu';
   display: inline-block;
-  margin-left: 20px;
+  padding: 16px 20px 12px;
+  background: transparent;
+  text-align: center;
+  font-size: 15px;
+  color: #FFFFFF;
+  line-height: 19px;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-bottom: 3px solid transparent;
 }
-.menu-list li a {
+#toggle:checked + .toggle:after {
+  border-bottom: 3px solid #8ab0e6;
+}
+
+.menu {
+  display: inline-block;
+  font-size: 15px;
+  float: right;
+}
+.menu li {
+  display: inline-block;
+}
+.menu li a {
+  padding: 16px 20px 12px;
   color: #fff;
-  -webkit-text-stroke: 0.25px;
+  line-height: 19px;
+  display: inline-block;
+  border-bottom: 3px solid transparent;
+}
+.menu li a:active,
+.menu li a:focus,
+.menu li a:hover,
+.menu li a.selected {
+  -webkit-transition: 0.2s ease-out all;
+  border-bottom: 3px solid #8ab0e6;
 }
 .logo-img {
   margin-top: 10px;
@@ -209,10 +282,7 @@ pre code {
   color: white;
   display: inline-block;
 }
-.selected {
-  font-weight: bold;
-}
-.menu-list .menu-job {
+.menu .menu-job {
   padding: 8px 30px;
   border: 1px solid #fff;
   border-radius: 3px;
@@ -236,6 +306,7 @@ pre code {
 
 .posts .post-author-info { /*추후에는 blog list 의 post-author-info와 blog의 post-author-info를 분리하는게 좋을 듯.*/
   margin: 0;
+  text-align: left;
 }
 .posts .post-author-info .portrait {
   width: 60px;
@@ -246,8 +317,8 @@ pre code {
 }
 
 .posts li {
-  border-bottom: 1px solid #dadee3;/*@light_grey_0*/
-  padding: 40px 0;
+  border-bottom: 1px solid #e9ebf0;
+  padding: 8% 0;
 }
 .list-type-none {
   list-style: none;
@@ -257,9 +328,9 @@ pre code {
 
 .pagination {
   text-align: center;
+  font-size: 18px;
   padding: 10px 0;
   margin-top: 30px;
-
 }
 .pagination ol {
   display: inline-block;
@@ -269,10 +340,10 @@ pre code {
   display: inline-block;
 }
 .pagination li a {
+  -webkit-transition: 0.2s ease-out all;
   margin: 4px 0;
   padding: 9px 14px;
-  border: 1px solid #d0d5db; /* @grey_m4 */
-  border-radius: 8px;
+  border-radius: 2px;
   font-size: 18px;
   color: #5a6173; /* @semi_dark_grey_p2 */
 }
@@ -280,8 +351,7 @@ pre code {
 .pagination .page .current-page:hover {
   margin: 4px 0;
   padding: 9px 14px;
-  border: 1px solid #d0d5db; /* @grey_m4 */
-  border-radius: 8px;
+  border-radius: 2px;
   font-size: 18px;
   color: #5a6173; /* @semi_dark_grey_p2 */
   background-color: #f5f7fa; /* @light_grey_m4 */
@@ -290,70 +360,59 @@ pre code {
 .pagination .next a,
 .pagination .previous.disabled,
 .pagination .next.disabled {
-  
   font-size: 18px;
   color: #5a6173; /* @semi_dark_grey_p2 */
 }
 .pagination .previous.disabled,
 .pagination .next.disabled {
   color: #b0b6c2; /* @grey_0 */
-  border-color: #dadee3; /* @light_grey_0 */
 }
 .pagination .previous, 
 .pagination .next {
   padding: 2% 4%;
-  border: 1px solid #d0d5db; /* @grey_m4 */
-  border-radius: 8px;
+  border-radius: 2px;
   display: inline-block;
 }
 .pagination .previous:hover,
 .pagination .next:hover,
 .pagination .page a:hover {
+  -webkit-transition: 0.2s ease-out all;
   background-color: #f5f7fa; /* @light_grey_m4 */
-  border-color: #c9ced6; /* @grey_m3 */
 }
 
 /* blog post */
 
 .post-author-info {
-  margin-bottom: 25%;
+  margin-bottom: 10%;
+  text-align: center;
 }
-.post h1 { font-size: 26px; color: #5a6173;/*@@semi_dark_grey_p2*/ }
-.post h2 { font-size: 24px; color: #5a6173;/*@@semi_dark_grey_p2*/ }
-.post h3 { font-size: 22px; color: #5a6173;/*@@semi_dark_grey_p2*/ }
-.post h4 { font-size: 20px; color: #5a6173;/*@@semi_dark_grey_p2*/ }
-.post h5 { font-size: 18px; color: #5a6173;/*@@semi_dark_grey_p2*/ }
-.post h6 { font-size: 16px; color: #5a6173;/*@@semi_dark_grey_p2*/ }
-
+,post h1 {
+  font-size: 28px;
+}
 .post h1,
-.post h2 {
-  margin-top: 60px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #dadee3; /*@light_grey_0*/
-}
+.post h2,
 .post h3,
 .post h4 {
-  margin-top: 30px;
+  margin-top: 40px;
+  padding-bottom: 10px;
 }
 .post h5,
 .post h6 {
   margin-top: 20px;
 }
 .post p {
-  color: #363d4f; /*@semi_dark_grey_p5*/
+  font-size: 18px;
+  color: #4f5259; /*@semi_dark_grey_p5*/
 }
 .post-author-info .portrait {
-  width: 16%;
+  width: 17%;
   vertical-align: middle;
   border-radius: 50%;
-  float: right;
-  margin-left: 30px;
 }
 .post-author-info .author-name a,
 .post-author-info .author-name {
   font-size: 14px;
   color: #b0b6c2;/*@grey_0*/
-  margin-right: 10px;
 }
 .post-date {
   margin-bottom: 10px;
@@ -361,20 +420,25 @@ pre code {
   color: #b0b6c2;/*@grey_0*/
 }
 .post img {
-  max-width: 100%;
+  max-width: 90%;
   display: block;
   padding: 20px;
 }
 .post-title {
-  margin: 0 100px 5px 0;
+  font-size: 32px;
+  margin-top: 30px;
   font-weight: bold;
   line-height: 1.4em;
-  color: #363d4f;/*@semi_dark_grey_p5*/
+  color: #4f5259;/*@semi_dark_grey_p5*/
+}
+.posts .post-title {
+  margin: 0 0 5px;
+  font-size: 24px;
 }
 .post-title-words{
   font-weight: bold;
   line-height: 1.4em;
-  color: #363d4f;/*@semi_dark_grey_p5*/
+  color: #4f5259;/*@semi_dark_grey_p5*/
 }
 .post-description {
   margin: 18px 100px 6px 0;
@@ -388,26 +452,20 @@ pre code {
 /* post-footer back btn */
 
 .back-btn {
-  margin-top: 80px;
-  margin-bottom: 20px;
+  margin: 80px auto;
   text-align: center;
 }
 .back-btn a {
   padding: 20px 80px;
+  display: inline-block;
   border: 1px solid #d0d5db; /* @grey_m4 */
-  border-radius: 8px;
+  border-radius: 3px;
   font-size: 18px;
   color: #5a6173; /* @semi_dark_grey_p2 */
 }
 .back-btn a:hover {
   background-color: #f5f7fa; /* @light_grey_m4 */
   border-color: #c9ced6; /* @grey_m3 */
-}
-
-/* facebook comment */
-
-.fb-like { 
-  margin-top: 60px;
 }
 
 /* blog ends */
@@ -417,9 +475,9 @@ pre code {
 .post .intro-title {
   margin-top: 20px;
   padding-bottom: 20px;
-  color: #363d4f; /* @semi_dark_grey_p5 */
+  color: #4f5259; /* @semi_dark_grey_p5 */
   font-size: 38px;
-  border-bottom: 1px solid #dadee3; /*@light_grey_0*/
+  border-bottom: 1px solid #e9ebf0; /*$grey-1*/
 }
 .about p a,
 .about ol a,
@@ -429,7 +487,7 @@ pre code {
 .author {
   overflow: auto;
   padding: 30px 0;
-  border-bottom: 1px solid #dadee3; /*@light_grey_0*/
+  border-bottom: 1px solid #e9ebf0; /*$grey-1*/
 }
 .author-title {
   margin-top: 100px;
@@ -449,7 +507,7 @@ pre code {
   font-size: 18px;
 }
 .nick-name a {
-  color: #363d4f; /* @semi_dark_grey_p5 */
+  color: #4f5259; /* @semi_dark_grey_p5 */
 }
 .author img {
   width: 14%;
@@ -515,19 +573,10 @@ pre code {
 }
 /* responsive */
 @media only screen and (max-width: 650px) {
-  .spoqa-logo-wrap {
-    float: none;
+  body { 
+    width: 100%;
   }
-  .menu-list {
-    float: left;
-  }
-  .menu-list li {
-    margin-left: 0px; 
-    margin-right: 20px;
-    margin-top: 10px;
-    padding: 8px 0;
-  }
-  .menu-list .menu-job {
+  .menu .menu-job {
     position: absolute;
     right: 5%;
     top: 50px;
@@ -541,38 +590,53 @@ pre code {
   .pagination .next {
     float: right;
   }
-  /* hiring banner */
-
-    .hiring-box {
-      padding: 94px 36%;
-      top: 113px;
-    }
-    .hiring-text {
-      margin-top: 13px;
-      padding: 51px 0;
-    }
-    .hiring-title {
-      font-size: 44px;
-      padding-bottom: 16px;
-    }
-    .hiring-subtitle {
-      font-size: 18px;
-    }
 }
 
 @media only screen and (max-width: 480px) {
-
-  /* hiring banner 없애면 주석 풀 것
-  .header {
-    height: 80px;
-  }*/
-  .menu-list {
-    float: left;
+  body { 
+    width: 100%;
   }
-  .menu-list li {
-    margin-left: 0px; 
-    margin-right: 20px;
-    margin-bottom: 10px;
+  .header {
+    height: 50px;
+  }
+  .toggle {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  #toggle:checked ~ .menu {
+    display: block;
+    opacity: 1;
+  }
+  .menu {
+    display: none;
+    opacity: 0;
+    margin: 10px 5% 0;
+    width: 90%;
+    position: absolute;
+    right: 0;
+    background: rgba(7, 25, 57, 0.8);
+    border-radius: 3px;
+  }
+  .menu li {
+    display: block;
+  }
+  .menu li a {
+    padding: 15px 0;
+    width: 100%;
+    text-align: center;
+  }
+  .post-author-info .portrait {
+    width: 40%;
+  }
+  .posts .portrait {
+    display: none;
+  }
+  .posts li {
+    padding: 15% 0;
   }
   .post-title {
     margin-right: 0;
@@ -586,23 +650,12 @@ pre code {
   .back-btn a {
     padding: 20px 25%;
   }
-  .spoqa-logo-wrap {
-    float:none;
-  }
-  
-  /* hiring- banner */
-  .hiring-box {
-    border: none;
-  }
-  .hiring-text {
-    padding: 30px 0;
-  }
-  .hiring-subtitle br {
-    display: block;
-  }
 }
 
 @media only screen and (max-width: 360px) {
+  body { 
+    width: 100%;
+  }
   .menu-job {
     display: none;
   }
@@ -615,11 +668,11 @@ pre code {
 .res-mobile .header {
   height: 80px;
 }
-.res-mobile .menu-list {
+.res-mobile .menu {
   float: left;
   padding: 8px 0;
 }
-.res-mobile .menu-list li a {
+.res-mobile .menu li a {
   padding-left: 0;
   padding-right: 20px;
 }

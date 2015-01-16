@@ -28,6 +28,8 @@
 {% endif %}
 <meta property="og:image" content="http://www.gravatar.com/avatar/52813188698089bda7e20154c114d17e.png">
 <script src="//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+<script src="//use.typekit.net/ise6lwp.js"></script>
+<script>try{Typekit.load();}catch(e){}</script>
 <link rel="stylesheet" href="{{ base_path }}/css/styles.css">
 <link rel="stylesheet" href="{{ base_path }}/css/syntax.css">
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -42,17 +44,21 @@
           <a class="spoqa-logo" href="{{ base_path }}/"><img src="{{ base_path }}/images/logo.png"></a>
           <a class="blog-title" href="{{ base_path }}/">Tech Blog</a>
         </div>
-        <ul class="menu-list">
-          <li><a class="
-            {% if page.url == '/about.html' %}
-            selected
-            {% endif %} menu-about" href="{{ base_path }}/about.html">About</a></li>
-          <li><a class="
-            {% if page.url != '/about.html' and page.url != '/job.html' %}
-            selected
-            {% endif %} menu-blog" href="{{ base_path }}/index.html">Blog</a></li>
-          <li><a class="menu-github" href="https://github.com/spoqa">GitHub</a></li>
-        </ul>
+        <div class="nav">
+          <input type="checkbox" id="toggle">
+          <label for="toggle" class="toggle" onclick></label>
+          <ul class="menu">
+            <li><a class="
+              {% if page.url == '/about.html' %}
+              selected
+              {% endif %} menu-about" href="{{ base_path }}/about.html">About</a></li>
+            <li><a class="
+              {% if page.url != '/about.html' and page.url != '/job.html' %}
+              selected
+              {% endif %} menu-blog" href="{{ base_path }}/index.html">Blog</a></li>
+            <li><a class="menu-github" href="https://github.com/spoqa">GitHub</a></li>
+          </ul>
+        </div>
       </div>
     </div>
     <div class="content">

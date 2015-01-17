@@ -1,4 +1,9 @@
-pygments: true
+highlighter: pygments
 paginate: 10
 markdown: kramdown
 host: 0.0.0.0
+
+subscribe_rss: /atom.xml
+kramdown:
+  input: GFM
+  hard_wrap: false

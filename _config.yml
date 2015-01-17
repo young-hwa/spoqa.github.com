@@ -7,3 +7,6 @@ subscribe_rss: /atom.xml
 kramdown:
   input: GFM
   hard_wrap: false
+
+home_url: "http://spoqa.github.io"
+representing_image: "/images/representing_image.png"

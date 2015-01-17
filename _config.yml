@@ -2,3 +2,9 @@ pygments: true
 paginate: 10
 markdown: kramdown
 host: 0.0.0.0
+
+safe: true
+analytics :
+  provider : google
+  google :
+      tracking_id : 'UA-36136046-5'

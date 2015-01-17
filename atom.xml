@@ -1,10 +1,10 @@
 ---
-layout: nil
+layout: null
 
 ---
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
- 
+
   <title>Spoqa tech blog</title>
   <link href="http://spoqa.github.com/"/>
   <link type="application/atom+xml" rel="self" href="http://spoqa.github.com/atom.xml"/>
@@ -30,5 +30,5 @@ layout: nil
       </entry>
       {% endif %}
   {% endfor %}
- 
+
 </feed>

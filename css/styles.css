@@ -49,8 +49,8 @@ p, dl {
 }
 .post p a:hover,
 .post ol a:hover,
-.post ul a:hover { 
-  text-decoration: underline; 
+.post ul a:hover {
+  text-decoration: underline;
 }
 .clearfix:before,
 .clearfix:after {
@@ -145,8 +145,8 @@ pre code {
   border-bottom: 1px #dadee3; /* @light_grey_0 */
 }
 a.footnote,
-.post p a.footnote, 
-.post ol a.footnote, 
+.post p a.footnote,
+.post ol a.footnote,
 .post ul a.footnote {
   margin: 0 3px;
   padding: 2px 6px 0px;
@@ -160,8 +160,8 @@ a.footnote,
   text-decoration: none;
 }
 a.footnote:hover,
-.post p a.footnote:hover, 
-.post ol a.footnote:hover, 
+.post p a.footnote:hover,
+.post ol a.footnote:hover,
 .post ul a.footnote:hover {
   background: #f6f7f8;
 }
@@ -292,7 +292,7 @@ a.footnote:hover,
   background-color: #5e89d6;
 }
 
-/* post-authot-info (post-info로 수정하는게 의미상 맞을 듯) */ 
+/* post-authot-info (post-info로 수정하는게 의미상 맞을 듯) */
 
 .post-item p {
   font-size: 18px;
@@ -367,7 +367,7 @@ a.footnote:hover,
 .pagination .next.disabled {
   color: #b0b6c2; /* @grey_0 */
 }
-.pagination .previous, 
+.pagination .previous,
 .pagination .next {
   padding: 2% 4%;
   border-radius: 2px;
@@ -447,6 +447,7 @@ a.footnote:hover,
 .post-footer {
   margin-top: 20px;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 /* post-footer back btn */
@@ -512,7 +513,7 @@ a.footnote:hover,
 .author img {
   width: 14%;
   padding: 0;
-  border-radius: 50%; 
+  border-radius: 50%;
   float: left;
 }
 .twitter-icon {
@@ -573,7 +574,7 @@ a.footnote:hover,
 }
 /* responsive */
 @media only screen and (max-width: 650px) {
-  body { 
+  body {
     width: 100%;
   }
   .menu .menu-job {
@@ -593,7 +594,7 @@ a.footnote:hover,
 }
 
 @media only screen and (max-width: 480px) {
-  body { 
+  body {
     width: 100%;
   }
   .header {
@@ -653,7 +654,7 @@ a.footnote:hover,
 }
 
 @media only screen and (max-width: 360px) {
-  body { 
+  body {
     width: 100%;
   }
   .menu-job {
@@ -698,3 +699,7 @@ a.footnote:hover,
   float: right;
 }
 
+/* fb comment plug-in overrides */
+.fb-comments > span {
+  padding-top: 30px;
+}

@@ -285,15 +285,6 @@ a.footnote:hover,
   color: white;
   display: inline-block;
 }
-.menu .menu-job {
-  padding: 8px 30px;
-  border: 1px solid #fff;
-  border-radius: 3px;
-  background-color: #719add;
-}
-.menu-job:hover {
-  background-color: #5e89d6;
-}
 
 /* post-authot-info (post-info로 수정하는게 의미상 맞을 듯) */
 

@@ -225,12 +225,12 @@ a.footnote:hover,
   z-index: 2;
 }
 .toggle:hover:after {
-  border-bottom: 3px solid #8ab0e6;
+  border-bottom: 2px solid #8ab0e6;
 }
 .toggle:after {
   content: '메뉴';
   display: inline-block;
-  padding: 16px 20px 12px;
+  padding: 16px 20px 13px;
   background: transparent;
   text-align: center;
   font-size: 15px;
@@ -243,10 +243,10 @@ a.footnote:hover,
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  border-bottom: 3px solid transparent;
+  border-bottom: 2px solid transparent;
 }
 #toggle:checked + .toggle:after {
-  border-bottom: 3px solid #8ab0e6;
+  border-bottom: 2px solid #8ab0e6;
 }
 
 .menu {
@@ -258,18 +258,21 @@ a.footnote:hover,
   display: inline-block;
 }
 .menu li a {
-  padding: 16px 20px 12px;
+  padding: 16px 20px 13px;
   color: #fff;
   line-height: 19px;
   display: inline-block;
-  border-bottom: 3px solid transparent;
+  border-bottom: 2px solid transparent;
 }
 .menu li a:active,
-.menu li a:focus,
-.menu li a:hover,
 .menu li a.selected {
   -webkit-transition: 0.2s ease-out all;
-  border-bottom: 3px solid #8ab0e6;
+  border-bottom: 2px solid #8ab0e6;
+}
+.menu li a:focus,
+.menu li a:hover {
+  -webkit-transition: 0.2s ease-out all;
+  border-bottom: 2px solid #b0b6c2;
 }
 .logo-img {
   margin-top: 10px;

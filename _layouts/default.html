@@ -42,7 +42,7 @@
       <div class="header-item">
         <div class="spoqa-logo-wrap">
           <a class="spoqa-logo" href="{{ base_path }}/"><img src="{{ base_path }}/images/logo.png"></a>
-          <a class="blog-title" href="{{ base_path }}/">Tech Blog</a>
+          <a class="blog-title" href="{{ base_path }}/">기술 블로그</a>
         </div>
         <div class="nav">
           <input type="checkbox" id="toggle">
@@ -51,14 +51,25 @@
             <li><a class="
               {% if page.url == '/about.html' %}
               selected
-              {% endif %} menu-about" href="{{ base_path }}/about.html">About</a></li>
+              {% endif %} menu-about" href="{{ base_path }}/about.html">소개</a></li>
             <li><a class="
               {% if page.url != '/about.html' and page.url != '/job.html' %}
               selected
-              {% endif %} menu-blog" href="{{ base_path }}/index.html">Blog</a></li>
+              {% endif %} menu-blog" href="{{ base_path }}/index.html">블로그</a></li>
             <li><a class="menu-github" href="https://github.com/spoqa">GitHub</a></li>
+            <li><a class="    
+              {% if page.url == '/job.html' %}   
+              selected   
+              {% endif %} menu-job" href="/job.html">채용정보</a></li>
           </ul>
         </div>
+      </div>
+    </div>
+    <div class="hiring-banner">
+      <div class="hiring-content">
+        <h2 class="hiring-title">당신과 함께<br> 일하고 싶습니다.</h2>
+        <div class="hiring-subtitle">스포카 크리에이터 팀에서 배우고 성장하면서, <br>같이 서비스와 제품을 만들어 나갈 <br>UX/UI 디자이너를 모집합니다.</div>
+        <a target="_blank" class="btn-job" type="button" href="{{ base_path }}/job.html">채용 공고 보기</a>
       </div>
     </div>
     <div class="content">
@@ -66,7 +77,6 @@
     </div>
     <div class="push">
     </div>
-
     <div class="footer">
       <div id="info">
         <span>© <a href="http://dodopoint.com/">Spoqa</a> Inc. All rights reserved.</span>

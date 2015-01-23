@@ -566,15 +566,63 @@ a.footnote:hover,
 .footer a:hover {
   text-decoration: underline;
 }
+
+/* hiring banner */    
+   
+.hiring-banner {  
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 5%;
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(/images/hiring-imagex1.jpg);
+  background-color: #333b4d;
+  background-position: center center;
+  -webkit-transition: 0.2s ease-out all;
+}        
+.lt-ie9 .hiring-banner {
+  background-image: url(/images/hiring-imagex1.jpg) no-repeat;
+  background-position: center center;  
+}    
+.hiring-content {
+  margin: 0 auto;
+  padding-top: 100px;
+  max-width: 700px;
+}    
+.hiring-title {    
+  margin-bottom: 20px;
+  font-size: 48px;
+  font-weight: 100;
+  line-height: 1.1em;
+  color: white;
+  -webkit-transition: 0.2s ease-out all;
+}    
+.hiring-subtitle {   
+  color: #dce0e6;    
+  font-size: 18px;   
+  font-weight: normal;
+  -webkit-transition: 0.2s ease-out all;   
+}
+.btn-job {
+  margin-top: 40px;
+  padding: 14px 8%;
+  display: inline-block;
+  border: 1px solid #b0b6c2;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 18px;
+  -webkit-transition: 0.2s ease-out all;
+}
+.btn-job:hover {
+  color: #8ab0e6;
+  background-color: transparent;
+  border: 1px solid #8ab0e6;
+}
 /* responsive */
 @media only screen and (max-width: 650px) {
   body {
     width: 100%;
-  }
-  .menu .menu-job {
-    position: absolute;
-    right: 5%;
-    top: 50px;
   }
   .pagination .pages li {
     display: none;
@@ -615,6 +663,7 @@ a.footnote:hover,
     right: 0;
     background: rgba(7, 25, 57, 0.8);
     border-radius: 3px;
+    text-align: center;
   }
   .menu li {
     display: block;
@@ -622,7 +671,25 @@ a.footnote:hover,
   .menu li a {
     padding: 15px 0;
     width: 100%;
+  }
+  .hiring-banner {
+    height: 430px;
+    background-position: 70% center;
+  }
+  .hiring-content {
+    padding-top: 80px;
     text-align: center;
+    text-shadow: 0px 0px 5px #333b4d,
+                 0px 0px 5px #333b4d;
+  }
+  .hiring-title {
+    font-size: 42px;
+  }
+  .hiring-subtitle br{
+    display: none;
+  }
+  .btn-job {
+    width: 70%;
   }
   .post-author-info .portrait {
     width: 40%;
@@ -651,11 +718,17 @@ a.footnote:hover,
   body {
     width: 100%;
   }
-  .menu-job {
-    display: none;
+  .hiring-banner {
+    height: 380px;
   }
-  .hiring-box {
-    padding: 0;
+  .hiring-content {
+    padding-top: 70px;
+  }
+  .hiring-title {
+    font-size: 36px;
+  }
+  .btn-job {
+    margin-top: 20px;
   }
 }
 

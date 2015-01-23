@@ -42,7 +42,7 @@
       <div class="header-item">
         <div class="spoqa-logo-wrap">
           <a class="spoqa-logo" href="{{ base_path }}/"><img src="{{ base_path }}/images/logo.png"></a>
-          <a class="blog-title" href="{{ base_path }}/">Tech Blog</a>
+          <a class="blog-title" href="{{ base_path }}/">기술 블로그</a>
         </div>
         <div class="nav">
           <input type="checkbox" id="toggle">
@@ -51,11 +51,11 @@
             <li><a class="
               {% if page.url == '/about.html' %}
               selected
-              {% endif %} menu-about" href="{{ base_path }}/about.html">About</a></li>
+              {% endif %} menu-about" href="{{ base_path }}/about.html">소개</a></li>
             <li><a class="
               {% if page.url != '/about.html' and page.url != '/job.html' %}
               selected
-              {% endif %} menu-blog" href="{{ base_path }}/index.html">Blog</a></li>
+              {% endif %} menu-blog" href="{{ base_path }}/index.html">블로그</a></li>
             <li><a class="menu-github" href="https://github.com/spoqa">GitHub</a></li>
           </ul>
         </div>

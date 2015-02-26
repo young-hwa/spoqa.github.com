@@ -566,10 +566,9 @@ a.footnote:hover,
 .footer a:hover {
   text-decoration: underline;
 }
-
-/* hiring banner */    
-   
-.hiring-banner {  
+/* hiring banner     
+  
+  .hiring-banner {  
   margin-left: auto;
   margin-right: auto;
   padding: 0 5%;
@@ -619,6 +618,8 @@ a.footnote:hover,
   background-color: transparent;
   border: 1px solid #8ab0e6;
 }
+*/
+
 /* responsive */
 @media only screen and (max-width: 650px) {
   body {
@@ -672,7 +673,7 @@ a.footnote:hover,
     padding: 15px 0;
     width: 100%;
   }
-  .hiring-banner {
+  /*.hiring-banner {
     height: 430px;
     background-position: 70% center;
   }
@@ -690,7 +691,7 @@ a.footnote:hover,
   }
   .btn-job {
     width: 70%;
-  }
+  }*/
   .post-author-info .portrait {
     width: 40%;
   }
@@ -718,7 +719,7 @@ a.footnote:hover,
   body {
     width: 100%;
   }
-  .hiring-banner {
+  /*.hiring-banner {
     height: 380px;
   }
   .hiring-content {
@@ -729,7 +730,7 @@ a.footnote:hover,
   }
   .btn-job {
     margin-top: 20px;
-  }
+  }*/
 }
 
 /* for IE8 and lower */

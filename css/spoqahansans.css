@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'spoqahansans';
+  src: url('font/SpoqaHanSans-Bold.woff') format('woff');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'spoqahansans';
+  src: url('font/SpoqaHanSans-Regular.woff') format('woff');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'spoqahansans';
+  src: url('font/SpoqaHanSans-Thin.woff') format('woff');
+  font-weight: 100;
+}

@@ -1,3 +1,9 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+@import "spoqa-colors";
+
 * {
   margin: 0;
   padding: 0;
@@ -8,10 +14,10 @@ body {
   width: 100%;
   height: 100%;
   font-family: "spoqahansans", Apple SD Gothic Neo, Nanum Barun Gothic, Nanum Gothic, Verdana, Arial, Dotum, sans-serif;
-  color: #4f5259;
+  color: $text-color;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: none;
-}
+} 
 .content,
 .footer {
   width: 90%;
@@ -26,18 +32,18 @@ body {
 
 a {
   text-decoration: none;
-  color: #6585c1; /*sub_blue_0*/
+  color: $text-color;
 }
 
-h1 { font-size: 30px; color: #4f5259; }
-h2 { font-size: 26px; color: #4f5259; }
-h3 { font-size: 24px; color: #4f5259; }
-h4 { font-size: 22px; color: #4f5259; }
-h5 { font-size: 20px; color: #4f5259; }
-h6 { font-size: 18px; color: #4f5259; }
+h1 { font-size: 30px; color: $text-color; }
+h2 { font-size: 26px; color: $text-color; }
+h3 { font-size: 24px; color: $text-color; }
+h4 { font-size: 22px; color: $text-color; }
+h5 { font-size: 20px; color: $text-color; }
+h6 { font-size: 18px; color: $text-color; }
 
 p, dl {
-  color: #555;
+  color: $text-color;
   font-size: 16px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -73,20 +79,20 @@ dl dd {
 }
 table {
   margin: 10px 0;
-  border-bottom:1px #dcdcdc solid;
+  border-bottom:1px $divider-color solid;
   border-collapse: collapse;
 }
 thead {
-  background-color: #f5f7fa; /*@light_grey_m4*/
+  background-color: $grey-1;
 }
 th, td{
-  border-top:1px #dcdcdc solid;
+  border-top:1px $divider-color solid;
   padding: 10px 20px;
 }
 blockquote {
   margin: 20px 0 20px 25px;
   padding-left: 12px;
-  border-left: 3px solid #e9ebf0; /*$grey-1*/
+  border-left: 3px solid $divider-color;
 }
 .post blockquote p {
   padding-top: 0;
@@ -98,8 +104,8 @@ pre {
   padding: 10px;
   display: inline-block;
   width: 100%;
-  background: #f5f7fa; /*@light_grey_m4*/
-  border: 1px solid #e9ebf0; /*$grey-1*/
+  background: $grey-1;
+  border: 1px solid $divider-color;
   border-radius: 4px;
 }
 p code,
@@ -112,8 +118,8 @@ table a code {
   padding: 2px 5px;
   width: 100%;
   font-size: 16px;
-  background: #f5f7fa; /*@light_grey_m4*/
-  border: 1px solid #e9ebf0; /*$grey-1*/
+  background: $grey-1;
+  border: 1px solid $divider-color;
   border-radius: 4px;
 }
 pre code {
@@ -143,7 +149,7 @@ pre code {
 }
 .post hr {
   margin: 20px;
-  border-bottom: 1px #dadee3; /* @light_grey_0 */
+  border-bottom: 1px $divider-color;
 }
 a.footnote,
 .post p a.footnote,
@@ -155,7 +161,7 @@ a.footnote,
   text-align: center;
   font-weight: bolder;
   -webkit-text-stroke: 0.25px;
-  border: 1px solid #dadee3;
+  border: 1px solid $divider-color;
   border-radius: 3px;
   -webkit-transition: 0.2s ease-out all;
   text-decoration: none;
@@ -164,11 +170,11 @@ a.footnote:hover,
 .post p a.footnote:hover,
 .post ol a.footnote:hover,
 .post ul a.footnote:hover {
-  background: #f6f7f8;
+  background: $btn-default-active-bg-color;
 }
 .footnotes {
   margin-top: 60px;
-  border-top: 1px solid #dadee3;
+  border-top: 1px solid $divider-color;
 }
 .post.footnotes li,
 .post.footnotes li p {
@@ -268,12 +274,12 @@ a.footnote:hover,
 .menu li a:active,
 .menu li a.selected {
   -webkit-transition: 0.2s ease-out all;
-  border-bottom: 2px solid #8ab0e6;
+  border-bottom: 2px solid $divider-color;
 }
 .menu li a:focus,
 .menu li a:hover {
   -webkit-transition: 0.2s ease-out all;
-  border-bottom: 2px solid #b0b6c2;
+  border-bottom: 2px solid $divider-color;
 }
 .logo-img {
   margin-top: 10px;
@@ -293,7 +299,7 @@ a.footnote:hover,
   font-size: 18px;
 }
 .sep {
-  color: #dfe1e6;/*@ @light_grey_m1 */
+  color: $grey-text-color;
   margin: 0 5px;
 }
 
@@ -312,7 +318,7 @@ a.footnote:hover,
 }
 
 .posts li {
-  border-bottom: 1px solid #e9ebf0;
+  border-bottom: 1px solid $divider-color;
   padding: 8% 0;
 }
 .list-type-none {
@@ -340,7 +346,7 @@ a.footnote:hover,
   padding: 9px 14px;
   border-radius: 2px;
   font-size: 18px;
-  color: #5a6173; /* @semi_dark_grey_p2 */
+  color: $text-color;
 }
 .pagination .page .current-page,
 .pagination .page .current-page:hover {
@@ -348,19 +354,19 @@ a.footnote:hover,
   padding: 9px 14px;
   border-radius: 2px;
   font-size: 18px;
-  color: #5a6173; /* @semi_dark_grey_p2 */
-  background-color: #f5f7fa; /* @light_grey_m4 */
+  color: $text-color;
+  background-color: $btn-default-active-bg-color; 
 }
 .pagination .previous a,
 .pagination .next a,
 .pagination .previous.disabled,
 .pagination .next.disabled {
   font-size: 18px;
-  color: #5a6173; /* @semi_dark_grey_p2 */
+  color: $text-color;
 }
 .pagination .previous.disabled,
 .pagination .next.disabled {
-  color: #b0b6c2; /* @grey_0 */
+  color: $text-color;
 }
 .pagination .previous,
 .pagination .next {
@@ -372,7 +378,7 @@ a.footnote:hover,
 .pagination .next:hover,
 .pagination .page a:hover {
   -webkit-transition: 0.2s ease-out all;
-  background-color: #f5f7fa; /* @light_grey_m4 */
+  background-color: $btn-default-active-bg-color;
 }
 
 /* blog post */
@@ -381,7 +387,7 @@ a.footnote:hover,
   margin-bottom: 10%;
   text-align: center;
 }
-,post h1 {
+.post h1 {
   font-size: 28px;
 }
 .post h1,
@@ -397,7 +403,7 @@ a.footnote:hover,
 }
 .post p {
   font-size: 18px;
-  color: #4f5259; /*@semi_dark_grey_p5*/
+  color: $text-color; 
 }
 .post-author-info .portrait {
   width: 17%;
@@ -407,12 +413,12 @@ a.footnote:hover,
 .post-author-info .author-name a,
 .post-author-info .author-name {
   font-size: 14px;
-  color: #b0b6c2;/*@grey_0*/
+  color: $grey-text-color;
 }
 .post-date {
   margin-bottom: 10px;
   font-size: 14px;
-  color: #b0b6c2;/*@grey_0*/
+  color: $grey-text-color;
 }
 .post img {
   max-width: 90%;
@@ -424,16 +430,16 @@ a.footnote:hover,
   margin-top: 30px;
   font-weight: bold;
   line-height: 1.4em;
-  color: #4f5259;/*@semi_dark_grey_p5*/
+  color: $text-color;
 }
 .posts .post-title {
   margin: 0 0 5px;
   font-size: 24px;
 }
 .post-title-words{
-  font-weight: bold;
+  font-weight: lighter;
   line-height: 1.4em;
-  color: #4f5259;/*@semi_dark_grey_p5*/
+  color: $text-color;
 }
 .post-description {
   margin: 18px 100px 6px 0;
@@ -454,14 +460,14 @@ a.footnote:hover,
 .back-btn a {
   padding: 20px 80px;
   display: inline-block;
-  border: 1px solid #d0d5db; /* @grey_m4 */
+  border: 1px solid $btn-border-color;
   border-radius: 3px;
   font-size: 18px;
-  color: #5a6173; /* @semi_dark_grey_p2 */
+  color: $text-color; /* @semi_dark_grey_p2 */
 }
 .back-btn a:hover {
-  background-color: #f5f7fa; /* @light_grey_m4 */
-  border-color: #c9ced6; /* @grey_m3 */
+  background-color: $btn-default-active-bg-color; /* @light_grey_m4 */
+  border-color: $btn-border-color; /* @grey_m3 */
 }
 
 /* blog ends */
@@ -471,9 +477,9 @@ a.footnote:hover,
 .post .intro-title {
   margin-top: 20px;
   padding-bottom: 20px;
-  color: #4f5259; /* @semi_dark_grey_p5 */
+  color: $text-color; /* @semi_dark_grey_p5 */
   font-size: 38px;
-  border-bottom: 1px solid #e9ebf0; /*$grey-1*/
+  border-bottom: 1px solid $divider-color;
 }
 .about p a,
 .about ol a,
@@ -483,7 +489,7 @@ a.footnote:hover,
 .author {
   overflow: auto;
   padding: 30px 0;
-  border-bottom: 1px solid #e9ebf0; /*$grey-1*/
+  border-bottom: 1px solid $divider-color;
 }
 .author-title {
   margin-top: 100px;
@@ -503,7 +509,7 @@ a.footnote:hover,
   font-size: 18px;
 }
 .nick-name a {
-  color: #4f5259; /* @semi_dark_grey_p5 */
+  color: $text-color;
 }
 .author img {
   width: 14%;
@@ -559,10 +565,10 @@ a.footnote:hover,
 .footer {
   margin-bottom: 20px;
   font-size: 16px;
-  color: #b0b6c2;/*@grey_0*/
+  color: $grey-text-color;
 }
 .footer a {
-  color: #b0b6c2;/*@grey_0*/
+  color: $grey-text-color;
 }
 .footer a:hover {
   text-decoration: underline;
@@ -608,7 +614,7 @@ a.footnote:hover,
   margin-top: 40px;
   padding: 14px 8%;
   display: inline-block;
-  border: 1px solid #b0b6c2;
+  border: 1px solid $btn-border-color;
   border-radius: 2px;
   color: #fff;
   font-size: 18px;

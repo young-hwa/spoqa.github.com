@@ -18,7 +18,7 @@ description: 처리 시간이 오래 걸리는 작업을 Celery를 통해 개선
 
 다행히 저희는 이런 문제에 대한 일반적인 해결책을 잘 알고 있었습니다. 바로 별도의 작업자(Worker)를 두는 것이지요. 시간이 오래 걸리는 [PDF] 생성 루틴은 웹서버와 별개로 돌아가는 작업자에게 위임하고 요청을 처리하는 핸들러는 클라이언트(웹 브라우저)에게 바로 [HTTP] 응답을 돌려줍니다. 생성된 파일은 [Amazon S3]에 올려서 완료될 때 요청자가 내려받을 수 있게 만들면 됩니다.
 
-![list](/images/2012-05-29/1.png =700x)
+![list](/images/2012-05-29/1.png)
 
 그럼 이러한 작업자는 어떻게 구현할까요? 물론 시간과 여유가 있으신 분들은 바닥부터 만들어보시는 것도 좋은 경험이겠습니다만, 저희는 그럴 시간은 없었습니다. 그래서 선택한 것이 [Celery]입니다. [지난 포스팅](http://spoqa.github.com/2011/12/24/about-spoqa-server-stack.html)에서 인용한 [Celery]에 관한 소개를 보시죠.
 
@@ -38,7 +38,7 @@ description: 처리 시간이 오래 걸리는 작업을 Celery를 통해 개선
 
 이때 ([김재석](http://jck.im)님이) 고안한 방법이 페이지를 나눠서 만드는 것입니다. [Dyno]가 감당할 수 있을 만큼의 페이지 단위의 작업으로 쪼갠 뒤에 다시 큐에 넣어 각기 다른 작업자가 처리하게 하는 것이죠. (물론 [Dyno]당 메모리 제한이기떄문에 [Celery]의 [concurreny](http://docs.celeryproject.org/en/latest/configuration.html#concurrency-settings)를 고려해야 합니다.) 
 
-![list](/images/2012-05-29/2.png =700x)
+![list](/images/2012-05-29/2.png)
 
 위의 개념을 적용한 코드를 함께 보시죠.
 

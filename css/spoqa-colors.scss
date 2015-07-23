@@ -1,0 +1,76 @@
+/*
+Brand color
+*/
+
+//'colorname-0' is the default color.
+
+//MainBlue
+$mainblue-d2: #1233b6;
+$mainblue-d1: #2c5ae9;
+$mainblue-0: #4c80f1;
+$mainblue-l1: #87b1f3;
+ 
+//SubColor - brand
+$matic-d2: #3d1faa;
+$matic-d1: #703cef;
+$matic-0: #8c6bf7;
+$matic-l1: #b1a7ff;
+ 
+$insight-d2: #005e9e;
+$insight-d1: #00a9dd;
+$insight-0: #18cdea;
+$insight-l1: #7ee8f5;
+ 
+$pos-d2: #00725f;
+$pos-d1: #00bc8b;
+$pos-0: #4ed89e;
+$pos-l1: #89f7c2;
+
+//Grey
+$grey-9: #292a2b;
+$grey-8: #363a3c;
+$grey-7: #4d5256;
+$grey-6: #81878b;
+$grey-5: #a9afb3;
+$grey-4: #ced3d6;
+$grey-3: #e1e4e6;
+$grey-2: #eaedef;
+$grey-1: #f3f5f6;
+$grey-0: #f8fafb;
+
+/*
+UI color
+*/
+
+//Red
+$red-d2: #b24d65;
+$red-d1: #e55e81;
+$red-0: #ff7595;
+$red-l1: #ffacbf;
+ 
+//Green
+$green-d2: #60a253;
+$green-d1: #7cd06b;
+$green-0: #8ae877;
+$green-l1: #b9f1ad;
+
+/*
+Variables
+*/
+
+//Vars
+$grey-bg-color: $grey-0;
+$grey-highlight-color: $grey-1;
+$divider-color: $grey-3;
+$btn-border-color: $grey-4;
+$input-border-color: $grey-4;
+$grey-text-color: $grey-5;
+$grey-icn-color: $grey-5;
+$text-color: $grey-7;
+$increase-text-color: $green-d1;
+$descent-text-color: $red-d1;
+$danger-text-color: $red-d1;
+$btn-primary-solid-text-color: #fff;
+$btn-bg-color: #fff;
+$btn-default-active-bg-color: $grey-2;
+$btn-disable-color: $grey-3;

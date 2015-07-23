@@ -1,17 +1,38 @@
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+@import 'reset/reset.css';
+@import "spoqa-colors";
+
+@font-face {
+  font-family: 'spoqahansans';
+  src: url('./fonts/SpoqaHanSans-Bold_subset.woff') format('woff');
+  font-weight: 700;
 }
+
+@font-face {
+  font-family: 'spoqahansans';
+  src: url('./fonts/SpoqaHanSans-Regular_subset.woff') format('woff');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'spoqahansans';
+  src: url('./fonts/SpoqaHanSans-Thin_subset.woff') format('woff');
+  font-weight: 100;
+}
+
 body {
   background-color: #fff;
   width: 100%;
   height: 100%;
   font-family: "spoqahansans", Apple SD Gothic Neo, Nanum Barun Gothic, Nanum Gothic, Verdana, Arial, Dotum, sans-serif;
-  color: #4f5259;
+  color: $text-color;
+  word-break: keep-all;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: none;
-}
+} 
 .content,
 .footer {
   width: 90%;
@@ -21,27 +42,44 @@ body {
   padding: 4% 5%;
 }
 
+.spoqa_intro {
+  padding-top: 28px;
+}
+
 /* text style */
 
+sub {
+  font-size: 14px;
+}
+
+strong {
+  -webkit-font-smoothing: antialiased;
+}
 
 a {
   text-decoration: none;
-  color: #6585c1; /*sub_blue_0*/
+  color: $mainblue-0;
 }
 
-h1 { font-size: 30px; color: #4f5259; }
-h2 { font-size: 26px; color: #4f5259; }
-h3 { font-size: 24px; color: #4f5259; }
-h4 { font-size: 22px; color: #4f5259; }
-h5 { font-size: 20px; color: #4f5259; }
-h6 { font-size: 18px; color: #4f5259; }
+h1 { 
+  font-size: 48px; 
+  font-weight: 100; 
+}
+h2 { 
+  font-size: 32px; 
+  font-weight: 100;
+}
+h3 { font-size: 20px; }
+h4 { font-size: 20px; }
+h5 { font-size: 18px; }
+h6 { font-size: 18px; }
 
 p, dl {
-  color: #555;
+  color: $text-color;
   font-size: 16px;
   padding-top: 10px;
   padding-bottom: 10px;
-  line-height: 1.5em;
+  line-height: 1.9em;
 }
 .post p a,
 .post ol a,
@@ -65,42 +103,42 @@ p, dl {
     *zoom: 1;
 }
 dl dt {
-  font-weight: bolder;
+  font-weight: 100;
   margin-top: 10px
 }
 dl dd {
-  margin-left: 2em;
+  margin-left: 1.6em;
 }
 table {
   margin: 10px 0;
-  border-bottom:1px #dcdcdc solid;
+  border-bottom:1px $divider-color solid;
   border-collapse: collapse;
 }
 thead {
-  background-color: #f5f7fa; /*@light_grey_m4*/
+  background-color: $grey-1;
 }
 th, td{
-  border-top:1px #dcdcdc solid;
+  border-top:1px $divider-color solid;
   padding: 10px 20px;
 }
 blockquote {
   margin: 20px 0 20px 25px;
   padding-left: 12px;
-  border-left: 3px solid #e9ebf0; /*$grey-1*/
+  border-left: 3px solid $divider-color;
 }
 .post blockquote p {
   padding-top: 0;
   padding-bottom: 0;
-  font-size: 18px;
+  font-size: 16px;//18px
 }
 pre {
   margin: 10px 0;
-  padding: 10px;
+  padding: 20px;
   display: inline-block;
   width: 100%;
-  background: #f5f7fa; /*@light_grey_m4*/
-  border: 1px solid #e9ebf0; /*$grey-1*/
-  border-radius: 4px;
+  background: $grey-1;
+  border: 1px solid $divider-color;
+  border-radius: 2px;
 }
 p code,
 p a code,
@@ -112,9 +150,9 @@ table a code {
   padding: 2px 5px;
   width: 100%;
   font-size: 16px;
-  background: #f5f7fa; /*@light_grey_m4*/
-  border: 1px solid #e9ebf0; /*$grey-1*/
-  border-radius: 4px;
+  background: $grey-1;
+  border: 1px solid $divider-color;
+  border-radius: 2px;
 }
 pre code {
   word-wrap: break-word;
@@ -122,18 +160,19 @@ pre code {
   border: none;
   padding: 0;
   margin: 0;
+  font-size: 15px;
 }
 .post ul,
 .post ol {
   margin: 20px 0 20px 40px;
 }
 .post li {
-  font-size: 18px;
+  font-size: 16px;
   margin: 6px 0;
-  line-height: 1.6em;
+  line-height: 1.9em;
 }
 .post li p {
-  font-size: 18px;
+  font-size: 16px;//18px
 }
 .post ol li ul,
 .post ol li ol,
@@ -143,20 +182,19 @@ pre code {
 }
 .post hr {
   margin: 20px;
-  border-bottom: 1px #dadee3; /* @light_grey_0 */
+  border-bottom: 1px $divider-color;
 }
 a.footnote,
 .post p a.footnote,
 .post ol a.footnote,
 .post ul a.footnote {
   margin: 0 3px;
-  padding: 2px 6px 0px;
-  font-size: 0.8em;
+  padding: 2px 6px 2px;
+  font-size: 0.7em;
   text-align: center;
-  font-weight: bolder;
   -webkit-text-stroke: 0.25px;
-  border: 1px solid #dadee3;
-  border-radius: 3px;
+  border: 1px solid $divider-color;
+  border-radius: 2px;
   -webkit-transition: 0.2s ease-out all;
   text-decoration: none;
 }
@@ -164,22 +202,24 @@ a.footnote:hover,
 .post p a.footnote:hover,
 .post ol a.footnote:hover,
 .post ul a.footnote:hover {
-  background: #f6f7f8;
+  background: $btn-default-active-bg-color;
 }
 .footnotes {
   margin-top: 60px;
-  border-top: 1px solid #dadee3;
+  border-top: 1px solid $divider-color;
 }
 .post.footnotes li,
 .post.footnotes li p {
-  font-size: 16px;
+  font-size: 14px;
 }
 /*header*/
 
 .header {
-  height: 50px;
+  height: 60px;
   padding: 0 5%;
-  background-color: rgba(7, 25, 57, 0.8);
+  background-color: #fff;
+  border-bottom: 1px solid $divider-color;
+  box-shadow: 0 0 1px rgba(0,0,0,0.15);
 }
 .header-item {
   max-width: 700px;
@@ -187,18 +227,19 @@ a.footnote:hover,
   margin-right: auto;
 }
 .spoqa-logo-wrap {
-  padding-top: 16px;
+  padding-top: 23px;
   float:left;
 }
 .spoqa-logo img {
   width: 60px;
   height: auto;
   padding-right: 6px;
+  padding-top: 3px;
   vertical-align: middle;
 }
 .blog-title {
   font-size: 15px;
-  color: #b0b6c2;
+  color: $grey-text-color;
 }
 .atom-img {
   display: inline-block;
@@ -252,28 +293,28 @@ a.footnote:hover,
 
 .menu {
   display: inline-block;
-  font-size: 15px;
+  font-size: 16px;
   float: right;
 }
 .menu li {
   display: inline-block;
 }
 .menu li a {
-  padding: 16px 20px 13px;
-  color: #fff;
+  padding: 22px 24px 16px;
+  color: $text-color;
   line-height: 19px;
   display: inline-block;
-  border-bottom: 2px solid transparent;
+  border-bottom: 4px solid transparent;
 }
 .menu li a:active,
 .menu li a.selected {
   -webkit-transition: 0.2s ease-out all;
-  border-bottom: 2px solid #8ab0e6;
+  border-bottom: 4px solid $mainblue-0;
 }
 .menu li a:focus,
 .menu li a:hover {
   -webkit-transition: 0.2s ease-out all;
-  border-bottom: 2px solid #b0b6c2;
+  border-bottom: 4px solid $divider-color;
 }
 .logo-img {
   margin-top: 10px;
@@ -281,7 +322,7 @@ a.footnote:hover,
   vertical-align: middle;
 }
 .dev-blog {
-  font-weight: bold;
+  font-weight: 100;
   font-size: 40px;
   color: white;
   display: inline-block;
@@ -290,10 +331,10 @@ a.footnote:hover,
 /* post-authot-info (post-info로 수정하는게 의미상 맞을 듯) */
 
 .post-item p {
-  font-size: 18px;
+  font-size: 14px;
 }
 .sep {
-  color: #dfe1e6;/*@ @light_grey_m1 */
+  color: $grey-text-color;
   margin: 0 5px;
 }
 
@@ -312,7 +353,7 @@ a.footnote:hover,
 }
 
 .posts li {
-  border-bottom: 1px solid #e9ebf0;
+  border-bottom: 1px solid $divider-color;
   padding: 8% 0;
 }
 .list-type-none {
@@ -323,7 +364,7 @@ a.footnote:hover,
 
 .pagination {
   text-align: center;
-  font-size: 18px;
+  font-size: 16px;
   padding: 10px 0;
   margin-top: 30px;
 }
@@ -339,32 +380,32 @@ a.footnote:hover,
   margin: 4px 0;
   padding: 9px 14px;
   border-radius: 2px;
-  font-size: 18px;
-  color: #5a6173; /* @semi_dark_grey_p2 */
+  font-size: 14px;
+  color: $text-color;
 }
 .pagination .page .current-page,
 .pagination .page .current-page:hover {
   margin: 4px 0;
   padding: 9px 14px;
   border-radius: 2px;
-  font-size: 18px;
-  color: #5a6173; /* @semi_dark_grey_p2 */
-  background-color: #f5f7fa; /* @light_grey_m4 */
+  font-size: 14px;
+  color: $text-color;
+  background-color: $grey-1; 
 }
 .pagination .previous a,
 .pagination .next a,
 .pagination .previous.disabled,
 .pagination .next.disabled {
-  font-size: 18px;
-  color: #5a6173; /* @semi_dark_grey_p2 */
+  font-size: 14px;
+  color: $text-color;
 }
 .pagination .previous.disabled,
 .pagination .next.disabled {
-  color: #b0b6c2; /* @grey_0 */
+  color: $text-color;
 }
 .pagination .previous,
 .pagination .next {
-  padding: 2% 4%;
+  padding: 1% 2%;
   border-radius: 2px;
   display: inline-block;
 }
@@ -372,7 +413,7 @@ a.footnote:hover,
 .pagination .next:hover,
 .pagination .page a:hover {
   -webkit-transition: 0.2s ease-out all;
-  background-color: #f5f7fa; /* @light_grey_m4 */
+  background-color: $grey-1;
 }
 
 /* blog post */
@@ -381,23 +422,30 @@ a.footnote:hover,
   margin-bottom: 10%;
   text-align: center;
 }
-,post h1 {
+.post h1 {
   font-size: 28px;
 }
 .post h1,
-.post h2,
+.post h2 {
+  margin-top: 64px;
+  padding-bottom: 12px;
+  color: $grey-text-color;
+}
+
 .post h3,
 .post h4 {
-  margin-top: 40px;
+  margin-top: 30px;
   padding-bottom: 10px;
+  color: $grey-text-color;
 }
+
 .post h5,
 .post h6 {
-  margin-top: 20px;
+  margin-top: 18px;
 }
 .post p {
-  font-size: 18px;
-  color: #4f5259; /*@semi_dark_grey_p5*/
+  font-size: 16px;
+  color: $text-color; 
 }
 .post-author-info .portrait {
   width: 17%;
@@ -406,13 +454,13 @@ a.footnote:hover,
 }
 .post-author-info .author-name a,
 .post-author-info .author-name {
-  font-size: 14px;
-  color: #b0b6c2;/*@grey_0*/
+  font-size: 15px;
+  color: $grey-text-color;
 }
 .post-date {
   margin-bottom: 10px;
   font-size: 14px;
-  color: #b0b6c2;/*@grey_0*/
+  color: $grey-text-color;
 }
 .post img {
   max-width: 90%;
@@ -422,18 +470,19 @@ a.footnote:hover,
 .post-title {
   font-size: 32px;
   margin-top: 30px;
-  font-weight: bold;
+  margin-bottom: 10px;
+  font-weight: 100;
   line-height: 1.4em;
-  color: #4f5259;/*@semi_dark_grey_p5*/
+  color: $text-color;
 }
 .posts .post-title {
   margin: 0 0 5px;
-  font-size: 24px;
+  font-size: 30px;
 }
 .post-title-words{
-  font-weight: bold;
+  font-weight: 100;
   line-height: 1.4em;
-  color: #4f5259;/*@semi_dark_grey_p5*/
+  color: $text-color;
 }
 .post-description {
   margin: 18px 100px 6px 0;
@@ -454,14 +503,14 @@ a.footnote:hover,
 .back-btn a {
   padding: 20px 80px;
   display: inline-block;
-  border: 1px solid #d0d5db; /* @grey_m4 */
+  border: 1px solid $btn-border-color;
   border-radius: 3px;
-  font-size: 18px;
-  color: #5a6173; /* @semi_dark_grey_p2 */
+  font-size: 16px;
+  color: $text-color; /* @semi_dark_grey_p2 */
 }
 .back-btn a:hover {
-  background-color: #f5f7fa; /* @light_grey_m4 */
-  border-color: #c9ced6; /* @grey_m3 */
+  background-color: $btn-default-active-bg-color; /* @light_grey_m4 */
+  border-color: $btn-border-color; /* @grey_m3 */
 }
 
 /* blog ends */
@@ -470,10 +519,10 @@ a.footnote:hover,
 
 .post .intro-title {
   margin-top: 20px;
-  padding-bottom: 20px;
-  color: #4f5259; /* @semi_dark_grey_p5 */
+  padding-bottom: 12px;
+  color: $grey-text-color;
   font-size: 38px;
-  border-bottom: 1px solid #e9ebf0; /*$grey-1*/
+  border-bottom: 1px solid $divider-color;
 }
 .about p a,
 .about ol a,
@@ -483,12 +532,13 @@ a.footnote:hover,
 .author {
   overflow: auto;
   padding: 30px 0;
-  border-bottom: 1px solid #e9ebf0; /*$grey-1*/
+  border-bottom: 1px solid $divider-color;
 }
 .author-title {
   margin-top: 100px;
 }
 .author-info {
+  margin-top: 3px;
   margin-left: 20%;
 }
 .member-info {
@@ -500,10 +550,10 @@ a.footnote:hover,
 .nick-name {
   margin-right: 10px;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 16px;
 }
 .nick-name a {
-  color: #4f5259; /* @semi_dark_grey_p5 */
+  color: $text-color;
 }
 .author img {
   width: 14%;
@@ -558,11 +608,11 @@ a.footnote:hover,
 
 .footer {
   margin-bottom: 20px;
-  font-size: 16px;
-  color: #b0b6c2;/*@grey_0*/
+  font-size: 14px;
+  color: $grey-text-color;
 }
 .footer a {
-  color: #b0b6c2;/*@grey_0*/
+  color: $grey-text-color;
 }
 .footer a:hover {
   text-decoration: underline;
@@ -600,7 +650,7 @@ a.footnote:hover,
 }    
 .hiring-subtitle {   
   color: #dce0e6;    
-  font-size: 18px;   
+  font-size: 16px;   
   font-weight: normal;
   -webkit-transition: 0.2s ease-out all;   
 }
@@ -608,10 +658,10 @@ a.footnote:hover,
   margin-top: 40px;
   padding: 14px 8%;
   display: inline-block;
-  border: 1px solid #b0b6c2;
+  border: 1px solid $btn-border-color;
   border-radius: 2px;
   color: #fff;
-  font-size: 18px;
+  font-size: 16px;
   -webkit-transition: 0.2s ease-out all;
 }
 .btn-job:hover {
@@ -642,7 +692,7 @@ a.footnote:hover,
     width: 100%;
   }
   .header {
-    height: 50px;
+    height: 60px;
   }
   .toggle {
     display: block;

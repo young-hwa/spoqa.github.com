@@ -62,7 +62,7 @@ Apple 72 dpi를 채택한 이유는 타자기 세대에서 널리 쓰이던 10 p
 
 Microsoft는 인간이 컴퓨터 디스플레이를 볼 때는 책이나 문서를 볼 때 눈(망막)에서 책이나 문서까지의 거리보다 1/3 가량 더 멀리 본다고 주장합니다. 그래서 72 dpi 스크린에서의 글씨는 실제 편집자에 의해 의도되었던 글씨 크기보다 작게 보이기 때문에 가독성에 해를 끼친다고 판단합니다.
 
-![list](/images/2012-07-06/1.png =700x)
+![list](/images/2012-07-06/1.png)
 
 <sub><a href="http://cdn.iphonehacks.com/wp-content/uploads/2012/03/apple-new-ipad-retina-display-math.jpg">어디선가</a> 본 것 같은 논리입니다.</sub></center>
 
@@ -92,7 +92,7 @@ Web Browser
 Display
 ---
 
-![list](/images/2012-07-06/2.png =700x)
+![list](/images/2012-07-06/2.png)
 
 <a href="http://members.ping.de/~sven/dpi.html">DPI Calculator / PPI Calculator</a>
 

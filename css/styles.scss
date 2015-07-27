@@ -62,7 +62,7 @@ a {
 }
 
 h1 { 
-  font-size: 48px; 
+  font-size: 32px; 
   font-weight: 100; 
 }
 h2 { 
@@ -181,8 +181,20 @@ pre code {
   margin: 0 0 0 40px;
 }
 .post hr {
-  margin: 20px;
-  border-bottom: 1px $divider-color;
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.post center {
+  line-height: 1.7em;
+}
+.post tr {
+  font-size: 15px;
+  line-height: 1.7em;
+}
+.post caption {
+  margin: 10px;
 }
 a.footnote,
 .post p a.footnote,

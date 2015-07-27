@@ -506,11 +506,11 @@ a.footnote:hover,
   border: 1px solid $btn-border-color;
   border-radius: 3px;
   font-size: 16px;
-  color: $text-color; /* @semi_dark_grey_p2 */
+  color: $text-color; 
 }
 .back-btn a:hover {
-  background-color: $btn-default-active-bg-color; /* @light_grey_m4 */
-  border-color: $btn-border-color; /* @grey_m3 */
+  background-color: $btn-default-active-bg-color; 
+  border-color: $btn-border-color; 
 }
 
 /* blog ends */

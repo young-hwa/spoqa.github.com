@@ -10,7 +10,7 @@ publish: true
 
 웹 애플리케이션을 개발할 때 기능적으로는 무관하지만, 사용자에게 인터렉티브하고 심미적으로 예쁜 디자인을 제공하고 싶은 경험이 있을 것입니다. 하지만 막상 직접 구현을 하는 것은 생각보다 시간이 오래 걸리고, 구현하더라도 양질의 UI가 나오지 않는 경우들이 있습니다. 그래서 이번 글에서는 쉽고 빠르게 양질의 UI를 제공해주는 라이브러리를 소개해 드리려고 합니다.
 
-#Spin.js
+## Spin.js
 ---
   
 ![list](/images/UI_component/Spinjs.png)
@@ -21,7 +21,7 @@ publish: true
   
 - [Spin.js] / [Download](https://github.com/fgnass/spin.js)
   
-#Datatables
+## Datatables
 ---
   
 ![list](/images/UI_component/Datatables.png)  
@@ -32,7 +32,7 @@ publish: true
   
 - [Datatables]
   
-#Curtain.js
+## Curtain.js
 ---
   
 ![list](/images/UI_component/Curtainjs.png)  
@@ -43,7 +43,7 @@ publish: true
   
 - [Curtain.js] / [Download](https://github.com/Victa/curtain.js)
   
-#Turn.js
+## Turn.js
 ---
   
 ![list](/images/UI_component/Turnjs.png)  
@@ -54,7 +54,7 @@ publish: true
   
 - [Turn.js] / [Download](https://github.com/blasten/turn.js)
   
-#Glfx.js
+## Glfx.js
 ---
   
 ![list](/images/UI_component/Glfxjs.png)  
@@ -65,7 +65,7 @@ publish: true
   
 - [Glfx.js] / [Download](https://github.com/evanw/glfx.js)
   
-#JQuery Tag-it
+## JQuery Tag-it
 ---
   
 ![list](/images/UI_component/Tag-it.png)  
@@ -76,7 +76,7 @@ publish: true
   
 - [JQuery Tag-it] / [Download](https://github.com/aehlke/tag-it)
   
-#Tinycon
+## Tinycon
 ---
   
 ![list](/images/UI_component/Tinycon.png)  
@@ -87,7 +87,7 @@ publish: true
   
 - [Tinycon] / [Download](https://github.com/tommoor/tinycon)
   
-#3D GALLERY
+## 3D GALLERY
 ---
   
 ![list](/images/UI_component/3DGallery.png)  
@@ -98,7 +98,7 @@ publish: true
   
 - [3D GALLERY] / [Demo](http://tympanus.net/Development/3DGallery/)
   
-#글을 마치면서
+## 글을 마치면서
 ---
 이번 글에서는 UI Component Javascript 라이브러리들에 대해 알아봤습니다. 위의 라이브러리로 좀 더 쉽고 빠르게 양질의 웹 애플리케이션을 개발할 수 있었으면 좋겠습니다.
 

@@ -12,9 +12,8 @@ publish: true
 웹 페이지에 접속하는 장비나 브라우저에 구애받지 않고 최적화된 모습을 보여주기 위해서는 어떻게 해야 할까요? 그 방법들은 정말 다양하게 존재합니다만 그 중 가장 대표적이고 편리한 **뷰포트(viewport)**, **미디어 쿼리(media query)**, **유저 에이전트를 감지하는 jQuery**에 대해 소개해 드리겠습니다.
 
 ### 다양한 스크린에서 최적화된 뷰(view)를 만들어주는 기술들
-___
 
-####뷰포트(viewport)
+#### 뷰포트(viewport)
 간단하게 이야기하면 웹 페이지에서 눈에 보이는 영역을 말합니다. 데스크탑과 모바일의 뷰포트는 약간의 차이가 있는데, 모바일 브라우저는 윈도우의 리사이즈가 불가능하고 데스크탑 브라우저에서 이용하지 않는 터치를 이용하는 등의 특성 때문에 데스크탑 브라우저와는 구성 및 형태가 약간 다릅니다. 또한, 모바일의 스크린 크기가 데스크탑의 스크린 크기보다 월등히 작으므로 모바일 전용으로 제작되지 않은 웹페이지는 모바일에서 볼때 화면이 전체적으로 축소되는 것을 자주 목격할 수 있습니다. 때문에 뷰포트를 이용하여 모바일의 특성과 모바일의 화면 크기 등을 고려해야만 모바일 사용자에게 최적화된 웹 페이지를 선사할 수 있습니다.
 
 기본적으로 뷰포트의 설정방법은 다음과 같습니다.
@@ -24,7 +23,7 @@ ___
 뷰포트의 속성 및 더 자세한 내용은 [이곳](http://developer.apple.com/library/safari/#documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html "viewport properties")을 참고하시면 되겠습니다.
 
 
-####미디어 쿼리(media query) 
+#### 미디어 쿼리(media query) 
 미디어 쿼리란 CSS2.1의 미디어 타입(media type)을 기반으로 한 CSS3 기능이고, 이를 이용하면 구체적인 조건을 지정하여 각기 다른 디바이스에 다른 스타일 시트를 적용할 수 있을 뿐만 아니라 각 사용자들에게 필요한 스타일의 웹 페이지를 제공할 수 있습니다. 예를 들면 screen의 폰트 크기와 print의 폰트 크기는 대게 달라야만 하는데 그 이유는 종이로 출력되는 폰트 크기보다 스크린의 폰트 크기가 더 커야만 사용자가 스크린의 컨텐츠를 보기 편하기 때문입니다. 이러한 문제는 미디어 쿼리를 이용하면 아주 간단하게 해결할 수 있습니다.
 
 미디어 쿼리를 설정하는 방법은 여러 가지가 있으며 대표적으로 다음과 같은 방법을 이용합니다.
@@ -35,7 +34,7 @@ ___
 
 
 ### 뷰포트와 미디어 쿼리, jQuery.browser를 이용한 예제
-___
+
 우선, Code 1-1처럼 전체적인 html 페이지를 구성합니다. 편의를 위해 내용은 복사, 붙여 넣기를 이용합니다.
 
 <script src="https://gist.github.com/3347225.js?file=Code 1-1.html"></script> 
@@ -100,7 +99,6 @@ IE의 버전은 x.0 형태로 설정할 수 있습니다. Code 1-9와 같이 작
 
 
 ### 참고하시면 좋은 곳
----
 
 [Apple library - Viewport (애플 라이브러리 - 뷰포트)](http://developer.apple.com/library/ios/#DOCUMENTATION/AppleApplications/Reference/SafariWebContent/UsingtheViewport/UsingtheViewport.html "Apple Viewport") 
 

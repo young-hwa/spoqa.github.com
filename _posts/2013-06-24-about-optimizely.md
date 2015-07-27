@@ -37,7 +37,7 @@ Optimizely는 세계적인 대형 기업들이 이용하는 서비스로, 이들
 
 
 
-###더 정확한 데이터를 추출하려는 노력.
+### 더 정확한 데이터를 추출하려는 노력.
 
 메일링 리스트를 수집하는 등의 폼 입력/전송을 하는 비율을 구하는 경우, 혹은 메인 페이지에서 다른 세부페이지로 이동하는 이용자 비율을 나타내기 위해 **목표(Goal)**을 나타냅니다. 목표한 골에 A 버전(기존안/Original) 이용자가 더 많이 들어갔는지, B 버전(새로 작성한 안/Variation)이 효과적이었는지를 테스트 할 수 있습니다. 
 
@@ -47,7 +47,7 @@ Optimizely는 세계적인 대형 기업들이 이용하는 서비스로, 이들
 
 
 
-###정말 쉬운 실험요소 변경.
+### 정말 쉬운 실험요소 변경.
 
 
 
@@ -70,7 +70,7 @@ Optimizely를 이용하면 여러분이 복잡한 CSS나 Javascript 기술이 �
 참 쉽죠?
 
 
-###간단한 설치
+### 간단한 설치
 
 위처럼 변경했던 시험요소들을 저장하려면 복잡하고 긴 코드를 다시 원래 파일에 붙여 넣어야 할까요? 그렇지 않습니다. Optimizely는 변경한 컨텐츠 정보를 간단한 자바스크립트 코드로 'Optimize' 해 주기 때문에 단 몇줄만 추가해주면 원하는 결과가 나옵니다.
 
@@ -78,7 +78,7 @@ Optimizely를 이용하면 여러분이 복잡한 CSS나 Javascript 기술이 �
 
 
 
-###확장성
+### 확장성
 
 유명한 아티스트 두 명이 콜라보레이션 하는 상상을 해보죠. 각자의 개성을 살려 새로운 결과물들을 창조해내지요. 물론 그들의 궁합이 잘 맞아야 한다는 전제가 있습니다. 하지만 다행히도 Optimizely와 연동되는 서비스들은 궁합이 잘 맞는 편입니다. Optimizely는 A/B 테스팅에 관한 자료에 집중하고 있기 때문에, 조금 더 디테일한 자료(Analytics, Heatmap)는 욕심내지 않고 기타 많은 서비스와 연동합니다.
 
@@ -86,14 +86,14 @@ Optimizely를 이용하면 여러분이 복잡한 CSS나 Javascript 기술이 �
 Optimizely와 연동되는 서비스는 다음과 같습니다.
 
 
-######Analytics
+###### Analytics
 * [Google Analytics](http://www.google.com/analytics/)
 * [KISSmetrics](https://www.kissmetrics.com/)
 * [Mixpanel](https://mixpanel.com/)
 * [Omniture SiteCatalyst](http://www.omniture.com/ko/products/web_analytics/sitecatalyst)
 
 
-######Heatmap
+###### Heatmap
 * [ClickTale](http://www.clicktale.com/)
 * [Crazyegg](http://crazyegg.com/)
 

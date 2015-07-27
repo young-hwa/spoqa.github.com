@@ -64,7 +64,7 @@ Container는 Column의 수를 지정해줍니다. 몇 개의 Column을 사용하
 그럼 Grid System을 이용해 실제 진행 과정을 살펴보겠습니다.
 가장 많이 사용되는 960gs를 사용하여 Grid System을 구축하는 방법을 알아보겠습니다. [960gs 홈페이지](http://960.gs)에서 파일을 다운로드 받으시면 아래의 과정을 따라 하실 수 있습니다. 
 
-#####Page design
+##### Page design
 
 Grid System은 효과적으로 페이지의 레이아웃을 스케치를 할 수 있습니다. 디자인 작업 전 종이에 하는 스케치 과정에서 [Grid가 그려진 PDF](<http://www.scribd.com/doc/2663171/960-Grid-System-sketch/>)를 출력해 스케치할 수 있습니다.  
 
@@ -81,7 +81,7 @@ Grid System은 효과적으로 페이지의 레이아웃을 스케치를 할 수
 
 
 
-#####Coding
+##### Coding
 
 이제 디자인을 바탕으로 구현에 들어갑니다. [960gs 기본규격 CSS](http://grids.heroku.com/grid.css?column_width=60&column_amount=12&gutter_width=20)를 다운로드를 받은 뒤 진행합니다.
 
@@ -112,7 +112,7 @@ HTML에 다운로드 받은 '960.css' 파일을 불러옵니다. 'head' 부분�
 
 '960gs'의 특징이라고 볼 수 있는 점은 한 행에 12 혹은 16 Column이 채워져야 한다는 점입니다. 만약 다른 행에 Column을 넣고 싶다면 비어있는 Column을 padding값이 있는 Column으로 채워주면 되는데, 그와 관련된 속성이 바로 'prefix' 와 'suffix' 입니다.
 
-#####prefix
+##### prefix
 
 ![grid_4](/images/about-grid-system/prefix.png)
 
@@ -122,7 +122,7 @@ HTML에 다운로드 받은 '960.css' 파일을 불러옵니다. 'head' 부분�
 
 960.css 파일을 살펴보면 위와 같이 'padding-left' 속성이 적용되어 있음을 알 수 있습니다. 하나의 'prefix'당 80px을 차지하는데, 이 값은 60px에 양쪽 gutter 값 20px이 합쳐진 값임을 알 수 있습니다. 'container_12'를 기준으로 'prefix_1'의 padding 값이 'grid_1'의 넓이만큼 적용되어 있음을 알 수 있습니다. 다시 정리하자면, Column을 기준으로 왼쪽에 여백을 주고 싶을 때 prefix를 사용합니다.
 
-#####suffix
+##### suffix
 
 그렇다면 'prefix'와 반대로 Column기준 오른쪽에 여백을 주고 싶을 때는 어떻게 해야 할까요? 바로 'suffix'를 사용하면 됩니다.
 
@@ -138,7 +138,7 @@ HTML에 다운로드 받은 '960.css' 파일을 불러옵니다. 'head' 부분�
 
 
 
-#####Push & Pull
+##### Push & Pull
 -----
 
 960gs에서는 'push'와 'pull'을 사용하여 Column을 독립적으로 재 배치 할 수 있습니다.
@@ -163,7 +163,7 @@ HTML에 다운로드 받은 '960.css' 파일을 불러옵니다. 'head' 부분�
 
 
 
-#####alpha & omega
+##### alpha & omega
 -----
 
 'alpha' 와 'omega'속성을 사용하면 좀 더 디테일한 레이아웃을 작성할 수 있습니다.

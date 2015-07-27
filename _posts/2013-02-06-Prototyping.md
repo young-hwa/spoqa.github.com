@@ -8,10 +8,8 @@ publish: true
 ---
 
 안녕하세요. 스포카 디자인팀 인턴 박소연입니다. 이번 글에서는 사용자 경험<sub>User Experience</sub> 디자인 과정 중 프로토타이핑<sub>Prototyping</sub>에 대해 설명해보도록 하겠습니다.
-</br></br>
 
-Prototyping이란,
----
+## Prototyping이란,
 <img src="/images/2013-02-06/1.png" style="margin-left:auto;margin-right:auto;height: 35%;"/>
 **Prototype**이란 “처음”을 뜻하는 그리스어 *protos*와 “느낌”을 뜻하는 *typos*가 합쳐져 “원본”, “초기”를 뜻하는 *prototypos*가 되었고, 이것에서 발전한 “초기 형태”인 *prototypon*에서 유래하였습니다.
 (출처: 위키피디아)
@@ -86,19 +84,19 @@ Prototyping이란,
 
 프로토타입을 제작하고 난 후에는 제작한 모델을 사용하여 실험을 진행 할 수 있습니다. 실험 종류 역시 여러 가지가 있지만, 이번에는 세 가지만 추려서 소개해 드리겠습니다.
 
-###Desktop Walkthrough
+### Desktop Walkthrough
 
 <img src="/images/2013-02-06/4.jpg" style="margin-left:auto;margin-right:auto;"/>
 말 그대로 책상 위에서 구현할 수 있는 작은 모형을 말합니다. 레고와 같은 3D모형을 이용하여 실제상황의 특징들을 구현합니다. 이를 무대로 삼아, 사용자의 페르소나<sub>Persona</sub>를 구현한 모형을 직접 움직이며 사용자 경험을 재현합니다. 간단한 모형으로 다양한 사람들이 이해하기 쉽고, 전체적인 프로세스를 포괄적으로 검토할 수 있습니다. 또한, 모형을 여기저기 움직이면서 문제점을 수정하기에 쉽습니다.
 
-###Service Prototype
+### Service Prototype
 
 <img src="/images/2013-02-06/5.jpg" style="width:280px; margin-left:auto;margin-right:auto;"/>
 서비스 프로토타입은 소품과 물리적인 목업<sub>mock-up</sub>을 이용하여 상세한 서비스를 재현하게 됩니다. 주로 해당 제품을 사용하는 실제 환경과 최대한 비슷한 곳에서 사용자가 직접 사용하고 역할극 등을 진행하게 됩니다. 사용자가 직접 사용하고 만져볼 수 있는 모델이 있기 때문에 사용자가 서비스에 대해 좀더 깊은 이해를 할 수 있습니다.
 
 
 
-###Service Staging
+### Service Staging
 
 <img src="/images/2013-02-06/6.jpg" style="margin-left:auto;margin-right:auto;"/>
 서비스 스테이징은 좀 더 많은 인원이 필요합니다. 여러 이해관계자가 지켜보는 가운데 디자이너와 사용자가 함께 프로토타입을 사용한 시나리오<sub>scenario</sub>를 재현합니다. 역할을 바꾸어 여러 번 반복 재연하면서, 다양한 이해관계자의 피드백을 받을 수 있습니다.
@@ -149,14 +147,13 @@ Prototyping이란,
 </table>
     
 
-Conclusion
----
+## Conclusion
 이제까지 UX Design의 과정 중 한 가지인 프로토타이핑에 대해 간략히 설명해보았습니다. 프로토타이핑의 가장 중요한 목적은 사용자들이 직접 체험하고 이해할 수 있도록 최대한 실제와 가깝게 재현하는 것입니다. 하지만 프로토타이핑으로 다양한 실험을 했다고 디자인이 완료된 것은 아닙니다. 수집한 의견을 반영하여 수정과 보완을 거쳐 새로운 프로토타입으로 다시 실험하는 등 응용 범위는 다양합니다. 프로토타이핑은 UX Design에 필수적인 과정입니다. 보통, 디자이너와 개발자들은 사용자들이 자신이 생각한 대로 움직일 것이라고 일종의 “착각”을 하게 되는데, 이는 프로토타이핑을 통해 적절히 조정할 수 있을 것입니다.
 
-<br />
-####참고자료 및 이미지 출처:
+
+#### 참고자료 및 이미지 출처:
 * 서비스 디자인 교과서, 안그라픽스, 2012
-* www.enginegroup.co.uk/site
-* www.loop-ux.com
-* http://www.davidarno.org/2009/09/17/napkee-converting-balsamiq-mockups-into-flex-views-just-became-a-complete-breeze/
-* http://inspirationfeed.com/inspiration/25-examples-of-wireframes-and-mockups-sketches/
+* <http://www.enginegroup.co.uk/site>
+* <http://www.loop-ux.com>
+* <http://www.davidarno.org/2009/09/17/napkee-converting-balsamiq-mockups-into-flex-views-just-became-a-complete-breeze/>
+* <http://inspirationfeed.com/inspiration/25-examples-of-wireframes-and-mockups-sketches/>

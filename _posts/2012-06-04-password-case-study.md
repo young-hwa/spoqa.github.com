@@ -39,7 +39,7 @@ publish: true
 Facebook은 어쩌면 블리자드와 비슷한 유형의 고민을 해결하기 위해 꽤 똑똑한 방법을 사용하여 업계의 주목을 받았습니다. 
 
 ![fbimage](http://img.labnol.org/files/facebook-password.jpg)
-[Your Facebook Account has Three Passwords](http://www.labnol.org/internet/facebook-account-passwords/21241/)
+[Your Facebook Account has Three Passwords](http://img.labnol.org/di/facebook-password.jpg)
 
 Facebook은 사용자의 패스워드를 세 가지 유형으로 저장해놓습니다. 하나는 일반 패스워드, 두 번째는 대소문자를 뒤집어놓은 패스워드, 세 번째는 첫 번째 문자만 대문자인 패스워드입니다. 
 

@@ -50,21 +50,21 @@ description: Google Web Designer로 프로젝트를 진행하며 알게 된 기�
 
 다음으로 작업하며 사용했던 기능에 대해 몇 가지 말씀드리겠습니다. 
 
+## 소스
 
-1. 소스
----
 ![6](/images/2013-12-19/6.png)
 소스들은 파일 창에서 작업 창으로 드래그하셔서 쓸 수 있습니다. 소스를 옮겨놓으면 자동으로 images라는 폴더가 생성되는데 그 안에 옮겨놓은 소스가 들어있습니다. 
 같은 소스를 또다시 끌어다 놓으면 자동으로 복제됩니다. <sub>(작업 창과 images 폴더에)</sub> 일러스트레이터나 포토샵처럼 상단 메뉴바에서 이미지를 불러올 수는 없습니다.
-2. 레이어
----
+
+## 레이어
+
 <img src="/images/2013-12-19/7.png" style="display:inline; width: 50%"/><img src="/images/2013-12-19/12.png"  style="display:inline; width: 24.5%"/>
 
 소스가 작업 창으로 옮겨지면 <span style="color:red">레이어가 생성</span>되는데 이 레이어의 이름을 지정하고 싶으면 오른편 속성 창에서(오른쪽이미지) 요소 밑에 있는 <span style="color:red">ID</span>로 이름값을 지정해 주면 됩니다. HTML스럽네요. 아무리 레이어에서 더블클릭을 하고 우클릭을 해도 이름 변경이 안 됩니다. 
 <span style="color:white; background-color: #555">레이어</span>의 위아래 순서는 끌어 옮겨서 바꿀 수 있고 <span style="color:white; background-color: #555">레이어</span>를 선택하고 Ctrl+c, Ctrl+v 하면 선택된 레이어가 복제됩니다. 상단 메뉴바의 수정에서도 가능합니다. (타임라인 복제가 아니라< 레이어=화면의 소스>만 복제됩니다.) 각 레이어를 클릭하면 오른편 <span style="color:yellow; background-color: #555">스타일</span> 창에서 해당 코드를 보여줍니다. 레이어 오른편에 <span style="color:yellow; background-color: #555">휘어진 화살표</span>를 클릭하면 해당 레이어 재생 수를 지정할 수 있습니다. (없음/2회/무한) 세 가지 옵션입니다. 그래서 옵션을 무한으로 설정하면 해당 동작이 계속해서 반복합니다. 
 
-3. 타임라인
----
+## 타임라인
+
 ![8](/images/2013-12-19/8.png)
 타임라인의 시간 범위를 설정할 수 는 없습니다. 
 그저 원하는 마지막 시간위치에 키프레임을 놓는 것이 범위 설정 방법입니다.
@@ -72,8 +72,8 @@ description: Google Web Designer로 프로젝트를 진행하며 알게 된 기�
 <span style="color:yellow; background-color: #555">키프레임과 키프레임 사이</span>에 마우스를 대고 우클릭을 하면 easing(이징) 기능이 있습니다. 
 움직임의 가속과 감속을 조절할 수 있는 기능입니다.
 
-4. 기타기능
----
+## 기타기능
+
 ![9](/images/2013-12-19/9.png)
 타임라인 윗부분에 <span style="color:yellow; background-color: #555">코드 보기</span>를 누르면 디자인한 작업의 전체 코드를 작업 창에서 보실 수 있습니다.
 그 옆의 <span style="color:red">미리 보기</span>를 누르면 브라우저로 작업물을 확인할 수 있습니다. 브라우저는 크롬과 인터넷 익스플로러 두 가지입니다. 
@@ -87,8 +87,8 @@ description: Google Web Designer로 프로젝트를 진행하며 알게 된 기�
 
 이제 마지막으로 작업한 결과물을 추출하는 방법을 알아보겠습니다.
 
-5. 추출법
----
+## 추출법
+
 다 만든 작업물을 추출하는 것은 미리 보기 옆의 <span style="color:white; background-color: #555">게시 버튼</span>을 눌러 할 수 있습니다.
 추출하면 zip으로 압축되어 나오고 그 안에 Index.html과 사용한 소스파일들이 들어있습니다. 
 아래는 게시버튼을 누르면 나타나는 창입니다.
@@ -108,7 +108,7 @@ description: Google Web Designer로 프로젝트를 진행하며 알게 된 기�
 미흡한 글 읽어주셔서 감사합니다. ^^  
 
 
-참고
+#### 참고
 
 1. [위키 백과](http://en.wikipedia.org/wiki/Google_Web_Designer)
 2. [공식 사이트](http://www.google.co.kr/webdesigner/)

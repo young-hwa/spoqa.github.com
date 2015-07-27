@@ -64,7 +64,7 @@ Microsoft는 인간이 컴퓨터 디스플레이를 볼 때는 책이나 문서�
 
 ![list](/images/2012-07-06/1.png)
 
-<sub><a href="http://cdn.iphonehacks.com/wp-content/uploads/2012/03/apple-new-ipad-retina-display-math.jpg">어디선가</a> 본 것 같은 논리입니다.</sub></center>
+<sub><a href="http://cdn.iphonehacks.com/wp-content/uploads/2012/03/apple-new-ipad-retina-display-math.jpg">어디선가</a> 본 것 같은 논리입니다.</sub>
 
 Microsoft는 위 문제를 해결하기 위해 트릭을 씁니다. 72 dpi 해상도를 96 dpi의 해상도로 높이는데 그 이유는 다음과 같습니다. 컴퓨터 스크린은 책이나 문서를 읽을 때의 거리 보다 4/3배 이므로, 해상도도 4/3배를 하여 72 ppi의 모니터에서 글씨 크기를 키워 상대적으로 같은 글씨 크기를 만들어 가독성을 높이겠다는 의도였습니다.
 

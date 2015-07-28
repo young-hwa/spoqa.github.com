@@ -62,7 +62,7 @@ a {
 }
 
 h1 { 
-  font-size: 48px; 
+  font-size: 32px; 
   font-weight: 100; 
 }
 h2 { 
@@ -181,8 +181,20 @@ pre code {
   margin: 0 0 0 40px;
 }
 .post hr {
-  margin: 20px;
-  border-bottom: 1px $divider-color;
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.post center {
+  line-height: 1.7em;
+}
+.post tr {
+  font-size: 15px;
+  line-height: 1.7em;
+}
+.post caption {
+  margin: 10px;
 }
 a.footnote,
 .post p a.footnote,
@@ -506,11 +518,11 @@ a.footnote:hover,
   border: 1px solid $btn-border-color;
   border-radius: 3px;
   font-size: 16px;
-  color: $text-color; /* @semi_dark_grey_p2 */
+  color: $text-color; 
 }
 .back-btn a:hover {
-  background-color: $btn-default-active-bg-color; /* @light_grey_m4 */
-  border-color: $btn-border-color; /* @grey_m3 */
+  background-color: $btn-default-active-bg-color; 
+  border-color: $btn-border-color; 
 }
 
 /* blog ends */
@@ -564,42 +576,49 @@ a.footnote:hover,
 .twitter-icon {
   display: inline-block;
   background-image: url(/images/twitter-icon.png);
+  background-size: 24px 24px;
   width: 24px;
   height: 24px;
 }
 .facebook-icon {
   display: inline-block;
   background-image: url(/images/facebook-icon.png);
+  background-size: 24px 24px;
   width: 24px;
   height: 24px;
 }
 .tumblr-icon {
   display: inline-block;
   background-image: url(/images/tumblr-icon.png);
+  background-size: 24px 24px;
   width: 24px;
   height: 24px;
 }
 .dribbble-icon {
   display: inline-block;
   background-image: url(/images/dribbble-icon.png);
+  background-size: 24px 24px;
   width: 24px;
   height: 24px;
 }
 .linkdin-icon {
   display: inline-block;
   background-image: url(/images/linkdin-icon.png);
+  background-size: 24px 24px;
   width: 24px;
   height: 24px;
 }
 .wordpress-icon {
   display: inline-block;
   background-image: url(/images/wordpress-icon.png);
+  background-size: 24px 24px;
   width: 24px;
   height: 24px;
 }
 .homepage-icon {
   display: inline-block;
   background-image: url(/images/homepage-icon.png);
+  background-size: 24px 24px;
   width: 24px;
   height: 24px;
 }

@@ -35,15 +35,14 @@ layout: default
   <div id="fb-root"></div>
 </div>
 <script>
-$(function() {
-  $('.fb-like, .fb-comments').attr('data-width', "100%");
-  (function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/ko_KR/all.js#xfbml=1&appId=207542736008055";
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));
+document.addEventListener("DOMContentLoaded", function(event) {
+    $('.fb-like, .fb-comments').attr('data-width', "100%");
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/ko_KR/all.js#xfbml=1&appId=207542736008055";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
 });
 </script>
-

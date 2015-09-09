@@ -2,8 +2,13 @@
 # this ensures Jekyll reads the file to be transformed into CSS later
 # only Main files contain this front matter, not partials.
 ---
-@import 'reset/reset.css';
-@import "spoqa-colors";
+@import 'spoqa-colors';
+@import 'reset/reset';
+@import 'solarized_light.css';
+
+.hljs {
+  background: $grey-1;
+}
 
 @font-face {
   font-family: 'spoqahansans';
@@ -23,16 +28,6 @@
   font-weight: 100;
 }
 
-body {
-  background-color: #fff;
-  width: 100%;
-  height: 100%;
-  font-family: "spoqahansans", Apple SD Gothic Neo, Nanum Barun Gothic, Nanum Gothic, Verdana, Arial, Dotum, sans-serif;
-  color: $text-color;
-  word-break: keep-all;
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: none;
-} 
 .content,
 .footer {
   width: 90%;
@@ -47,185 +42,88 @@ body {
 }
 
 /* text style */
-
-sub {
-  font-size: 14px;
+.post {
+  p a,
+  ol a,
+  ul a {
+    padding-right: 2px;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  blockquote p {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 16px;//18px
+  }
+  ul,
+  ol {
+    margin: 20px 0 20px 40px;
+  }
+  li {
+    font-size: 16px;
+    margin: 6px 0;
+    line-height: 1.9em;
+  }
+  li p {
+    font-size: 16px;//18px
+  }
+  ol li ul,
+  ol li ol,
+  ul li ul,
+  ul li ol {
+    margin: 0 0 0 40px;
+  }
+  hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  center {
+    line-height: 1.7em;
+  }
+  tr {
+    font-size: 15px;
+    line-height: 1.7em;
+  }
+  caption {
+    margin: 10px;
+  }
 }
 
-strong {
-  -webkit-font-smoothing: antialiased;
-}
+// footnote
+a.footnote {
+  &,
+  .post p &,
+  .post ol &,
+  .post ul & {
+    margin: 0 3px;
+    padding: 2px 6px 2px;
+    font-size: 0.7em;
+    text-align: center;
+    -webkit-text-stroke: 0.25px;
+    border: 1px solid $divider-color;
+    border-radius: 2px;
+    -webkit-transition: 0.2s ease-out all;
+    text-decoration: none;
 
-a {
-  text-decoration: none;
-  color: $mainblue-0;
-}
-
-h1 { 
-  font-size: 32px; 
-  font-weight: 100; 
-}
-h2 { 
-  font-size: 32px; 
-  font-weight: 100;
-}
-h3 { font-size: 20px; }
-h4 { font-size: 20px; }
-h5 { font-size: 18px; }
-h6 { font-size: 18px; }
-
-p, dl {
-  color: $text-color;
-  font-size: 16px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  line-height: 1.9em;
-}
-.post p a,
-.post ol a,
-.post ul a {
-  padding-right: 2px;
-}
-.post p a:hover,
-.post ol a:hover,
-.post ul a:hover {
-  text-decoration: underline;
-}
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
-}
-.clearfix:after {
-    clear: both;
-}
-.clearfix {
-    *zoom: 1;
-}
-dl dt {
-  font-weight: 100;
-  margin-top: 10px
-}
-dl dd {
-  margin-left: 1.6em;
-}
-table {
-  margin: 10px 0;
-  border-bottom:1px $divider-color solid;
-  border-collapse: collapse;
-}
-thead {
-  background-color: $grey-1;
-}
-th, td{
-  border-top:1px $divider-color solid;
-  padding: 10px 20px;
-}
-blockquote {
-  margin: 20px 0 20px 25px;
-  padding-left: 12px;
-  border-left: 3px solid $divider-color;
-}
-.post blockquote p {
-  padding-top: 0;
-  padding-bottom: 0;
-  font-size: 16px;//18px
-}
-pre {
-  margin: 10px 0;
-  padding: 20px;
-  display: inline-block;
-  width: 100%;
-  background: $grey-1;
-  border: 1px solid $divider-color;
-  border-radius: 2px;
-}
-p code,
-p a code,
-li code,
-li a code,
-table code,
-table a code {
-  margin: 0 2px;
-  padding: 2px 5px;
-  width: 100%;
-  font-size: 16px;
-  background: $grey-1;
-  border: 1px solid $divider-color;
-  border-radius: 2px;
-}
-pre code {
-  word-wrap: break-word;
-  width: 100%;
-  border: none;
-  padding: 0;
-  margin: 0;
-  font-size: 15px;
-}
-.post ul,
-.post ol {
-  margin: 20px 0 20px 40px;
-}
-.post li {
-  font-size: 16px;
-  margin: 6px 0;
-  line-height: 1.9em;
-}
-.post li p {
-  font-size: 16px;//18px
-}
-.post ol li ul,
-.post ol li ol,
-.post ul li ul,
-.poat ul li ol {
-  margin: 0 0 0 40px;
-}
-.post hr {
-  border: 0;
-  height: 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-}
-.post center {
-  line-height: 1.7em;
-}
-.post tr {
-  font-size: 15px;
-  line-height: 1.7em;
-}
-.post caption {
-  margin: 10px;
-}
-a.footnote,
-.post p a.footnote,
-.post ol a.footnote,
-.post ul a.footnote {
-  margin: 0 3px;
-  padding: 2px 6px 2px;
-  font-size: 0.7em;
-  text-align: center;
-  -webkit-text-stroke: 0.25px;
-  border: 1px solid $divider-color;
-  border-radius: 2px;
-  -webkit-transition: 0.2s ease-out all;
-  text-decoration: none;
-}
-a.footnote:hover,
-.post p a.footnote:hover,
-.post ol a.footnote:hover,
-.post ul a.footnote:hover {
-  background: $btn-default-active-bg-color;
+    &:hover {
+      background: $btn-default-active-bg-color;
+    }
+  }
 }
 .footnotes {
   margin-top: 60px;
   border-top: 1px solid $divider-color;
-}
-.post.footnotes li,
-.post.footnotes li p {
-  font-size: 14px;
-}
-/*header*/
 
+  &.post li,
+  &.post li p {
+    font-size: 14px;
+  }
+}
+
+// header
 .header {
   height: 60px;
   padding: 0 5%;
@@ -288,7 +186,7 @@ a.footnote:hover,
   background: transparent;
   text-align: center;
   font-size: 15px;
-  color: #FFFFFF;
+  color: white;
   line-height: 19px;
   -webkit-transition: all 0.5s linear;
   -moz-transition: all 0.5s linear;
@@ -302,7 +200,7 @@ a.footnote:hover,
 #toggle:checked + .toggle:after {
   border-bottom: 2px solid #8ab0e6;
 }
-
+// Menu
 .menu {
   display: inline-block;
   font-size: 16px;
@@ -310,23 +208,25 @@ a.footnote:hover,
 }
 .menu li {
   display: inline-block;
-}
-.menu li a {
-  padding: 22px 24px 16px;
-  color: $text-color;
-  line-height: 19px;
-  display: inline-block;
-  border-bottom: 4px solid transparent;
-}
-.menu li a:active,
-.menu li a.selected {
-  -webkit-transition: 0.2s ease-out all;
-  border-bottom: 4px solid $mainblue-0;
-}
-.menu li a:focus,
-.menu li a:hover {
-  -webkit-transition: 0.2s ease-out all;
-  border-bottom: 4px solid $divider-color;
+
+  a {
+    padding: 22px 24px 16px;
+    color: $text-color;
+    line-height: 19px;
+    display: inline-block;
+    border-bottom: 4px solid transparent;
+
+    &:active,
+    &.selected {
+      -webkit-transition: 0.2s ease-out all;
+      border-bottom: 4px solid $mainblue-0;
+    }
+    &:focus,
+    &:hover {
+      -webkit-transition: 0.2s ease-out all;
+      border-bottom: 4px solid $divider-color;
+    }
+  }
 }
 .logo-img {
   margin-top: 10px;
@@ -363,7 +263,6 @@ a.footnote:hover,
   float: right;
   margin-left: 40px;
 }
-
 .posts li {
   border-bottom: 1px solid $divider-color;
   padding: 8% 0;
@@ -379,105 +278,110 @@ a.footnote:hover,
   font-size: 16px;
   padding: 10px 0;
   margin-top: 30px;
-}
-.pagination ol {
-  display: inline-block;
-  margin: 14px 24px;
-}
-.pagination li {
-  display: inline-block;
-}
-.pagination li a {
-  -webkit-transition: 0.2s ease-out all;
-  margin: 4px 0;
-  padding: 9px 14px;
-  border-radius: 2px;
-  font-size: 14px;
-  color: $text-color;
-}
-.pagination .page .current-page,
-.pagination .page .current-page:hover {
-  margin: 4px 0;
-  padding: 9px 14px;
-  border-radius: 2px;
-  font-size: 14px;
-  color: $text-color;
-  background-color: $grey-1; 
-}
-.pagination .previous a,
-.pagination .next a,
-.pagination .previous.disabled,
-.pagination .next.disabled {
-  font-size: 14px;
-  color: $text-color;
-}
-.pagination .previous.disabled,
-.pagination .next.disabled {
-  color: $text-color;
-}
-.pagination .previous,
-.pagination .next {
-  padding: 1% 2%;
-  border-radius: 2px;
-  display: inline-block;
-}
-.pagination .previous:hover,
-.pagination .next:hover,
-.pagination .page a:hover {
-  -webkit-transition: 0.2s ease-out all;
-  background-color: $grey-1;
+
+  ol {
+    display: inline-block;
+    margin: 14px 24px;
+  }
+  li {
+    display: inline-block;
+  }
+  li a {
+    -webkit-transition: 0.2s ease-out all;
+    margin: 4px 0;
+    padding: 9px 14px;
+    border-radius: 2px;
+    font-size: 14px;
+    color: $text-color;
+  }
+  .page .current-page,
+  .page .current-page:hover {
+    margin: 4px 0;
+    padding: 9px 14px;
+    border-radius: 2px;
+    font-size: 14px;
+    color: $text-color;
+    background-color: $grey-1;
+  }
+  .previous a,
+  .next a,
+  .previous.disabled,
+  .next.disabled {
+    font-size: 14px;
+    color: $text-color;
+  }
+  .previous.disabled,
+  .next.disabled {
+    color: $text-color;
+  }
+  .previous,
+  .next {
+    padding: 1% 2%;
+    border-radius: 2px;
+    display: inline-block;
+  }
+  .previous:hover,
+  .next:hover,
+  .page a:hover {
+    -webkit-transition: 0.2s ease-out all;
+    background-color: $grey-1;
+  }
 }
 
 /* blog post */
 
+.post {
+  h1 {
+    font-size: 28px;
+  }
+  h1,
+  h2 {
+    margin-top: 64px;
+    padding-bottom: 12px;
+    color: $grey-text-color;
+  }
+
+  h3,
+  h4 {
+    margin-top: 30px;
+    padding-bottom: 10px;
+    line-height: 1.5em;
+    color: $grey-text-color;
+  }
+
+  h5,
+  h6 {
+    margin-top: 18px;
+  }
+  p {
+    font-size: 16px;
+    color: $text-color;
+  }
+  img {
+    max-width: 90%;
+    display: block;
+    padding: 20px;
+  }
+}
 .post-author-info {
   margin-bottom: 10%;
   text-align: center;
-}
-.post h1 {
-  font-size: 28px;
-}
-.post h1,
-.post h2 {
-  margin-top: 64px;
-  padding-bottom: 12px;
-  color: $grey-text-color;
-}
 
-.post h3,
-.post h4 {
-  margin-top: 30px;
-  padding-bottom: 10px;
-  color: $grey-text-color;
-}
-
-.post h5,
-.post h6 {
-  margin-top: 18px;
-}
-.post p {
-  font-size: 16px;
-  color: $text-color; 
-}
-.post-author-info .portrait {
-  width: 17%;
-  vertical-align: middle;
-  border-radius: 50%;
-}
-.post-author-info .author-name a,
-.post-author-info .author-name {
-  font-size: 15px;
-  color: $grey-text-color;
+ .portrait {
+    width: 17%;
+    vertical-align: middle;
+    border-radius: 50%;
+  }
+ .author-name a,
+ .author-name {
+    font-size: 15px;
+    color: $grey-text-color;
+  }
 }
 .post-date {
   margin-bottom: 10px;
   font-size: 14px;
   color: $grey-text-color;
-}
-.post img {
-  max-width: 90%;
-  display: block;
-  padding: 20px;
 }
 .post-title {
   font-size: 32px;
@@ -518,11 +422,11 @@ a.footnote:hover,
   border: 1px solid $btn-border-color;
   border-radius: 3px;
   font-size: 16px;
-  color: $text-color; 
+  color: $text-color;
 }
 .back-btn a:hover {
-  background-color: $btn-default-active-bg-color; 
-  border-color: $btn-border-color; 
+  background-color: $btn-default-active-bg-color;
+  border-color: $btn-border-color;
 }
 
 /* blog ends */
@@ -636,9 +540,9 @@ a.footnote:hover,
 .footer a:hover {
   text-decoration: underline;
 }
-/* hiring banner     
-  
-  .hiring-banner {  
+/* hiring banner
+
+.hiring-banner {
   margin-left: auto;
   margin-right: auto;
   padding: 0 5%;
@@ -649,29 +553,29 @@ a.footnote:hover,
   background-color: #333b4d;
   background-position: center center;
   -webkit-transition: 0.2s ease-out all;
-}        
+}
 .lt-ie9 .hiring-banner {
   background-image: url(/images/hiring-imagex1.jpg) no-repeat;
-  background-position: center center;  
-}    
+  background-position: center center;
+}
 .hiring-content {
   margin: 0 auto;
   padding-top: 100px;
   max-width: 700px;
-}    
-.hiring-title {    
+}
+.hiring-title {
   margin-bottom: 20px;
   font-size: 48px;
   font-weight: 100;
   line-height: 1.1em;
   color: white;
   -webkit-transition: 0.2s ease-out all;
-}    
-.hiring-subtitle {   
-  color: #dce0e6;    
-  font-size: 16px;   
+}
+.hiring-subtitle {
+  color: #dce0e6;
+  font-size: 18px;
   font-weight: normal;
-  -webkit-transition: 0.2s ease-out all;   
+  -webkit-transition: 0.2s ease-out all;
 }
 .btn-job {
   margin-top: 40px;
@@ -804,37 +708,39 @@ a.footnote:hover,
 }
 
 /* for IE8 and lower */
-.res-mobile .header {
-  height: 80px;
-}
-.res-mobile .menu {
-  float: left;
-  padding: 8px 0;
-}
-.res-mobile .menu li a {
-  padding-left: 0;
-  padding-right: 20px;
-}
-.res-mobile .post-title {
-  margin-right: 0;
-}
-.res-mobile .pagination .pages li {
-  display: none;
-}
-.res-mobile .post-description {
-  margin-right: 0;
-}
-.res-mobile .back-btn a {
-  padding: 20px 25%;
-}
-.res-mobile .spoqa-logo-wrap {
-    float:none;
-}
-.res-mobile .pagination .previous {
-  float: left;
-}
-.res-mobile .pagination .next {
-  float: right;
+.res-mobile {
+  .header {
+    height: 80px;
+  }
+  .menu {
+    float: left;
+    padding: 8px 0;
+  }
+  .menu li a {
+    padding-left: 0;
+    padding-right: 20px;
+  }
+  .post-title {
+    margin-right: 0;
+  }
+  .pagination .pages li {
+    display: none;
+  }
+  .post-description {
+    margin-right: 0;
+  }
+  .back-btn a {
+    padding: 20px 25%;
+  }
+  .spoqa-logo-wrap {
+      float:none;
+  }
+  .pagination .previous {
+    float: left;
+  }
+  .pagination .next {
+    float: right;
+  }
 }
 
 /* fb comment plug-in overrides */

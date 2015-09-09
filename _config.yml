@@ -13,3 +13,5 @@ representing_image: "/images/og-logo.png"
 
 sass:
     sass_dir: css
+
+trawler_mode: true

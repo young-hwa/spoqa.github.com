@@ -100,17 +100,17 @@
 <!-- Responsive layout polyfill for IE8 and lower -->
 <!--[if lte IE 8]>
 <script>
-var config = {
-    mobileResponsiveBreakpoint: 650
-};
-$(window).on('resize', function(){
-    if ($(window).width() <= config.mobileResponsiveBreakpoint) {
-       !$(document.body).hasClass('res-mobile')) {
-        $(document.body).addClass('res-mobile');
-    } else {
-        $(document.body).removeClass('res-mobile');
-    }
-}).trigger('resize');
+  var config = {
+      mobileResponsiveBreakpoint: 650
+  };
+  $(window).on('resize', function(){
+      if ($(window).width() <= config.mobileResponsiveBreakpoint) {
+         !$(document.body).hasClass('res-mobile')) {
+          $(document.body).addClass('res-mobile');
+      } else {
+          $(document.body).removeClass('res-mobile');
+      }
+  }).trigger('resize');
 </script>
 <![endif]-->
 </body>

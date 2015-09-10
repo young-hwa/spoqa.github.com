@@ -54,7 +54,7 @@
     <div class="header">
       <div class="header-item">
         <div class="spoqa-logo-wrap">
-          <a class="spoqa-logo" href="{{ base_path }}/"><img src="{{ base_path }}/images/logo.png"></a>
+          <a class="spoqa-logo" href="{{ base_path }}/"><img src="{{ base_path }}/images/logo.png" alt="Spoqa logo"></a>
           <a class="blog-title" href="{{ base_path }}/">기술 블로그</a>
         </div>
         <div class="nav">
@@ -100,19 +100,18 @@
 <!-- Responsive layout polyfill for IE8 and lower -->
 <!--[if lte IE 8]>
 <script>
-var config = {
-    mobileResponsiveBreakpoint: 650
-};
-$(window).on('resize', function(){
-    if ($(window).width() <= config.mobileResponsiveBreakpoint) {
-       !$(document.body).hasClass('res-mobile')) {
-        $(document.body).addClass('res-mobile');
-    } else {
-        $(document.body).removeClass('res-mobile');
-    }
-}).trigger('resize');
+  var config = {
+      mobileResponsiveBreakpoint: 650
+  };
+  $(window).on('resize', function(){
+      if ($(window).width() <= config.mobileResponsiveBreakpoint) {
+         !$(document.body).hasClass('res-mobile')) {
+          $(document.body).addClass('res-mobile');
+      } else {
+          $(document.body).removeClass('res-mobile');
+      }
+  }).trigger('resize');
 </script>
 <![endif]-->
 </body>
 </html>
-

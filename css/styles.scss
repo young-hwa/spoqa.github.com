@@ -6,28 +6,14 @@
 @import 'reset/reset';
 @import 'solarized_light.css';
 
+// Typekit Font loader attrs
+.wf-loading body {
+  font-family: "Apple SD Gothic Neo", "Nanum Barun Gothic", "Nanum Gothic", Verdana, Arial, "Malgun Gothic", Dotum, sans-serif;
+}
+
 .hljs {
   background: $grey-1;
 }
-
-@font-face {
-  font-family: 'spoqahansans';
-  src: url('./fonts/SpoqaHanSans-Bold_subset.woff') format('woff');
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: 'spoqahansans';
-  src: url('./fonts/SpoqaHanSans-Regular_subset.woff') format('woff');
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: 'spoqahansans';
-  src: url('./fonts/SpoqaHanSans-Thin_subset.woff') format('woff');
-  font-weight: 100;
-}
-
 .content,
 .footer {
   width: 90%;

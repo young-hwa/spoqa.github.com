@@ -647,11 +647,13 @@ a.footnote {
   .hiring-banner {
     height: 400px;
     background-position: 70% left;
+    text-align: center;
   }
   .hiring-content {
-    padding-top: 60px;
+    top: 60px;
+    right:0; left:0;
     text-align: center;
-    margin-left: 0px;
+    margin: 0;
   }
   .hiring-title {
     font-size: 42px;
@@ -691,10 +693,13 @@ a.footnote {
   }
   .hiring-banner {
     height: 380px;
+    text-align: center;
   }
   .hiring-content {
-    padding-top: 60px;
-    margin-left: 0px;
+    top: 60px;
+    right:0; left:0;
+    text-align: center;
+    margin: 0;
   }
   .hiring-title {
     font-size: 36px;

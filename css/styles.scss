@@ -196,21 +196,20 @@ a.footnote {
   display: inline-block;
 
   a {
-    padding: 22px 24px 16px;
+    font-size: 16px;
+    padding: 24px 24px 16px;
     color: $text-color;
     line-height: 19px;
     display: inline-block;
-    border-bottom: 4px solid transparent;
 
     &:active,
     &.selected {
       -webkit-transition: 0.2s ease-out all;
-      border-bottom: 4px solid $mainblue-0;
+      color: $mainblue-0;
     }
     &:focus,
     &:hover {
       -webkit-transition: 0.2s ease-out all;
-      border-bottom: 4px solid $divider-color;
     }
   }
 }

@@ -69,15 +69,15 @@
               selected
               {% endif %} menu-about" href="{{ base_path }}/about.html">소개</a></li>
             <li><a class="
-              {% if page.url != '/about.html' and page.url != '/job.html' %}
+              {% if page.url != '/about.html' and page.url != '/jobs.html' %}
               selected
               {% endif %} menu-blog" href="{{ base_path }}/index.html">블로그</a></li>
             <li><a class="menu-github" href="https://github.com/spoqa">GitHub</a></li>
             {% if site.trawler_mode %}
             <li><a class="
-              {% if page.url == '/job.html' %}
+              {% if page.url == '/jobs.html' %}
               selected
-              {% endif %} menu-job" href="/job.html">채용정보</a></li>
+              {% endif %} menu-job" href="/jobs.html">채용정보</a></li>
             {% endif %}
           </ul>
         </div>

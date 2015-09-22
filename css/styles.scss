@@ -163,12 +163,12 @@ a.footnote {
   z-index: 2;
 }
 .toggle:hover:after {
-  border-bottom: 2px solid $mainblue-0;
+  border-bottom: 3px solid $mainblue-0;
 }
 .toggle:after {
   content: '메뉴';
   display: inline-block;
-  padding: 23px 20px 17px;
+  padding: 23px 20px 16px;
   background: transparent;
   text-align: center;
   font-size: 15px;
@@ -181,10 +181,10 @@ a.footnote {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  border-bottom: 2px solid transparent;
+  border-bottom: 3px solid transparent;
 }
 #toggle:checked + .toggle:after {
-  border-bottom: 2px solid $mainblue-0;
+  border-bottom: 3px solid $mainblue-0;
 }
 // Menu
 .menu {
@@ -197,19 +197,22 @@ a.footnote {
 
   a {
     font-size: 16px;
-    padding: 24px 24px 16px;
+    padding: 24px 24px 15px;
     color: $text-color;
     line-height: 19px;
     display: inline-block;
+    border-bottom: 3px solid transparent;
 
     &:active,
     &.selected {
       -webkit-transition: 0.2s ease-out all;
+      border-bottom: 3px solid $mainblue-0;
       color: $mainblue-0;
     }
     &:focus,
     &:hover {
       -webkit-transition: 0.2s ease-out all;
+      border-bottom: 3px solid $divider-color;
     }
   }
 }

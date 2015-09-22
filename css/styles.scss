@@ -20,7 +20,7 @@
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
-  padding: 4% 5%;
+  padding: 3% 5%;
 }
 
 .spoqa_intro {
@@ -197,7 +197,7 @@ a.footnote {
 
   a {
     font-size: 16px;
-    padding: 24px 22px 15px;
+    padding: 24px 20px 15px;
     color: $text-color;
     line-height: 19px;
     display: inline-block;
@@ -528,27 +528,28 @@ a.footnote {
 .footer a:hover {
   text-decoration: underline;
 }
-/* hiring banner
+/* hiring banner */
 
 .hiring-banner {
   margin-left: auto;
   margin-right: auto;
   padding: 0 5%;
-  height: 500px;
+  height: 430px;
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url(/images/hiring-imagex1.jpg);
-  background-color: #333b4d;
-  background-position: center center;
+  background-color: #fff;
+  background-position: left bottom;
   -webkit-transition: 0.2s ease-out all;
 }
 .lt-ie9 .hiring-banner {
   background-image: url(/images/hiring-imagex1.jpg) no-repeat;
-  background-position: center center;
+  background-position: left bottom;
 }
 .hiring-content {
   margin: 0 auto;
-  padding-top: 100px;
+  padding-top: 80px;
+  margin-left: 562px;
   max-width: 700px;
 }
 .hiring-title {
@@ -556,31 +557,33 @@ a.footnote {
   font-size: 48px;
   font-weight: 100;
   line-height: 1.1em;
-  color: white;
+  color: $text-color;
   -webkit-transition: 0.2s ease-out all;
 }
 .hiring-subtitle {
-  color: #dce0e6;
+  color: $text-color;
   font-size: 18px;
   font-weight: normal;
   -webkit-transition: 0.2s ease-out all;
+  line-height: 1.5em;
 }
 .btn-job {
-  margin-top: 40px;
+  margin-top: 34px;
   padding: 14px 8%;
   display: inline-block;
-  border: 1px solid $btn-border-color;
+  border: 1px solid $mainblue-0;
   border-radius: 2px;
-  color: #fff;
+  color: $mainblue-0;
+  background-color: rgba(255, 255, 255, 0.7);
   font-size: 16px;
   -webkit-transition: 0.2s ease-out all;
 }
 .btn-job:hover {
-  color: #8ab0e6;
+  color: $mainblue-0;
   background-color: transparent;
-  border: 1px solid #8ab0e6;
+  border: 1px solid $mainblue-0;
+  background-color: rgba(76, 128, 241, 0.1);
 }
-*/
 
 /* responsive */
 @media only screen and (max-width: 650px) {
@@ -635,15 +638,14 @@ a.footnote {
     padding: 15px 0;
     width: 100%;
   }
-  /*.hiring-banner {
-    height: 430px;
-    background-position: 70% center;
+  .hiring-banner {
+    height: 400px;
+    background-position: 70% left;
   }
   .hiring-content {
-    padding-top: 80px;
+    padding-top: 60px;
     text-align: center;
-    text-shadow: 0px 0px 5px #333b4d,
-                 0px 0px 5px #333b4d;
+    margin-left: 0px;
   }
   .hiring-title {
     font-size: 42px;
@@ -653,7 +655,7 @@ a.footnote {
   }
   .btn-job {
     width: 70%;
-  }*/
+  }
   .post-author-info .portrait {
     width: 40%;
   }
@@ -681,18 +683,19 @@ a.footnote {
   body {
     width: 100%;
   }
-  /*.hiring-banner {
+  .hiring-banner {
     height: 380px;
   }
   .hiring-content {
-    padding-top: 70px;
+    padding-top: 60px;
+    margin-left: 0px;
   }
   .hiring-title {
     font-size: 36px;
   }
   .btn-job {
     margin-top: 20px;
-  }*/
+  }
 }
 
 /* for IE8 and lower */

@@ -184,7 +184,7 @@ a.footnote {
   border-bottom: 2px solid transparent;
 }
 #toggle:checked + .toggle:after {
-  border-bottom: 2px solid #8ab0e6;
+  border-bottom: 2px solid $mainblue-0;
 }
 // Menu
 .menu {

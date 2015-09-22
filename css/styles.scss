@@ -541,16 +541,22 @@ a.footnote {
   background-color: #fff;
   background-position: left bottom;
   -webkit-transition: 0.2s ease-out all;
+
 }
 .lt-ie9 .hiring-banner {
   background-image: url(/images/hiring-imagex1.jpg) no-repeat;
   background-position: left bottom;
 }
-.hiring-content {
-  margin: 0 auto;
-  padding-top: 80px;
-  margin-left: 562px;
+.hiring-fixedwidth-wrap {
   max-width: 700px;
+  margin: 0 auto;
+  position: relative;
+}
+.hiring-content {
+  top: 80px;
+  right: 11px;
+  display: block;
+  position: absolute;
 }
 .hiring-title {
   margin-bottom: 20px;

@@ -163,16 +163,16 @@ a.footnote {
   z-index: 2;
 }
 .toggle:hover:after {
-  border-bottom: 2px solid #8ab0e6;
+  border-bottom: 3px solid $mainblue-0;
 }
 .toggle:after {
   content: '메뉴';
   display: inline-block;
-  padding: 16px 20px 13px;
+  padding: 23px 20px 16px;
   background: transparent;
   text-align: center;
   font-size: 15px;
-  color: white;
+  color: $text-color;
   line-height: 19px;
   -webkit-transition: all 0.5s linear;
   -moz-transition: all 0.5s linear;
@@ -181,10 +181,10 @@ a.footnote {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  border-bottom: 2px solid transparent;
+  border-bottom: 3px solid transparent;
 }
 #toggle:checked + .toggle:after {
-  border-bottom: 2px solid #8ab0e6;
+  border-bottom: 3px solid $mainblue-0;
 }
 // Menu
 .menu {
@@ -196,21 +196,23 @@ a.footnote {
   display: inline-block;
 
   a {
-    padding: 22px 24px 16px;
+    font-size: 16px;
+    padding: 24px 24px 15px;
     color: $text-color;
     line-height: 19px;
     display: inline-block;
-    border-bottom: 4px solid transparent;
+    border-bottom: 3px solid transparent;
 
     &:active,
     &.selected {
       -webkit-transition: 0.2s ease-out all;
-      border-bottom: 4px solid $mainblue-0;
+      border-bottom: 3px solid $mainblue-0;
+      color: $mainblue-0;
     }
     &:focus,
     &:hover {
       -webkit-transition: 0.2s ease-out all;
-      border-bottom: 4px solid $divider-color;
+      border-bottom: 3px solid $divider-color;
     }
   }
 }
@@ -622,8 +624,8 @@ a.footnote {
     width: 90%;
     position: absolute;
     right: 0;
-    background: rgba(7, 25, 57, 0.8);
-    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 2px;
     text-align: center;
   }
   .menu li {

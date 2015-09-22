@@ -163,16 +163,16 @@ a.footnote {
   z-index: 2;
 }
 .toggle:hover:after {
-  border-bottom: 2px solid #8ab0e6;
+  border-bottom: 2px solid $mainblue-0;
 }
 .toggle:after {
   content: '메뉴';
   display: inline-block;
-  padding: 16px 20px 13px;
+  padding: 23px 20px 17px;
   background: transparent;
   text-align: center;
   font-size: 15px;
-  color: white;
+  color: $text-color;
   line-height: 19px;
   -webkit-transition: all 0.5s linear;
   -moz-transition: all 0.5s linear;

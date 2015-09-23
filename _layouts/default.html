@@ -119,6 +119,9 @@
       $('.hiring-banner').bind("touchstart", function() {
         location.href = '/jobs.html';
       });
+      $('.toggle').bind("touchstart", function() {
+        $('.menu').toggle();
+      })
     });
   </script>
   <!-- Responsive layout polyfill for IE8 and lower -->

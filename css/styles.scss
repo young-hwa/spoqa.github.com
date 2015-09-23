@@ -624,13 +624,8 @@ a.footnote {
     -webkit-user-select: none;
     user-select: none;
   }
-  #toggle:checked ~ .menu {
-    display: block;
-    opacity: 1;
-  }
   .menu {
     display: none;
-    opacity: 0;
     margin: 10px 5% 0;
     width: 90%;
     position: absolute;

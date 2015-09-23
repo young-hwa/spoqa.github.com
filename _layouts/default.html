@@ -116,9 +116,8 @@
   <script>
     hljs.initHighlightingOnLoad();
     $(function() {
-      $('.hiring-banner').click(function() {
-        if($(window).height() <= 580)
-          location.href = '/jobs.html';
+      $('.hiring-banner').bind("touchstart", function() {
+        location.href = '/jobs.html';
       });
     });
   </script>

@@ -649,7 +649,8 @@ a.footnote {
     width: 100%;
   }
   .hiring-banner {
-    height: 380px
+    height: 380px;
+    cursor: pointer;
   }
   .hiring-content {
     top: 60px;
@@ -697,6 +698,7 @@ a.footnote {
   .hiring-banner {
     height: 380px;
     text-align: center;
+    cursor: pointer;
   }
   .hiring-content {
     top: 60px;

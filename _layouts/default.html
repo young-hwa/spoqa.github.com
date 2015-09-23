@@ -115,6 +115,12 @@
   <script src="{{ base_path }}/js/highlight.pack.js"></script>
   <script>
     hljs.initHighlightingOnLoad();
+    $(function() {
+      $('.hiring-banner').click(function() {
+        if($(window).height() <= 580)
+          location.href = '/jobs.html';
+      });
+    });
   </script>
   <!-- Responsive layout polyfill for IE8 and lower -->
   <!--[if lte IE 8]>

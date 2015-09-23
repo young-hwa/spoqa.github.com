@@ -557,9 +557,8 @@ a.footnote {
   right: 11px;
   display: block;
   position: absolute;
-  text-shadow: 0px 0px 6px rgba(248,248,246, 0.6),
-               0px 0px 6px rgba(248,248,246, 0.6);
-
+ text-shadow: 0px 0px 20px rgba(248,248,246, 0.6),
+              0px 0px 30px rgba(248,248,246, 0.6);
 }
 .hiring-title {
   margin-bottom: 20px;
@@ -654,7 +653,7 @@ a.footnote {
   }
   .hiring-content {
     top: 60px;
-    right:0; 
+    right:0;
     left:0;
     margin: 0;
     text-align:center;

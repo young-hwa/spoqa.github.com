@@ -8,12 +8,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Spoqa Tech Blog{% if page.title %} | {{ page.title }}{% endif %}</title>
-  {% if page.title %}
+  {% if page.url contains 'jobs' %}
+  <meta property="og:title" content="스포카에서 크리에이터를 찾습니다.">
+  <meta property="og:type" content="blog">
+  <meta property="og:url" content="http://spoqa.github.io{{ page.url }}">
+  <meta property="og:site_name" content="Spoqa 기술 블로그">
+  <meta property="og:description" content="스포카에서 상점을 위한 IT 서비스를 디자인하고 개발할 크리에이터를 찾고 있습니다.">
+  {% elsif page.title %}
   {% assign base_path = '../../..' %}
   <meta property="og:title" content="{{ page.title }}">
   <meta property="og:type" content="article">
   <meta property="og:url" content="http://spoqa.github.io{{ page.url }}">
-  <meta property="og:site_name" content="Spoqa Tech Blog">
+  <meta property="og:site_name" content="Spoqa 기술 블로그">
   <meta property="og:description" content="{{ page.description }}">
   {% else %}
   {% if paginator.page == 1 %}
@@ -21,13 +27,17 @@
   {% else %}
     {% assign base_path = '..' %}
   {% endif %}
-  <meta property="og:title" content="Spoqa Tech Blog">
+  <meta property="og:title" content="Spoqa 기술 블로그">
   <meta property="og:type" content="blog">
   <meta property="og:url" content="{{ site.home_url }}">
-  <meta property="og:site_name" content="Spoqa Tech Blog">
+  <meta property="og:site_name" content="Spoqa 기술 블로그">
   <meta property="og:description" content="몇가지 Code snippet과 설명등을 포함하여 매주 1회씩 스포카 팀이 배운 여러가지 기술들에 대해 소개합니다.">
   {% endif %}
-  <meta property="og:image" content="{{ site.home_url }}{{ site.representing_image }}">
+  {% if page.representing_image %}
+    <meta property="og:image" content="{{ site.home_url }}{{ page.representing_image }}">
+  {% else %}
+    <meta property="og:image" content="{{ site.home_url }}{{ site.representing_image }}">
+  {% endif %}
   <script>
     window.WebFontConfig = {
         custom: {
@@ -49,7 +59,7 @@
     ga('send', 'pageview');
   </script>
   <link rel="stylesheet" href="{{ base_path }}/css/styles.css">
-  <link href="{{ base_path }}/atom.xml" type="application/atom+xml" rel="alternate" title="Spoqa Tech Blog">
+  <link href="{{ base_path }}/atom.xml" type="application/atom+xml" rel="alternate" title="Spoqa 기술 블로그">
   <link rel="shortcut icon" href="{{ base_path }}/images/favicon.ico">
   <style type="text/css">
 @media only screen and (max-width: 580px) {

@@ -557,8 +557,8 @@ a.footnote {
   right: 11px;
   display: block;
   position: absolute;
-  text-shadow: 0px 0px 6px #f8f8f6,
-               0px 0px 6px #f8f8f6;
+  text-shadow: 0px 0px 6px rgba(248,248,246, 0.6),
+               0px 0px 6px rgba(248,248,246, 0.6);
 
 }
 .hiring-title {
@@ -749,6 +749,60 @@ a.footnote {
     float: right;
   }
 }
+
+// job-table
+
+.job-table {
+  margin-top: 20px;
+}
+
+.job-table > thead {
+  border-top: 1px solid $grey-2;
+}
+
+.job-table > thead > tr,
+.job-table > tbody > tr {
+  border-bottom: 1px solid $grey-2;
+  background-color: #fff;
+}
+
+.job-table > thead > tr > th {
+  font-weight: 700;
+  text-align: center;
+  vertical-align: middle;
+  border-color: $grey-2;
+  padding: 16px;
+  color: $grey-5;
+}
+
+.job-table > tbody > tr >td {
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  border-color: $grey-2;
+  padding: 0;
+
+  > a {
+    display: inline-block;
+    width: 100%;
+    padding: 16px 0;
+    color: $grey-7;
+  }
+}
+
+.job-table > tbody > tr:hover {
+  background-color: white;
+
+  >td {
+    -webkit-transition: 0.2s ease-out all;
+    background-color: $grey-0;
+
+    >a {
+      color: $mainblue-0;
+    }
+  }
+}
+
 
 /* fb comment plug-in overrides */
 .fb-comments > span {

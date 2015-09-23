@@ -8,12 +8,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Spoqa Tech Blog{% if page.title %} | {{ page.title }}{% endif %}</title>
-  {% if page.title %}
+  {% if page.url contains 'jobs' %}
+  <meta property="og:title" content="스포카에서 크리에이터를 찾습니다.">
+  <meta property="og:type" content="blog">
+  <meta property="og:url" content="http://spoqa.github.io{{ page.url }}">
+  <meta property="og:site_name" content="Spoqa 기술 블로그">
+  <meta property="og:description" content="스포카에서 상점을 위한 IT 서비스를 디자인하고 개발할 크리에이터를 찾고 있습니다.">
+  {% elsif page.title %}
   {% assign base_path = '../../..' %}
   <meta property="og:title" content="{{ page.title }}">
   <meta property="og:type" content="article">
   <meta property="og:url" content="http://spoqa.github.io{{ page.url }}">
-  <meta property="og:site_name" content="Spoqa Tech Blog">
+  <meta property="og:site_name" content="Spoqa 기술 블로그">
   <meta property="og:description" content="{{ page.description }}">
   {% else %}
   {% if paginator.page == 1 %}
@@ -21,13 +27,17 @@
   {% else %}
     {% assign base_path = '..' %}
   {% endif %}
-  <meta property="og:title" content="Spoqa Tech Blog">
+  <meta property="og:title" content="Spoqa 기술 블로그">
   <meta property="og:type" content="blog">
   <meta property="og:url" content="{{ site.home_url }}">
-  <meta property="og:site_name" content="Spoqa Tech Blog">
+  <meta property="og:site_name" content="Spoqa 기술 블로그">
   <meta property="og:description" content="몇가지 Code snippet과 설명등을 포함하여 매주 1회씩 스포카 팀이 배운 여러가지 기술들에 대해 소개합니다.">
   {% endif %}
-  <meta property="og:image" content="{{ site.home_url }}{{ site.representing_image }}">
+  {% if page.representing_image %}
+    <meta property="og:image" content="{{ site.home_url }}{{ page.representing_image }}">
+  {% else %}
+    <meta property="og:image" content="{{ site.home_url }}{{ site.representing_image }}">
+  {% endif %}
   <script>
     window.WebFontConfig = {
         custom: {
@@ -49,7 +59,7 @@
     ga('send', 'pageview');
   </script>
   <link rel="stylesheet" href="{{ base_path }}/css/styles.css">
-  <link href="{{ base_path }}/atom.xml" type="application/atom+xml" rel="alternate" title="Spoqa Tech Blog">
+  <link href="{{ base_path }}/atom.xml" type="application/atom+xml" rel="alternate" title="Spoqa 기술 블로그">
   <link rel="shortcut icon" href="{{ base_path }}/images/favicon.ico">
   <style type="text/css">
 @media only screen and (max-width: 580px) {
@@ -76,15 +86,15 @@
               selected
               {% endif %} menu-about" href="{{ base_path }}/about.html">소개</a></li>
             <li><a class="
-              {% if page.url != '/about.html' and page.url != '/job.html' %}
+              {% if page.url != '/about.html' and page.url != '/jobs.html' %}
               selected
               {% endif %} menu-blog" href="{{ base_path }}/index.html">블로그</a></li>
             <li><a class="menu-github" href="https://github.com/spoqa">GitHub</a></li>
             {% if site.trawler_mode %}
             <li><a class="
-              {% if page.url == '/job.html' %}
+              {% if page.url == '/jobs.html' %}
               selected
-              {% endif %} menu-job" href="/job.html">채용정보</a></li>
+              {% endif %} menu-job" href="/jobs.html">채용정보</a></li>
             {% endif %}
           </ul>
         </div>
@@ -95,7 +105,7 @@
         <div class="hiring-content">
           <h2 class="hiring-title">당신과 함께<br> 일하고 싶습니다.</h2>
           <div class="hiring-subtitle">스포카에서 배우고 성장하면서, <br>서비스와 제품을 함께 만들어 나갈 <br>크리에이터를 모집합니다.</div>
-          <a target="_blank" class="btn-job" type="button" href="{{ base_path }}/job.html">채용 공고 보기</a>
+          <a class="btn-job" type="button" href="{{ base_path }}/jobs.html">채용 공고 보기</a>
         </div>
       </div>
     </div>
@@ -115,6 +125,14 @@
   <script src="{{ base_path }}/js/highlight.pack.js"></script>
   <script>
     hljs.initHighlightingOnLoad();
+    $(function() {
+      $('.hiring-banner').bind("touchstart", function() {
+        location.href = '/jobs.html';
+      });
+      $('.toggle').bind("touchstart", function() {
+        $('.menu').toggle();
+      })
+    });
   </script>
   <!-- Responsive layout polyfill for IE8 and lower -->
   <!--[if lte IE 8]>

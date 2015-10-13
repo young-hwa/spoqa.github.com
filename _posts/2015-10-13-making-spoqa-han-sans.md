@@ -45,7 +45,7 @@ publish: true
 <img src="/images/2015-10-13/0_0.png"
      style="margin-right:auto; margin-left:auto;" />
 
-[한중일 통합 한자](https://ko.wikipedia.org/wiki/%ED%95%9C%EC%A4%91%EC%9D%BC_%ED%86%B5%ED%95%A9_%ED%95%9C%EC%9E%90#.ED.95.9C.EC.A4.91.EC.9D.BC_.ED.86.B5.ED.95.A9_.ED.95.9C.EC.9E.90)(CJK Unified Ideographs)의 유니코드 레인지를 검색하면, U+4E00와 U+9FD5사이의 20,950자가 한·중·일 통합 한자임을 확인 할 수 있습니다. 이 한·중·일 통합 한자를 삭제해 보겠습니다. 처음 시작하는 `4E00`의 문자 셀을 먼저 클릭하고 `Shift` 키를 누른 채로 `9FD5`를 클릭하면 모든 한·중·일 통합 한자가 선택됩니다.
+[한중일 통합 한자](https://ko.wikipedia.org/wiki/%ED%95%9C%EC%A4%91%EC%9D%BC_%ED%86%B5%ED%95%A9_%ED%95%9C%EC%9E%90#.ED.95.9C.EC.A4.91.EC.9D.BC_.ED.86.B5.ED.95.A9_.ED.95.9C.EC.9E.90)(CJK Unified Ideographs)의 유니코드 범위를 검색하면, U+4E00와 U+9FD5사이의 20,950자가 한·중·일 통합 한자임을 확인 할 수 있습니다. 이 한·중·일 통합 한자를 삭제해 보겠습니다. 처음 시작하는 `4E00`의 문자 셀을 먼저 클릭하고 `Shift` 키를 누른 채로 `9FD5`를 클릭하면 모든 한·중·일 통합 한자가 선택됩니다.
 
 <img src="/images/2015-10-13/0_1.png"
      style="margin-right:auto; margin-left:auto;" />

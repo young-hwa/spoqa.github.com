@@ -317,6 +317,12 @@ a.footnote {
 }
 
 /* blog post */
+figcaption {
+  text-align: center;
+  font-size: 14px;
+  color: $grey-text-color;
+  margin-bottom: 20px;
+}
 
 .post {
   h1 {

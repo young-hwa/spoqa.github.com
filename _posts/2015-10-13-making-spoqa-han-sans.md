@@ -22,6 +22,22 @@ publish: true
 
 계속해서 글꼴 조사를 하던 와중에 우리는 글꼴 경량화에 관한 여러 포스팅을 접하게 되어 글꼴을 커스터마이즈하기로 결정했습니다.[^3] 필요조건에 가장 부합하는 본고딕을 선택, 글리프와 일부 영문, 그리고 숫자를 &ldquo;커스텀&rdquo; 하였고, 경량화 작업에 착수했습니다.[^4]
 
+<figure>
+<img src="/images/2015-10-13/before_after_1.png"
+     style="margin-right:auto; margin-left:auto;" />
+<figcaption>
+    도도 스토어앱의 숫자 패드 (적용 전 / 적용 후)
+</figcaption>
+</figure>
+
+<figure>
+<img src="/images/2015-10-13/before_after_2.png"
+     style="margin-right:auto; margin-left:auto;" />
+<figcaption>
+	도도 인사이트의 대시보드 (적용 전 / 적용 후)
+</figcaption>
+</figure>
+
 이 글에서는 배포 웹페이지에는 나타나 있지 않은 뒷 이야기를 적었습니다. 서브셋 글꼴 만들기와 웹폰트 경량화, 오픈 폰트 라이선스(OFL)를 가진 글꼴을 어떻게 수정하였는지, 아마추어 타입 디자이너로서 어떤 문제에 봉착했는지, 그리고 다른 오픈 폰트 라이선스 글꼴 프로젝트은 어떤 것들이 있는지 등을 소개 합니다. 모쪼록 이 글이 글꼴 제작에 관심 있는 디자이너와 개발자에게 유용하기를 바랍니다.
 
 

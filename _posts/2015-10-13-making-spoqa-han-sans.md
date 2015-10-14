@@ -228,7 +228,7 @@ publish: true
 
 [^10]: 스포카 개발자 홍민희님이 첫번째 스터디의 [발표](http://speakerdeck.com/minhee/yunikodeu-seuteodi)를 맡아주셨습니다.
 
-[^11]: 서체가 인코딩되지 않아 네모 형태로 나오는 것을 두부([tofu](https://en.wikipedia.org/wiki/Noto_fonts#Origin_of_Noto_name))라고 부릅니다. 노토산스의 이름은 **No**-**to**fu에서 유래했다고 합니다. 글리프가 없어서 깨지는 현상을 없애겠다는 글꼴의 컨셉이 담겨져 있는 좋은 작명이 아닐까 싶습니다.
+[^11]: 서체가 인코딩되지 않아 네모 형태로 나오는 것을 두부([tofu](https://en.wikipedia.org/wiki/Noto_fonts#Origin_of_Noto_name))라고 부릅니다. Noto Sans의 이름은 **No**-**to**fu에서 유래했다고 합니다. 글리프가 없어서 깨지는 현상을 없애겠다는 글꼴의 컨셉이 담겨져 있는 좋은 작명이 아닐까 싶습니다.
 
 [^12]: [Lobster is the new comic sans](http://www.lobsteristhenewcomicsans.com/) 사이트를 참고하세요.
 

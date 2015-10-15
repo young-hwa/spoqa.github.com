@@ -8,7 +8,7 @@
 ## Setup
 
 ### OSX
-`chmod +x ./install-mac.sh && ./install-mac.sh`
+`$ ./install-mac.sh`
 
 ## How to write a post
 1. _post 디렉토리 밑에 [Markdown] 문법으로 포스트를 작성합니다.[yyyy-mm-dd-제목.md]

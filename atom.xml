@@ -15,7 +15,7 @@ layout: null
     <email>dev@spoqa.com</email>
   </author>
 
-  {% for post in site.posts %}
+  {% for post in site.posts limit:20 %}
       {% if post.publish != false %}
       <entry>
         <id>http://spoqa.github.com{{ post.id }}</id>

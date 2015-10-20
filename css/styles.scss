@@ -160,7 +160,7 @@ a.footnote {
   z-index: 2;
 }
 .toggle:hover:after {
-  border-bottom: 3px solid $mainblue-0;
+  border-bottom: 3px solid $primary-color;
 }
 .toggle:after {
   content: '메뉴';
@@ -180,7 +180,7 @@ a.footnote {
   border-bottom: 3px solid transparent;
 }
 #toggle:checked + .toggle:after {
-  border-bottom: 3px solid $mainblue-0;
+  border-bottom: 3px solid $primary-color;
 }
 // Menu
 .menu {
@@ -199,8 +199,8 @@ a.footnote {
     &:active,
     &.selected {
       -webkit-transition: 0.2s ease-out all;
-      border-bottom: 3px solid $mainblue-0;
-      color: $mainblue-0;
+      border-bottom: 3px solid $primary-color;
+      color: $hightlight-text-color;
     }
     &:focus,
     &:hover {
@@ -571,16 +571,16 @@ figcaption {
   margin-top: 24px;
   padding: 17px 15%;
   display: inline-block;
-  border: 1px solid $mainblue-0;
+  border: 1px solid $primary-color;
   border-radius: 2px;
-  color: $mainblue-0;
+  color: $hightlight-text-color;
   background-color: rgba(255, 255, 255, 0.7);
   -webkit-transition: 0.2s ease-out all;
 }
 .btn-job:hover {
-  color: $mainblue-0;
+  color: $hightlight-text-color;
   background-color: transparent;
-  border: 1px solid $mainblue-0;
+  border: 1px solid $primary-color;
   background-color: rgba(76, 128, 241, 0.1);
 }
 
@@ -785,7 +785,7 @@ figcaption {
     background-color: $grey-0;
 
     >a {
-      color: $mainblue-0;
+      color: $hightlight-text-color;
     }
   }
 }

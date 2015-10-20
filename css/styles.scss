@@ -15,7 +15,7 @@
 }
 
 .hljs {
-  background: $grey-1;
+  background: $grey-highlight-color;
 }
 .content,
 .footer {
@@ -281,7 +281,7 @@ a.footnote {
     border-radius: 2px;
     font-size: $blog-font-size-sm;
     color: $text-color;
-    background-color: $grey-1;
+    background-color: $grey-highlight-color;
   }
   .previous a,
   .next a,
@@ -304,7 +304,7 @@ a.footnote {
   .next:hover,
   .page a:hover {
     -webkit-transition: 0.2s ease-out all;
-    background-color: $grey-1;
+    background-color: $grey-highlight-color;
   }
 }
 
@@ -740,12 +740,12 @@ figcaption {
 }
 
 .job-table > thead {
-  border-top: 1px solid $grey-2;
+  border-top: 1px solid $table-border-color;
 }
 
 .job-table > thead > tr,
 .job-table > tbody > tr {
-  border-bottom: 1px solid $grey-2;
+  border-bottom: 1px solid $table-border-color;
   background-color: #fff;
 }
 
@@ -753,23 +753,22 @@ figcaption {
   font-weight: 700;
   text-align: center;
   vertical-align: middle;
-  border-color: $grey-2;
+  border-color: $table-border-color;
   padding: 16px;
-  color: $grey-5;
+  color: $grey-text-color;
 }
 
 .job-table > tbody > tr >td {
   font-weight: normal;
   text-align: center;
   vertical-align: middle;
-  border-color: $grey-2;
+  border-color: $table-border-color;
   padding: 0;
 
   > a {
     display: inline-block;
     width: 100%;
     padding: 16px 0;
-    color: $grey-7;
   }
 }
 
@@ -778,7 +777,7 @@ figcaption {
 
   >td {
     -webkit-transition: 0.2s ease-out all;
-    background-color: $grey-0;
+    background-color: $grey-bg-color;
 
     >a {
       color: $hightlight-text-color;

@@ -91,7 +91,6 @@ h5 { font-size: 18px; }
 h6 { font-size: 16px; }
 p, dl {
   color: $text-color;
-  font-size: 16px;
   padding-top: 10px;
   padding-bottom: 10px;
   line-height: 1.9em;
@@ -135,7 +134,6 @@ table a code {
   margin: 0 2px;
   padding: 2px 5px;
   width: 100%;
-  font-size: 16px;
   background: $grey-1;
   border: 1px solid $divider-color;
   border-radius: 2px;
@@ -154,7 +152,6 @@ pre code {
   border: none;
   padding: 0;
   margin: 0;
-  font-size: 15px;
 }
 code {
   font-family: "Source Code Pro", Consolas, "Letter Gothic Std", Courier, "Nanum Gothic Coding", monospace;

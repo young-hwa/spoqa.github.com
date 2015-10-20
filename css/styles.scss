@@ -217,9 +217,6 @@ a.footnote {
 
 /* post-authot-info (post-info로 수정하는게 의미상 맞을 듯) */
 
-.post-item p {
-  font-size: $blog-font-size-sm;
-}
 .sep {
   color: $grey-text-color;
   margin: 0 5px;
@@ -346,13 +343,11 @@ figcaption {
   }
  .author-name a,
  .author-name {
-    font-size: $blog-font-size-sm;//FIXME:일단 14px로 해봄
     color: $grey-text-color;
   }
 }
 .post-date {
   margin-bottom: 10px;
-  font-size: $blog-font-size-sm;
   color: $grey-text-color;
 }
 .post-title {

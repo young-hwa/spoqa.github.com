@@ -52,7 +52,7 @@ ENG, KR
 
 body {
 //font-family: $font-family-base;
-  font-size: $font-size-base;
+  font-size: $blog-font-size-base;//테크블로그 기본 폰트 사이즈를 설정했습니다.
   line-height: 1.5em;
   color: $text-color;
   -webkit-font-smoothing: antialiased;
@@ -160,7 +160,7 @@ dd {
 // --------------------------------------------------------------------------
 
 small {
-  font-size: $font-size-sm;
+  font-size: $blog-font-size-sm;
   -webkit-font-smoothing: subpixel-antialiased;
 }
 

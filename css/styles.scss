@@ -126,12 +126,13 @@ a.footnote {
   margin-right: auto;
 }
 .spoqa-logo-wrap {
-  padding-top: 23px;
+  padding-top: 20px;
   float:left;
 }
 .spoqa-logo img {
   width: 60px;
   height: auto;
+  padding-top: 1px;
   padding-right: 6px;
   vertical-align: middle;
 }
@@ -199,9 +200,8 @@ a.footnote {
 
   a {
     font-size: 16px;
-    padding: 12px 20px 15px;
+    padding: 7px 20px 15px;
     color: $text-color;
-    line-height: 19px;
     display: inline-block;
     border-bottom: 3px solid transparent;
 

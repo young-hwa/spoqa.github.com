@@ -64,12 +64,6 @@
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   }
-  center {
-    line-height: 1.7em;
-  }
-  tr {
-    line-height: 1.7em;
-  }
   caption {
     margin: 10px;
   }
@@ -366,7 +360,6 @@ figcaption {
   margin-top: 30px;
   margin-bottom: 10px;
   font-weight: 100;
-  line-height: 1.4em;
   color: $text-color;
 }
 .posts .post-title {
@@ -375,7 +368,6 @@ figcaption {
 }
 .post-title-words{
   font-weight: 100;
-  line-height: 1.4em;
   color: $text-color;
 }
 .post-description {

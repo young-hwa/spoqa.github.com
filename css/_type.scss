@@ -2,8 +2,8 @@
 // Spoqa Han Sans
 // FIXME: Change as webfont
 // ==========================================================================
-
-/* ENG, KR
+/*
+ENG, KR
 // --------------------------------------------------------------------------
 
 @font-face {
@@ -42,27 +42,27 @@
 
 @font-face {
   font-family: 'Spoqa Han Sans JP';
-  src: url('static/fonts/SpoqaHanSansJP-Thin_subset.woff') format('woff');
+  src: url('/fonts/SpoqaHanSansJP-Thin_subset.woff') format('woff');
   font-weight: 100;
 }
-
 */
 
 // Default Setting
 // --------------------------------------------------------------------------
 
 body {
-  font-family: $font-family-base;
+//font-family: $font-family-base;
   font-size: $font-size-base;
   line-height: 1.5em;
   color: $text-color;
   -webkit-font-smoothing: antialiased;
   word-break: keep-all;
 
-  &:lang(ja) {
+/*  &:lang(ja) {
     font-family: $font-family-jp;
     line-height: 1.6em;
   }
+*/
 }
 
 

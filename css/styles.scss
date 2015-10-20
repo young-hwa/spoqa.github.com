@@ -216,7 +216,7 @@ a.footnote {
 }
 .dev-blog {
   font-weight: 100;
-  font-size: 36px;
+  font-size: $blog-font-size-lg;
   color: white;
   display: inline-block;
 }
@@ -318,7 +318,7 @@ figcaption {
 
 .post {
   h1 {
-    font-size: 36px;//h2에 비해 h1가 너무 커지지 않게 에드혹 코드 붙임.
+    font-size: $blog-font-size-lg;
   }
   h1,
   h2 {
@@ -362,7 +362,7 @@ figcaption {
   color: $grey-text-color;
 }
 .post-title {
-  font-size: 36px;
+  font-size: $blog-font-size-lg;
   margin-top: 30px;
   margin-bottom: 10px;
   font-weight: 100;
@@ -371,7 +371,7 @@ figcaption {
 }
 .posts .post-title {
   margin: 0 0 5px;
-  font-size: 36px;
+  font-size: $blog-font-size-lg;
 }
 .post-title-words{
   font-weight: 100;
@@ -413,7 +413,7 @@ figcaption {
 .post .intro-title {
   margin-top: 20px;
   padding-bottom: 12px;
-  font-size: 36px;
+  font-size: $blog-font-size-lg;
   border-bottom: 1px solid $divider-color;
 }
 .about p a,
@@ -643,7 +643,7 @@ figcaption {
     text-align:center;
   }
   .hiring-title {
-    font-size: 36px;
+    font-size: $blog-font-size-lg;
   }
   .hiring-subtitle br{
     display: none;
@@ -690,7 +690,7 @@ figcaption {
     margin: 0;
   }
   .hiring-title {
-    font-size: 36px;
+    font-size: $blog-font-size-lg;
   }
   .btn-job {
     margin-top: 20px;

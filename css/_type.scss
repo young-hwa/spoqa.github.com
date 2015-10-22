@@ -70,12 +70,11 @@ body {
 // Heading
 // --------------------------------------------------------------------------
 
-/* 블로그에서는 따로 쓰지 않아 주석처리
 h1, h2, h3, h4, h5, h6 {
   margin-top: 1.5em;
   margin-bottom: 1em;
 }
-*/
+
 h1, h2 {
   font-weight: 100;
   line-height: 1.3em;
@@ -89,9 +88,9 @@ h3, h4, h5, h6 {
 h1 { font-size: 48px; }
 h2 { font-size: 36px; }
 h3 { font-size: 22px; }
-h4 { font-size: 22px; }
+h4 { font-size: 22px; color: $grey-text-color; } // FIXME: 추후에는 이 파일은 원본을 사용하고 에드혹 시트는 style.scss에 몰아서 관리합니다.
 h5 { font-size: 16px; } //테크블로그에서는 16px이 기본 폰트 사이즈이므로 그것과 같게 설정합니다.
-h6 { font-size: 16px; }
+h6 { font-size: 16px; color: $grey-text-color; font-weight: bold; } // FIXME: 추후에는 이 파일은 원본을 사용하고 에드혹 시트는 style.scss에 몰아서 관리합니다.
 
 
 // Body text

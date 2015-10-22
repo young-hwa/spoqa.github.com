@@ -5,6 +5,9 @@
 @import 'spoqa-colors';
 @import 'reset/reset';
 @import 'solarized_light.css';
+@import '_variables';
+@import '_type';
+
 
 // Typekit Font loader attrs
 .wf-loading body {
@@ -12,7 +15,7 @@
 }
 
 .hljs {
-  background: $grey-1;
+  background: $grey-highlight-color;
 }
 .content,
 .footer {
@@ -40,19 +43,14 @@
   blockquote p {
     padding-top: 0;
     padding-bottom: 0;
-    font-size: 16px;//18px
   }
   ul,
   ol {
     margin: 20px 0 20px 40px;
   }
   li {
-    font-size: 16px;
     margin: 6px 0;
     line-height: 1.9em;
-  }
-  li p {
-    font-size: 16px;//18px
   }
   ol li ul,
   ol li ol,
@@ -65,13 +63,6 @@
     height: 0;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  }
-  center {
-    line-height: 1.7em;
-  }
-  tr {
-    font-size: 15px;
-    line-height: 1.7em;
   }
   caption {
     margin: 10px;
@@ -86,7 +77,7 @@ a.footnote {
   .post ul & {
     margin: 0 3px;
     padding: 2px 6px 2px;
-    font-size: 0.7em;
+    font-size: $blog-font-size-sm;
     text-align: center;
     -webkit-text-stroke: 0.25px;
     border: 1px solid $divider-color;
@@ -105,7 +96,7 @@ a.footnote {
 
   &.post li,
   &.post li p {
-    font-size: 14px;
+    font-size: $blog-font-size-sm;
   }
 }
 
@@ -123,18 +114,18 @@ a.footnote {
   margin-right: auto;
 }
 .spoqa-logo-wrap {
-  padding-top: 23px;
+  padding-top: 20px;
   float:left;
 }
 .spoqa-logo img {
   width: 60px;
   height: auto;
+  padding-top: 1px;
   padding-right: 6px;
-  padding-top: 3px;
   vertical-align: middle;
 }
 .blog-title {
-  font-size: 15px;
+  font-size: $blog-font-size-sm;
   color: $grey-text-color;
 }
 .atom-img {
@@ -163,7 +154,7 @@ a.footnote {
   z-index: 2;
 }
 .toggle:hover:after {
-  border-bottom: 3px solid $mainblue-0;
+  border-bottom: 3px solid $primary-color;
 }
 .toggle:after {
   content: '메뉴';
@@ -171,7 +162,6 @@ a.footnote {
   padding: 23px 20px 16px;
   background: transparent;
   text-align: center;
-  font-size: 15px;
   color: $text-color;
   line-height: 19px;
   -webkit-transition: all 0.5s linear;
@@ -184,30 +174,27 @@ a.footnote {
   border-bottom: 3px solid transparent;
 }
 #toggle:checked + .toggle:after {
-  border-bottom: 3px solid $mainblue-0;
+  border-bottom: 3px solid $primary-color;
 }
 // Menu
 .menu {
   display: inline-block;
-  font-size: 16px;
   float: right;
 }
 .menu li {
   display: inline-block;
 
   a {
-    font-size: 16px;
-    padding: 24px 20px 15px;
+    padding: 19px 20px 15px;
     color: $text-color;
-    line-height: 19px;
     display: inline-block;
     border-bottom: 3px solid transparent;
 
     &:active,
     &.selected {
       -webkit-transition: 0.2s ease-out all;
-      border-bottom: 3px solid $mainblue-0;
-      color: $mainblue-0;
+      border-bottom: 3px solid $primary-color;
+      color: $hightlight-text-color;
     }
     &:focus,
     &:hover {
@@ -223,16 +210,13 @@ a.footnote {
 }
 .dev-blog {
   font-weight: 100;
-  font-size: 40px;
+  font-size: $blog-font-size-lg;
   color: white;
   display: inline-block;
 }
 
 /* post-authot-info (post-info로 수정하는게 의미상 맞을 듯) */
 
-.post-item p {
-  font-size: 14px;
-}
 .sep {
   color: $grey-text-color;
   margin: 0 5px;
@@ -263,7 +247,6 @@ a.footnote {
 
 .pagination {
   text-align: center;
-  font-size: 16px;
   padding: 10px 0;
   margin-top: 30px;
 
@@ -279,7 +262,7 @@ a.footnote {
     margin: 4px 0;
     padding: 9px 14px;
     border-radius: 2px;
-    font-size: 14px;
+    font-size: $blog-font-size-sm;
     color: $text-color;
   }
   .page .current-page,
@@ -287,15 +270,15 @@ a.footnote {
     margin: 4px 0;
     padding: 9px 14px;
     border-radius: 2px;
-    font-size: 14px;
+    font-size: $blog-font-size-sm;
     color: $text-color;
-    background-color: $grey-1;
+    background-color: $grey-highlight-color;
   }
   .previous a,
   .next a,
   .previous.disabled,
   .next.disabled {
-    font-size: 14px;
+    font-size: $blog-font-size-sm;
     color: $text-color;
   }
   .previous.disabled,
@@ -312,45 +295,23 @@ a.footnote {
   .next:hover,
   .page a:hover {
     -webkit-transition: 0.2s ease-out all;
-    background-color: $grey-1;
+    background-color: $grey-highlight-color;
   }
 }
 
 /* blog post */
 figcaption {
   text-align: center;
-  font-size: 14px;
+  font-size: $blog-font-size-sm;
   color: $grey-text-color;
   margin-bottom: 20px;
 }
 
 .post {
   h1 {
-    font-size: 28px;
-  }
-  h1,
-  h2 {
-    margin-top: 64px;
-    padding-bottom: 12px;
-    color: $grey-text-color;
+    font-size: $blog-font-size-lg;
   }
 
-  h3,
-  h4 {
-    margin-top: 30px;
-    padding-bottom: 10px;
-    line-height: 1.5em;
-    color: $grey-text-color;
-  }
-
-  h5,
-  h6 {
-    margin-top: 18px;
-  }
-  p {
-    font-size: 16px;
-    color: $text-color;
-  }
   img {
     max-width: 90%;
     display: block;
@@ -358,7 +319,7 @@ figcaption {
   }
 }
 .post-author-info {
-  margin-bottom: 10%;
+  margin-bottom: 12%;
   text-align: center;
 
  .portrait {
@@ -368,30 +329,26 @@ figcaption {
   }
  .author-name a,
  .author-name {
-    font-size: 15px;
     color: $grey-text-color;
   }
 }
 .post-date {
   margin-bottom: 10px;
-  font-size: 14px;
   color: $grey-text-color;
 }
 .post-title {
-  font-size: 32px;
+  font-size: 48px;
   margin-top: 30px;
   margin-bottom: 10px;
   font-weight: 100;
-  line-height: 1.4em;
   color: $text-color;
 }
 .posts .post-title {
   margin: 0 0 5px;
-  font-size: 30px;
+  font-size: $blog-font-size-lg;
 }
 .post-title-words{
   font-weight: 100;
-  line-height: 1.4em;
   color: $text-color;
 }
 .post-description {
@@ -415,7 +372,6 @@ figcaption {
   display: inline-block;
   border: 1px solid $btn-border-color;
   border-radius: 3px;
-  font-size: 16px;
   color: $text-color;
 }
 .back-btn a:hover {
@@ -430,8 +386,7 @@ figcaption {
 .post .intro-title {
   margin-top: 20px;
   padding-bottom: 12px;
-  color: $grey-text-color;
-  font-size: 38px;
+  font-size: $blog-font-size-lg;
   border-bottom: 1px solid $divider-color;
 }
 .about p a,
@@ -460,7 +415,6 @@ figcaption {
 .nick-name {
   margin-right: 10px;
   font-weight: bold;
-  font-size: 16px;
 }
 .nick-name a {
   color: $text-color;
@@ -525,7 +479,7 @@ figcaption {
 
 .footer {
   margin-bottom: 20px;
-  font-size: 14px;
+  font-size: $blog-font-size-sm;
   color: $grey-text-color;
 }
 .footer a {
@@ -578,7 +532,6 @@ figcaption {
 }
 .hiring-subtitle {
   color: $text-color;
-  font-size: 16px;
   font-weight: normal;
   -webkit-transition: 0.2s ease-out all;
   line-height: 1.5em;
@@ -587,17 +540,16 @@ figcaption {
   margin-top: 24px;
   padding: 17px 15%;
   display: inline-block;
-  border: 1px solid $mainblue-0;
+  border: 1px solid $primary-color;
   border-radius: 2px;
-  color: $mainblue-0;
+  color: $hightlight-text-color;
   background-color: rgba(255, 255, 255, 0.7);
-  font-size: 16px;
   -webkit-transition: 0.2s ease-out all;
 }
 .btn-job:hover {
-  color: $mainblue-0;
+  color: $hightlight-text-color;
   background-color: transparent;
-  border: 1px solid $mainblue-0;
+  border: 1px solid $primary-color;
   background-color: rgba(76, 128, 241, 0.1);
 }
 
@@ -664,7 +616,7 @@ figcaption {
     text-align:center;
   }
   .hiring-title {
-    font-size: 42px;
+    font-size: $blog-font-size-lg;
   }
   .hiring-subtitle br{
     display: none;
@@ -711,7 +663,7 @@ figcaption {
     margin: 0;
   }
   .hiring-title {
-    font-size: 36px;
+    font-size: $blog-font-size-lg;
   }
   .btn-job {
     margin-top: 20px;
@@ -761,12 +713,12 @@ figcaption {
 }
 
 .job-table > thead {
-  border-top: 1px solid $grey-2;
+  border-top: 1px solid $table-border-color;
 }
 
 .job-table > thead > tr,
 .job-table > tbody > tr {
-  border-bottom: 1px solid $grey-2;
+  border-bottom: 1px solid $table-border-color;
   background-color: #fff;
 }
 
@@ -774,23 +726,22 @@ figcaption {
   font-weight: 700;
   text-align: center;
   vertical-align: middle;
-  border-color: $grey-2;
+  border-color: $table-border-color;
   padding: 16px;
-  color: $grey-5;
+  color: $grey-text-color;
 }
 
 .job-table > tbody > tr >td {
   font-weight: normal;
   text-align: center;
   vertical-align: middle;
-  border-color: $grey-2;
+  border-color: $table-border-color;
   padding: 0;
 
   > a {
     display: inline-block;
     width: 100%;
     padding: 16px 0;
-    color: $grey-7;
   }
 }
 
@@ -799,10 +750,10 @@ figcaption {
 
   >td {
     -webkit-transition: 0.2s ease-out all;
-    background-color: $grey-0;
+    background-color: $grey-bg-color;
 
     >a {
-      color: $mainblue-0;
+      color: $hightlight-text-color;
     }
   }
 }

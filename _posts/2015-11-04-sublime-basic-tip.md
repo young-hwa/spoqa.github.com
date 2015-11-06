@@ -101,15 +101,15 @@ Sublime Text에는 다른 코드작성용 텍스트 에디터와 마찬가지로
 <img src="/images/2015-11-04/sublimetext-find-menu.png"
      style="margin-right:auto; margin-left:auto;" />   
 
-그 중 제가 굉장히 자주 썼던 단축키 2가지를 소개합니다. 
+그 중 제가 굉장히 자주 썼던 검색 기능 2가지를 소개합니다. 
 
 
-- `command` + `F`
+- Find `command` + `F`
 
 현재 보고 있는 파일 내에서 특정한 단어를 찾을 때 사용합니다.
 
 
-- `command` + `shift` + `F`
+- Find in Files `command` + `shift` + `F`
 
 Where에 쓰인 디렉토리 안에 있는 모든 파일에서 검색어가 있는 부분들을 검색합니다. 특정 부분이 어느 파일의 몇 번째 줄에 작성되어 있는지 모를 때 유용한 기능입니다.
 

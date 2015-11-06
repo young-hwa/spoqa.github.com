@@ -83,7 +83,7 @@ Sublime Text에는 다른 코드작성용 텍스트 에디터와 마찬가지로
 
 - `view` - `layout`
 
-<img src="/images/2015-11-04/column-wrap.png"
+<img src="/images/2015-11-04/layout-menu.png"
      style="margin-right:auto; margin-left:auto;" />
 
 한번에 여러가지 문서 보면서 고쳐야 할 때 굉장히 유용한 기능입니다. 메뉴 하나씩 소개

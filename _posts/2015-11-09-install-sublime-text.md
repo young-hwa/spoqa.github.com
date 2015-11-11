@@ -171,7 +171,7 @@ If installing manually (not through Package Control), add the following to your 
 
 ---
 
-잘 읽으셨나요? 디자이너분들이 조금 더 쉽게 코드에 입문할 수 있도록 관련 주제의 포스팅을 지속적으로 업로드 할 예정입니다. 다음에는 기초적인 SublimeText 사용법으로 찾아뵙겠습니다. 읽어주셔서 감사합니다.
+잘 읽으셨나요? 디자이너분들이 조금 더 쉽게 코드에 입문할 수 있도록 관련 주제의 포스팅을 지속해서 올릴 예정입니다. 다음에는 기초적인 SublimeText 사용법으로 찾아뵙겠습니다. 읽어주셔서 감사합니다.
 
 
 

@@ -51,6 +51,10 @@
   li {
     margin: 6px 0;
     line-height: 1.9em;
+
+    pre {
+      width: calc(100% - 42px);
+    }
   }
   ol li ul,
   ol li ol,

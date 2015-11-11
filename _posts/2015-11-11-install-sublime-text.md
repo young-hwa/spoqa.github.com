@@ -72,7 +72,7 @@ SublimeText에서 테마나 Syntax highlighting 등의 확장 기능을 손쉽�
    "color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
 }</code></pre>
   문서에는 수동으로 설치했을 경우에만 위 내용을 따르라고 쓰여 있지만, Package Control을 사용해서 설치해도 적용이 자동으로 되지는 않으므로 수동으로 적용해줘야 합니다. 
-  적용할 코드를 복사합니다. 이때 대괄호는 복사하지 않습니다. 
+  적용할 코드를 복사합니다. 이때 중괄호는 복사하지 않습니다. 
         
         <pre><code>"theme": "Material-Theme.sublime-theme",
 "color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",</code></pre>

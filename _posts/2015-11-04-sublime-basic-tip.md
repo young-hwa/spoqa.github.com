@@ -7,15 +7,9 @@ description: Sublime Text 초보 사용자를 위한 팁을 공유합니다.
 publish: true
 ---
 
-현재 스포카 디자이너들은 코드를 작성 및 수정할 때 Sublime Text를 사용하고 있습니다. 제가 사용하면서 자주 쓰게 되고 유용하다고 생각되었던 것들을 몇 가지 공유해보려고 합니다. 특히 Sublime Text를 통해 코드에 입문하는 사람에게 도움이 되리라 생각합니다.
+오늘은 제가 Sublime Text를 사용하면서 자주 썼고 유용하다고 생각되었던 것들을 몇 가지 공유해보려고 합니다. Sublime Text를 통해 코드에 입문하는 사람에게 도움이 되리라 생각합니다. 이 포스트를 통해 Sublime Text를 처음 접하시는 분들은 지난 포스트를 먼저 읽으시길 추천드립니다.
 
-## Sublime Text?
-
-이 포스트를 통해 Sublime Text를 처음 접하시는 분들은 지난 포스트를 참고하시면 더욱 좋습니다.
-
-[다시 읽기 - SublimeText 설치하기](http://spoqa.github.io)
-
-Sublime Text는 HTML, CSS, Javascript 등 모든 프로그래밍 언어를 작성할 때 사용할 수 있는 텍스트 에디터입니다. 간단하게는 (마크다운과 함께) 메모장처럼 사용할 수도 있습니다.
+[관련 글 - SublimeText 시작하기](http://spoqa.github.io/2015/11/11/install-sublime-text.html)
 
 
 ## Syntax 구분으로 코드 가독성 높이기 
@@ -71,7 +65,8 @@ Sublime Text에는 다른 코드작성용 텍스트 에디터와 마찬가지로
 
 만약 Sass에 대한 syntax highlighting이 필요하다면 `sublime text syntax highlighting for Sass` 등의 키워드로 검색하면 설치 방법을 쉽게 찾으실 수 있습니다.(?) 지난 글에서 Material design 테마를 PackageControl을 통해 설치하는 방법을 소개해드렸으니 이해하는데 조금은 도움이 되실 겁니다.
 
-[다시 읽기 - PackageControl 설치하기](http://spoqa.github.io)
+[관련 글 - SublimeText 시작하기](http://spoqa.github.io/2015/11/11/install-sublime-text.html)
+
 
 ## 보는 방식으로 코드 가독성 높이기 
 - `view` - `word wrap column`

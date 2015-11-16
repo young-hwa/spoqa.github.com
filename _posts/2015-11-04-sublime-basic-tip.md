@@ -63,7 +63,7 @@ Sublime Text에는 다른 코드작성용 텍스트 에디터와 마찬가지로
 </figcaption>
 </figure>
 
-만약 Sass에 대한 syntax highlighting이 필요하다면 `sublime text syntax highlighting for Sass` 등의 키워드로 검색하면 설치 방법을 쉽게 찾으실 수 있습니다.(?) 지난 글에서 Material design 테마를 PackageControl을 통해 설치하는 방법을 소개해드렸으니 이해하는데 조금은 도움이 되실 겁니다.
+만약 Sass에 대한 syntax highlighting이 필요하다면, `sublime text syntax highlighting for Sass` 등의 키워드로 검색하여 설치 방법을 쉽게 찾으실 수 있습니다. 지난 글에서 Material design 테마를 Package Control을 통해 설치하는 방법을 소개해드렸는데 따라해보셨다면 필요한 패키지를 어떻게 설치해야 하는지 감잡기 쉬우실 겁니다.
 
 [관련 글 - SublimeText 시작하기](http://spoqa.github.io/2015/11/11/install-sublime-text.html)
 
@@ -74,15 +74,40 @@ Sublime Text에는 다른 코드작성용 텍스트 에디터와 마찬가지로
 <img src="/images/2015-11-04/column-wrap.png"
      style="margin-right:auto; margin-left:auto;" />
 
-코드에 따라 가로로 꽤 길어지는 경우가 있을 수 있습니다. 이를 한눈에 잘 볼 수 있도록 가상의 
+간혹 살펴보아야할 코드가 가로로 꽤 길어서 가로 스크롤이 길어지는 경우가 있을 수 있습니다. 이를 한눈에 잘 볼 수 있도록 가상의 열을 만들어주는 기능으로, 코드에는 변화가 없습니다.
+
+
+<figure>
+<img src="/images/2015-11-04/html-extension.png"
+     style="margin-right:auto; margin-left:auto;" />
+<figcaption>
+    (위) word wrap column auto 적용시
+</figcaption>
+</figure>
+
+<figure>
+<img src="/images/2015-11-04/html-extension.png"
+     style="margin-right:auto; margin-left:auto;" />
+<figcaption>
+    (위) word wrap column 70적용시
+</figcaption>
+</figure>
+
 
 - `view` - `layout`
 
 <img src="/images/2015-11-04/layout-menu.png"
      style="margin-right:auto; margin-left:auto;" />
 
-한번에 여러가지 문서 보면서 고쳐야 할 때 굉장히 유용한 기능입니다. 메뉴 하나씩 소개
-이건이거고 저건저건데 나는 컬러2를 제일 많이 애용한다.
+한번에 여러가지 문서 보면서 수정할 때 굉장히 유용한 기능입니다. 해상도에 따른 작업환경이나 멀티태스킹을 해야할 때 유용한데, 저는 `Columns:2`를 애용합니다.
+
+<figure>
+<img src="/images/2015-11-04/html-extension.png"
+     style="margin-right:auto; margin-left:auto;" />
+<figcaption>
+    (위) Columns:2 적용시
+</figcaption>
+</figure>
 
 ## 고치고 싶은 부분 쉽게 찾기
 

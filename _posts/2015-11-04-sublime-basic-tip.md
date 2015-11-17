@@ -7,7 +7,7 @@ description: Sublime Text 초보 사용자를 위한 팁을 공유합니다.
 publish: true
 ---
 
-오늘은 제가 Sublime Text를 사용하면서 자주 썼고 유용하다고 생각되었던 것들을 몇 가지 공유해보려고 합니다. Sublime Text를 통해 코드에 입문하는 사람에게 도움이 되리라 생각합니다. 이 포스트를 통해 Sublime Text를 처음 접하시는 분들은 지난 포스트를 먼저 읽으시길 추천드립니다.
+오늘은 제가 Sublime Text를 사용하면서 자주 썼고 유용하다고 생각되었던 것들을 몇 가지 공유해보려고 합니다. 이 포스트를 통해 Sublime Text를 처음 접하시는 분들은 지난 포스트를 먼저 읽으시길 추천드립니다.
 
 [관련 글 - SublimeText 시작하기](http://spoqa.github.io/2015/11/11/install-sublime-text.html)
 
@@ -65,11 +65,10 @@ Sublime Text에는 다른 코드작성용 텍스트 에디터와 마찬가지로
 
 만약 Sass에 대한 syntax highlighting이 필요하다면, `sublime text syntax highlighting for Sass` 등의 키워드로 검색하여 설치 방법을 쉽게 찾으실 수 있습니다. 지난 글에서 Material design 테마를 Package Control을 통해 설치하는 방법을 소개해드렸는데 따라해보셨다면 필요한 패키지를 어떻게 설치해야 하는지 감잡기 쉬우실 겁니다.
 
-[관련 글 - SublimeText 시작하기](http://spoqa.github.io/2015/11/11/install-sublime-text.html)
-
 
 ## 보는 방식으로 코드 가독성 높이기 
-- `view` - `word wrap column`
+
+#### `view` - `word wrap column`
 
 <img src="/images/2015-11-04/column-wrap.png"
      style="margin-right:auto; margin-left:auto;" />
@@ -78,36 +77,47 @@ Sublime Text에는 다른 코드작성용 텍스트 에디터와 마찬가지로
 
 
 <figure>
-<img src="/images/2015-11-04/html-extension.png"
+<img src="/images/2015-11-04/auto.png"
      style="margin-right:auto; margin-left:auto;" />
 <figcaption>
-    (위) word wrap column auto 적용시
+    (위) word wrap column - auto 적용시
 </figcaption>
 </figure>
 
 <figure>
-<img src="/images/2015-11-04/html-extension.png"
+<img src="/images/2015-11-04/70.png"
      style="margin-right:auto; margin-left:auto;" />
 <figcaption>
-    (위) word wrap column 70적용시
+    (위) word wrap column - 70적용시
 </figcaption>
 </figure>
 
+auto는 반응형으로 창 크기에 맞게 열 너비가 변화하지만 텍스트 커서를 키보드로만 움직일 때에는 스크롤이 움직이지 않도록 wrap column을 좁게하여  쓰는게 편할 수 있습니다. 
+  
 
-- `view` - `layout`
+#### `view` - `layout`
 
 <img src="/images/2015-11-04/layout-menu.png"
      style="margin-right:auto; margin-left:auto;" />
 
-한번에 여러가지 문서 보면서 수정할 때 굉장히 유용한 기능입니다. 해상도에 따른 작업환경이나 멀티태스킹을 해야할 때 유용한데, 저는 `Columns:2`를 애용합니다.
+한번에 여러가지 문서 보면서 수정할 때 굉장히 유용한 기능입니다. 해상도에 따른 작업환경이나 멀티태스킹을 해야할 때 유용한데, 저는 `Columns:2`를 애용합니다. 진행하는 이슈 종류나 사용하는 언어에 따라 편한 레이아웃을 골라 사용하시면 됩니다. 
 
 <figure>
-<img src="/images/2015-11-04/html-extension.png"
+<img src="/images/2015-11-04/columns2.png"
      style="margin-right:auto; margin-left:auto;" />
 <figcaption>
     (위) Columns:2 적용시
 </figcaption>
 </figure>
+
+<figure>
+<img src="/images/2015-11-04/row3.png"
+     style="margin-right:auto; margin-left:auto;" />
+<figcaption>
+    (위) Rows:3 적용시
+</figcaption>
+</figure>
+
 
 ## 고치고 싶은 부분 쉽게 찾기
 
@@ -121,28 +131,58 @@ Sublime Text에는 다른 코드작성용 텍스트 에디터와 마찬가지로
 <img src="/images/2015-11-04/sublimetext-find-menu.png"
      style="margin-right:auto; margin-left:auto;" />   
 
-그 중 제가 굉장히 자주 썼던 검색 기능 2가지를 소개합니다. 
+그 중 제가 굉장히 자주 썼던 검색 기능 몇 가지를 소개합니다. 
 
 
-- Find `command` + `F`
+#### Find `⌘` + `F`
 
 현재 보고 있는 파일 내에서 특정한 단어를 찾을 때 사용합니다.
 
-
-- Find in Files `command` + `shift` + `F`
-
-Where에 쓰인 디렉토리 안에 있는 모든 파일에서 검색어가 있는 부분들을 검색합니다. 특정 부분이 어느 파일의 몇 번째 줄에 작성되어 있는지 모를 때 유용한 기능입니다.
-
-<img src="/images/2015-11-04/sublimetext-find-in-files.png"
+<img src="/images/2015-11-04/find-example.png"
      style="margin-right:auto; margin-left:auto;" />   
 
-검색어가 쓰여진 곳은 모두 검색 결과에 나오기 때문에 찾고자 여러 군데 쓰이는 단어보다는
-찾고자하는 부분에만 쓰이는 클래스 이름 등을 작성하면 찾기가 더 쉽습니다.
 
-검색결과 이미지 넣기 
+#### Find in Files `⌘` + `shift` + `F`
 
-이 외에도 많은 기능을 제공하고 있지만 이것들만 알아도 사용하는데 큰 무리가 없습니다.
-빠른 코딩입문하십셔 ^^~ 행쇼~ 
+Where에 쓰인 디렉토리 안에 있는 모든 파일에서 검색어가 있는 부분들을 검색합니다. 특정 부분이 어느 파일의 몇 번째 줄에 작성되어 있는지 모를 때 유용한 기능입니다. 검색어가 쓰여진 곳은 모두 검색 결과에 나오기 때문에 찾고자 여러 군데 쓰이는 단어보다는 찾고자하는 부분에만 쓰이는 클래스 이름 등을 작성하면 찾기가 더 쉽습니다.
+
+<img src="/images/2015-11-04/findinfiles-0.png"
+     style="margin-right:auto; margin-left:auto;" />   
+
+1.찾고 싶은 검색어를 입력합니다. 저는 spoqa 폴더 내에서 `margin-left: auto;`가 써진 곳을 모두 찾고 싶다고 가정하고 써보았습니다.
+
+<img src="/images/2015-11-04/findinfiles-1.png"
+     style="margin-right:auto; margin-left:auto;" />   
+
+2.그러면 Find Results 탭이 생기면서 검색 결과를 보여줍니다. 어떤 디렉토리의 어떤 파일에 몇 번째 줄에 검색어가 써져 있는지 쉽게 알 수 있습니다. 또한 파일이름 부분을 더블 클릭하면 바로 그 파일로 이동합니다.
+
+
+#### Goto anything `⌘` + `P`
+
+<img src="/images/2015-11-04/goto-anything.png"
+     style="margin-right:auto; margin-left:auto;" />   
+
+Sublime Text 3에서 제공하는 기능으로 특정한 파일이나 행(line)으로 이동할 때 사용합니다. 디렉토리를 뒤질 필요 없이 보고 싶은 파일 이름을 검색하여 빠르게 열 수 있습니다. 
+
+폴더 채로 열려있는 상태라면 `⌘` + `T`도 동일한 역할을 하는데 이 기능은 현재 열려있는 탭 리스트 중에서만 선택하여 이동할 수 있습니다.
+
+
+#### 특정한 행으로 이동하기  `Goto anything`에서 `:123`
+
+<img src="/images/2015-11-04/goto-anything.png"
+     style="margin-right:auto; margin-left:auto;" />   
+
+긴 스크롤에 방해받지 않고 특정 행을 바로 보고 싶다면 이 기능도 유용합니다. 만약 123번째 줄로 이동하고 싶다면 Goto anything 기능을 키고 `:123`을 입력하면 됩니다. 
+
+
+##
+
+이 외에도 Sublime Text에는 많은 기능을 제공하고 있지만 이것들만 알아도 사용하는데 큰 무리가 없습니다. 더 다양한 기능을 알고 싶다면 메뉴를 구석구석 눌러보면서 직접 경험하거나 검색만 하더라도 무궁무진한 팁을 발견할 수 있습니다. 혹은 [sublimetexttips](http://sublimetexttips.com/) 같은 뉴스레터를 구독하는 것도 방법이겠지요.
+
+짧은 글이지만 Sublime Text를 통해 코드에 입문하는 사람에게 도움이 되면 좋겠습니다. 다음에도 유용한 글로 찾아뵙겠습니다. 읽어주셔서 감사합니다!
+
+
+---
 
 [^1]: https://en.wikipedia.org/wiki/Syntax_highlighting
-- 예시 코드 인용 http://jinja.pocoo.org/
+https://blog.generalassemb.ly/sublime-text-3-tips-tricks-shortcuts/

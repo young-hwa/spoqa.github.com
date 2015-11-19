@@ -7,18 +7,18 @@ description: Sublime Text 초보 사용자를 위한 팁을 공유합니다.
 publish: true
 ---
 
-오늘은 제가 Sublime Text를 사용하면서 자주 썼고 유용하다고 생각되었던 것들을 몇 가지 공유해보려고 합니다. 이 포스트를 통해 Sublime Text를 처음 접하시는 분들은 [지난 포스트](http://spoqa.github.io/2015/11/11/install-sublime-text.html)를 먼저 읽으시길 추천드립니다.
+오늘은 제가 Sublime Text를 사용하면서 자주 썼고 유용하다고 생각되었던 것들을 몇 가지 공유해보려고 합니다. 이 글을 통해 Sublime Text를 처음 접하시는 분들은 [지난 포스트](http://spoqa.github.io/2015/11/11/install-sublime-text.html)를 먼저 읽으시길 추천드립니다.
 
 
-## Syntax 구분으로 코드 가독성 높이기 
+## 문법 구분으로 코드 가독성 높이기 
 
-Sublime Text에는 다른 코드작성용 텍스트 에디터와 마찬가지로 언어 구조에 맞게 색상이 자동으로 입혀지는 Syntax Highlighting(구문 혹은 문법 강조) 기능을 제공하고 있습니다. 
+Sublime Text에는 다른 코드작성용 텍스트 에디터와 마찬가지로 언어 구조에 맞게 색상이 자동으로 입혀지는 문법 강조(syntax highlighting) 기능을 제공하고 있습니다. 
 
 <figure>
 <img src="/images/2015-11-04/plain-text.png"
      style="margin-right:auto; margin-left:auto;" />
 <figcaption>
-    (위) syntax highlight 미적용
+    (위) 문법 구분 기능 미적용
 </figcaption>
 </figure>
 
@@ -26,18 +26,18 @@ Sublime Text에는 다른 코드작성용 텍스트 에디터와 마찬가지로
 <img src="/images/2015-11-04/html-extension.png"
      style="margin-right:auto; margin-left:auto;" />
 <figcaption>
-    (위) syntax highlight 적용
+    (위) 문법 구분 기능 적용
 </figcaption>
 </figure>
 
-이 기능은 문법 구조 별로 다른 색상이 적용되고 그 색상의 대비가 크기 때문에 코드의 구조와 문법적 오류를 빠르게 파악할 수 있습니다. 실제로 [코드 상의 오류를 찾는데 걸리는 시간을 줄여준다는 연구][1]도 있습니다. Syntax highlighting로 인해 텍스트의 의미나 기능이 달라지는 것은 아니며 이것은 오로지 사람이 읽을 때의 편의성을 위한 장치입니다. 이 때 사용되는 컬러는 텍스트 에디터, 테마 설정, 사용자 설정에 따라 바뀔 수 있습니다.
+이 기능은 쓰여진 개발 언어의 구조에 따라 다른 색상이 적용되고 그 색상의 대비가 크기 때문에 코드의 구조와 문법적 오류를 빠르게 파악할 수 있습니다. 실제로 [코드 상의 오류를 찾는데 걸리는 시간을 줄여준다는 연구][1]도 있습니다. 문법 강조로 인해 텍스트의 의미나 기능이 달라지는 것은 아니며 이것은 오로지 사람이 읽을 때의 편의성을 위한 장치입니다. 이 때 사용되는 컬러는 텍스트 에디터, 테마 설정, 사용자 설정에 따라 바뀔 수 있습니다.
 
 ### 1.Extension 설정 확인하기
 
 우선 Sublime Text 하단 우측(분홍색으로 표시된 부분)에 현재 쓰고 있는 파일 형식과 동일한 Extension이 설정되어 있는지 확인하세요.
 <img src="/images/2015-11-04/extension-location.png" /> 
 
-만약 기본값인 Plain text로 되어 있거나 다른 Extension으로 되어 있다면 알맞은 언어를 선택하여 알맞게 highlight(강조)되도록 하면 됩니다.
+만약 기본값인 Plain text로 되어 있거나 다른 Extension으로 되어 있다면 알맞은 언어를 선택하여 알맞게 문법이 강조되도록 하면 됩니다.
 <img src="/images/2015-11-04/extension.png" />     
 
 ### 2.Package 설치하기
@@ -52,17 +52,17 @@ Sublime Text에는 다른 코드작성용 텍스트 에디터와 마찬가지로
 </figcaption>
 </figure>
 
-이것은 지정된 기존의 언어와 다르기 때문에 생기는 현상입니다. 이 경우에는 syntax highlighting을 도와주는 일종의 플러그인이라고 할 수 있는 Package를 설치하면 됩니다. 
+이것은 지정된 기존의 언어와 다르기 때문에 생기는 현상입니다. 이 경우에는 문법 강조를 도와주는 일종의 플러그인이라고 할 수 있는 Package를 설치하면 됩니다. 
 
 <figure>
 <img src="/images/2015-11-04/jinja-syntax.png"
      style="margin-right:auto; margin-left:auto;" />
 <figcaption>
-(위) HTML뿐만 아니라 다른 언어(jinja)에도 syntax highlighting이 적용되었다.
+(위) HTML뿐만 아니라 다른 언어(jinja)에도 문법 강조 기능이 적용되었다.
 </figcaption>
 </figure>
 
-만약 Sass에 대한 syntax highlighting이 필요하다면, `sublime text syntax highlighting for Sass` 등의 키워드로 검색하여 설치 방법을 쉽게 찾으실 수 있습니다. 지난 글에서 Material design 테마를 Package Control을 통해 설치하는 방법을 소개했습니다. 따라해보셨다면 필요한 패키지를 어떻게 설치해야 하는지 알기 어렵지 않을 것입니다.
+만약 Sass에 대한 문법 강조가 필요하다면, `sublime text syntax highlighting for Sass` 등의 키워드로 검색하여 설치 방법을 쉽게 찾으실 수 있습니다. 지난 글에서 Material design 테마를 Package Control을 통해 설치하는 방법을 소개했습니다. 따라해보셨다면 필요한 패키지 설치방법을 알기 어렵지 않을 것입니다.
 
 #### Sass 패키지 설치해보기
 
@@ -95,7 +95,7 @@ Sass는 CSS를 더 효율적으로 작성할 수 있도록 도와주는 언어�
      style="margin-right:auto; margin-left:auto;" />
 
 
-잠시 후 다시 명령어 팔레트가 또 뜨는데 이번에는 `Syntax Highlighting for Sass`를 입력하고 엔터를 누릅니다. 검색어 입력과 동시에 하단에 이름에 검색어가 들어간 패키지가 모두 검색되어 나옵니다. 그렇기 때문에 패키지 컨트롤 공식 페이지에서 정확한 패키지 이름을 알아내어 그걸 그대로 붙여넣는다면 설치하기 더 쉽겠지요.
+잠시 후 다시 명령어 팔레트가 또 뜨는데 이번에는 `syntax highlighting for Sass`를 입력하고 엔터를 누릅니다. 검색어 입력과 동시에 하단에 이름에 검색어가 들어간 패키지가 모두 검색되어 나옵니다. 그렇기 때문에 패키지 컨트롤 공식 페이지에서 정확한 패키지 이름을 알아내어 그걸 그대로 붙여넣는다면 설치하기 더 쉽겠지요.
 
 <img src="/images/2015-11-04/packagecontrol-02.png"
      style="margin-right:auto; margin-left:auto;" />
@@ -138,7 +138,7 @@ Sass는 CSS를 더 효율적으로 작성할 수 있도록 도와주는 언어�
 </figcaption>
 </figure>
 
-auto는 반응형으로 창 크기에 맞게 열 너비가 변화하지만 텍스트 커서를 키보드로만 움직일 때에는 스크롤이 움직이지 않도록 wrap column을 좁게하여  쓰는게 편할 수 있습니다. 
+auto는 반응형으로 창 크기에 맞게 열 너비가 변화하지만 텍스트 커서를 키보드로만 움직일 때에는 스크롤이 움직이지 않도록 wrap column을 좁게하여 쓰는게 편할 수 있습니다. 
   
 
 ### 2.한번에 여러 개 문서 보기 
@@ -174,7 +174,7 @@ auto는 반응형으로 창 크기에 맞게 열 너비가 변화하지만 텍�
 1. 웹 브라우저에서 요소 검사(Inspect Element)하여 고치고 싶은 부분을 찾는다.
 2. Sublime Text에서 고쳐야 하는 부분을 찾아 코드를 수정한다.
 
-1과 2의 사이에서 내가 고치고 싶은 코드를 어떻게 하면 빠르게 찾을 수 있을지 처음에는 알기 어려울 수 있습니다. 이를 테면 어느 파일 몇 번째 줄에 있는지, 찾아야 하는 코드가 두 군데 이상에 적용되어 있을 때 등의 경우에 고민이 생기게 될 것입니다. Sublime Text의 `Find`메뉴에서 제공하는 여러가지 검색 기능으로 해결할 수 있습니다. 
+1과 2의 사이에서 내가 고치고 싶은 코드를 어떻게 하면 빠르게 찾을 수 있을지 처음에는 알기 어려울 수 있습니다. 이를 테면 어느 파일 몇 번째 줄에 있는지, 찾아야 하는 코드가 두 군데 이상에 적용되어 있을 때 등의 경우에 고민이 생기게 될 것입니다. Sublime Text의 `Find`메뉴 등에서 제공하는 여러가지 검색 기능으로 해결할 수 있습니다. 
 
 <img src="/images/2015-11-04/sublimetext-find-menu.png"
      style="margin-right:auto; margin-left:auto;" />   
@@ -233,7 +233,7 @@ Where에 쓰인 디렉토리 안에 있는 모든 파일에서 검색어가 있�
 
 ## 마치며
 
-이 외에도 Sublime Text에는 많은 기능을 제공하고 있지만 이것들만 알아도 사용하는데 큰 무리가 없습니다. 더 다양한 기능을 알고 싶다면 메뉴를 구석구석 눌러보면서 직접 경험하거나 검색만 하더라도 무궁무진한 팁을 발견할 수 있습니다. 혹은 [sublime text tips](http://sublimetexttips.com/) 같은 뉴스레터를 구독하는 것도 방법이겠지요.
+이 외에도 Sublime Text에는 많은 기능을 제공하고 있지만 이것들만 알아도 사용하는데 큰 무리가 없습니다. 더 다양한 기능을 알고 싶다면 메뉴를 구석구석 눌러보면서 직접 경험하거나 검색만 하더라도 무궁무진한 팁을 발견할 수 있습니다. 혹은 [Sublime text tips](http://sublimetexttips.com/) 같은 뉴스레터를 구독하는 것도 방법이겠지요.
 
 짧은 글이지만 Sublime Text를 통해 코드에 입문하는 사람에게 도움이 되면 좋겠습니다. 다음에도 유용한 글로 찾아뵙겠습니다. 읽어주셔서 감사합니다!
 

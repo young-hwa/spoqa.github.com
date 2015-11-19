@@ -34,7 +34,7 @@ Sublime Text에는 다른 코드작성용 텍스트 에디터와 마찬가지로
 
 ### 1.Extension 설정 확인하기
 
-우선 SublimeText 하단 우측(분홍색으로 표시된 부분)에 현재 쓰고 있는 파일 형식과 동일한 Extension이 설정되어 있는지 확인하세요.
+우선 Sublime Text 하단 우측(분홍색으로 표시된 부분)에 현재 쓰고 있는 파일 형식과 동일한 Extension이 설정되어 있는지 확인하세요.
 <img src="/images/2015-11-04/extension-location.png" /> 
 
 만약 기본값인 Plain text로 되어 있거나 다른 Extension으로 되어 있다면 알맞은 언어를 선택하여 알맞게 highlight(강조)되도록 하면 됩니다.
@@ -233,10 +233,10 @@ Where에 쓰인 디렉토리 안에 있는 모든 파일에서 검색어가 있�
 
 ## 마치며
 
-이 외에도 Sublime Text에는 많은 기능을 제공하고 있지만 이것들만 알아도 사용하는데 큰 무리가 없습니다. 더 다양한 기능을 알고 싶다면 메뉴를 구석구석 눌러보면서 직접 경험하거나 검색만 하더라도 무궁무진한 팁을 발견할 수 있습니다. 혹은 [sublimetexttips](http://sublimetexttips.com/) 같은 뉴스레터를 구독하는 것도 방법이겠지요.
+이 외에도 Sublime Text에는 많은 기능을 제공하고 있지만 이것들만 알아도 사용하는데 큰 무리가 없습니다. 더 다양한 기능을 알고 싶다면 메뉴를 구석구석 눌러보면서 직접 경험하거나 검색만 하더라도 무궁무진한 팁을 발견할 수 있습니다. 혹은 [sublime text tips](http://sublimetexttips.com/) 같은 뉴스레터를 구독하는 것도 방법이겠지요.
 
 짧은 글이지만 Sublime Text를 통해 코드에 입문하는 사람에게 도움이 되면 좋겠습니다. 다음에도 유용한 글로 찾아뵙겠습니다. 읽어주셔서 감사합니다!
 
 
 
-[1]: https://en.wikipedia.org/wiki/Syntax_highlighting
+[1]: https://en.wikipedia.org/wiki/Syntax_highlighting#Practical_benefits

@@ -42,7 +42,7 @@ Sublime Text에는 다른 코드작성용 텍스트 에디터와 마찬가지로
 
 ### 2. Package 설치하기
 
-만약 기본 Extension에서 제공해주지 않는 언어라면 어떻게 해야할까요? 추가로 HTML과 CSS를 도와주는 보조 언어/라이브러리를 설치하여 작성하다 보면 HTML이나 CSS는 언어 구조에 따라 자동으로 색상이 입혀져 있는 반면에 보조 언어로 쓰인 부분은 문법이 강조되지 않습니다. 예로, 아래 그림에는 HTML과 보조 언어인 Jinja({% .... %}이런 식으로 된 언어)[2]가 함께 사용되고 있습니다.
+만약 기본 Extension에서 제공해주지 않는 언어라면 어떻게 해야할까요? 추가로 HTML과 CSS를 도와주는 보조 언어/라이브러리를 설치하여 작성하다 보면 HTML이나 CSS는 언어 구조에 따라 자동으로 색상이 입혀져 있는 반면에 보조 언어로 쓰인 부분은 문법이 강조되지 않습니다. 예로, 아래 그림에는 HTML과 보조 언어인 [Jinja][2](아래 이미지에서 쿨그레이색으로 1, 2, 4, 5, 6, 8번째 줄에 등장하는 언어)가 함께 사용되고 있습니다.
 
 <figure>
 <img src="/images/2015-11-04/just-html.png"
@@ -105,16 +105,21 @@ Sass는 CSS를 더 효율적으로 작성할 수 있도록 도와주는 언어�
 <img src="/images/2015-11-04/packagecontrol-03.png"
      style="margin-right:auto; margin-left:auto;" />
 
-설치되었다면 하단 우측 extension 선택하는 곳에서 `Sass`를 발견하실 수 있습니다. 
+설치되었다면 하단 우측 extension 선택하는 곳에서 `Syntax Highlighting for Sass`를 발견하실 수 있습니다. 
 
 <img src="/images/2015-11-04/sass-installed.png"
      style="margin-right:auto; margin-left:auto;" />
 
 ## 보는 방식으로 코드 가독성 높이기 
 
+Sublime Text의 `view`메뉴의 몇가지 기능만으로도 코드 읽기에 편리한 작업 환경으로 바꿀 수 있습니다.
+
+<img src="/images/2015-11-04/see-view-menu.png"
+     style="margin-right:auto; margin-left:auto;" />
+
 ### 1. 열(column) 너비 고정하여 가로 스크롤 줄이기 
 
-`view` > `word wrap column`
+`view` > `word wrap` 체크하고 `view` > `word wrap column`
 
 <img src="/images/2015-11-04/column-wrap.png"
      style="margin-right:auto; margin-left:auto;" />
@@ -174,7 +179,9 @@ auto는 반응형으로 창 크기에 맞게 열 너비가 변화하지만, 텍�
 1. 웹 브라우저에서 요소 검사(Inspect Element)하여 고치고 싶은 부분을 찾는다.
 2. Sublime Text에서 고쳐야 하는 부분을 찾아 코드를 수정한다.
 
-1과 2의 사이에서 내가 고치고 싶은 코드를 어떻게 하면 빠르게 찾을 수 있을지 처음에는 알기 어려울 수 있습니다. 이를테면 어느 파일 몇 번째 줄에 있는지, 찾아야 하는 코드가 두 군데 이상에 적용되어 있을 때 등의 경우에 고민이 생기게 될 것입니다. Sublime Text의 `Find` 메뉴 등에서 제공하는 여러 가지 검색 기능으로 해결할 수 있습니다. 
+1과 2의 사이에서 내가 고치고 싶은 코드를 어떻게 하면 빠르게 찾을 수 있을지 처음에는 알기 어려울 수 있습니다. 이를테면 어느 파일 몇 번째 줄에 있는지, 찾아야 하는 코드가 두 군데 이상에 적용되어 있을 때 등의 경우에 고민이 생기게 될 것입니다. Sublime Text의 상단에 있는 `Find` 메뉴 등에서 제공하는 여러 가지 검색 기능으로 해결할 수 있습니다. 
+<img src="/images/2015-11-04/see-view-menu.png"
+     style="margin-right:auto; margin-left:auto;" />
 
 <img src="/images/2015-11-04/sublimetext-find-menu.png"
      style="margin-right:auto; margin-left:auto;" />   
@@ -223,12 +230,12 @@ Where에 쓰인 디렉토리 안에 있는 모든 파일에서 검색어가 있�
 
 ### 4. 특정한 행으로 이동하기  
 
-`Goto anything`을 켜고 `:123`
+`Goto anything`을 켜고 `:14`
 
-<img src="/images/2015-11-04/goto-anything.png"
+<img src="/images/2015-11-04/goto-line.png"
      style="margin-right:auto; margin-left:auto;" />   
 
-긴 스크롤에 방해받지 않고 특정 행을 바로 보고 싶다면 이 기능도 유용합니다. 만약 123번째 줄로 이동하고 싶다면 위에서 설명해 드린 Goto anything 기능을 켜고 `:123`을 입력하면 됩니다. 
+긴 스크롤에 방해받지 않고 특정 행을 바로 보고 싶다면 이 기능도 유용합니다. 만약 14번째 줄로 이동하고 싶다면 위에서 설명해 드린 Goto anything 기능을 켜고 `:14`을 입력하면 됩니다. 
 
 
 ## 마치며
@@ -240,4 +247,4 @@ Where에 쓰인 디렉토리 안에 있는 모든 파일에서 검색어가 있�
 
 
 [1]: https://en.wikipedia.org/wiki/Syntax_highlighting#Practical_benefits
-[2]: jinja란 어찌구저찌구이다.
+[2]: http://jinja.pocoo.org/

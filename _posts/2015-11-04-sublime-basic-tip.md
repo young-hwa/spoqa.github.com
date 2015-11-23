@@ -180,7 +180,7 @@ auto는 반응형으로 창 크기에 맞게 열 너비가 변화하지만, 텍�
 2. Sublime Text에서 고쳐야 하는 부분을 찾아 코드를 수정한다.
 
 1과 2의 사이에서 내가 고치고 싶은 코드를 어떻게 하면 빠르게 찾을 수 있을지 처음에는 알기 어려울 수 있습니다. 이를테면 어느 파일 몇 번째 줄에 있는지, 찾아야 하는 코드가 두 군데 이상에 적용되어 있을 때 등의 경우에 고민이 생기게 될 것입니다. Sublime Text의 상단에 있는 `Find` 메뉴 등에서 제공하는 여러 가지 검색 기능으로 해결할 수 있습니다. 
-<img src="/images/2015-11-04/see-view-menu.png"
+<img src="/images/2015-11-04/see-find-menu.png"
      style="margin-right:auto; margin-left:auto;" />
 
 <img src="/images/2015-11-04/sublimetext-find-menu.png"

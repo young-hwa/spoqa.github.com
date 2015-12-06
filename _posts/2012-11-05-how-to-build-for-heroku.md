@@ -134,9 +134,9 @@ buildpack을 직접 만들어 적용하는 건 아주 쉽습니다. 우선 다�
     $ heroku config:set MAGICK_HOME=/app/vendor/ImageMagick+lqr LD_PRELOAD=/app/vendor/ImageMagick+lqr/lib/libMagickCore.so --app dodo-dev
 
 
-  [스포카 개발팀]: http://spoqa.github.com
-  [Heroku]: http://www.heroku.com
-  [wand]: http://dahlia.kr/wand/
+  [스포카 개발팀]: https://spoqa.github.io/
+  [Heroku]: http://www.heroku.com/
+  [wand]: http://wand-py.org/
   [Seam carving]: http://en.wikipedia.org/wiki/Seam_carving
   [Ruby]: http://www.ruby-lang.org/
   [Vulcan]: https://github.com/heroku/vulcan
@@ -144,8 +144,8 @@ buildpack을 직접 만들어 적용하는 건 아주 쉽습니다. 우선 다�
   [Python]: http://www.python.org/
   [ImageMagick]: http://www.imagemagick.org/script/index.php
   [liblqr]: http://liblqr.wikidot.com/
-  [github]: https://github.com
+  [github]: https://github.com/
   [Amazon S3]: http://aws.amazon.com/s3/
-  [Dropbox]: http://www.dropbox.com
+  [Dropbox]: https://www.dropbox.com/
   [Node.js]: http://www.nodejs.org/
   

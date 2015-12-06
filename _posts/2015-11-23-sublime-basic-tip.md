@@ -7,7 +7,7 @@ description: Sublime Text 초보 사용자를 위한 팁을 공유합니다.
 publish: true
 ---
 
-오늘은 제가 Sublime Text를 사용하면서 자주 썼고 유용하다고 생각되었던 것들을 몇 가지 공유해보려고 합니다. 이 글을 통해 Sublime Text를 처음 접하시는 분들은 [지난 포스트](http://spoqa.github.io/2015/11/11/install-sublime-text.html)를 먼저 읽으시길 추천해 드립니다.
+오늘은 제가 Sublime Text를 사용하면서 자주 썼고 유용하다고 생각되었던 것들을 몇 가지 공유해보려고 합니다. 이 글을 통해 Sublime Text를 처음 접하시는 분들은 [지난 포스트](https://spoqa.github.io/2015/11/11/install-sublime-text.html)를 먼저 읽으시길 추천해 드립니다.
 
 
 ## 문법 구분으로 코드 가독성 높이기 

@@ -6,11 +6,11 @@ author-email: akaz@spoqa.com
 description: RESTful api를 설계하기 위한 개념들을 추가적으로 알아보고 유용하게 쓰일만한 HTTP헤더와 상태코드를 살펴봅니다.
 ---
 
-안녕하세요. 스포카 개발팀 유병석입니다. 오늘 포스팅에서는 저번에 스포카 기술 블로그에 올라왔었던 [REST 아키텍처를 훌륭하게 적용하기 위한 몇 가지 디자인 팁](http://spoqa.github.io/2012/02/27/rest-introduction.html)의 글에서 언급되지 않았던 추가적인 내용에 대해서 좀 더 얘기해보고자 합니다. 혹시 이전 포스팅을 읽지 않으셨다면 이전 포스팅을 먼저 읽으신 후 이 포스팅을 읽어주시기 바랍니다.
+안녕하세요. 스포카 개발팀 유병석입니다. 오늘 포스팅에서는 저번에 스포카 기술 블로그에 올라왔었던 [REST 아키텍처를 훌륭하게 적용하기 위한 몇 가지 디자인 팁](https://spoqa.github.io/2012/02/27/rest-introduction.html)의 글에서 언급되지 않았던 추가적인 내용에 대해서 좀 더 얘기해보고자 합니다. 혹시 이전 포스팅을 읽지 않으셨다면 이전 포스팅을 먼저 읽으신 후 이 포스팅을 읽어주시기 바랍니다.
 
 ## Document?
 
-컬렉션에 관해서는 앞서 소개한 [이전 글](http://spoqa.github.io/2012/02/27/rest-introduction.html)에서 자세히 설명해놓았으니 읽어보시기 바랍니다. 지금 제가 언급할 것을 **도큐먼트**인데요. 도큐먼트는 컬렉션과는 달리 **단수명사나 명사의 조합으로 표현**되어 URI에 나타납니다.
+컬렉션에 관해서는 앞서 소개한 [이전 글](https://spoqa.github.io/2012/02/27/rest-introduction.html)에서 자세히 설명해놓았으니 읽어보시기 바랍니다. 지금 제가 언급할 것을 **도큐먼트**인데요. 도큐먼트는 컬렉션과는 달리 **단수명사나 명사의 조합으로 표현**되어 URI에 나타납니다.
 
     http://api.soccer.restapi.org/leagues/seattle/teams/trebuchet/players/claudio
 

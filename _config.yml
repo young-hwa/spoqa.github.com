@@ -8,7 +8,7 @@ kramdown:
   input: GFM
   hard_wrap: false
 
-home_url: "http://spoqa.github.io"
+home_url: "https://spoqa.github.io"
 representing_image: "/images/og-logo.png"
 
 sass:

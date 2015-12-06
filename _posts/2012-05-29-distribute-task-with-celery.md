@@ -20,7 +20,7 @@ description: 처리 시간이 오래 걸리는 작업을 Celery를 통해 개선
 
 ![list](/images/2012-05-29/1.png)
 
-그럼 이러한 작업자는 어떻게 구현할까요? 물론 시간과 여유가 있으신 분들은 바닥부터 만들어보시는 것도 좋은 경험이겠습니다만, 저희는 그럴 시간은 없었습니다. 그래서 선택한 것이 [Celery]입니다. [지난 포스팅](http://spoqa.github.com/2011/12/24/about-spoqa-server-stack.html)에서 인용한 [Celery]에 관한 소개를 보시죠.
+그럼 이러한 작업자는 어떻게 구현할까요? 물론 시간과 여유가 있으신 분들은 바닥부터 만들어보시는 것도 좋은 경험이겠습니다만, 저희는 그럴 시간은 없었습니다. 그래서 선택한 것이 [Celery]입니다. [지난 포스팅](https://spoqa.github.io/2011/12/24/about-spoqa-server-stack.html)에서 인용한 [Celery]에 관한 소개를 보시죠.
 
 > [Celery]는 [Python]으로 작성된 **비동기 작업 큐(Asynchronous task queue/job queue)**입니다. 앞서 소개한 **작업(Task)**를 **브로커(Broker, 스포카 서버는 [Redis]를 사용)**를 통해 전달하면 하나 이상의 **워커(Worker)**가 이를 처리하는 구조입니다. 포인트 적립-공유에 따른 분배처리, 포스팅 기능, 페이스북/트위터 공유등의 비동기 처리가 필요한 작업을 [Celery]에 위임하여 처리하고 있습니다.
 

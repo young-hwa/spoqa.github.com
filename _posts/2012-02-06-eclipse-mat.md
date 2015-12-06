@@ -6,7 +6,7 @@ author-email: akaz@spoqa.com
 description: Eclipse Memory Analyzer(MAT)을 소개하고 유용하게 쓸 수 있는 기능들을 알아봅니다.
 ---
 
-안드로이드 개발을 하다보면 종종 [OutOfMemory(OOM)][OOM]에러를 만나게 됩니다. [이전에 올렸던 포스팅](http://spoqa.github.com/2012/01/09/using-gson-in-android.html)에서도 이 문제로 고생을 했는데요, 메모리 누수 관련 문제는 로직 에러와는 달라서 찾기가 매우 난감한 경우가 많습니다. 이러한 메모리 누수 관련 문제를 해결하기 위한 검사 기능을 제공하는 무료 툴이 있습니다. 바로 [Eclipse MAT(Memory Analyzer)(MAT)][MAT]입니다.
+안드로이드 개발을 하다보면 종종 [OutOfMemory(OOM)][OOM]에러를 만나게 됩니다. [이전에 올렸던 포스팅](https://spoqa.github.io/2012/01/09/using-gson-in-android.html)에서도 이 문제로 고생을 했는데요, 메모리 누수 관련 문제는 로직 에러와는 달라서 찾기가 매우 난감한 경우가 많습니다. 이러한 메모리 누수 관련 문제를 해결하기 위한 검사 기능을 제공하는 무료 툴이 있습니다. 바로 [Eclipse MAT(Memory Analyzer)(MAT)][MAT]입니다.
 
 ![Eclipse MAT](/images/eclipse-mat/mat_thumb.png)
 
@@ -64,7 +64,7 @@ Dominator tree를 띄우면 현재 덤프 된 매모리 스냅 샷 중 가장 �
 
 상위에 있는 몇몇 객체들이 가장 의심 되는 객체들이라고 볼 수 있겠습니다. 왼쪽의 화살표를 클릭함으로써 그 객체가 참조하고 있는 다른 객체들에 대한 정보들을 볼 수 있습니다. 각 객체를 클릭하면 옆에 Inspect창의 내용이 달라지는 것을 볼 수 있습니다.
 
-실제 이 스냅 샷은 [이전 포스팅의 문제](http://spoqa.github.com/2012/01/09/using-gson-in-android.html)를 해결하려고 떠놓은 스냅 샷인데요, 이 결과를 보고 많은 메모리가 네트워크를 통해 받아오는 스트림을 처리하고 문자열로 가공하는데에 낭비되고 있다는 생각이 들어 다른 방법으로 우회하는 방법을 썼고 결과적으로 문제를 해결 할 수 있었습니다.
+실제 이 스냅 샷은 [이전 포스팅의 문제](https://spoqa.github.io/2012/01/09/using-gson-in-android.html)를 해결하려고 떠놓은 스냅 샷인데요, 이 결과를 보고 많은 메모리가 네트워크를 통해 받아오는 스트림을 처리하고 문자열로 가공하는데에 낭비되고 있다는 생각이 들어 다른 방법으로 우회하는 방법을 썼고 결과적으로 문제를 해결 할 수 있었습니다.
 
 ## Android에서 MAT사용법
 ---

@@ -16,7 +16,7 @@ description: 새 판올림을 준비하며 프로젝트에 자바스크립트 MV
 
 만약 서버 측에서 [RESTful](http://en.wikipedia.org/wiki/Representational_state_transfer)한 URL을 제공한다면, Backbone을 사용하여 얻을 수 있는 이점이 더 확실해집니다. [모델에 RESTful한 URL을 제공](http://backbonejs.org/#Model-url)하면, [간단하게 서버와 동기화하면서](http://backbonejs.org/#Sync) 그에 따르는 뷰의 변화 따위를 손쉽게 구현할 수 있습니다. 
 
-RESTful한 인터페이스 설계에 대해서 궁금하시다면 이전에 올라온 [글](http://spoqa.github.com/2012/02/27/rest-introduction.html)을 참조해보세요. Backbone 기반으로 설계된 [여러 웹 애플리케이션](http://backbonejs.org/#examples) 중에는 여러분이 잘 알고 있을만한 서비스들도 있을 것입니다.
+RESTful한 인터페이스 설계에 대해서 궁금하시다면 이전에 올라온 [글](https://spoqa.github.io/2012/02/27/rest-introduction.html)을 참조해보세요. Backbone 기반으로 설계된 [여러 웹 애플리케이션](http://backbonejs.org/#examples) 중에는 여러분이 잘 알고 있을만한 서비스들도 있을 것입니다.
 
 ## MVC 패턴?
 

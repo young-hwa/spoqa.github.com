@@ -6,10 +6,10 @@ layout: null
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title>Spoqa tech blog</title>
-  <link href="http://spoqa.github.com/"/>
-  <link type="application/atom+xml" rel="self" href="http://spoqa.github.com/atom.xml"/>
+  <link rel="alternate" href="{{ site.home_url }}/"/>
+  <link type="application/atom+xml" rel="self" href="{{ site.home_url }}/atom.xml"/>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
-  <id>http://spoqa.github.com</id>
+  <id>{{ site.home_url }}/</id>
   <author>
     <name>Spoqa Developer</name>
     <email>dev@spoqa.com</email>
@@ -18,8 +18,8 @@ layout: null
   {% for post in site.posts limit:20 %}
       {% if post.publish != false %}
       <entry>
-        <id>http://spoqa.github.com{{ post.id }}</id>
-        <link type="text/html" rel="alternate" href="http://spoqa.github.com{{ post.url }}"/>
+        <id>{{ site.home_url }}{{ post.url }}</id>
+        <link type="text/html" rel="alternate" href="{{ site.home_url }}{{ post.url }}"/>
         <title>{{ post.title }}</title>
         <updated>{{ post.date | date_to_xmlschema }}</updated>
         <author>

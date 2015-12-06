@@ -24,7 +24,7 @@ layout: null
         <updated>{{ post.date | date_to_xmlschema }}</updated>
         <author>
           <name>{{ post.author }}</name>
-          <uri>http://spoqa.github.com{{ post.url }}</uri>
+          <email>{{ post.author-email }}</email>
         </author>
         <content type="html">{{ post.content | xml_escape }}</content>
       </entry>

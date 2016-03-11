@@ -1,6 +1,6 @@
 ---
 layout: entry
-title: "봇 안내서 - 당신만의 알파고:heart:"
+title: "봇 안내서 - 당신만의 알파고"
 author: Jessica
 author-email: jessica@spoqa.com
 description: bot으로 쾌적한 생활을!
@@ -20,7 +20,9 @@ publish: true
 
 
 ## 봇이 뭐지?
-봇이란 어찌고 저찌고..
+**봇(Bot)**[1]
+
+> 로봇의 준말로 인간이 하는 행도을 흉내내고 자동화하도록 만들어진 프로그램
 
 
 ## 슬랙봇과 스포칸
@@ -37,7 +39,7 @@ publish: true
 - 박제
 - 좋은 PR
 - 가위바위보
- - https://spoqa.slack.com/archives/general/p1457610840002571 숨막히는 가위바위보 현장 
+ - https://spoqa.slack.com/archives/general/p1457610840002571 숨막히는 가위바위보 현장
 
 
 이하 생략한다.(이미지)
@@ -71,4 +73,4 @@ IF A, then B.
 
 
 
-[1]: https://en.wikipedia.org/wiki/Syntax_highlighting#Practical_benefits
+[1]: https://ko.wikipedia.org/wiki/%EC%9D%B8%ED%84%B0%EB%84%B7_%EB%B4%87

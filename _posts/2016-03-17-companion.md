@@ -74,9 +74,9 @@ publish: true
 앞으로는 좀 더 적극적으로 문제를 발견하고 해결하는 팀이 될 수 있게 하려고 일회성 아닌 주기적으로 진행하려고 합니다. 또한, 현재는 SP 분들과 많이 진행했지만, PC 팀 분들과도 같이 진행하려고 합니다. 나중에는 계획적인 진행이 아니라 동행하더라도 문제가 없고, 이상하지 않은 환경을 만들려고 합니다. 감사합니다.
 
 
-[^1]: Partner Consultant는 스포카의 서비스를 소개하고, 매장 업종과 상권에 따라 점주, 브랜드가 가려워하는 지점을 파악한 뒤 우리의 서비스를 통한 솔루션을 제안하는 분들입니다. 자세한 사항은 [스포카 홈페이지-인에이블러](http://www.spoqa.com/enabler/)를 참고 바랍니다.
+[^1]: Partner Consultant는 스포카의 서비스를 소개하고, 매장 업종과 상권에 따라 점주, 브랜드가 가려워하는 지점을 파악한 뒤 우리의 서비스를 통한 솔루션을 제안하는 분들입니다. 자세한 사항은 [스포카 공식 홈페이지-인에이블러](http://www.spoqa.com/enabler/)를 참고 바랍니다.
 
-[^2]: Store Planner는 파트너 컨설턴트 팀에서 연결한 매장과 회사와의 관계를 더욱 공고하게 하려고 현장의 의견과 피드백을 수집하고 함께 논의하여, 최고의 서비스를 만드는데 함께 하는 분들입니다. 자세한 사항은 [스포카 홈페이지-인에이블러](http://www.spoqa.com/enabler/)를 참고 바랍니다.
+[^2]: Store Planner는 파트너 컨설턴트 팀에서 연결한 매장과 회사와의 관계를 더욱 공고하게 하려고 현장의 의견과 피드백을 수집하고 함께 논의하여, 최고의 서비스를 만드는데 함께 하는 분들입니다. 자세한 사항은 [스포카 공식 홈페이지-인에이블러](http://www.spoqa.com/enabler/)를 참고 바랍니다.
 
 [^3]: Patton, Jeff. User Story Mapping: Discover the Whole Story, Build the Right Product. O'Reilly Media; 1 edition (September 25, 2014), 페이지 표기가 없는 이유는 [safaribooks](https://www.safaribooksonline.com/library/view/user-story-mapping/9781491904893/pr06.html) 에서는 페이지를 따로 알려주지 않기 때문입니다.
 

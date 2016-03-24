@@ -58,10 +58,10 @@ description: 스포카 개발자인 A씨의 일주일을 통해, 스포카 개�
 
 
 [트렐로]: https://trello.com/
-[스포카 개발 블로그]: http://spoqa.github.com
+[스포카 개발 블로그]: https://spoqa.github.io/
 [스터디]: http://github.com/spoqa/sicp
 [Balsamiq Mockup]: http://www.balsamiq.com/products/mockups
-[github]: https://github.com
+[github]: https://github.com/
 [Google Play]: https://play.google.com/intl/ko/about/
 [Apple App Store]: http://itunes.apple.com/kr/genre/ios/
 [QA(Quality Assurance)]: http://en.wikipedia.org/wiki/Quality_assurance

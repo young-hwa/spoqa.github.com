@@ -25,7 +25,7 @@ A/B 테스팅에 관련한 유명한 일화가 하나 있습니다. 1497년, [Va
 
 ## [Optimizely](http://optimizely.com)?
 
-Optimizely는 웹서비스를 운영하면서 A/B Testing 수행을 원하시는 분들에게 적합한 서비스입니다. Optimizely를 사용하기 전에 A/B 테스팅에 대한 정보가 필요하다면 A/B 테스팅에 관련한 JC Kim님의 글( [A/B Testing에 대한 기초적인 정보들](http://spoqa.github.io/2012/05/15/ab-testing-basic.html) )을 먼저 읽어보시는 것을 추천합니다. 
+Optimizely는 웹서비스를 운영하면서 A/B Testing 수행을 원하시는 분들에게 적합한 서비스입니다. Optimizely를 사용하기 전에 A/B 테스팅에 대한 정보가 필요하다면 A/B 테스팅에 관련한 JC Kim님의 글( [A/B Testing에 대한 기초적인 정보들](https://spoqa.github.io/2012/05/15/ab-testing-basic.html) )을 먼저 읽어보시는 것을 추천합니다. 
 
 Optimizely는 단순히 A/B 테스트의 진행과 그 통계 결과만 제공하는 것이 아니라, 테스트를 진행하는 동안의 모든 준비 과정에서 사용자들에게 도움을 주고 있습니다. 오늘은 그 Optimizely의 핵심 기능 및 활용법에 대하여 알아보겠습니다. Optimizely는 유료 서비스이지만 30일 동안의 Free Trial을 제공해주므로 그 기간 동안 충분히 이 서비스의 모든 것을 체험할 수 있습니다.
 

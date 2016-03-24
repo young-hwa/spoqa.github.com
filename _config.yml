@@ -8,10 +8,12 @@ kramdown:
   input: GFM
   hard_wrap: false
 
-home_url: "http://spoqa.github.io"
+home_url: "https://spoqa.github.io"
 representing_image: "/images/og-logo.png"
 
 sass:
     sass_dir: css
 
 trawler_mode: true
+gems: [jekyll-paginate]
+future: true

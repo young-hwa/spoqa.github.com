@@ -55,16 +55,16 @@ publish: true
 ---
 [Amazon Simple Storage Service(Amazon S3)][Amazon S3]는 [Amazon RDS]와 마찬가지로 [Amazon EC2]를 기반으로 한 데이터 저장 관리 서비스입니다. 스포카 서버에 업로드 되는 사진이나 문서등의 파일들을 통합하여 관리하여 서버의 인스턴스를 늘려 확장하는 경우에도 문제없이 대처할 수 있도록 하는 것이 주 목적입니다.
 
-[스포카]: http://spoqa.com
-[스포카 개발팀]: http://spoqa.github.com
+[스포카]: http://spoqa.com/
+[스포카 개발팀]: https://spoqa.github.io/
 [솔루션 스택(Solution Stack)]: http://en.wikipedia.org/wiki/Solution_stack
-[Dotcloud]: http://dotcloud.com
+[Dotcloud]: http://dotcloud.com/
 [Linux]: https://github.com/torvalds/linux
-[nginx]: http://nginx.org
+[nginx]: http://nginx.org/
 [uwsgi]: http://projects.unbit.it/uwsgi
 [Python]: http://python.org/
 [Redis]: http://redis.io/
-[Celery]: http://celeryproject.org
+[Celery]: http://celeryproject.org/
 [PaaS]: http://en.wikipedia.org/wiki/Platform_as_a_service
 [Amazon Web Services(AWS)]: http://aws.amazon.com/
 [Amazon S3]: http://aws.amazon.com/s3/

@@ -8,20 +8,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Spoqa Tech Blog{% if page.title %} | {{ page.title }}{% endif %}</title>
-  {% if page.url contains 'jobs' %}
   <link rel="canonical" href="{{ site.home_url }}{{ page.url }}">
-  <meta property="og:title" content="스포카에서 크리에이터를 찾습니다.">
-  <meta property="og:type" content="blog">
+  <meta property="og:title" content="{{ page.title }}">
   <meta property="og:url" content="{{ site.home_url }}{{ page.url }}">
   <meta property="og:site_name" content="Spoqa 기술 블로그">
+  {% if page.url contains 'jobs' %}
+  <meta property="og:type" content="blog">
   <meta property="og:description" content="스포카에서 상점을 위한 IT 서비스를 디자인하고 개발할 크리에이터를 찾고 있습니다.">
   {% elsif page.title %}
   {% assign base_path = '../../..' %}
-  <link rel="canonical" href="{{ site.home_url }}{{ page.url }}">
-  <meta property="og:title" content="{{ page.title }}">
   <meta property="og:type" content="article">
-  <meta property="og:url" content="{{ site.home_url }}{{ page.url }}">
-  <meta property="og:site_name" content="Spoqa 기술 블로그">
   <meta property="og:description" content="{{ page.description }}">
   {% else %}
   {% if paginator.page == 1 %}

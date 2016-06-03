@@ -49,9 +49,11 @@ publish: true
 </figure>
 
 <figure>
-<figcaption>
-의도하지 않은 줄바꿈이 발생하는 도도 포인트 스토어앱 화면
-</figcaption>
+  <img src="/images/2016-06-03/word-break-bug.png"
+     style="margin-right:auto; margin-left:auto;" />
+  <figcaption>
+    의도하지 않은 줄바꿈이 발생하는 도도 포인트 스토어앱 화면
+  </figcaption>
 </figure>
 
 이런 특징을 가지고 있기 때문에 일본어 환경에서 한글과 같게 글자 크기를 설정하면 좁은 너비에 작성된 문자열들이 의도에 맞지 않게 줄바꿈 됩니다. 태블릿 앱은 비교적 넓은 너비의 데스크탑 모니터로 보는 웹사이트 환경과 달리 각 컴포넌트가 다소 한정된 너비를 지니기 때문에 이러한 <del>와장창</del> 현상이 더 자주 일어납니다.
@@ -192,14 +194,18 @@ html:lang(ja) {
 # 결과
 
 <figure>
+  <img src="/images/2016-06-03/store-app-KR-JP-bug.png"
+     style="margin-right:auto; margin-left:auto;" />
   <figcaption>
-    일본어와 한국어 환경에 다른 타이포그래피 속성 정의하지 않은 도도 포인트 스토어앱 화면
+    한국어와 일본어 환경에 다른 타이포그래피 속성을 정의하지 않은 도도 포인트 스토어앱 화면
   </figcaption>
 </figure>
 
 <figure>
+  <img src="/images/2016-06-03/store-app-KR-JP-normal.png"
+    style="margin-right:auto; margin-left:auto;" />
   <figcaption>
-    위의 예제를 활용해 다국어 타이포그래피 설정을 적용한 일본어와 한국어 환경에서의 도도 포인트 스토어앱 화면
+    위의 예제를 활용해 다국어 타이포그래피 설정을 적용한 한국어와 일본어 환경에서의 도도 포인트 스토어앱 화면
   </figcaption>
 </figure>
 

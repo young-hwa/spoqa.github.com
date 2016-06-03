@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: "스포카 한 산스와 글꼴 경량화"
-author: kang
+author: 강영화
 author-email: kang@spoqa.com
 description: 글꼴의 용량을 어떻게 줄였는지를 중심으로 스포카 한 산스의 제작기를 적어보았습니다.
 publish: true

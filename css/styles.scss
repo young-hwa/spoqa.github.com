@@ -740,12 +740,11 @@ figcaption {
   text-align: center;
   vertical-align: middle;
   border-color: $table-border-color;
-  padding: 0;
+  padding: 16px 0;
 
   > a {
     display: inline-block;
     width: 100%;
-    padding: 16px 0;
   }
 }
 

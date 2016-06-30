@@ -177,7 +177,7 @@ html:lang(ja) {
 ```
 // Mixin For JP locale
 @mixin font-size($sizeValue) {
-  font-size: (0.125 / 2 * $sizeValue) + rem;
+  font-size: ($sizeValue / 16) + rem;
 }
 ```
 

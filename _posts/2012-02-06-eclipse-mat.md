@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: Eclipse Memory Analyzer 소개
-author: akaz
+author: 유병석
 author-email: akaz@spoqa.com
 description: Eclipse Memory Analyzer(MAT)을 소개하고 유용하게 쓸 수 있는 기능들을 알아봅니다.
 ---

@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: Semantic Versioning 소개
-author: JC Kim
+author: 김재석
 author-email: shinvee@spoqa.com
 description: 소프트웨어의 버전 명을 정하는 방법은 여러 가지가 있지만 명확한 기준 없이 지어질 때가 많습니다. 이번 글은 여러 경험을 종합하여 만들어진 Semantic Versioning 스펙을 소개합니다.
 ---

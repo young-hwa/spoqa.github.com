@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: "Sublime Text 빠르게 적응하기"
-author: jessica
+author: 박지선
 author-email: jessica@spoqa.com
 description: Sublime Text 초보 사용자를 위한 팁을 공유합니다.
 publish: true

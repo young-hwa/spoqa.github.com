@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: Eclipse 디버거 사용법
-author: akaz
+author: 유병석
 author-email: akaz@spoqa.com
 description: Eclipse의 디버거의 사용 방법을 소개합니다.
 ---

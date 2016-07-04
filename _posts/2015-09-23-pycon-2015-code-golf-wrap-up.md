@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: "파이콘 한국 2015 코드 골프 되돌아보기"
-author: kyu
+author: 박준규
 author-email: kyu@spoqa.com
 description: 파이콘 한국 2015 코드 골프 이벤트의 출품작들을 분석해 봅니다.
 publish: true

@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: ASIHTTPRequest를 대체하는 iOS 네트워킹 라이브러리 2가지
-author: JC Kim
+author: 김재석
 author-email: shinvee@spoqa.com
 description: iOS 앱을 개발하는데 있어 네트워킹 라이브러리의 선택은 중요합니다. 이번 글에선 최근 개발이 종료된 ASIHTTPRequest 라이브러리의 대안을 2가지 소개합니다.
 ---

@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: NEXON Developers Conference 참관기
-author: akaz
+author: 유병석
 author-email: akaz@spoqa.com
 description: 이번 NDC행사를 참관한 후기를 적어보았습니다.
 ---

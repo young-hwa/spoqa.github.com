@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: 빠른 프로토타이핑을 위한 도구 소개
-author: JC Kim
+author: 김재석
 author-email: shinvee@spoqa.com
 description: 스포카 팀은 매장에서부터 페이스북, 트위터까지 이어지는 총체적인 경험 선을 시험하기 위해 프로토타이핑에 많은 고민을 하였습니다. 이번 글에선 프로토타이핑을 빠르게 할 수 있게 도와주는 도구들을 소개합니다. 
 ---

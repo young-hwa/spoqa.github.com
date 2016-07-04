@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: Java의 json 라이브러리 google-gson
-author: akaz
+author: 유병석
 author-email: akaz@spoqa.com
 description: 안드로이드 주소록을 다루며 애먹었던 경험을 소개하고 간단하게 json라이브러리 google-gson 사용법을 소개합니다.
 publish: true

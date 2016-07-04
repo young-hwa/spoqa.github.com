@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: 웹 퍼포먼스 높이기
-author: akaz
+author: 유병석
 author-email: akaz@spoqa.com
 description: 웹 퍼포먼스를 높일 수 있는 몇가지 팁에 대해 소개합니다.
 ---

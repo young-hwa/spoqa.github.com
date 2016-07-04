@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: 사례로 보는 패스워드와 사용자 경험의 관계
-author: JC Kim
+author: 김재석
 author-email: shinvee@spoqa.com
 description: 사용자 경험과 패스워드 보안에 영향을 끼친 몇가지 패스워드 정책에 대해 소개합니다.
 publish: true

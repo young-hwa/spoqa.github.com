@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: Spoqa 블로그 탄생 비화
-author: akaz
+author: 유병석
 author-email: akaz@spoqa.com
 description: 스포카 블로그는 어떤 기술을 통해 만들어졌을까요? github의 pages서비스와 Jekyll site generator에 대하여 알아봅니다.
 ---

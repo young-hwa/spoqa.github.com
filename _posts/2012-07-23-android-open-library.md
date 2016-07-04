@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: 안드로이드 오픈 라이브러리
-author: akaz
+author: 유병석
 author-email: akaz@spoqa.com
 description: 유용하게 쓰일 수 있는 안드로이드 라이브러리를 몇가지 살펴봅니다.
 ---

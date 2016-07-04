@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: 코드로 디자인하기
-author: yeun
+author: 정희연
 author-email: yeun@spoqa.com
 description: 회사에서 개발 환경을 갖추고 Git을 사용하기 시작한 지 약 10개월이 되었으므로 그간의 소회를 적어봅니다.
 publish: true

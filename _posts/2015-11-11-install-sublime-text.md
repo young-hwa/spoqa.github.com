@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: SublimeText 시작하기
-author: yeun
+author: 정희연
 author-email: yeun@spoqa.com
 description: SublimeText를 설치하고 Package control을 사용해 테마를 적용해봅니다.
 publish: true

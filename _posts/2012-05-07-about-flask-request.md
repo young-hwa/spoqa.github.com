@@ -37,11 +37,11 @@ description: Werkzeug와 Flask가 HTTP 요청을 어떻게 추상화 하는지�
 # Back to basics
 ---
 
-잠깐 여기서 처음으로 돌아가 보죠. [WSGI] 애플리케이션은 [HTTP] 요청을 처리하기 위한 함수(혹은 부를 수 있는 객체)로 <code>environ</code>과 <code>start_response</code>를 컨테이너로부터 받아 요청을 처리합니다. [Flask]는 <code>Flask.wsgi\_app()</code>을 통해 이 부분을 처리합니다.
+잠깐 여기서 처음으로 돌아가 보죠. [WSGI] 애플리케이션은 [HTTP] 요청을 처리하기 위한 함수(혹은 부를 수 있는 객체)로 <code>environ</code>과 <code>start_response</code>를 컨테이너로부터 받아 요청을 처리합니다. [Flask]는 <code>Flask.wsgi_app()</code>을 통해 이 부분을 처리합니다.
 
 <script src="https://gist.github.com/2594329.js?file=wsgi_app.py"></script>
 
-여기서 실제로 <code>environ</code>에 담긴 [HTTP] 요청에 대한 상세를 <code>Request</code> 형태로 바꾸는 역할을 하는 것이 바로 <code>request\_context()</code>입니다. <code>request\_context()</code>는 현재 클라이언트로부터 받은 <code>environ</code>을 토대로 문자 그대로 요청(Request)에 대한 문맥(Context)을 만들어서 이를 핸들러에서 사용할 수 있게끔 합니다. 
+여기서 실제로 <code>environ</code>에 담긴 [HTTP] 요청에 대한 상세를 <code>Request</code> 형태로 바꾸는 역할을 하는 것이 바로 <code>request_context()</code>입니다. <code>request_context()</code>는 현재 클라이언트로부터 받은 <code>environ</code>을 토대로 문자 그대로 요청(Request)에 대한 문맥(Context)을 만들어서 이를 핸들러에서 사용할 수 있게끔 합니다. 
 
 <script src="https://gist.github.com/2594329.js?file=request_context.py"></script>
 
@@ -49,13 +49,13 @@ description: Werkzeug와 Flask가 HTTP 요청을 어떻게 추상화 하는지�
 
 <script src="https://gist.github.com/2594329.js?file=RequestContext.py"></script>
 
-<code>RequestContext</code>는 넘겨받는 <code>app</code>의 <code>request_class</code>(기본은 뒤에 살펴볼 <code>werkzeug.wrappers.Request</code>입니다.)를 통해 문맥 안에서 사용할 <code>request</code>를 초기화합니다. 또한 [<code>with</code> 구문](http://docs.python.org/reference/compound_stmts.html#the-with-statement)을 통해 실행되는 <code>\_\_enter\_\_()</code>를 통해 자기 자신을 <code>\_request\_ctx\_stack</code>에 넣습니다.
+<code>RequestContext</code>는 넘겨받는 <code>app</code>의 <code>request_class</code>(기본은 뒤에 살펴볼 <code>werkzeug.wrappers.Request</code>입니다.)를 통해 문맥 안에서 사용할 <code>request</code>를 초기화합니다. 또한 [<code>with</code> 구문](http://docs.python.org/reference/compound_stmts.html#the-with-statement)을 통해 실행되는 <code>__enter__()</code>를 통해 자기 자신을 <code>_request_ctx_stack</code>에 넣습니다.
 
-여기서 주목해야 할 것이 <code>\_request\_ctx\_stack</code>입니다. 이 스택은 <code>.global</code>에 정의되어있습니다.  
+여기서 주목해야 할 것이 <code>_request_ctx_stack</code>입니다. 이 스택은 <code>.global</code>에 정의되어있습니다.  
 
 <script src="https://gist.github.com/2594329.js?file=global.py"></script>
 
-<code>\_request\_ctx</code>는 [Werkzeug]의 <code>LocalStack</code>의 인스턴스입니다. 또 우리가 여태까지 찾아 헤매던 <code>request</code> 역시 여기에 정의되어있는데, 이는 <code>\_request\_ctx</code> 중 가장 위의 <code>.request</code>를 가져오게 되어있는 <code>LocalProxy</code>임을 알 수 있습니다.
+<code>_request_ctx</code>는 [Werkzeug]의 <code>LocalStack</code>의 인스턴스입니다. 또 우리가 여태까지 찾아 헤매던 <code>request</code> 역시 여기에 정의되어있는데, 이는 <code>_request_ctx</code> 중 가장 위의 <code>.request</code>를 가져오게 되어있는 <code>LocalProxy</code>임을 알 수 있습니다.
 
 # Globalocal
 ---
@@ -64,16 +64,16 @@ description: Werkzeug와 Flask가 HTTP 요청을 어떻게 추상화 하는지�
 
 <script src="https://gist.github.com/2594329.js?file=local.py"></script>
 
-코드가 약간 복잡하지만, 기본적으로는 <code>get_ident</code>를 이용해서 데이터를 저장하고 가져옵니다. <code>get\_ident</code>는 현재 문맥([스레드(Thread)][스레드]나 [코루틴(Coroutine)][코루틴])을 나타내는 식별자로, 2개의 클래스는 모두 개개의 문맥에서 전역적으로 사용할 수 있는 값으로 저장될 수 있습니다.([Java]의 [java.lang.ThreadLocal]나 [Clojure]의 [binding](http://clojure.github.com/clojure/clojure.core-api.html#clojure.core/binding)을 떠올리시면 이해가 쉽습니다.) 스레드별로 다른 요청을 처리하는 경우 각각의 요청 문맥이 분리되어야 하기 때문이죠.
+코드가 약간 복잡하지만, 기본적으로는 <code>get_ident</code>를 이용해서 데이터를 저장하고 가져옵니다. <code>get_ident</code>는 현재 문맥([스레드(Thread)][스레드]나 [코루틴(Coroutine)][코루틴])을 나타내는 식별자로, 2개의 클래스는 모두 개개의 문맥에서 전역적으로 사용할 수 있는 값으로 저장될 수 있습니다.([Java]의 [java.lang.ThreadLocal]나 [Clojure]의 [binding](http://clojure.github.com/clojure/clojure.core-api.html#clojure.core/binding)을 떠올리시면 이해가 쉽습니다.) 스레드별로 다른 요청을 처리하는 경우 각각의 요청 문맥이 분리되어야 하기 때문이죠.
 
-이제 정리해봅시다. <code>environ</code>을 통해 넘어온 요청 내용은 <code>request_context()</code>에 의해 <code>Request</code> 객체로 만들어지고 이 객체는 현재 문맥에서 전역적으로 사용할 수 있게끔 <code>\_request\_ctx\_stack</code>에 저장됩니다. 우리는 핸들러에서 이를 <code>Flask.request</code>로 접근하여 사용합니다.
+이제 정리해봅시다. <code>environ</code>을 통해 넘어온 요청 내용은 <code>request_context()</code>에 의해 <code>Request</code> 객체로 만들어지고 이 객체는 현재 문맥에서 전역적으로 사용할 수 있게끔 <code>_request_ctx_stack</code>에 저장됩니다. 우리는 핸들러에서 이를 <code>Flask.request</code>로 접근하여 사용합니다.
 
 # How it works?
 ---
 
 이제 <code>request</code> 객체가 어디서 만들어지는지를 살펴보았으니 어떻게 만들어지는지에 초점을 맞춰보죠. <code>request</code> 객체는 아까 잠깐 언급한 <code>request_class</code>, 즉 별다른 설정이 없다면 [<code>werkzeug.wrappers.Request</code>](https://github.com/mitsuhiko/werkzeug/blob/0.8.3/werkzeug/wrappers.py#L1619)를 구현합니다. 
 
-[<code>werk.zeug.wrappers.Request</code>](https://github.com/mitsuhiko/werkzeug/blob/0.8.3/werkzeug/wrappers.py#L1619)는 [<code>werkzeug.wrappers.BaseRequest</code>](https://github.com/mitsuhiko/werkzeug/blob/0.8.3/werkzeug/wrappers.py#L71)에 [HTTP] 요청에 대한 명세를 독립적으로 구현하는 몇 개의 다른 [믹스인(MixIn)][믹스인]으로 구성되어있습니다. 기본적인 구현 전략은 <code>environ</code>을 객체의 멤버 변수로 가지고 있다가 조회하는 메소드나 프로퍼티가(ex. <code>.values</code>, <code>forms</code>)가 처음으로 불릴 때 명세에 맞게 이를 불러옵니다. ([<code>.\_load\_from\_data</code>](https://github.com/mitsuhiko/werkzeug/blob/0.8.3/werkzeug/wrappers.py#L299))
+[<code>werk.zeug.wrappers.Request</code>](https://github.com/mitsuhiko/werkzeug/blob/0.8.3/werkzeug/wrappers.py#L1619)는 [<code>werkzeug.wrappers.BaseRequest</code>](https://github.com/mitsuhiko/werkzeug/blob/0.8.3/werkzeug/wrappers.py#L71)에 [HTTP] 요청에 대한 명세를 독립적으로 구현하는 몇 개의 다른 [믹스인(MixIn)][믹스인]으로 구성되어있습니다. 기본적인 구현 전략은 <code>environ</code>을 객체의 멤버 변수로 가지고 있다가 조회하는 메소드나 프로퍼티가(ex. <code>.values</code>, <code>forms</code>)가 처음으로 불릴 때 명세에 맞게 이를 불러옵니다. ([<code>._load_from_data</code>](https://github.com/mitsuhiko/werkzeug/blob/0.8.3/werkzeug/wrappers.py#L299))
 
 # Prologue
 ---

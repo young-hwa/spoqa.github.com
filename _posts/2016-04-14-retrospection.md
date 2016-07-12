@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: "UX, 배움과 실무 사이에서"
-author: pi
+author: 박정진
 author-email: pi@spoqa.com
 description: 주니어 UX 디자이너로서 지난 1년을 회고하고, 느낀 점을 공유합니다.
 publish: true

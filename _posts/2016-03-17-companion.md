@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: "동행"
-author: BK
+author: 김병환
 author-email: bk@spoqa.com
 description: 동행 프로젝트에서 얻은 배움과 느낀 점을 공유합니다.
 publish: true

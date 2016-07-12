@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: 패키지 이름을 통해 디폴트 브라우저 띄워보기
-author: akaz
+author: 유병석
 author-email: akaz@spoqa.com
 description: 최근 앱 개발중 있었던 문제를 살펴보면서 패키지명을 통해 인텐트를 띄우는 방법을 알아봅니다.
 ---

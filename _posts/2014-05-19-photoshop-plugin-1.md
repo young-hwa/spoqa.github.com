@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: 포토샵 플러그인 살펴보기 (1)
-author: Yeun
+author: 정희연
 author-email: yeun@spoqa.com
 description: 업무 효율을 높여주는 포토샵 플러그인을 알아봅니다.
 ---

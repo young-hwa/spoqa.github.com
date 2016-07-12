@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: "Living on The Edge: 가장 앞에서 개발 (다시) 시작하기"
-author: jay
+author: 이재호
 author-email: jay@spoqa.com
 description: 새로운 프론트엔드 앱 개발 환경 구축에 대한 경험을 공유합니다.
 publish: true

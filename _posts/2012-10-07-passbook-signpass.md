@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: iOS Passbook의 signpass 분석
-author: JC Kim
+author: 김재석
 author-email: shinvee@spoqa.com
 description: iOS Passbook에 들어갈 Pass를 만들 때 반드시 필요한 툴킷인 signpass의 소스코드를 분석하였습니다.
 ---

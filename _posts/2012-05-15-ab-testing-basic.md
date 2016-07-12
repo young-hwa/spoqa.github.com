@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: A/B Testing에 대한 기초적인 정보들
-author: JC Kim
+author: 김재석
 author-email: shinvee@spoqa.com
 description: 최근 널리 쓰이고 있는 A/B Testing를 스터디하고 싶으신 분들을 위해 저희들이 보아온 여러가지 자료를 공유하고자 합니다.
 ---

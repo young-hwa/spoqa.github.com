@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: docker the cloud
-author: xym
+author: 강성용
 author-email: xym@spoqa.com
 description: 언제나 여러분의 든든한 힘이 되어주었던, 부장님께 올릴 기획안을 통과시키는 마법의 단어. 클라우드와 docker에 대해 알아봅시다! 비개발자 환영!
 ---

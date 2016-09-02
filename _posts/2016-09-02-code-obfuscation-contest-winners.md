@@ -25,7 +25,7 @@ publish: true
 각 부문별 수상자를 선정하고 부문별 총점을 모아서 대상자를 선정하였습니다. 부문별 수상자 중에 대상자는
 제외하였습니다.
 
-그럼 수상자를 발표하겠습니다. _두구두구두구두구....._
+그럼 수상자를 발표하겠습니다. _두구두구두구두구......_
 
 * **대상** : [@qria 님](https://github.com/spoqa/spoqa-pycon-2016-obfuscation-contest/pull/24)
 * **참신상** : [@sanxiyn 님](https://github.com/spoqa/spoqa-pycon-2016-obfuscation-contest/pull/21)
@@ -34,7 +34,7 @@ publish: true
 * **파이썬 활용/이해상** : [@sanxiyn 님](https://github.com/spoqa/spoqa-pycon-2016-obfuscation-contest/pull/21)
 * **따봉상** : [@sublee 님](https://github.com/spoqa/spoqa-pycon-2016-obfuscation-contest/pull/16)
 
-축하드립니다!
+축하드립니다! 수상자 분들은 상품 전달을 위하여 jc+pycon-2016-winner@spoqa.com 으로 연락 주시면 안내를 도와드리겠습니다.
 
 원래 수상자를 발표하면서 코드 리뷰까지 게시하려고 하였으나, 현재 진행중인 업무가 많아 수상 발표만 먼저
 올리게 되었습니다. 이어서 멀지 않은 시간 안에 제출작 리뷰 포스팅이 올라 올 예정이니 많은 관심 부탁드립니다.

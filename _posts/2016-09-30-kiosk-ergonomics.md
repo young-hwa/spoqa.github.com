@@ -17,7 +17,7 @@ publish: true
 
 ![](/images/2016-09-30/wrist-status-terms.jpg)
 
-손목의 관절 구조를 보면 휨 없이 중립상태를 기준으로 손이 수직을 향하게 됩니다. 손등을 내보이거나, 손바닥을 내보이는 모양은 팔과 손목 관절을 휜 형태가 되기 때문에, 기본적으로 약간의 부하를 주게 됩니다.
+손목의 관절 구조를 보면 휨 없이 중립상태를 기준으로 손이 수직을 향하게 됩니다. 손등을 내보이거나, 손바닥을 내보이는 모양은 팔과 손목 관절을 휜 형태가 되기 때문에, 기본적으로 약간의 부하를 주게 됩니다.[^1]
 한동안 유행했던 버티컬 마우스도, 이 중립 상태를 유지하며 마우스를 사용하게 하여 손목 터널 증후군의 발생을 최소화하기 위해 개발되었습니다.
 
 ![](/images/2016-09-30/ergonomic-mouse-vertical.jpg)
@@ -25,7 +25,7 @@ publish: true
 
 ## 2. 수평 상태 기준으로, 집게손가락 마디는 첫째를 제외하고 상하 운동만을 지원합니다.
 
-두 번째로, 수평 상태의 손바닥을 기준으로 할 때 엄지를 제외한 손가락 마디는 손허리손가락관절[^1]을 제외한 나머지 관절은 상하 운동밖에 지원하지 않습니다. 손허리손가락관절 마저도, 상하 운동에서 훨씬 자연스러우며 좌우 운동은 조금 불편하다는 것을 알 수 있습니다. 결론적으로는, 수평 상태를 기준으로, 집게손가락 마디는 상하 운동이 좌우 운동보다 훨씬 편리하고 자연스럽습니다.
+두 번째로, 수평 상태의 손바닥을 기준으로 할 때 엄지를 제외한 손가락 마디는 손허리손가락관절[^2]을 제외한 나머지 관절은 상하 운동밖에 지원하지 않습니다. [^3] 손허리손가락관절 마저도, 상하 운동에서 훨씬 자연스러우며 좌우 운동은 조금 불편하다는 것을 알 수 있습니다. 결론적으로는, 수평 상태를 기준으로, 집게손가락 마디는 상하 운동이 좌우 운동보다 훨씬 편리하고 자연스럽습니다.
 
 ![](/images/2016-09-30/hand-anatomy.png)
 
@@ -36,4 +36,6 @@ publish: true
 
 UI 디자인에 있어 스크린 내 화면만을 보며 좋은 디자인을 구현하는 것은 많은 한계가 있습니다. 결국, 총체적 경험은 기기의 위치, 사용하는 자세를 종합적으로 고려하여 최적의 동선을 고안해야 하는 것 같습니다. 특히, 사용자가 많은 서비스일 수록 이 작은 디테일이 기여하는 영향력은 굉장히 클 것입니다.
 
-  [^1]: 손바닥에 가장 가까운 관절. 손가락 골격에서 손허리뼈와 첫마디뼈를 연결하는 관절을 말합니다.
+  [^1]: [Amit Bhattacharya,James D. McGlothlin (2012). Occupational Ergonomics: Theory and Applications, Second Edition. 327p](https://books.google.co.kr/books?id=cSH2no3JcwAC&lpg=PA327&dq=wrist%20position%20neutral&hl=ko&pg=PA327#v=onepage&q=wrist%20position%20neutral&f=false)
+  [^2]: 손바닥에 가장 가까운 관절. 손가락 골격에서 손허리뼈와 첫마디뼈를 연결하는 관절을 말합니다.
+  [^3]: [Brook, N., Mizrahi, J., Shoham, M., & Dayan, J. (1995). A biomechanical model of index finger dynamics. Medical engineering & physics, 17(1), 54-63.](https://www.researchgate.net/publication/15495510_A_biomechanical_model_of_index_finger_dynamics)

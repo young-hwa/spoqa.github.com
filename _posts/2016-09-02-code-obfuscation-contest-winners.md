@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: "PyCon APAC 2016 코드 난독화 컨테스트 수상자 발표"
-author: kyu
+author: 박준규
 author-email: kyu@spoqa.com
 publish: true
 ---

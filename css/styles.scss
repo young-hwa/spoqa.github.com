@@ -7,7 +7,7 @@
 @import 'solarized_light.css';
 @import '_variables';
 @import '_type';
-
+@import url(//cdn.jsdelivr.net/font-hack/2.020/css/hack.min.css);
 
 // Typekit Font loader attrs
 .wf-loading body {
@@ -73,6 +73,16 @@
   }
 }
 
+p code, pre code, li code, code {
+  font-family: 'Hack', monospace;
+  font-size: 15px;
+  border-radius: 4px;
+}
+
+pre {
+  border-radius: 4px;
+}
+
 // footnote
 a.footnote {
   &,
@@ -110,7 +120,6 @@ a.footnote {
   padding: 0 5%;
   background-color: #fff;
   border-bottom: 1px solid $divider-color;
-  box-shadow: 0 0 1px rgba(0,0,0,0.15);
 }
 .header-item {
   max-width: 700px;
@@ -157,9 +166,6 @@ a.footnote {
 .toggle {
   z-index: 2;
 }
-.toggle:hover:after {
-  border-bottom: 3px solid $primary-color;
-}
 .toggle:after {
   content: '메뉴';
   display: inline-block;
@@ -177,9 +183,7 @@ a.footnote {
   box-sizing: border-box;
   border-bottom: 3px solid transparent;
 }
-#toggle:checked + .toggle:after {
-  border-bottom: 3px solid $primary-color;
-}
+
 // Menu
 .menu {
   display: inline-block;
@@ -190,20 +194,26 @@ a.footnote {
 
   a {
     padding: 19px 20px 15px;
-    color: $text-color;
-    display: inline-block;
-    border-bottom: 3px solid transparent;
+    color: $grey-text-color;
+    display: block;
+    font-size: 14px;
+    color: $grey-5;
+    @media only screen and (max-width: 580px) {
+      font-size: 17px;
+      color: $text-color;
+    }
+
 
     &:active,
     &.selected {
       -webkit-transition: 0.2s ease-out all;
-      border-bottom: 3px solid $primary-color;
-      color: $hightlight-text-color;
+      font-weight: 700;
+      color: $text-color;
     }
     &:focus,
     &:hover {
       -webkit-transition: 0.2s ease-out all;
-      border-bottom: 3px solid $divider-color;
+      color: $text-color;
     }
   }
 }
@@ -233,11 +243,11 @@ a.footnote {
   text-align: left;
 }
 .posts .post-author-info .portrait {
-  width: 60px;
+  width: 68px;
   vertical-align: middle;
   border-radius: 50%;
   float: right;
-  margin-left: 40px;
+  margin-left: 56px;
 }
 .posts li {
   border-bottom: 1px solid $divider-color;
@@ -341,18 +351,17 @@ figcaption {
   color: $grey-text-color;
 }
 .post-title {
-  font-size: 48px;
+  font-size: 44px;
   margin-top: 30px;
   margin-bottom: 10px;
-  font-weight: 100;
   color: $text-color;
 }
 .posts .post-title {
   margin: 0 0 5px;
   font-size: $blog-font-size-lg;
+  line-height: 1.4;
 }
 .post-title-words{
-  font-weight: 100;
   color: $text-color;
 }
 .post-description {
@@ -573,11 +582,21 @@ figcaption {
   .pagination .next {
     float: right;
   }
+  h1 { 
+    font-size: 36px; 
+  }
 }
 
 @media only screen and (max-width: 580px) {
   body {
     width: 100%;
+    font-size: 16px;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 1.5em;
+  }
+  p {
+    font-size: 16px;
   }
   .header {
     height: 60px;
@@ -639,6 +658,7 @@ figcaption {
   }
   .post-title {
     margin-right: 0;
+    font-size: 36px;
   }
   .pagination .pages li {
     display: none;

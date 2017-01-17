@@ -327,9 +327,10 @@ figcaption {
   }
 
   img {
-    max-width: 90%;
+    max-width: 100%;
     display: block;
-    padding: 20px;
+    padding-top: 18px;
+    padding-bottom: 18px;
   }
 }
 .post-author-info {

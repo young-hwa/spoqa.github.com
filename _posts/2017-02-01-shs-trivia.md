@@ -49,8 +49,7 @@ publish: true
 숫자와 함께 쓰인 영문 예시 도판을 보시면 의도가 더 설득될지도 모르겠습니다. 
 
 <figure>
-  <img src="/images/2017-02-01/sds33.png"
-    style="margin-right:auto; margin-left:auto;" />
+  <img src="/images/2017-02-01/sds32.png" class="w611" style="margin-right:auto; margin-left:auto;" />
 </figure>
 
 
@@ -61,15 +60,14 @@ publish: true
 
 
 <figure>
-  <img src="/images/2017-02-01/sds33.png"
+  <img src="/images/2017-02-01/sds5.png"
     style="margin-right:auto; margin-left:auto;" />
 </figure>
 
 내가 만약 서체 디자이너라면 각진 스타일을 모두 맞춰주었겠지만, 스포카 한 산스 프로젝트의 최종 목표는 완벽한 서체를 만드는 것이 아니라 우리 서비스에 최적화된 서체를 (빨리) 커스텀하는것이였으므로 타협을 하기로 했습니다. 아래 Apple산돌고딕 Neo 소문자 i와 j의 점 모양을 보시면 타협한 이유가 보이실 텐데요, 이걸 고치기 시작하면 고칠 게 너무 많아지기 때문입니다. 
 
 <figure>
-  <img src="/images/2017-02-01/sds6.png"
-    style="margin-right:auto; margin-left:auto;" />
+  <img src="/images/2017-02-01/sds6.png" class="w500" style="margin-right:auto; margin-left:auto;" />
 </figure>
 
 
@@ -79,16 +77,14 @@ publish: true
 오픈산스의 a는 사발(bowl) 부분이 다소 처진 느낌입니다. 이 사발 윗면의 경사 또한 부드러운 인상에 한몫한다고 판단, 경사를 완만하게 만들었습니다. 
 
 <figure>
-  <img src="/images/2017-02-01/sds7.png"
-    style="margin-right:auto; margin-left:auto;" />
+  <img src="/images/2017-02-01/sds7.png" class="w500" style="margin-right:auto; margin-left:auto;" />
   <figcaption>
     노토산스CJK KR 소문자 a과 스포카 한 산스 2.0 소문자a 
   </figcaption>
 </figure>
 
 <figure>
-  <img src="/images/2017-02-01/sds8.png"
-    style="margin-right:auto; margin-left:auto;" />
+  <img src="/images/2017-02-01/sds8.png" class="w412" style="margin-right:auto; margin-left:auto;" />
 </figure>
 
 ### 6) 숫자폭과 숫자 1, 4 글리프 
@@ -98,16 +94,14 @@ publish: true
 노토산스의 숫자를 보면 한글이나 영문 속에서 섞여 있을 땐 글줄이 매끈하게 썩 잘 어울리지만 숫자만 쓰였을 땐 그 장점이 단점으로 작용합니다. 
 
 <figure>
-  <img src="/images/2017-02-01/sds9.png"
-    style="margin-right:auto; margin-left:auto;" />
+  <img src="/images/2017-02-01/sds9.png" class="w513"style="margin-right:auto; margin-left:auto;" />
   <figcaption>
     스포카 한산스 2.0과 노토산스CJK KR, 영문과 숫자를 함께 썼을 경우
   </figcaption>
 </figure>
 
 <figure>
-  <img src="/images/2017-02-01/sds10.png"
-    style="margin-right:auto; margin-left:auto;" />
+  <img src="/images/2017-02-01/sds10.png" class="w622" style="margin-right:auto; margin-left:auto;" />
   <figcaption>
     스포카 한산스 2.0과 노토산스CJK KR, 숫자 형태 비교
   </figcaption>
@@ -117,13 +111,11 @@ publish: true
 특히 1의 공간을 해결하기 너무나 어려웠는데요, 이번엔 라토 1의 모양대로 밑에 받침을 넣어주고 상단의 삐침을 길게 빼줘서 고정폭이 되더라도 어색해 보이지 않게 개선했습니다. 
 
 <figure>
-  <img src="/images/2017-02-01/sds11.png"
-    style="margin-right:auto; margin-left:auto;" />
+  <img src="/images/2017-02-01/sds11.png" class="w485" style="margin-right:auto; margin-left:auto;" />
 </figure>
 
 <figure>
-  <img src="/images/2017-02-01/sds12.png"
-    style="margin-right:auto; margin-left:auto;" />
+  <img src="/images/2017-02-01/sds12.png" class="w400" style="margin-right:auto; margin-left:auto;" />
   <figcaption>
     스포카 한 산스 1.0의 1과 2.0의 1 모양 비교 
   </figcaption>
@@ -132,8 +124,7 @@ publish: true
 라토 4 획의 끝을 각지게 바꾸면서 다소 생뚱맞은 특징이 하나 생겼는데, 이를 반듯하게 다듬어주었습니다. 위의 숫자 1의 변화와 함께 놓고 보면 훨씬 안정적으로 바뀌었음을 느낄 수 있습니다. 
 
 <figure>
-  <img src="/images/2017-02-01/sds13.png"
-    style="margin-right:auto; margin-left:auto;" />
+  <img src="/images/2017-02-01/sds13.png" class="w600" style="margin-right:auto; margin-left:auto;" />
   <figcaption>
     스포카 한 산스1.0과 2.0, 각각의 숫자14 글리프 모양 비교
   </figcaption>
@@ -149,8 +140,7 @@ publish: true
 </figure>
 
 <figure>
-  <img src="/images/2017-02-01/sds15.png"
-    style="margin-right:auto; margin-left:auto;" />
+  <img src="/images/2017-02-01/sds15.png" class="w400" style="margin-right:auto; margin-left:auto;" />
   <figcaption>
     스포카 캐릭터 포포, 푸이 캐릭터 원형 
   </figcaption>
@@ -161,27 +151,23 @@ publish: true
 한글, 일본어 및 숫자를 주로 사용하는 서비스 특성에 맞춰, 숫자와 관련된 기호를 영문 소문자 디센더를 상대적으로 덜 고려한 위치로 옮겼습니다. 
 
 <figure>
-  <img src="/images/2017-02-01/sds16.png"
-    style="margin-right:auto; margin-left:auto;" />
+  <img src="/images/2017-02-01/sds16.png" style="margin-right:auto; margin-left:auto;" />
 </figure>
   
 수학 공식의 마이너스 부호는 너비를 늘리고 커스텀한 숫자에 맞춰 높이를 약간 낮췄습니다. 고객이 태블릿 입력창에 기입한 휴대폰 번호의 가독성이 높아야만 했기 때문에 너비를 충분히 넓혀주어 앞뒤 숫자들이 명확히 구분되게끔 했습니다. 
 
 <figure>
-  <img src="/images/2017-02-01/sds17.png"
-    style="margin-right:auto; margin-left:auto;" />
+  <img src="/images/2017-02-01/sds17.png" class="w379" style="margin-right:auto; margin-left:auto;" />
 </figure>
 
 <figure>
-  <img src="/images/2017-02-01/sds18.png"
-    style="margin-right:auto; margin-left:auto;" />
+  <img src="/images/2017-02-01/sds18.png" class="w660" style="margin-right:auto; margin-left:auto;" />
 </figure>
 
 이런 변화는 숫자의 변화와 마찬가지로 인쇄를 위한 매끈한 글줄을 조판하고자 할 땐 거슬릴 수 있습니다. 키보드에 있는 마이너스 부호는 수학 공식에 쓰이기도 하지만 하이픈이나 구간을 나타내는 엔대시와도 혼용하고 있기 때문입니다. 엔대시가 포함된 글 한 단락을 조판한다고 가정했을 땐, 이런 변화는 글줄이 다소 끊겨 보일 테니 말입니다. 
 
 <figure>
-  <img src="/images/2017-02-01/sds19.png"
-    style="margin-right:auto; margin-left:auto;" />
+  <img src="/images/2017-02-01/sds19.png" class="w472" style="margin-right:auto; margin-left:auto;" />
 </figure>
 
 
@@ -193,13 +179,11 @@ publish: true
 
 
 <figure>
-  <img src="/images/2017-02-01/sds20.png"
-    style="margin-right:auto; margin-left:auto;" />
+  <img src="/images/2017-02-01/sds20.png" class="w332" style="margin-right:auto; margin-left:auto;" />
 </figure>
 
 <figure>
-  <img src="/images/2017-02-01/sds21.png"
-    style="margin-right:auto; margin-left:auto;" />
+  <img src="/images/2017-02-01/sds21.png" class="w618" style="margin-right:auto; margin-left:auto;" />
 </figure>
 
 
@@ -208,33 +192,28 @@ publish: true
 노토산스CJK KR의 경우 영문의 어센더 디센더를 모두 고려한 길이와 위치로 설정되어있었습니다. 그래서 한글이나 숫자, 그리고 디센더가 없는 영문 글리프와는 좀 어색한 모양새입니다. 모두 고려해주면 좋겠지만, 당장은 한글과 숫자 사용이 월등히 많으므로 한글과 숫자에 어울리는 길이와 위치로 변경해주었습니다. 단 완벽하게 한글과 숫자에 최적화를 한 건 아니며, 어쩌다 영문 소문자와 함께 쓰여도 이상하지 않을 정도로 타협을 보았습니다. 
 
 <figure>
-  <img src="/images/2017-02-01/sds22.png"
-    style="margin-right:auto; margin-left:auto;" />
+  <img src="/images/2017-02-01/sds22.png" class="w688" style="margin-right:auto; margin-left:auto;" />
 </figure>
 
 <figure>
-  <img src="/images/2017-02-01/sds23.png"
-    style="margin-right:auto; margin-left:auto;" />
+  <img src="/images/2017-02-01/sds23.png" class="w688" style="margin-right:auto; margin-left:auto;" />
 </figure>
 
 <figure>
-  <img src="/images/2017-02-01/sds24.png"
-    style="margin-right:auto; margin-left:auto;" />
+  <img src="/images/2017-02-01/sds24.png" class="w658" style="margin-right:auto; margin-left:auto;" />
 </figure>
 
 참고로 산돌 네오고딕의 경우, 노토산스 CJK KR과 달리 영문서체도 모두 산돌에서 제작을 했음을 생각하면 영문의 디센더와 어센더의 높이를 한글에 맞게 길들인 것으로 짐작이 됩니다. 따라서 버티컬 라인의 위치와 길이가 별다른 조정 없이도 한글, 영문, 대소문자 숫자 모두 잘 어울립니다.
 
 <figure>
-  <img src="/images/2017-02-01/sds26.png"
-    style="margin-right:auto; margin-left:auto;" />
+  <img src="/images/2017-02-01/sds26.png" class="w688" style="margin-right:auto; margin-left:auto;" />
 </figure>
 
 (, ), {, }, [, ]도 디폴트값이 영문을 기준으로 되어있던 위치를 한글과 숫자 위주로 조절해주었습니다. 
 
 
 <figure>
-  <img src="/images/2017-02-01/sds27.png"
-    style="margin-right:auto; margin-left:auto;" />
+  <img src="/images/2017-02-01/sds27.png" class="w419" style="margin-right:auto; margin-left:auto;" />
     </figure>
 
 ### 12) ※, 〶, ‹, ›, «, », 『, 』, 「, 」, 『, 』, 「, 」, 《, 》, 〈, 〉 
@@ -260,8 +239,7 @@ publish: true
 퍼센트 기호의 경우, 스한스 버전 1 때는 단독으로 예뻐 보이는 방향으로 취향껏 고치는 바람에 똥글똥글한 모양에 세로획이 다소 두꺼운 모양이었으나, 숫자 0과 영문 Oo과 잘 어울리지 않는다고 판단, 기존 모양으로 돌아가 획 굵기만 재수정하였습니다. 
 
 <figure>
-  <img src="/images/2017-02-01/sds30.png"
-    style="margin-right:auto; margin-left:auto;" />
+  <img src="/images/2017-02-01/sds30.png" class="w565" style="margin-right:auto; margin-left:auto;" />
 </figure>
 
 ### 14) 각종 글리프 패스 정리 

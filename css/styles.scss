@@ -787,3 +787,60 @@ figcaption {
 .fb-comments > span {
   padding-top: 30px;
 }
+
+/* Adhoc post img width classes */
+@media only screen and (min-width: 332px) {
+  .post img {
+    &.w500 {
+      max-width: 500px;
+    }
+    &.w412 {
+      max-width: 412px;
+    }
+    &.w513 {
+      max-width: 513px;
+    }
+    &.w622 {
+      max-width: 622px;
+    }
+    &.w485 {
+      max-width: 485px;
+    }
+    &.w400 {
+      max-width: 400px;
+    }
+    &.w600 {
+      max-width: 600px;
+    }
+    &.w379 {
+      max-width: 379px;
+    }
+    &.w660 {
+      max-width: 660px;
+    }
+    &.w472 {
+      max-width: 472px;
+    }
+    &.w332 {
+      max-width: 332px;
+    }
+    &.w618 {
+      max-width: 618px;
+    }
+    &.w688 {
+      max-width: 688px;
+    }
+    &.w658 {
+      max-width: 658px;
+    }
+    &.w419 {
+      max-width: 419px;
+    }
+    &.w565 {
+      max-width: 565px;
+    }
+    &.w611 {
+      max-width: 611px;
+    }
+  }
+}

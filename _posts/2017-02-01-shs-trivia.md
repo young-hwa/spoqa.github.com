@@ -94,7 +94,7 @@ publish: true
 노토산스의 숫자를 보면 한글이나 영문 속에서 섞여 있을 땐 글줄이 매끈하게 썩 잘 어울리지만 숫자만 쓰였을 땐 그 장점이 단점으로 작용합니다. 
 
 <figure>
-  <img src="/images/2017-02-01/sds9.png" class="w513"style="margin-right:auto; margin-left:auto;" />
+  <img src="/images/2017-02-01/sds9.png" class="w513" style="margin-right:auto; margin-left:auto;" />
   <figcaption>
     스포카 한산스 2.0과 노토산스CJK KR, 영문과 숫자를 함께 썼을 경우
   </figcaption>

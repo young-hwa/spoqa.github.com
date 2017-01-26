@@ -10,6 +10,7 @@ kramdown:
 
 home_url: "https://spoqa.github.io"
 representing_image: "/images/og-logo.png"
+twitter_image: "/images/twitter-card.png"
 
 sass:
     sass_dir: css

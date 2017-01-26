@@ -5,38 +5,50 @@
 <!--[if gt ie 8]><!-->
 <html class=""><!--<![endif]-->
 <head>
+  {% capture page_description %}
+    {% if page.url contains 'jobs' %}
+      스포카에서 상점을 위한 IT 서비스를 디자인하고 개발할 크리에이터를 찾고 있습니다.
+    {% elsif page.description %}
+      {{ page.description }}
+    {% else %}
+      스포카 크리에이터의 경험과 배움을 공유합니다.
+    {% endif %}
+  {% endcapture %}
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>Spoqa Tech Blog{% if page.title %} | {{ page.title }}{% endif %}</title>
-  <link rel="canonical" href="{{ site.home_url }}{{ page.url }}">
-  <meta property="og:title" content="{{ page.title }}">
+  <title>Spoqa 기술 블로그{% if page.title %} | {{ page.title }}{% endif %}</title>
+  <meta name="description" content="{{ page_description | strip }}">
+  <link rel="canonical" href="{{ site.home_url}}{{ page.url }}">
+
+  <!-- OpenGraph meta tags -->
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}Spoqa 기술 블로그{% endif %}">
   <meta property="og:url" content="{{ site.home_url }}{{ page.url }}">
   <meta property="og:site_name" content="Spoqa 기술 블로그">
+  <meta property="og:description" content="{{ page_description | strip }}">
   {% if page.url contains 'jobs' %}
-  <meta property="og:type" content="blog">
-  <meta property="og:description" content="스포카에서 상점을 위한 IT 서비스를 디자인하고 개발할 크리에이터를 찾고 있습니다.">
+    <meta property="og:type" content="blog">
   {% elsif page.title %}
-  {% assign base_path = '../../..' %}
-  <meta property="og:type" content="article">
-  <meta property="og:description" content="{{ page.description }}">
+    <meta property="og:type" content="article">
   {% else %}
-  {% if paginator.page == 1 %}
-    {% assign base_path = '.' %}
-  {% else %}
-    {% assign base_path = '..' %}
-  {% endif %}
-  <link rel="canonical" href="{{ site.home_url }}/">
-  <meta property="og:title" content="Spoqa 기술 블로그">
-  <meta property="og:type" content="blog">
-  <meta property="og:url" content="{{ site.home_url }}/">
-  <meta property="og:site_name" content="Spoqa 기술 블로그">
-  <meta property="og:description" content="몇가지 Code snippet과 설명등을 포함하여 매주 1회씩 스포카 팀이 배운 여러가지 기술들에 대해 소개합니다.">
+    <meta property="og:type" content="blog">
   {% endif %}
   {% if page.representing_image %}
     <meta property="og:image" content="{{ site.home_url }}{{ page.representing_image }}">
   {% else %}
     <meta property="og:image" content="{{ site.home_url }}{{ site.representing_image }}">
   {% endif %}
+
+  <!-- Twitter card meta tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@spoqa">
+  <meta name="twitter:title" content="{% if page.title %}{{page.title}}{% else %}Spoqa 기술 블로그{% endif %}">
+  <meta name="twitter:description" content="{{ page_description | strip }}">
+  {% if page.representing_image %}
+    <meta name="twtiter:image" content="{{ site.home_url }}{{ page.representing_image }}">
+  {% else %}
+    <meta name="twtiter:image" content="{{ site.home_url }}{{ site.twitter_image }}">
+  {% endif %}
+
   <script>
     window.WebFontConfig = {
         custom: {
@@ -57,24 +69,24 @@
     ga('create', 'UA-36136046-5', 'auto');
     ga('send', 'pageview');
   </script>
-  <link rel="stylesheet" href="{{ base_path }}/css/styles.css">
-  <link href="{{ base_path }}/atom.xml" type="application/atom+xml" rel="alternate" title="Spoqa 기술 블로그">
-  <link rel="shortcut icon" href="{{ base_path }}/images/favicon.ico">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Spoqa 기술 블로그">
+  <link rel="shortcut icon" href="/images/favicon.ico">
   <style type="text/css">
-@media only screen and (max-width: 580px) {
-  .btn-job {
-    display: none;
-  }
-}
-</style>
+    @media only screen and (max-width: 580px) {
+      .btn-job {
+        display: none;
+      }
+    }
+  </style>
 </head>
 <body>
   <div class="wrapper">
     <div class="header">
       <div class="header-item">
         <div class="spoqa-logo-wrap">
-          <a class="spoqa-logo" href="{{ base_path }}/"><img src="{{ base_path }}/images/logo.png" alt="Spoqa logo"></a>
-          <a class="blog-title" href="{{ base_path }}/">기술 블로그</a>
+          <a class="spoqa-logo" href="/"><img src="/images/logo.png" alt="Spoqa logo"></a>
+          <a class="blog-title" href="/">기술 블로그</a>
         </div>
         <div class="nav">
           <input type="checkbox" id="toggle">
@@ -83,11 +95,11 @@
             <li><a class="
               {% if page.url == '/about.html' %}
               selected
-              {% endif %} menu-about" href="{{ base_path }}/about.html">소개</a></li>
+              {% endif %} menu-about" href="/about.html">소개</a></li>
             <li><a class="
               {% if page.url != '/about.html' and page.url != '/jobs.html' %}
               selected
-              {% endif %} menu-blog" href="{{ base_path }}/index.html">블로그</a></li>
+              {% endif %} menu-blog" href="/index.html">블로그</a></li>
             <li><a class="menu-github" href="https://github.com/spoqa">GitHub</a></li>
             {% if site.trawler_mode %}
             <li><a class="
@@ -104,7 +116,7 @@
         <div class="hiring-content">
           <h2 class="hiring-title">당신과 함께<br> 일하고 싶습니다.</h2>
           <div class="hiring-subtitle">스포카에서 배우고 성장하면서, <br>서비스와 제품을 함께 만들어 나갈 <br>크리에이터를 모집합니다.</div>
-          <a class="btn-job" type="button" href="{{ base_path }}/jobs.html">채용 공고 보기</a>
+          <a class="btn-job" type="button" href="/jobs.html">채용 공고 보기</a>
         </div>
       </div>
     </div>-->
@@ -121,7 +133,7 @@
     </div>
   </div>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="{{ base_path }}/js/highlight.pack.js"></script>
+  <script src="/js/highlight.pack.js"></script>
   <script>
     hljs.initHighlightingOnLoad();
     $(function() {

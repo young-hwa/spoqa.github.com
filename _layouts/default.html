@@ -33,9 +33,9 @@
     <meta property="og:type" content="blog">
   {% endif %}
   {% if page.representing_image %}
-    <meta property="og:image" content="{{ page.representing_image }}">
+    <meta property="og:image" content="{{ site.home_url }}{{ page.representing_image }}">
   {% else %}
-    <meta property="og:image" content="{{ site.representing_image }}">
+    <meta property="og:image" content="{{ site.home_url }}{{ site.representing_image }}">
   {% endif %}
 
   <!-- Twitter card meta tags -->
@@ -44,9 +44,9 @@
   <meta name="twitter:title" content="{% if page.title %}{{page.title}}{% else %}Spoqa 기술 블로그{% endif %}">
   <meta name="twitter:description" content="{{ page_description | strip }}">
   {% if page.representing_image %}
-    <meta name="twtiter:image" content="{{ page.representing_image }}">
+    <meta name="twtiter:image" content="{{ site.home_url }}{{ page.representing_image }}">
   {% else %}
-    <meta name="twtiter:image" content="{{ site.twitter_image }}">
+    <meta name="twtiter:image" content="{{ site.home_url }}{{ site.twitter_image }}">
   {% endif %}
 
   <script>

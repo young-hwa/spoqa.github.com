@@ -16,8 +16,9 @@ publish: true
 
 [도도 인사이트][dodo-insight]는 도도 포인트를 이용하는 점주들이 자신의 매장에서
 적립한 손님들의 데이터를 통해 통찰(insight)을 얻을 수 있도록 도와주는
-제품일 뿐만 아니라, 스포카 사내에서 [SP팀][spoqa-sp]과 [PC팀][spoqa-pc]이
-매장을 쉽게 관리하도록 도와주는 [CRM][] 서비스이기도 합니다.
+제품일 뿐만 아니라, 스포카 사내에서 [스토어 플래너팀][spoqa-sp]과
+[파트너 컨설턴트팀][spoqa-pc]이 매장을 쉽게 관리하도록 도와주는
+[CRM][] 서비스이기도 합니다.
 
 그렇기 때문에 도도 인사이트는 적립/사용 결과를 요약하여 보여주는
 분석 기능 이외에도 고객 목록, 매장/브랜드 목록, 적립/사용 기록과 같이 테이블의
@@ -60,10 +61,10 @@ URL은 변경되지 않고 하나로 고정되어 보입니다.[^1]
 
 ### SQLAlchemy 모델 구조와 테이블 구조를 활용하도록
 
-스포카에서는 많은 서비스와 제품들이 Python으로 작성되어있고 SQLAlchemy도
+스포카에서는 많은 서비스와 제품들이 Python으로 작성되었고, 또한 SQLAlchemy도
 적극적으로 이용하고 있습니다. 그런데 jQuery 플러그인인 datatable에서
 비동기 통신을 통해 정보를 가져오게 하기 위해서는 정보를 가지고 올 API를
-작성하는 일도 필요합니다. 
+작성하는 일도 필요합니다.
 
 이런 API에서 복잡한 로직을 작성하는 일은 드물고, 비슷하게
 반복되는 패턴이 있습니다.
@@ -74,22 +75,19 @@ URL은 변경되지 않고 하나로 고정되어 보입니다.[^1]
   - 어떤 단어를 검색하고 싶은가?
 - 이 조건들을 해석하고 데이터를 저장하고 있는 매체
   (캐시 레이어, 데이터베이스 등등)에 필요한 정보를 가지고 오도록 요청합니다.
-- 가지고 온 데이터는 리소스 요청한 클라이언트에서 사용할 수 있도록 직렬화하여
+- 가지고 온 데이터는 리소스를 요청한 클라이언트에서 사용할 수 있도록 직렬화하여
   응답합니다. 스포카에서는 주로 직렬화 포맷으로 JSON을 사용합니다.
 
-API의 핵심적인 로직은 저장 매체에 정보를 가지고 오도록 하는 부분임에도 불구하고
-가장 많은 시간은 조건들을 어떻게 해석할 것이며(deserialize 또는 parsing)
-이를 요청하는 쪽에 전달할 수 있는 형태로 바꾸는데(serialize) 많은 시간을
-소요하게 됩니다. 이런 작업을 가져오려는 데이터의 구조(schema)가 다른 부분을
-제외하고 보면 일반화할 수 있는 부분이 있습니다.
+API의 핵심적인 로직은 저장 매체로부터 필요한 정보를 가지고 오도록 하는
+부분입니다. 하지만 조건들을 어떻게 해석할 것이며(deserialize 또는 parsing)
+이를 요청하는 쪽에 전달할 수 있는 형태로 바꾸는데(serialize)
+더 많은 시간을 사용하게 됩니다. 그렇기때문에 이러한 점을 데이터 구조(schema)에
+맞추어 일반화한다면, API를 작성하는데 드는 시간을 단축시킬 수 있을 것입니다.
 
-또한, 핵심적인 로직인 어떤 정보를 어떤 조건으로 얼마만큼 가지고오는지도
-데이터를 테이블로 보여주어야 하는 경우,
-테이블이 보이는 모습이 직접 로직에 관여하게 됩니다.
-
-이런 조건들 안에서 jQuery 플러그인 datatable을 사용한다면, 웹 브라우저 안에서
-실행되어야하므로 서버안에서 정의된 SQAlchemy의 구조를 활용하지 못할 뿐만 아니라
-비슷하지만 일반화시키지 못하는 부분이 반복해서 생길수 밖에 없습니다.
+이런 조건들을 만족하도록 jQuery 플러그인인 datatable을 사용한다면,
+웹 브라우저 안에서 실행되어야하므로 서버 안에서 정의된
+SQAlchemy의 구조를 활용하지 못하고 따라서 데이터의 구조로부터 일반화 하기
+어려우므로 API 작성 시간도 길어집니다.
 
 
 ## 도도 테이블 사용하기
@@ -137,8 +135,8 @@ HTML에서 `music` 테이블에서 자료를 가져와서 보여줄때는
 </table>
 ```
 
-이런 구조로 작성하게되는데, 도도 테이블의 몇개 인자만 채워넣어 비슷하게
-맞춰보면
+이런 구조로 작성하게됩니다. 이 마크업을 도도 테이블을 사용해서
+몇개 인자만 채워넣어 비슷하게 맞춰보면
 
 ```python
 #!/usr/bin/env python3
@@ -252,9 +250,10 @@ URL을 바꿔주면서 조건에 관련된 데이터도 쉽게 가지고올 수 
 
 도도 테이블은 SQLAlchemy와 Flask에서 사용하기 쉽도록 만들었지만,
 다른 애플리케이션에도 적용할 수 있도록 `Environment`나 `Schema`, `Renderable`,
-`Queryable` 같은 추상 클래스도 존재합니다. 이를 통해 좀 더 강력하고 여러군데서
-사용할 수 있는, 미래에는 SQLAlchemy도 적용하지않고도 사용할 수 있도록,
-혹은 HTML이 아닌 엑셀로 바로 출력할 수 있도록 할 예정이 있습니다. 도도 테이블은
+`Queryable` 같은 추상 클래스도 존재합니다. 이를 통해 도도 테이블이 Flask 같은
+특정 라이브러리에 엮이지않고 사용 가능하도록 합니다. 그리고 SQLAlchemy
+적용하지않고도 데이터를 가지고 올 수 있도록 합니다. 마지막으로 HTML이 아닌
+엑셀등 다양한 출력 형태를 대응할 수 있도록 하려고합니다. 도도 테이블은
 [오픈 소스 프로젝트][dodotable]인만큼 많은 분과 같이 고쳐나갔으면 좋겠습니다.
 
 
@@ -264,10 +263,10 @@ URL을 바꿔주면서 조건에 관련된 데이터도 쉽게 가지고올 수 
 [dodo-insight]: https://dodoinsight.com
 [spoqa-sp]: http://www.spoqa.com/enabler/
 [spoqa-pc]: http://www.spoqa.com/enabler/
-[CRM]: https://wikipedia
+[CRM]: https://en.wikipedia.org/wiki/Customer_relationship_management
 [datatable]: https://datatables.net/
 [dodotable-readme]: https://github.com/spoqa/dodotable/blob/master/README.rst
 [Flask]: http://flask.pocoo.org/
 [flask-request]: http://flask.pocoo.org/docs/0.12/api/#flask.request
-[^1]: history.pushState 를 이용해서 조작할 수는 있겠지만 그런 기능을 구현하진않았습니다. https://developer.mozilla.org/en-US/docs/Web/API/History_API
-
+[^1]: [history.pushState][push-state] 를 이용해서 조작할 수는 있겠지만 그런 기능을 구현하진않았습니다.
+[push-state]: https://developer.mozilla.org/en-US/docs/Web/API/History_API

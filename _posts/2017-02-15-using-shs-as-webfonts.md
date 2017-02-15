@@ -58,9 +58,9 @@ publish: true
 ### 3. 서브셋 폰트 파일을 만드는 스크립트를 제작했습니다.
 서브셋 폰트 파일을 만드는 스크립트가 저장소에 반영되었습니다.[^3] 이후 오리지널 파일을 수정하더라도 쉽게 서브셋 폰트 파일로 만들 수 있습니다. 
 
-서브셋 폰트 파일을 만드는 스크립트 [`build_subset`]() 파일의 작동 방식을 간단히 소개합니다. 
+서브셋 폰트 파일을 만드는 스크립트 [`build_subset`](https://github.com/spoqa/spoqa-han-sans/blob/master/build_subset) 파일의 작동 방식을 간단히 소개합니다. 
 
-- 이 스크립트는 [`subset`]() 폴더 내에 위치한 [`glyphs.txt`]()를 읽어서 서브셋을 만듭니다. 
+- 이 스크립트는 [`subset`](https://github.com/spoqa/spoqa-han-sans/tree/master/Subset) 폴더 내에 위치한 [`glyphs.txt`](https://github.com/spoqa/spoqa-han-sans/blob/master/Subset/SpoqaHanSans/glyphs.txt)를 읽어서 서브셋을 만듭니다. 
   - 한글 폰트의 경우 `glyphs.txt` 파일에는 완성형 2,350자와 위에 언급한 추가글자 224자, 그리고 각종 필수 약물이 적혀있습니다.
 - `U+2603`(눈사람 기호), `U+E000`과 `U+E001`(왼쪽, 오른쪽 화살표) 글리프는 스크립트에 하드코딩 했습니다. PUA를 더할 때는 스크립트를 직접 수정합니다.
 - 용량 차이가 크지 않기 때문에 힌팅 정보, 이름 등의 메타정보를 최대한 살리는 방향으로 옵션을 설정했습니다.

@@ -104,7 +104,7 @@ publish: true
 스포카 한 산스를 공식 배포하고 1년이 조금 넘었습니다. 그간 분에 넘치는 관심과 성원에 감사합니다. 그동안 우리팀에서 작성한 스포카 한 산스 관련 웹페이지를 첨부하며 이 글을 마칩니다. 
 
 - [스포카 한 산스 공식 웹페이지](http://spoqa.github.io/spoqa-han-sans/)
-- [스포카 한 산스 2.0에 관한 몇 가지 단편적 사실들](http://spoqa.github.io/2017/02/15/shs-trivia.html)
+- [스포카 한 산스 2.0에 관한 몇 가지 단편적 사실들](http://spoqa.github.io/2017/02/15/SHS-trivia.html)
 - [스포카 한 산스와 글꼴 경량화](https://spoqa.github.io/2015/10/14/making-spoqa-han-sans.html)
 
 

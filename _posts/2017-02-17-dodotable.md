@@ -179,7 +179,7 @@ table = Table(
   클래스입니다. 이 클래스의 서브 클래스는 `__query__`를 구현하여
   자신이 나타내는 구성요소가 SQLAlchemy 쿼리에 대응되는 방법을 정합니다.
 - `dodotable.schema.Renderable`는 HTML로 출력될 수 있음을 나타내는
-  클래스입니다. 이 클래스의 서브클래스는 `__html__`를 구현하여
+  클래스입니다. 이 클래스의 서브클래스는 `__html__`[^3]를 구현하여
   HTML로 출력될때 어떻게 출력할 것인지 정합니다.
 
 
@@ -287,4 +287,5 @@ def find_songs() -> Response:
 [flask-request]: http://flask.pocoo.org/docs/0.12/api/#flask.request
 [^1]: [history.pushState][push-state] 를 이용해서 조작할 수는 있겠지만 그런 기능을 구현하진않았습니다.
 [^2]: http://dodotable.readthedocs.io/en/latest/dodotable/environment.html 에서 좀 더 자세한 설명을 읽으실 수 있습니다.
+[^3]: Python 에서 HTML 다루는 라이브러리들은 de facto 처럼 `__html__`를 구현합니다. 도도 테이블에서 사용하고 있는 엔진인 Jinja도 `__html__`이 구현되어있다면 `__html__`을 호출하는 식으로 동작합니다.
 [push-state]: https://developer.mozilla.org/en-US/docs/Web/API/History_API

@@ -107,18 +107,12 @@ datatable을 사용하면 직렬화, 역직렬화하는 과정이 추가되기 �
 ### `<table>` 태그와 Python 코드를 비슷하게 맞추기
 
 노래 정보를 가지고있는 `music` 테이블이 아래와 같은 구조를 가지고
-있다고 하면,
+있다고 가정하고,
 
-```console
-$ psql example -c "\dS music"
-   Table "public.music"
- Column | Type | Modifiers
---------+------+-----------
- id     | uuid | not null
- name   | text | not null
-Indexes:
-    "music_pkey" PRIMARY KEY, btree (id)
-```
+| id                                    | name     |
+|---------------------------------------|----------|
+| 80ca1ad0-2dd6-4bfd-9b1b-fba97141279a  | 9 crimes |
+| f86177c7-226e-483e-bd07-ce06dd8cc5be  | Hello    |
 
 `music` 테이블의 자료를 HTML로 표현하려면
 
@@ -288,5 +282,5 @@ def find_songs() -> Response:
 [flask-request]: http://flask.pocoo.org/docs/0.12/api/#flask.request
 [^1]: [history.pushState][push-state] 를 이용해서 조작할 수는 있겠지만 그런 기능을 구현하진않았습니다.
 [^2]: http://dodotable.readthedocs.io/en/latest/dodotable/environment.html 에서 좀 더 자세한 설명을 읽으실 수 있습니다.
-[^3]: Python 에서 HTML 다루는 라이브러리들은 de facto 처럼 `__html__`를 구현합니다. 도도 테이블에서 사용하고 있는 엔진인 Jinja도 `__html__`이 구현되어있다면 `__html__`을 호출하는 식으로 동작합니다.
+[^3]: Python 에서 HTML 다루는 라이브러리들은 사실상 표준으로 `__html__` 메소드를 구현합니다. 도도 테이블에서 사용하고 있는 엔진인 Jinja도 `__html__`이 구현되어있다면 `__html__`을 호출하는 식으로 동작합니다.
 [push-state]: https://developer.mozilla.org/en-US/docs/Web/API/History_API

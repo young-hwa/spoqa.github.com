@@ -14,11 +14,11 @@ publish: true
 
 ## 도도 테이블을 만든 이유
 
-[도도 인사이트][dodo-insight]는 도도 포인트를 이용하는 점주들이 자신의 매장에서
-적립한 손님들의 데이터를 통해 통찰(insight)을 얻을 수 있도록 도와주는
-제품일 뿐만 아니라, 스포카 사내에서 [스토어 플래너팀(이하 SP)][spoqa-sp]과
+[도도 인사이트][dodo-insight]는 도도 포인트를 이용하는 점주들이 매장에 적립한
+손님을 관리할 수 있는 서비스이면서,
+스포카 사내에서 [스토어 플래너팀(이하 SP)][spoqa-sp]과
 [파트너 컨설턴트팀(이하 PC)][spoqa-pc]이 매장을 쉽게 관리하도록 도와주는
-[CRM][] 서비스이기도 합니다.
+[CRM][] 서비스입니다.
 
 ![dodotable](/images/2017-01-22/dodotable.png)
 
@@ -72,7 +72,7 @@ URL은 변경되지 않고 하나로 고정되어 보였습니다.[^1]
 이런 API에서 복잡한 로직을 작성하는 일은 드물고, 비슷하게
 반복되는 패턴이 있습니다.
 
-- HTTP 요청에 querystring 혹은 body로부터 여러 조건을 전달받습니다.
+- HTTP 요청에 쿼리 문자열 혹은 요청 내용으로부터 여러 조건을 전달받습니다.
   - 어떤 페이지를 가지고 올 것인가?
   - 정렬은 어떻게 할 것인가?
   - 어떤 단어를 검색하고 싶은가?
@@ -145,7 +145,6 @@ Indexes:
 몇 개 인자만 채워넣어 비슷하게 맞춰보면
 
 ```python
-#!/usr/bin/env python3
 from dodotable.schema import Table, Column
 
 # music 테이블을 SQLAlchemy 모델로 구현
@@ -197,7 +196,7 @@ print(html) # class 이름이 씌워져 있는 HTML이 출력되지만 위에 HT
 2. 어떻게 출력할 것인지
 
 에 대하여 기존에 작성된 HTML과 비슷한 형태로 코드를 작성할 수 있게 합니다.
-그렇다고 해도 여전히 querystring과 같은 정보에서 필요한 조건 등을 해석하는
+그렇다고 해도 여전히 쿼리 문자열과 같은 정보에서 필요한 조건 등을 해석하는
 부분이 해결되지 않는데, `dodotable.condition` 모듈이 그런 부분을 채워줍니다.
 간단하게 위 예제에서 `이름`으로 정렬하는 기능을 넣어보겠습니다.
 
@@ -272,13 +271,14 @@ def find_songs() -> Response:
 
 도도 테이블은 사내에서도 많이 사용하고 있지만,
 사용하면서 많은 문제에 부딪히고 있고 아직 발전 가능성이 많은 프로젝트라고
-생각합니다. 도도 테이블은 [오픈 소스 프로젝트][dodotable]인만큼 누구나
+생각합니다. 도도 테이블은 [오픈 소스 프로젝트][dodotable-pypi]인만큼 누구나
 같이 만들어가는 소프트웨어가 되면 좋겠습니다.
 
 
 [SQLAlchemy]: https://www.sqlalchemy.org/
 [dodotable]: https://github.com/spoqa/dodotable
-[dodo-insight]: https://dodoinsight.com
+[dodotable-pypi]: https://pypi.python.org/pypi/dodotable
+[dodo-insight]: https://dodoinsight.com/
 [spoqa-sp]: http://www.spoqa.com/enabler/
 [spoqa-pc]: http://www.spoqa.com/enabler/
 [CRM]: https://en.wikipedia.org/wiki/Customer_relationship_management

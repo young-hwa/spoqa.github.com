@@ -293,7 +293,7 @@ publish: true
 
 **Reviewer :** 김예지, 박지선, 정희연
 
-**Technical assistance :** 양천웅, 홍민희, 문성원, 유은총, 김재석, 박준규, 최종찬
+**Technical assistance :** 양천웅, 홍민희, 문성원, 유은총, 김재석, 박준규, 최종찬, 강성용
 
 **Inspection of English contents :** 옥지혜
 

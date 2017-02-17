@@ -8,7 +8,7 @@ publish: true
 ---
 
 [도도 테이블][dodotable]은 Python의 대표적인 ORM인 [SQLAlchemy][]에서
-검색해온 결과를 HTML `<table>`로 쉽게 보여주는 파이썬 라이브러리입니다.
+검색해온 결과를 HTML `<table>` 태그로 쉽게 보여주는 파이썬 라이브러리입니다.
 도도 테이블을 만들게 된 이유와 사용법을 간단하게 소개하려고 합니다.
 
 
@@ -66,8 +66,8 @@ URL은 변경되지 않고 하나로 고정되어 보였습니다.[^1]
 
 스포카에서는 많은 서비스와 제품들이 Python으로 작성되었고, 또한 SQLAlchemy도
 적극적으로 이용하고 있습니다. 그런데 jQuery 플러그인인 datatable을 사용하면
-비동기 통신을 요청하는 JavaScript 코드와 서버에서 이를 처리하는 API를
-작성해야합니다.
+비동기 통신을 요청하는 JavaScript 코드와 API 서버에서 이를 처리하도록
+Python 코드를 작성해야합니다.
 
 이런 API에서 복잡한 로직을 작성하는 일은 드물고, 비슷하게
 반복되는 패턴이 있습니다.
@@ -179,7 +179,7 @@ table = Table(
 
 ```python
 table = table.select(offset=0, limit=10) # 내부에서 Queryable인 인스턴스들을 조합해서 쿼리를 만듭니다.
-html = table.__html__() # Renderable 이므로 __html__ 을 호출할 수 있습니다.
+html = table.__html__() # Renderable 이므로 __html__을 호출할 수 있습니다.
 
 print(html) # class 이름이 씌워져 있는 HTML이 출력되지만 위에 HTML 결과와 크게 다르지 않습니다.
 ```
@@ -280,7 +280,7 @@ def find_songs() -> Response:
 [dodotable-readme]: https://github.com/spoqa/dodotable/blob/master/README.rst
 [Flask]: http://flask.pocoo.org/
 [flask-request]: http://flask.pocoo.org/docs/0.12/api/#flask.request
-[^1]: [history.pushState][push-state] 를 이용해서 조작할 수는 있겠지만 그런 기능을 구현하진않았습니다.
+[^1]: [history.pushState][push-state]를 이용해서 조작할 수는 있겠지만 그런 기능을 구현하진않았습니다.
 [^2]: http://dodotable.readthedocs.io/en/latest/dodotable/environment.html 에서 좀 더 자세한 설명을 읽으실 수 있습니다.
-[^3]: Python 에서 HTML 다루는 라이브러리들은 사실상 표준으로 `__html__` 메소드를 구현합니다. 도도 테이블에서 사용하고 있는 엔진인 Jinja도 `__html__`이 구현되어있다면 `__html__`을 호출하는 식으로 동작합니다.
+[^3]: Python에서 HTML을 다루는 라이브러리들은 사실상 표준으로 `__html__` 메소드를 구현합니다. 도도 테이블에서 사용하고 있는 엔진인 Jinja도 `__html__`이 구현되어있다면 `__html__`을 호출하는 식으로 동작합니다.
 [push-state]: https://developer.mozilla.org/en-US/docs/Web/API/History_API

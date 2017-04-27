@@ -78,7 +78,7 @@ CONTAINER ID        IMAGE               COMMAND                  CREATED        
 f49f0020ab38        postgres:9.5        "docker-entrypoint..."   6 days ago          Up 5 days           5432/tcp                  pg
 ```
 
-제가 설정했던 컨테이너의 이름은 <strong>pg</strong>이므로 호스트 이름도 컨테이너의 이름과 동일하게 pg로 설정하여 `postgres://username:password@pg:5432/dbname`으로 연결하면 됩니다.
+설정했던 컨테이너의 이름은 <strong>pg</strong>이므로 호스트 이름도 컨테이너의 이름과 동일하게 pg로 설정하여 `postgres://username:password@pg:5432/dbname`으로 연결하면 됩니다.
 
 
 ### Docker화하지 못한 서비스와 통신하기

@@ -109,7 +109,7 @@ $ docker run --rm --add-host local.spoqa.com:10.200.10.1 buildpack-deps:curl cat
 
 ## 컨테이너 실행 시 호스트의 디렉터리를 참조
 
-코드수정 없이 Docker 이미지만 받아서 서비스를 실행하는 경우, 이미지에 포함된 설정 파일이 개발 환경과 맞지 않을 수 있으므로 개발 환경에 맞는 설정 파일을 컨테이너에서 사용하도록 설정해줘야합니다. `-v` 옵션을 주면 host 내부에 있는 디렉터리를 컨테이너에서 마운트할 수 있습니다.
+코드수정 없이 Docker 이미지만 받아서 서비스를 실행하는 경우, 이미지에 포함된 설정 파일이 개발 환경과 맞지 않을 수 있으므로 개발 환경에 맞는 설정 파일을 컨테이너에서 사용하도록 설정해줘야합니다. `-v` 옵션을 주면 호스트 내부에 있는 디렉터리를 컨테이너에서 마운트할 수 있습니다.
 
 ```
 $ docker run --rm -v ~/myprojects:/example-service image-name:tag ls -al /example-service

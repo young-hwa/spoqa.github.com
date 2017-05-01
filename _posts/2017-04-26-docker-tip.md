@@ -22,7 +22,7 @@ publish: true
 개발 환경에서 컨테이너를 실행하면서 저희가 마주친 문제들과 해결 방법을 공유하려 합니다.
 
 
-## 컨테이너 실행 시 환경변수 설정
+## Docker 이미지, 컨테이너에서 환경변수 설정
 
 Docker화된 서비스의 실행 시에 환경변수가 있어야 하는 경우가 존재합니다.
 이럴 때는 컨테이너 실행 시 `-e` 옵션을 통해 환경변수를 인자로 주는 게 가능합니다.
@@ -32,10 +32,24 @@ $ docker run -e HELLO=WORLD --rm image:tag bash -c 'echo $HELLO'
 WORLD
 ```
 
+Docker 이미지 생성 시 환경변수가 필요하다면 `--build-arg` 옵션을 통해서
+인자를 주는 게 가능합니다. 더 자세한 정보는 [Docker 공식 문서][docker-arg]를
+참고해주세요.
+
+```
+$ cat Dockerfile
+ARG FLASK
+ENV FLASK ${FLASK:Flask==0.11}
+
+RUN pip install $FLASK
+$ docker build --build-arg FLASK="Flask==0.12" . # built with flask 0.12
+$ docker build . # built with flask 0.11
+```
+
 
 ## 컨테이너간의 통신 방법
 
-Docker 이미지 생성 시 환경변수가 필요하다면 `--build-arg` 옵션을 통해서 인자를 주는 게 가능합니다. 더 자세한 정보는 [Docker 공식 문서][docker-arg]를 참고해주세요. 데이터를 갱신시킬 서비스를 실행시키고 서비스가 잘 실행되었는지 확인하기 위해서 개발 환경에서 사용하는 데이터베이스를 확인했는데, 데이터베이스에는 갱신된 데이터가 없었습니다.
+데이터를 갱신시킬 서비스를 실행시키고 서비스가 잘 실행되었는지 확인하기 위해서 개발 환경에서 사용하는 데이터베이스를 확인했는데, 데이터베이스에는 갱신된 데이터가 없었습니다.
 
 ```
 $ docker logs running-service

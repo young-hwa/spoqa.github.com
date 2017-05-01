@@ -22,7 +22,7 @@ publish: true
 개발 환경에서 컨테이너를 실행하면서 저희가 마주친 문제들과 해결 방법을 공유하려 합니다.
 
 
-## 컨테이너 실행시 환경변수 설정
+## 컨테이너 실행 시 환경변수 설정
 
 Docker화된 서비스의 실행 시에 환경변수가 있어야 하는 경우가 존재합니다.
 이럴 때는 컨테이너 실행 시 `-e` 옵션을 통해 환경변수를 인자로 주는 게 가능합니다.
@@ -71,7 +71,18 @@ CONTAINER ID        IMAGE               COMMAND                  CREATED        
 f49f0020ab38        postgres:9.5        "docker-entrypoint..."   6 days ago          Up 5 days           5432/tcp                  pg
 ```
 
-설정했던 컨테이너의 이름은 <strong>pg</strong>이므로 호스트 이름도 컨테이너의 이름과 동일하게 pg로 설정하여 `postgres://username:password@pg:5432/dbname`으로 연결하면 됩니다.
+컨테이너 실행 시 지정했던 이름은 pg이므로 spoqa-service 네트워크 내부에서
+컨테이너의 주소도 컨테이너의 이름과 똑같이 지정됩니다.
+그래서 컨테이너가 spoqa-service 네트워크에 연결 되어있다면,
+데이터베이스에 접속할때, `postgres://username:password@pg:5432/dbname`로
+연결할 수 있습니다. 아래는 Docker PostgreSQL 이미지에 포함되어있는
+명령 줄 인터페이스를 사용하여 Docker 컨테이너로 실행되고 있는
+PostgreSQL 서버에 접속하는 예제입니다.
+
+```
+$ docker run --network spoqa-service --rm -it postgres:9.5 psql "postgres://username:password@pg:5432/dbname"
+postgres> # it worked !
+```
 
 
 ### Docker화하지 못한 서비스와 통신하기

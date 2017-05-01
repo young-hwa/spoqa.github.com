@@ -49,17 +49,27 @@ $ docker build . # built with flask 0.11
 
 ## 컨테이너간의 통신 방법
 
-데이터를 갱신시킬 서비스를 실행시키고 서비스가 잘 실행되었는지 확인하기 위해서 개발 환경에서 사용하는 데이터베이스를 확인했는데, 데이터베이스에는 갱신된 데이터가 없었습니다.
+데이터베이스가 필요한 서비스를 컨테이너로 실행하려면 컨테이너 내부에서
+접근 가능한 데이터베이스 서버가 필요합니다. 일반적으로
+개발 환경에서는 아래 2가지 방법을 사용하여 데이터베이스에 연결합니다.
 
-```
-$ docker logs running-service
-```
+1. 원격지 서버에 있는 데이터베이스에 연결
+2. 개발 환경 내부에 있는 데이터베이스에 연결
 
-명령어를 통해 로그를 확인해 보니 컨테이너 실행이 제대로 안 되고 있었고, 컨테이너 실행 시 `-d` 옵션을 줬기 때문에 서비스가 실행되지 않은 것을 바로 확인하지 못했습니다. 그래서 `-d` 옵션을 주지 않고 실행하니 데이터베이스를 찾지 못하는 문제가 있었습니다.
-해당 서비스는 [PostgreSQL][]을 사용하기 때문에 PostgreSQL을 Docker로 실행시켜서 연결하려고 했습니다.
-PostgreSQL을 컨테이너로 실행시키는 방법은 [Docker Hub PostgreSQL 저장소](https://hub.docker.com/_/postgres/)를 참고해주세요.
+원격지 서버에 있는 데이터베이스의 경우 원격지에 서버를 유지하는
+비용이 발생하므로 후자를 선택하여 데이터베이스 서버를 실행시킵니다.
+이런 상황에서 [Docker Hub][docker-hub]에서 제공하는 데이터베이스
+서버 이미지를 사용한다면, 쉽게 데이터베이스 서버를 구축할 수 있습니다.
 
-컨테이너 내부에서는 호스트가 실행한 개발용 데이터베이스를 인식하지 못하는 것이 원인이었습니다. 그래서 컨테이너 내부에서 데이터베이스 컨테이너를 인식시키기 위해 [docker network][] 명령어를 사용했습니다. 먼저, 컨테이너끼리 연결할 네트워크를 생성합니다.
+스포카에서는 주로 [PostgreSQL][]을 사용하기 때문에
+PostgreSQL 서버를 컨테이너로 실행하여 다른 서비스와 연결하는 것을 가정합니다.
+PostgreSQL을 컨테이너로 실행시키는 방법은
+[Docker Hub PostgreSQL 저장소](https://hub.docker.com/_/postgres/)를
+참고해주세요.[^1]
+
+PostgreSQL을 컨테이너로 실행하고 있더라도, PostgreSQL 컨테이너가 다른
+컨테이너와 연결되어 있지 않기 때문에 데이터베이스에 접속할 수 없습니다.
+[docker network][] 명령어를 사용하여, 컨테이너끼리 연결되도록 설정해야합니다.
 
 ```
 $ docker network create spoqa-service
@@ -146,6 +156,7 @@ $ docker run --rm -v ~/myprojects:/example-service image-name:tag ls -al /exampl
 개발 환경에서도 Docker를 적극적으로 사용하면 여러 서비스를 실행해야 하는 개발 환경도 쉽게 구축할 수 있습니다.
 이 글이 Docker를 사용 시 도움이 됐으면 합니다.
 
+[docker-hub]: https://hub.docker.com
 [SOA]: https://ko.wikipedia.org/wiki/%EC%84%9C%EB%B9%84%EC%8A%A4_%EC%A7%80%ED%96%A5_%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98
 [Docker]: https://www.docker.com/
 [PostgreSQL]: https://www.postgresql.org/
@@ -154,3 +165,5 @@ $ docker run --rm -v ~/myprojects:/example-service image-name:tag ls -al /exampl
 [docker network connect]: https://docs.docker.com/engine/reference/commandline/network_connect/
 [docker-arg]: https://docs.docker.com/engine/reference/builder/#arg
 [OAuth]: https://ko.wikipedia.org/wiki/OAuth
+
+[^1]: Docker Hub에서는 PostgreSQL뿐만 아니라 [MySQL](https://hub.docker.com/_/mysql/), [MariaDB](https://hub.docker.com/_/mariadb/), [RethinkDB](https://hub.docker.com/_/rethinkdb/) 같은 여러 데이터베이스 서버의 이미지를 제공하고 있습니다.

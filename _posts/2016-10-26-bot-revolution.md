@@ -7,18 +7,18 @@ description: 스포카의 슬랙봇 활용법 엿보기
 publish: true
 ---
 
-스포카에서 다년간 일하면서 나에게는 몇 가지 별명이 생겼다. 그 중 하나는 봇맘(Bot mom)이다. 다른 스타트업에서처럼 으레 스포카에서도 주어지고 보이는 일만 하는게 아니라 작고 큰 문제를 스스로 발견하고 고민할 기회가 왕왕 생긴다. 나 또한 그런 기회가 있었고 그러던 중 (귀차니즘을 극복하기 위해라고 쓰고) 일을 더 효율적으로 하기 위해(라고 읽는다) 봇(Bot)에 재미를 느끼게 되었다. 그리고 하나 둘 봇으로 문제를 해결하게 되었고 어느새 사람들이 그 별명을 붙여주었다.
+스포카에서 다년간 일하면서 나에게는 몇 가지 별명이 생겼다. 그 중 하나는 봇맘(Bot mom)이다. 다른 스타트업에서처럼 으레 스포카에서도 주어지는 일만 하는게 아니라 작고 큰 문제를 스스로 발견하고 고민할 기회가 왕왕 생긴다. 나 또한 그런 기회가 있었고 그러던 중 (귀차니즘을 극복하기 위해라고 쓰고) 일을 더 효율적으로 하기 위해(라고 읽는다) 봇(Bot)에 재미를 느끼게 되었다. 그리고 하나 둘 봇으로 문제를 해결하게 되었고 어느새 사람들이 그 별명을 붙여주었다.
 
 
 # 봇(Bot)
 
 2014년 즈음부터 스포카는 슬랙(Slack)[1]을 사내 메신저로 사용하고 있었고, 현재 아틀라시안 제품(JIRA, Confluence 등)과 Github을 함께 쓰고 있다. 이 서비스들이 제공하는 기본 라우팅 기능 만으로는 실제 업무 환경에서 불편함을 느끼게 되는 상황들이 더러 있어 슬랙봇 기능 등을 활용하게 되었다.
 
-팀마다 사용빈도는 다르지만 현재 많은 직원이 슬랙봇을 활용하고 있는데 지속적으로 업무 환경을 개선하는데 Bot 기능이 상당한 기여를 하고 있다.
+팀마다 사용빈도는 다르지만 현재 많은 직원이 슬랙봇을 활용하고 있는데 지속적으로 업무 환경을 개선하는데 봇 기능이 상당한 기여를 하고 있다.
 
 > 인터넷 상에서 자동화된 작업(스크립트)를 실행하는 응용 소프트웨어
 
-봇(Bot)[2]은 위와 같이 설명되고 있다. 슬랙에서 사용자가 설정한 단어가 입력되거나 시간대가 되었을 때, 설정했던 이미지나 텍스트로 보여주는 기능을 Bot이라고 생각하면 된다.
+봇(Bot)[2]은 위와 같이 설명되고 있다. 예를 들어, 슬랙에서 사용자가 설정한 단어가 입력되거나 시간대가 되었을 때, 설정했던 이미지나 텍스트가 자동으로 나오는 기능이라고 생각하면 된다.
 
 슬랙에서 기본적으로 제공하는 슬랙 봇과 Reminder 기능만 잘 활용해도 누구나 업무환경 개선을 시도해볼 수 있다. 개인적으로 스포카의 봇 활용(hacking)[3]은 어떠한 다른 팀과 비교해도 뒤지지 않는다 생각한다. 실제 업무에 적용한 사례를 보면 봇이 무엇인지, 무엇을 할 수 있는지 아는데 도움이 될 것이다. 큰 도움이 되고 있었던 사례를 모아 소개하겠다.[4]
 
@@ -28,14 +28,14 @@ publish: true
 #### 상황 및 의도
 서비스 내 용어가 팀별로 다르게 쓰이거나 여러가지로 불리고 있는 것들이 있었다. 혹은 서비스가 런칭/업데이트되면서 개편된 제품/기능이름들이 있었다. 이는 아는 사람끼리는 문제가 없지만 신규입사자나 아직 전달이 덜된 타팀과 소통할 때에는 오해가 생길 수 있었다. 이런 상황에서 UXD팀에서는 추가적으로 새로운 이름을 알리고 즉각 교정 효과를 볼 수도 있는 효율적인 방법을 고안하고자 했다.
 
-<img src="/images/2016-10-30/matic-message.png" style="margin: 0 auto; width: 510px;">
+<img src="/images/2016-10-30/matic-message.png" style="margin: 0 auto;">
 <figcaption>
   1-1. 도도 매틱이 도도 메시지로 서비스명이 변경되었음을 알리는 봇이다
 </figcaption>
 
-<img src="/images/2016-10-30/new-label-effect.png" style="margin: 0 auto; width: 510px;">
+<img src="/images/2016-10-30/new-label-effect.png" style="margin: 0 auto;">
 <figcaption>
-  1-2. 리뉴얼된 제품/기능이름을 알릴 때 쓰였던 슬랙봇들. 시간이 지나면서 제 임무를 다하고 사라졌다.
+  1-2. 개편된 제품/기능이름을 알릴 때 쓰였던 슬랙봇들. 시간이 지나면서 제 임무를 다하고 사라졌다.
 </figcaption>
 
 #### 효과
@@ -48,7 +48,7 @@ publish: true
 #### 상황 및 의도
 디자이너가 코드를 다루다가 가끔 알 수 없는 함정에 빠질 때가 있다. 서버가 왜인지 켜지지 않는다거나 원인을 명확히 알 수 없는 에러가 뜬다거나 하는 경우다. 그런 때면 개발자에게 도움을 요청하는데, 개발자의 입장에서는 진행하고 있던 업무를 잠시 중단하고 해결할 수 있는 커맨드를 알려주거나 알아보는데 시간이 걸릴 수 있다. 이럴 때 봇이 취해야하는 커맨드를 알려준다.
 
-<img src="/images/2016-10-30/command-helper.png" style="margin: 0 auto; width: 510px;">
+<img src="/images/2016-10-30/command-helper.png" style="margin: 0 auto;">
 <figcaption>
   봇으로 개발자가 도와줘야 하는 단계가 하나 줄었다!
 </figcaption>
@@ -65,17 +65,17 @@ publish: true
 
 다른 경우로는, 매번 특정 팀에게 물어보는 것이 있다. 사이트 내 친절히 설명을 작성하고 공지해도 정보 접근이 귀찮거나 어려운 곳에 있으면 바로 담당자에게 물어서 바로 올바른 답변을 얻고자 하게 된다. 이런 경우, 같은 질문을 하는 사람은 수십 명인데 답변하는 사람은 한 두명여서 답변하는 담당자는 피로해질 수 있다.
 
-<img src="/images/2016-10-30/weekly-meeting.png" style="margin: 0 auto; width: 510px;">
+<img src="/images/2016-10-30/weekly-meeting.png" style="margin: 0 auto;">
 <figcaption>
   3-1. 우리팀 주간미팅 회의록이 어딨더라...?
 </figcaption>
 
-<img src="/images/2016-10-30/des-format.png" style="margin: 0 auto; width: 510px;">
+<img src="/images/2016-10-30/des-format.png" style="margin: 0 auto;">
 <figcaption>
   3-2. 디자인팀에게 요청할 때 뭘 알려드려야 하지?
 </figcaption>
 
-<img src="/images/2016-10-30/area-list.png" style="margin: 0 auto; width: 510px;">
+<img src="/images/2016-10-30/area-list.png" style="margin: 0 auto;">
 <figcaption>
   3-3. 이 지역 담당자가 누구더라?
 </figcaption>
@@ -89,7 +89,7 @@ publish: true
 #### 상황 및 의도
 현재 스포카 Visual design팀(이하 VD팀)은 5명이며 디자인이라면 모두 관심을 가지고 의견을 주는데 주저함이 없다. 어떤 이슈를 진행할 때 중간 점검의 느낌으로 가볍게 1~2명에게 리뷰를 받고 싶을 때가 있다. 항상 같은 사람에게만 리뷰를 부탁하는건 아닌지, 다양한 의견을 받아보고는 싶은데 누구에게 돌리는게 좋을까, 리뷰어 선정에 고민을 하게 될 때가 있다. 혹은 이슈진행자가 정해지지 않았을 때 마음의 짐을 덜고 책임자를 정하는 잔인한 방법이 되기도 한다.(ㅋㅋ) 5명인데 1명 혹은 2명을 고르고 싶으므로 or/and를 병기하여 모든 경우의 수를 정리하여 봇을 만들었다.
 
-<img src="/images/2016-10-30/vd-random.png" style="margin: 0 auto; width: 510px;">
+<img src="/images/2016-10-30/vd-random.png" style="margin: 0 auto;">
 <figcaption>
   VD리뷰랜덤
 </figcaption>
@@ -103,7 +103,7 @@ publish: true
 
 앞서 소개한 유형들이 너무 단순하다고 느껴진다면 키워드 봇을 연속적으로 활용해보는 방법도 있다. 채팅형 봇을 만든 듯한 착각을 느끼게 할 수 있다.
 
-<img src="/images/2016-10-30/size-danawa.png" style="margin: 0 auto; width: 510px;">
+<img src="/images/2016-10-30/size-danawa.png" style="margin: 0 auto;">
 <figcaption>
   사이즈 다나와 (혹자는 이 사례를 보고 슬랙해킹의 정점을 달려가는 것 아니냐 감탄하였다.)
 </figcaption>
@@ -114,22 +114,22 @@ publish: true
 봇이 일상화되니 왠만한 정기적인 업무일정은 무조건 봇으로 만드는게 습관이 되었다.
 예전에는 다른 봇제작 서비스를 통해 만들던 기능이었는데, 슬랙에 리마인드(Remind) 기능이 업데이트 되면서 더 편해졌다. 리마인드 기능 설명은 [이쪽](https://get.slack.help/hc/en-us/articles/208423427-Set-a-reminder)을 참고 바란다.
 
-<img src="/images/2016-10-30/vd-sprint.png" style="margin: 0 auto; width: 510px;">
+<img src="/images/2016-10-30/vd-sprint.png" style="margin: 0 auto;">
 <figcaption>
   6-1. 스프린트 시작 알림 봇
 </figcaption>
 
-<img src="/images/2016-10-30/daily-meeting.png" style="margin: 0 auto; width: 510px;">
+<img src="/images/2016-10-30/daily-meeting.png" style="margin: 0 auto;">
 <figcaption>
   6-2. 데일리미팅 알림 봇
 </figcaption>
 
-<img src="/images/2016-10-30/friday-end.png" style="margin: 0 auto; width: 510px;">
+<img src="/images/2016-10-30/friday-end.png" style="margin: 0 auto;">
 <figcaption>
   6-3. 주말의 시작을 알리는 봇
 </figcaption>
 
-<img src="/images/2016-10-30/part-time-pay.png" style="margin: 0 auto; width: 510px;">
+<img src="/images/2016-10-30/part-time-pay.png" style="margin: 0 auto;">
 <figcaption>
   6-4. 디자인팀 알바비 정산을 잊지 않도록 도와주는 비서봇
 </figcaption>
@@ -140,21 +140,21 @@ publish: true
 
 
 #### 상황 및 의도
-지금까지 소개한 것들은 회사 내부에서 업무를 진행할 때 도움을 받고 내부 커뮤니케이션을 위한 것들이었다. 이번에 소개할 것은 회사 서비스와 관련된 개발자 친화적인 방법이다. 서비스 내 DB와 슬랙에서 제공하는 API를 접목하여 별도의 트래킹(tracking)툴 없이 실제 사용자의 행동 중 주요하게 알아야 하는 것을 슬랙봇으로 만든 것들이다.
+지금까지 소개한 것들은 회사 내부에서 업무를 진행할 때 도움을 받거나 내부 커뮤니케이션을 위한 것들이었다. 이번에 소개할 것은 회사 서비스와 관련된 개발자 친화적인 방법이다. 서비스 내 DB와 슬랙에서 제공하는 API를 접목하여 별도의 트래킹(tracking)툴 없이 실제 사용자의 행동 중 주요하게 알아야 하는 것을 슬랙봇으로 만든 것들이다.
 
-<img src="/images/2016-10-30/outlaw.png" style="margin: 0 auto; width: 510px;">
+<img src="/images/2016-10-30/outlaw.png" style="margin: 0 auto;">
 <figcaption>
   7-1. 부정적립으로 의심되는 이벤트를 알려주는 봇
 </figcaption>
 
-<img src="/images/2016-10-30/coin-noti.png" style="margin: 0 auto; width: 510px;">
+<img src="/images/2016-10-30/coin-noti.png" style="margin: 0 auto;">
 <figcaption>
   7-2. 매장 잔여코인 알림과 코인결제완료를 알려주는 봇
 </figcaption>
 
 
 #### 효과
-별도의 트래킹툴이나 웹사이트에 접속할 필요가 없고 실시간 데이터를 파악할 수 있었다. 또한 서비스에 주요한 영향을 끼치는 사용자의 실제 행동을 팀원들과 함께 빠르게 공유할 수 있었다.  
+별도의 트래킹툴이나 웹사이트에 접속할 필요 없이 실시간 데이터를 파악할 수 있었다. 또한 서비스에 주요한 영향을 끼치는 사용자의 실제 행동을 팀원들과 함께 빠르게 공유할 수 있었다.  
 
 
 # 봇을 만들 수 있는 다른 방법

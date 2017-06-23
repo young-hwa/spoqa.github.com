@@ -109,7 +109,7 @@ postgres> # it worked !
 ```
 
 
-### 3. Docker화하지 못한 서비스와 통신하기
+## 3. Docker화하지 못한 서비스와 통신하기
 
 하지만 아직 스포카에선 Docker화 하지 못한 서비스들도 있습니다. 컨테이너 내부에서 Docker를 실행하고 있는 호스트 네트워크와 통신을 하기 위해서는 별도의 설정이 필요했습니다. macOS에서는 [Docker 네트워크 가이드](https://docs.docker.com/docker-for-mac/networking/#use-cases-and-workarounds)에 소개된 것처럼 사용하지 않는 IP를 lo0 인터페이스에 붙여서 통신합니다. 다른 OS의 경우 [Docker 공식 문서](https://docs.docker.com/manuals/)를 참고해주세요.
 

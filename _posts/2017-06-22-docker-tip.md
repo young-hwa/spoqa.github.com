@@ -27,7 +27,7 @@ publish: true
 Docker화된 서비스의 실행 시에 환경변수가 있어야 하는 경우가 존재합니다.
 이럴 때는 컨테이너 실행 시 `-e` 옵션을 통해 환경변수를 인자로 주는 게 가능합니다.
 
-```
+```bash
 $ docker run -e HELLO=WORLD --rm image:tag bash -c 'echo $HELLO'
 WORLD
 ```
@@ -36,7 +36,7 @@ Docker 이미지 생성 시 환경변수가 필요하다면 `--build-arg` 옵션
 인자를 주는 게 가능합니다. 더 자세한 정보는 [Docker 공식 문서][docker-arg]를
 참고해주세요.
 
-```
+```bash
 $ cat Dockerfile
 ARG FLASK
 ENV FLASK ${FLASK:Flask==0.11}
@@ -71,25 +71,25 @@ PostgreSQL을 컨테이너로 실행하고 있더라도, PostgreSQL 컨테이너
 컨테이너와 연결되어 있지 않기 때문에 데이터베이스에 접속할 수 없습니다.
 [docker network][] 명령어를 사용하여, 컨테이너끼리 연결되도록 설정해야합니다.
 
-```
+```bash
 $ docker network create spoqa-service
 ```
 
 컨테이너 실행 시 `--network` 옵션을 통해 컨테이너간의 통신에 해당 네트워크를 사용할 수 있도록 만듭니다.
 
-```
+```bash
 $ docker run --network spoqa-service image-name:tag
 ```
 
 또는 이미 실행 중인 컨테이너를 생성한 네트워크에 연결하기 위해서는 [docker network connect][] 명령어를 사용하면 됩니다.
 
-```
+```bash
 $ docker network connect spoqa-service running-service-name
 ```
 
 Docker 네트워크에 연결된 호스트 주소는 컨테이너를 실행할 때 설정했던 컨테이너의 이름과 같습니다.
 
-```
+```bash
 $ docker ps
 CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                     NAMES
 f49f0020ab38        postgres:9.5        "docker-entrypoint..."   6 days ago          Up 5 days           5432/tcp                  pg
@@ -103,7 +103,7 @@ f49f0020ab38        postgres:9.5        "docker-entrypoint..."   6 days ago     
 명령 줄 인터페이스를 사용하여 Docker 컨테이너로 실행되고 있는
 PostgreSQL 서버에 접속하는 예제입니다.
 
-```
+```bash
 $ docker run --network spoqa-service --rm -it postgres:9.5 psql "postgres://username:password@pg:5432/dbname"
 postgres> # it worked !
 ```
@@ -113,14 +113,14 @@ postgres> # it worked !
 
 하지만 아직 스포카에선 Docker화 하지 못한 서비스들도 있습니다. 컨테이너 내부에서 Docker를 실행하고 있는 호스트 네트워크와 통신을 하기 위해서는 별도의 설정이 필요했습니다. macOS에서는 [Docker 네트워크 가이드](https://docs.docker.com/docker-for-mac/networking/#use-cases-and-workarounds)에 소개된 것처럼 사용하지 않는 IP를 lo0 인터페이스에 붙여서 통신합니다. 다른 OS의 경우 [Docker 공식 문서](https://docs.docker.com/manuals/)를 참고해주세요.
 
-```
+```bash
 $ sudo ifconfig lo0 alias 10.200.10.1
 ```
 
 [buildpack-deps](https://hub.docker.com/_/buildpack-deps/)를 사용하면 IP 대응이
 제대로 되었는지 별도의 설정 없이 확인이 가능합니다.
 
-```
+```bash
 # 5000번 포트에 서비스가 실행되고 있을 때를 가정합니다.
 $ docker run --rm -it buildpack-deps:curl curl http://10.200.10.1:5000
 ```
@@ -130,7 +130,7 @@ $ docker run --rm -it buildpack-deps:curl curl http://10.200.10.1:5000
 이 경우에 호스트에 별칭을 지어 주는 것이 유용할 때가 많은데, 컨테이너 실행 시
 `--add-host` 옵션을 주면 `/etc/hosts` 파일에 별칭이 추가됩니다.
 
-```
+```bash
 $ docker run --rm --add-host local.spoqa.com:10.200.10.1 buildpack-deps:curl curl http://local.spoqa.com:5000
 $ docker run --rm --add-host local.spoqa.com:10.200.10.1 buildpack-deps:curl cat /etc/hosts
   127.0.0.1	localhost
@@ -147,7 +147,7 @@ $ docker run --rm --add-host local.spoqa.com:10.200.10.1 buildpack-deps:curl cat
 
 코드 수정 없이 Docker 이미지만 받아서 서비스를 실행하는 경우, 이미지에 포함된 설정 파일이 개발 환경과 맞지 않을 수 있으므로 개발 환경에 맞는 설정 파일을 컨테이너에서 사용하도록 설정해줘야 합니다. `-v` 옵션을 주면 호스트 내부에 있는 디렉터리를 컨테이너에서 마운트할 수 있습니다.
 
-```
+```bash
 $ docker run --rm -v ~/myprojects:/example-service image-name:tag ls -al /example-service
   -rw-r--r--   1 root root    5302 Apr 25  2017 config.toml
 

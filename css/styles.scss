@@ -62,6 +62,14 @@
   ul li ol {
     margin: 0 0 0 40px;
   }
+  dl {
+    dt {
+      font-weight: bold;
+    }
+    dd + dd {
+      margin-top: 10px;
+    }
+  }
   hr {
     border: 0;
     height: 0;

@@ -26,7 +26,7 @@ README에 링크도 추가할 겸 튜토리얼을 작성하게 됐습니다.
 ## gettext
 아에이오우는 [gettext 번역 시스템](https://en.wikipedia.org/wiki/Gettext)에 기반하여 만들어져있습니다.
 
-gettext 번역 시스템은 요약하자면 아래의 예시와 같이 생긴 코드를 실행할 때:
+gettext 번역 시스템은 간단히 말해서 아래의 예시와 같이 생긴 코드를 실행할 때:
 
 ```js
 console.log(gettext('안녕하세요'));

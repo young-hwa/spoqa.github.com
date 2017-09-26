@@ -53,8 +53,8 @@ console.log(gettext('안녕하세요'));
 이 튜토리얼에서는 [jed](https://github.com/messageformat/Jed)를 사용하겠습니다.
 
 ## [transifex](https://www.transifex.com/)
+transifex는 gettext 기반의 웹 기반 번역 UI를 제공하는 서비스입니다. (유료입니다. 15일의 무료체험기간을 제공합니다)
 아에이오우는 transifex로 PO 템플릿 파일을 올리고, transifex에서 PO 파일을 내려받는 기능을 제공합니다.
-transifex는 gettext 기반의 번역 워크플로를 제공하는 서비스입니다. (유료입니다. 15일의 무료체험기간을 제공합니다)
 
 ## 내 프로젝트에 아에이오우 끼얹기
 

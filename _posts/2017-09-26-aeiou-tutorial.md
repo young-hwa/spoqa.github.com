@@ -58,6 +58,15 @@ console.log(gettext('안녕하세요'));
 transifex는 gettext 기반의 웹 기반 번역 UI를 제공하는 서비스입니다. (유료입니다. 15일의 무료체험 기간을 제공합니다)
 아에이오우는 transifex로 PO 템플릿 파일을 올리고, transifex에서 PO 파일을 내려받는 기능을 제공합니다.
 
+## 아에이오우 커맨드라인 명령어
+아에이오우는 `extract`, `push`, `download`, `ensure`의 네 가지 명령어를 가진 커맨드라인 인터페이스를 제공합니다.
+각 명령어는 아래와 같은 역할을 합니다:
+
+- `extract`: 소스코드에서 번역이 필요한 문구들을 추출합니다.
+- `push`: 추출한 문구들(`messages.pot`)을 transifex로 전송합니다.
+- `download`: transifex에서 번역 파일들을 내려받습니다.
+- `ensure`: 현재 프로젝트에서 특정 로케일로의 번역이 모두 이루어졌는지 확인합니다. (`extract`, `download` 이후 사용)
+
 ## 내 프로젝트에 아에이오우 끼얹기
 
 ### 1. aeiou, jed 설치

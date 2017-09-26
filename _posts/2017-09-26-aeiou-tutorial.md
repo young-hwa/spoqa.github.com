@@ -130,7 +130,7 @@ writing PO template file to dist/translations/messages.pot
 # 메시지가 추가되었으면 push하기 전에 새로 extract 해주어야 합니다.
 # `npx aeiou extract --srcDir="./src" --outDir="./dist/translations"`
 
-$ npx aeiou push --id="chan_spoqa" --password="비밀번호" \
+$ npx aeiou push --id="아이디" --password="비밀번호" \
     --project="testproject-44" --resource="example" --potDir="./dist/translations"
 
 -> PUT https://www.transifex.com/api/2/project/testproject-44/resource/example/content
@@ -142,7 +142,7 @@ $ npx aeiou push --id="chan_spoqa" --password="비밀번호" \
 아래의 명령문으로 transifex에서 번역 카탈로그 파일들을 다운받을 수 있습니다:
 
 ```sh
-$ npx aeiou download --id="chan_spoqa" --password="비밀번호" \
+$ npx aeiou download --id="아이디" --password="비밀번호" \
     --project="testproject-44" --resource="example" --outDir="./dist/translations"
 
 -> GET https://www.transifex.com/api/2/project/testproject-44/resource/example

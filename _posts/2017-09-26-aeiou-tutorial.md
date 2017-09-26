@@ -49,13 +49,13 @@ console.log(gettext('안녕하세요'));
 템플릿 파일은 확장자가 `.pot`이지만, `.po` 파일과 다른 점은 번역문이 전부 비어있다는 것뿐이고, 포맷은 `.po` 파일과 완전히 동일합니다.
 
 ### 런타임
-`gettext` 함수를 포함해서 카탈로그 파일을 파싱하는 등의 작업은 어플리케이션 런타임에 이루어집니다.
+`gettext` 함수를 포함해서 카탈로그 파일을 파싱하는 등의 작업은 애플리케이션 런타임에 이루어집니다.
 
 아직은 아에이오우에 런타임을 만들어놓지 않아서 `gettext` 런타임을 제공하는 라이브러리가 따로 필요합니다.
 이 튜토리얼에서는 [jed](https://github.com/messageformat/Jed)를 사용하겠습니다.
 
 ## [transifex](https://www.transifex.com/)
-transifex는 gettext 기반의 웹 기반 번역 UI를 제공하는 서비스입니다. (유료입니다. 15일의 무료체험기간을 제공합니다)
+transifex는 gettext 기반의 웹 기반 번역 UI를 제공하는 서비스입니다. (유료입니다. 15일의 무료체험 기간을 제공합니다)
 아에이오우는 transifex로 PO 템플릿 파일을 올리고, transifex에서 PO 파일을 내려받는 기능을 제공합니다.
 
 ## 내 프로젝트에 아에이오우 끼얹기
@@ -85,7 +85,7 @@ import { mo } from 'jed-gettext-parser';
     // aeiou는 다음과 같은 `gettext` 함수 호출을 인식합니다.
     const sayHello = name => console.log(gettext('안녕하세요 %s'), name);
 
-    // 들여쓰기 단계가 깊어도 상관 없습니다.
+    // 들여쓰기 단계가 깊어도 상관없습니다.
     function sayHi(name) {
         // `jed.gettext('번역어')` 꼴의 호출은 aeiou가 인식하지 못합니다.
         console.log(/* jed. */gettext('안녕 %s야'), name);
@@ -127,7 +127,7 @@ writing PO template file to dist/translations/messages.pot
 다음부터는 새로운 문구가 추가되었을 때 아래의 명령문으로 `messages.pot` 파일을 업로드할 수 있습니다:
 
 ```sh
-# 메시지가 추가되었으면 push하기 전에 새로 extract 해주어야 합니다.
+# 메시지가 추가되었으면 push 하기 전에 새로 extract 해주어야 합니다.
 # `npx aeiou extract --srcDir="./src" --outDir="./dist/translations"`
 
 $ npx aeiou push --id="아이디" --password="비밀번호" \
@@ -158,7 +158,7 @@ writing PO(ja) file to dist/translations/ja.po
 
 ```
 
-원하는 언어의 카탈로그 파일이 다운받아지지 않는다면
+원하는 언어의 카탈로그 파일이 다운받아 지지 않는다면
 transifex 프로젝트 웹사이트로 가서 해당 언어의 team에다가
 아무 역할의 사람(예: 본인)을 1명 추가하고 다시 시도하면 됩니다.
 
@@ -168,7 +168,7 @@ transifex 프로젝트 웹사이트로 가서 해당 언어의 team에다가
 $ cd dist
 $ echo '<script src="example.js"></script>' > ./index.html
 $ http-server -p 1234 # 없으면 `npm install -g http-server` 로 설치합니다.
-# 웹브라우저로 `http://localhost:1234/` 탭을 연 뒤 자바스크립트 콘솔창을 띄웁니다.
+# 웹브라우저로 `http://localhost:1234/` 탭을 연 뒤 자바스크립트 콘솔 창을 띄웁니다.
 ```
 
 <figure>
@@ -182,10 +182,10 @@ $ http-server -p 1234 # 없으면 `npm install -g http-server` 로 설치합니�
 ### 5. 번역되지 않은 메시지 확인하기
 
 `aeiou ensure` 명령으로 번역되지 않은 메시지를 검색할 수 있습니다.
-미번역된 메시지가 있을 경우 exit status로 `0`이 아닌 값을 반환하므로 ci 등에 붙여서 활용할 수 있습니다:
+미번역된 메시지가 있으면 exit status로 `0`이 아닌 값을 반환하므로 ci 등에 붙여서 활용할 수 있습니다:
 
 ```sh
-# 메시지가 추가되었으면 ensure하기 전에 새로 extract 해주어야 합니다.
+# 메시지가 추가되었으면 ensure 하기 전에 새로 extract 해주어야 합니다.
 # `npx aeiou extract --srcDir="./src" --outDir="./dist/translations"`
 
 $ npx aeiou ensure --locale="ja" --potDir="./dist/translations"
@@ -200,8 +200,8 @@ msgid: 착한 어린이
 
 아직 아에이오우는 개선할 여지가 많이 남아있는 프로젝트입니다.
 
-`gettext` 함수를 추출하는 기능이 타입스크립트와 자바스크립트에 대해서만 구현되어있기 때문에 커피스크립트 등의 언어는 지원되지 않고있고,
-어플리케이션에서 사용할 `gettext` 런타임이 안 만들어져있어서 `jed` 등의 외부 라이브러리를 병용해야합니다.
+`gettext` 함수를 추출하는 기능이 타입스크립트와 자바스크립트에 대해서만 구현되어있기 때문에 커피스크립트 등의 언어는 지원되지 않고 있고,
+애플리케이션에서 사용할 `gettext` 런타임이 안 만들어져있어서 `jed` 등의 외부 라이브러리를 병용해야 합니다.
 transifex라는 유료 서비스에 의존적인 부분도 다른 번역 서비스와 연계할 수 있는 기능을 붙이는 식으로 개선할 수 있을 겁니다.
 
 아에이오우는 MIT 라이센스 하에 배포되는 오픈소스 프로젝트입니다. 이슈 제보, PR 환영합니다: <https://github.com/spoqa/aeiou>

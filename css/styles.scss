@@ -87,6 +87,12 @@ p code, pre code, li code, code {
   border-radius: 4px;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  code {
+    font-size: inherit;
+  }
+}
+
 pre {
   border-radius: 4px;
 }

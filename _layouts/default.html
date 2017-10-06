@@ -97,6 +97,14 @@
   /></noscript>
   <!-- End Facebook Pixel Code -->
 </head>
+{% if page.title %}
+<script>
+  fbq('track', 'ViewContent', {
+    content_ids: '{{ site.home_url }}{{ page.url }}',
+  });
+</script>
+{% endif %}
+
 <body>
   <div class="wrapper">
     <div class="header">

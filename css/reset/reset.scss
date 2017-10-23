@@ -77,13 +77,8 @@ a {
   text-decoration: none;
   color: $mainblue-0;
 }
-h1 {
+h1, h2 {
   font-size: 32px;
-  font-weight: 100;
-}
-h2 {
-  font-size: 32px;
-  font-weight: 100;
 }
 h3 { font-size: 24px; }
 h4 { font-size: 20px; }
@@ -96,7 +91,6 @@ p, dl {
   line-height: 1.9em;
 }
 dl dt {
-  font-weight: 100;
   margin-top: 10px
 }
 dl dd {
@@ -111,7 +105,7 @@ thead {
   background-color: $grey-1;
 }
 th, td{
-  border-top:1px $divider-color solid;
+  border-top: 1px $divider-color solid;
   padding: 10px 20px;
 }
 blockquote {
@@ -136,7 +130,7 @@ table a code {
   width: 100%;
   background: $grey-1;
   border: 1px solid $divider-color;
-  border-radius: 2px;
+  border-radius: $border-radius-base;
 }
 h1 code,
 h2 code,
@@ -163,5 +157,5 @@ pre {
   width: 100%;
   background: $grey-1;
   border: 1px solid $divider-color;
-  border-radius: 2px;
+  border-radius: $border-radius-base;
 }

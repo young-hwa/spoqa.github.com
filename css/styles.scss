@@ -3,9 +3,9 @@
 # only Main files contain this front matter, not partials.
 ---
 @import 'spoqa-colors';
+@import '_variables';
 @import 'reset/reset';
 @import 'solarized_light.css';
-@import '_variables';
 @import '_type';
 @import url(//cdn.jsdelivr.net/font-hack/2.020/css/hack.min.css);
 

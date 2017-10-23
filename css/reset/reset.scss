@@ -130,7 +130,7 @@ table a code {
   width: 100%;
   background: $grey-1;
   border: 1px solid $divider-color;
-  border-radius: 2px;
+  border-radius: $border-radius-base;
 }
 h1 code,
 h2 code,
@@ -157,5 +157,5 @@ pre {
   width: 100%;
   background: $grey-1;
   border: 1px solid $divider-color;
-  border-radius: 2px;
+  border-radius: $border-radius-base;
 }

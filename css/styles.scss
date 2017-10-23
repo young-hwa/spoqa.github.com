@@ -109,7 +109,7 @@ a.footnote {
     text-align: center;
     -webkit-text-stroke: 0.25px;
     border: 1px solid $divider-color;
-    border-radius: 2px;
+    border-radius: $border-radius-base;
     -webkit-transition: 0.2s ease-out all;
     text-decoration: none;
 
@@ -289,7 +289,7 @@ a.footnote {
     -webkit-transition: 0.2s ease-out all;
     margin: 4px 0;
     padding: 9px 14px;
-    border-radius: 2px;
+    border-radius: $border-radius-base;
     font-size: $blog-font-size-sm;
     color: $text-color;
   }
@@ -297,7 +297,7 @@ a.footnote {
   .page .current-page:hover {
     margin: 4px 0;
     padding: 9px 14px;
-    border-radius: 2px;
+    border-radius: $border-radius-base;
     font-size: $blog-font-size-sm;
     color: $text-color;
     background-color: $grey-highlight-color;
@@ -316,7 +316,7 @@ a.footnote {
   .previous,
   .next {
     padding: 1% 2%;
-    border-radius: 2px;
+    border-radius: $border-radius-base;
     display: inline-block;
   }
   .previous:hover,
@@ -399,7 +399,7 @@ figcaption {
   padding: 20px 80px;
   display: inline-block;
   border: 1px solid $btn-border-color;
-  border-radius: 3px;
+  border-radius: $border-radius-lg;
   color: $text-color;
 }
 .back-btn a:hover {
@@ -632,7 +632,7 @@ figcaption {
     z-index: 1;
     right: 0;
     background: rgba(255, 255, 255, 0.9);
-    border-radius: 2px;
+    border-radius: $border-radius-base;
     text-align: center;
   }
   .menu li {

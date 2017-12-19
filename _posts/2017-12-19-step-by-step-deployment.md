@@ -52,7 +52,7 @@ publish: true
 프로젝트를 한창 진행하던 중, 사소한 요구사항 응대를 위해 결제 금액을 편하게 입력할 수 있도록 `00` 버튼을 추가하는 간단한 이슈를 진행했습니다. 그런데 이 기능을 업데이트하고 나서 매장의 항의가 빗발쳤습니다. `00` 버튼을 추가하는 김에, 숫자 패드 배열을 최신 버전으로 변경하고 중복으로 있는 액션 버튼을 하나로 줄인 간단한 이슈였습니다. 하지만 업데이트를 진행한 날, 강도 높은 여러 매장의 피드백을 듣고 급하게 `00` 버튼을 제외한 모든 변경사항을 롤백해야만 했습니다.
 
 <figure>
-<img src="/images/2017-10-27/rollback.png"
+<img src="/images/2017-12-19/rollback.png"
      style="margin-right:auto; margin-left:auto;" />
 <figcaption>
     제품 변경 후 강한 피드백을 받고 하루만에 롤백
@@ -86,7 +86,7 @@ publish: true
 이에 따라 리뉴얼할 사항들을 쪼개서 전체 리스트업 하고, 새롭게 단위를 나누어 우선순위를 배열했습니다.
 
 <figure>
-<img src="/images/2017-10-27/step-by-step-deployment.png"
+<img src="/images/2017-12-19/step-by-step-deployment.png"
      style="margin-right:auto; margin-left:auto;" />
 <figcaption>
     리뉴얼할 사항을 적절한 단위로 쪼개서 배포 순서를 결정
@@ -98,7 +98,7 @@ publish: true
 우선순위를 재배열한 후, 이상적인 상태의 설계와 디자인을 쪼개서 현 버전에 부분적으로 신기능이 들어가도 전체 서비스 사용 흐름과 디자인에 문제가 없도록 중간 단계를 재설정했습니다. 또한 기능을 구현하고 있는 동안에는, 바로 다음에 구현될 기능만 잘라 워킹 프로토타입을 만들어서 내부 테스트를 다시 수행했습니다.
 
 <figure>
-<img src="/images/2017-10-27/setup-mid-purpose.png"
+<img src="/images/2017-12-19/setup-mid-purpose.png"
      style="margin-right:auto; margin-left:auto;" />
 <figcaption>
     이상적인 상태에서 한 단계 정도 수준을 낮춘 중간 전략을 설정
@@ -131,7 +131,7 @@ QA가 완료된 후에는 전체 고객에게 바로 배포하지 않고, 부분
 그러나 배포 전략 변경 이후에는 배포될 단위별로 워킹 프로토타입을 다시 쪼개서 만들고, 한 번에 하나의 내용에 대해서만 테스트를 진행한 후 피드백을 수집했습니다. 덕분에 훨씬 몰입이 높은 환경에서 테스트가 진행되었고, 한 내용에 대한 심층적인 피드백을 수집할 수 있었습니다.
 
 <figure>
-<img src="/images/2017-10-27/cafe-study.png"
+<img src="/images/2017-12-19/cafe-study.png"
      style="margin-right:auto; margin-left:auto;" />
 <figcaption>
     단계별 배포 전략 수행 이후 cafe study 리서치 방식의 변화
@@ -146,7 +146,7 @@ QA가 완료된 후에는 전체 고객에게 바로 배포하지 않고, 부분
 ## 염두에 둘 것
 
 <figure>
-<img src="/images/2017-10-27/update-introduction.png"
+<img src="/images/2017-12-19/update-introduction.png"
      style="margin-right:auto; margin-left:auto;" />
 <figcaption>
     어떤 업데이트 안내 문구가 친절하게 느껴지는가?

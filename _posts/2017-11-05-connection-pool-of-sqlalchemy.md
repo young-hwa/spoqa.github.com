@@ -72,4 +72,5 @@ SQLAlchemy의 연결 풀의 동작 방식을 이해하면 상용 서비스를 �
   [Flask-SQLAlchemy]: https://github.com/mitsuhiko/flask-sqlalchemy/
   [Pgpool-II]: http://www.pgpool.net/mediawiki/index.php/Main_Page
 
-  [^1]: SQLite의 파일 기반 데이터베이스에서는 연결 비용이 적기 때문에 기본적으로 `NullPool`을 채택합니다. `NullPool`은 이름에서 알 수 있듯이 연결 풀링을 하지 않습니다.
+  [^1]: SQLAlchemy 0.7부터 SQLite 같은 파일 기반 데이터베이스에서는 [기본적으로 `NullPool`을 채택합니다.](http://docs.sqlalchemy.org/en/latest/dialects/sqlite.html#threading-pooling-behavior) 파일 기반 데이터베이스에는 네트워크 연결이 일어나지 않기 때문에, 연결 비용이 적기 때문입니다. `NullPool`은 이름에서 알 수 있듯이 연결 풀을 유지하지 않고[^2] 풀에 연결이 들어오는 즉시 폐기합니다.
+  [^2]: 큐 풀의 `pool_size`를 0으로 하는 것과 같다고 착각할 수 있으나, 큐 풀은 [`pool_size`가 0일 때 `pool_size`가 무한대인 것으로 인식합니다.](http://docs.sqlalchemy.org/en/latest/core/pooling.html#sqlalchemy.pool.QueuePool.params.pool_size) 따라서 풀을 만들지 않으려면 `NullPool`을 쓰는 것이 적절합니다.

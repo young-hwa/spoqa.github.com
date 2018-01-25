@@ -43,7 +43,11 @@ ES-Discuss는 WICG와 비슷하게 ECMAScript 스펙에 대해서 논의하는 �
 
 HTML은 W3C의 WebPlat WG와 WHATWG에서, CSS는 W3C의 CSSWG에서, JS는 ECMA의 TC39에서 표준을 이끌고 있습니다.
 
-위 저장소들에 공개된 초안은 표준이 되기까지 여러 단계를 거치게 되는데, 여기서 다루지는 않겠습니다.
+위 저장소들에 공개된 초안은 표준이 되기까지 여러 단계를 거치게 되는데, <del>여기서 다루지는 않겠습니다.</del>
+(2018-01-25 추가됨) 이에 대한 내용은 다음의 블로그 포스트에서 자세히 설명하고 있습니다.
+
+- [W3C 표준화 제정 단계](http://wit.nts-corp.com/2013/10/16/280)
+- [ECMAScript와 TC39](http://ahnheejong.name/articles/ecmascript-tc39/)
 
 
 ## 다듬어진 표준은 어떤 브라우저에서 얼마나 구현되고 있을까

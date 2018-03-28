@@ -18,7 +18,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Spoqa 기술 블로그{% if page.title %} | {{ page.title }}{% endif %}</title>
   <meta name="description" content="{{ page_description | strip }}">
-  <link rel="canonical" href="{{ site.home_url}}{{ page.url }}">
+  {% if page.redirection %}
+    <meta http-equiv="refresh" content="0; url={{- site.home_url}}{{ page.redirection }}">
+    <link rel="canonical" href="{{ site.home_url}}{{ page.redirection }}">
+  {% else %}
+    <link rel="canonical" href="{{ site.home_url}}{{ page.url }}">
+  {% endif %}
 
   <!-- OpenGraph meta tags -->
   <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}Spoqa 기술 블로그{% endif %}">
@@ -135,7 +140,7 @@
             <li><a class="
               {% if page.url == '/jobs.html' or url_left6 == '/jobs/' %}
               selected
-              {% endif %} menu-job" href="/jobs.html">채용정보</a></li>
+              {% endif %} menu-job" href="/jobs/">채용정보</a></li>
             {% endif %}
           </ul>
         </div>

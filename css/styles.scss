@@ -860,3 +860,21 @@ figcaption {
     }
   }
 }
+
+
+.recruit {
+  background-color: $grey-bg-color;
+  border-radius:  4px;
+  padding: 12px 30px 10px 30px;
+  margin-top: 60px;
+  p {
+    line-height: 1.85;
+  }
+  @media only screen and (max-width: 580px) {
+    padding: 8px 16px;;
+    margin-top: 40px;
+    p {
+      font-size: 15px;
+    }
+  }
+}

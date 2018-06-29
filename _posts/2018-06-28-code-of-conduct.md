@@ -114,7 +114,6 @@ publish: true
 
 이 문서는 [Github 저장소](https://github.com/spoqa/code-of-conduct)에 올려 관리합니다. 그리고 이를 발표하는 일회성 포스트로 끝내지 않고 계속해서 함께 개선할 예정입니다.
 
-우리가 공유한 문서를 계기로 더 많은 조직과 모임에서 비슷한 움직임이 생기기를 기대합니다. 마지막으로 모두가 안전한 조직문화를 위해 노력한 예시와 업계 내 다양성을 담으려는 가시적인 노력의 결과를 소개하며 이 글을 닫겠습니다. 
+우리가 공유한 문서를 계기로 더 많은 조직과 모임에서 비슷한 움직임이 생기기를 기대합니다. 마지막으로 모두가 안전한 조직문화를 위해 노력한 가시적인 노력의 결과를 한 가지 소개하며 이 글을 닫겠습니다. 
 
 - [작은 조직에서 성평등 실천하기](https://newsbikr.wordpress.com/2018/04/30/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8-2-%EC%9E%91%EC%9D%80-%EC%A1%B0%EC%A7%81%EC%97%90%EC%84%9C-%EC%84%B1%ED%8F%89%EB%93%B1-%EC%8B%A4%EC%B2%9C%ED%95%98%EA%B8%B0-%EC%8B%A0%EC%95%84-%EC%A3%BC/): 2018년 4월 8일 카페 나하에서 열린 [BIYN 리-런칭 파티(BIYN 제13회 총회)](https://newsbikr.wordpress.com/2018/04/19/biyn-%EB%A6%AC-%EB%9F%B0%EC%B9%AD-%ED%8C%8C%ED%8B%B0-%EC%9E%90%EB%A3%8C%EC%A7%91/) 때 발표한 BIYN(기본소득청‘소’년네트워크) 성평등 약속문을 만드는 과정 및 결과 공유 자료입니다.
-- [젠더 관점의 투자(Gender Lens Investing) 리포트](http://sopoong.net/blog-post/gli/): 투자 생태계 내 기울어진 운동장을 인식하고, 성별에 따른 자본의 불평등을 적극적으로 해결하기 위해 [sopoong](http://sopoong.net/)에서 도입한 젠더 관점의 투자(Gender Lens Investing)에 대한 소개 및 분석 리포트 입니다.

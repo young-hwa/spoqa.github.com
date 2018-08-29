@@ -88,7 +88,7 @@ publish: true
 스포카에서는 [트위터 에모지](https://twemoji.twitter.com/)를 판스티커로 출력해 회고에 활용하고 있습니다. 독특한 스티커를 사용해 활용하면 조금 더 재미있게 환기되는 회고를 할 수 있겠죠?
 
 <p align="center">
-  <img src="/images/2018-08-29/emoji.jpg" width="436px" />
+  <img src="/images/2018-08-29/emoji.JPG" width="436px" />
 </p>
 
 ### 4. 더 이야기하기 (10분)
